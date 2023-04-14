@@ -1,11 +1,17 @@
 # main links
 main:
+  - title: "Home"
+    url: "/"
   - title: "Algorithm"
-    url: /algorithm/
+    url: algorithm/
+  - title: "Spring"
+    url: spring/
+  - title: "Blog"
+    url: blog/
 #  - title: "Sample Posts"
 #    url: /year-archive/
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+#  - title: "Quick-Start Guide"
+#    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
