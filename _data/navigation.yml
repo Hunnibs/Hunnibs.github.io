@@ -1,12 +1,16 @@
 # main links
 main:
-  - title: "Home"
+  - title: "HOME"
     url: "/"
-  - title: "Algorithm"
+  - title: "ALGORITHM STUDY"
     url: algorithm/
-  - title: "Spring"
+  - title: "BAEKJOON"
+    url: baekjoon/
+  - title: "PROGRAMMERS"
+    url: programmers/
+  - title: "SPRING"
     url: spring/
-  - title: "Blog"
+  - title: "BLOG"
     url: blog/
 #  - title: "Sample Posts"
 #    url: /year-archive/

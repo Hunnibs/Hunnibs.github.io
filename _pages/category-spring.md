@@ -2,6 +2,8 @@
 title: "스프링"
 layout: archive
 permalink: spring
+author_profile: true
+sidebar_main: true
 ---
 
 {% assign posts = site.categories.spring %}
