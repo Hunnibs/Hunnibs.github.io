@@ -1,5 +1,5 @@
 ---
-title: "블로그"
+title: "블로그 개발일지"
 layout: archive
 permalink: /blog/
 author_profile: true
