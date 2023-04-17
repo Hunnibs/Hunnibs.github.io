@@ -1,7 +1,7 @@
 ---
 title: "블로그 개발일지"
 layout: archive
-permalink: /categories/blog/
+permalink: /categories/BLOG/
 author_profile: true
 sidebar_main: true
 ---
