@@ -1,7 +1,7 @@
 ---
 title: "프로그래머스 문제 풀이"
 layout: archive
-permalink: /programmers/
+permalink: /categories/programmers/
 author_profile: true
 sidebar_main: true
 ---

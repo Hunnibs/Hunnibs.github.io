@@ -1,10 +1,10 @@
 ---
-title: "블로그 개발일지"
+title: "백준 문제 풀이"
 layout: archive
-permalink: /blog/
+permalink: /categories/baekjoon/
 author_profile: true
 sidebar_main: true
 ---
 
-{% assign posts = site.categories.blog %}
+{% assign posts = site.categories.baekjoon %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}

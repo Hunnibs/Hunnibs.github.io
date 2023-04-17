@@ -1,10 +1,10 @@
 ---
-title: "백준 문제 풀이"
+title: "스프링"
 layout: archive
-permalink: /baekjoon/
+permalink: /categories/spring/
 author_profile: true
 sidebar_main: true
 ---
 
-{% assign posts = site.categories.baekjoon %}
+{% assign posts = site.categories.spring %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
