@@ -2,16 +2,18 @@
 main:
   - title: "HOME"
     url: "/"
-  - title: "ALGORITHM STUDY"
-    url: /categories/algorithm/
-  - title: "BAEKJOON"
-    url: /categories/baekjoon/
-  - title: "PROGRAMMERS"
-    url: /categories/programmers/
-  - title: "SPRING"
-    url: /categories/spring/
-  - title: "BLOG"
-    url: /categories/blog/
+  - title: "CATEGORY"
+    url: "/categories/"
+#  - title: "ALGORITHM STUDY"
+#    url: /categories/algorithm/
+#  - title: "BAEKJOON"
+#    url: /categories/baekjoon/
+#  - title: "PROGRAMMERS"
+#    url: /categories/programmers/
+#  - title: "SPRING"
+#    url: /categories/spring/
+#  - title: "BLOG"
+#    url: /categories/blog/
 #  - title: "Sample Posts"
 #    url: /year-archive/
 #  - title: "Quick-Start Guide"
