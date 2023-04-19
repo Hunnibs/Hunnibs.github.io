@@ -8,10 +8,10 @@ main:
     url: /categories/blog/
   - title: "SPRING"
     url: /categories/spring/
-#  - title: "CATEGORY"
-#    url: "/categories/"
-#  - title: "BAEKJOON"
-#    url: /categories/baekjoon/
+  - title: "CATEGORY"
+    url: /categories/
+  - title: "TAG"
+    url: /tags/
 #  - title: "PROGRAMMERS"
 #    url: /categories/programmers/
   #  - title: "Sample Posts"
