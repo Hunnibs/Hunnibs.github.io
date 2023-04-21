@@ -51,7 +51,7 @@ menu:
     url:               /algorithm/
   - title:             Algorithm Study
     url:               /study/
-  - title:             Blog
+  - title:             Jekyll
     url:               /jekyll/
 #  - title:             Spring
 #    url:               /about/
