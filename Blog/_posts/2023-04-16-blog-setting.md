@@ -2,7 +2,7 @@
 layout: post
 title:  "[Jekyll] GitHub 블로그 개발일지(1)"
 description: > 
-  "간단하게 적어놓는 초기 세팅 과정"
+    "간단하게 적어놓는 초기 세팅 과정"
 
 hide_last_modified: true
 ---
