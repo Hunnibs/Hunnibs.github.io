@@ -7,6 +7,7 @@ description: >
 hide_last_modified: true
 ---
 > <https://school.programmers.co.kr/learn/courses/30/lessons/42884>
+
 ### 문제 해결 방안
 ***
 - 이전에 비슷한 문제를 풀어봐서 Greedy 알고리즘 사용을 바로 결정

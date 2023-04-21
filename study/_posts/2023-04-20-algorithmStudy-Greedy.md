@@ -6,6 +6,7 @@ description: >
 
 hide_last_modified: true
 ---
+***
 ### Greedy 알고리즘이란?
 ***
 - Greedy 알고리즘은 최적해를 구하는 데에 사용되는 근사적인 방법
