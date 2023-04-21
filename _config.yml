@@ -50,7 +50,7 @@ menu:
   - title:             Algorithm
     url:               /algorithm/
   - title:             Algorithm Study
-    url:               /algorithmStudy/
+    url:               /study/
   - title:             Blog
     url:               /blog/
 #  - title:             Spring
