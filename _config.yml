@@ -48,13 +48,13 @@ author:
 # Add links to the sidebar.
 menu:
   - title:             Algorithm
-    url:               /Algorithm/
+    url:               /algorithm/
   - title:             Algorithm Study
-    url:               /AlgorithmStudy/
+    url:               /algorithmStudy/
   - title:             Blog
-    url:               /Blog/
-  - title:             Spring
-    url:               /about/
+    url:               /blog/
+#  - title:             Spring
+#    url:               /about/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
@@ -80,7 +80,7 @@ paginate_path:         /:num/
 # Theme
 # ---------------------------------------------------------------------------------------
 
-#theme: #jekyll-theme-hydejack
+#theme: jekyll-theme-hydejack
 remote_theme: hydecorp/hydejack@v9
 
 
@@ -359,11 +359,11 @@ plugins:
 #   admins:              <id>
 
 # Used on index and about sites
-# social:
-#   name:                <firstname> <lastname>
-#   links:
-#     - https://twitter.com/<username>
-#     - https://github.com/<username>
+#social:
+#  name:                <firstname> <lastname>
+#  links:
+#    - https://twitter.com/<username>
+#    - https://github.com/Hunnibs
 
 
 # Plugin Configs
