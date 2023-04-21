@@ -11,6 +11,9 @@ hide_last_modified: true
 ### 1.1. 개인 레포지토리 생성
 ***
 - "username.github.io"로 github repository 생성
+
+    <img src="/assets/img/jekyll/createRepo.png" width="450px" height="300px">
+
 - Github Desktop 앱을 이용해 만들어둔 repository를 local 저장소로 가져옵니다.
 
 ### 1.2. 루비 설치
