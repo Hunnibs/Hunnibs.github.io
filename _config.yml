@@ -51,10 +51,10 @@ menu:
     url:               /algorithm/
   - title:             Algorithm Study
     url:               /study/
+  - title:             It
+    url:               /it/
   - title:             Jekyll
     url:               /jekyll/
-#  - title:             Spring
-#    url:               /about/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
