@@ -2,17 +2,31 @@
 layout: post
 title:  "블록체인"
 description: >
-    "블록체인 기술 정리"
+    "블록체인 기술 관련"
 
-hide_last_modified: true
+hide_last_modified: false
 ---
 ***
+* [정의](#정의)
+* [기술의 특징](#기술의-특징)
+* [핵심 구성 요소](#핵심-구성-요소)
+* [블록체인 연결되는 방식](#블록체인-연결되는-방식)
+* [블록체인 네트워크 유형](#블록체인-네트워크-유형)
+* [참조](#참조)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 ### 정의
 ***
++ 블록체인은 블록들을 체인으로 연결해놓은 것
 
 - **블록**이라고 하는 소규모 데이터들이 관리 대상 데이터를 P2P 방식을 기반으로 생성된 체인 형태의 연결고리 기반 분산 데이터 저장 환경에 저장하는 방식
 - 합의 없이 체인을 삭제하거나 수정할 수 없으므로 데이터가 시간 순서대로 일관성이 있음
-- 결과적으로 주문, 결제, 계정, 기타 트랜잭션을 추적하기 위해 변경 불가능한 원장을 생성할 수 있음
+- 결과적으로 주문, 결제, 계정, 기타 트랜잭션을 추적하기 위해 변경 불가능한 분산 원장을 생성할 수 있음
+
+> 분산 원장이란?   
+> 분산 원장은 탈중앙화의 특징을 가진 트랜잭션 데이터베이스를 뜻한다. 여기서 원장은 거래 장부를 뜻하는데 거래에 참여하는 각 당사자는
+> 동일한 거래 장부 사본을 소유하며, 변경 내용은 모두 함께 업데이트 된다.
 
 ### 기술의 특징
 ***
@@ -52,6 +66,24 @@ hide_last_modified: true
 - 프라이빗 키: 구성원 고유의 키
 - 두 개의 키가 함께 작동하여 원장의 데이터 잠금을 해제하는 방식
 
+### 블록체인 연결되는 방식
+***
+
+![blockchain](/assets/img/it/block.png)
+
+- 블록은 계속해서 만들어져 나온다.
+- 블록에 데이터를 저장해서 *블록체인*에 연결을 시키기 위해서는 일련의 과정이 필요하다.
+
+1. 블록체인 내 연결할 블록의 해시값을 가져온다.
+2. 저장하고 싶은 데이터를 해싱을 통해 해시값을 생성해낸다.
+3. 두 개의 해시값에 채굴자가 Nonce 값을 찾아내 새로운 해시값을 생성해낸다.
+
+> Nonce란?   
+> 새로운 해시값은 제약조건이 존재하기 때문에 적절한 Nonce 값을 찾아줘야한다.   
+> 적절한 Nonce 값을 찾기 위해서 계속해서 변경되기 때문에 '임시값'이라고도 한다. 
+
+- 위 과정을 거쳐 블록들이 연결되기 때문에 이미 블록에 저장되어있는 데이터를 변경하려하면 데이터의 해시값이 변하게 된다.(불변성)
+
 ### 블록체인 네트워크 유형
 ***
 
@@ -79,6 +111,8 @@ hide_last_modified: true
     - 목적에 따라 규칙을 바꿀 수 있다
     - 일정한 노드만 참여가 가능하기 때문에 트랜잭션 비용이 저렴하다.
 
-### 기술 정리 참조
+### 참조
 ***
-[AWS 공식문서](https://aws.amazon.com/ko/what-is/blockchain/?aws-products-all.sort-by=item.additionalFields.productNameLowercase&aws-products-all.sort-order=asc)
+[AWS 블록체인 관련 문서](https://aws.amazon.com/ko/what-is/blockchain/?aws-products-all.sort-by=item.additionalFields.productNameLowercase&aws-products-all.sort-order=asc)   
+[SAP 블록체인 관련 문서](https://www.sap.com/korea/insights/what-is-blockchain.html)   
+[노마드 코더 영상](https://www.youtube.com/watch?v=TljQRfHRId8&list=PL7jH19IHhOLOJfXeVqjtiawzNQLxOgTdq)
