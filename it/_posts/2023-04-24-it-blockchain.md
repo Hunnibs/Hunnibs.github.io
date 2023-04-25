@@ -6,16 +6,9 @@ description: >
 
 hide_last_modified: false
 ---
+* TOC
+{:toc}
 ***
-* [정의](#정의)
-* [기술의 특징](#기술의-특징)
-* [핵심 구성 요소](#핵심-구성-요소)
-* [블록체인 연결되는 방식](#블록체인-연결되는-방식)
-* [블록체인 네트워크 유형](#블록체인-네트워크-유형)
-* [참조](#참조)
-
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
 ### 정의
 ***
 + 블록체인은 블록들을 체인으로 연결해놓은 것
