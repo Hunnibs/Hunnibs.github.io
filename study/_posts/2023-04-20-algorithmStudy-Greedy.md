@@ -6,7 +6,8 @@ description: >
 
 hide_last_modified: true
 ---
-
+* TOC
+{:toc}
 ***
 ### Greedy 알고리즘이란?
 ***
