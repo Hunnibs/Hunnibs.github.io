@@ -31,6 +31,7 @@ hide_last_modified: true
 - 해결방법은 간단하다
 - [hydecorp/hydejack-starter-kit](https://github.com/hydecorp/hydejack-starter-kit)
 - 해당 레포지토리로 이동하면 스타터킷 답게 다 포함되어있는 것을 확인할 수 있다.
+- (추가) masterkit으로 다운받았지만 현재 버전과 다른 점이 많아 버전에 맞춰 다운받는것이 편할 수도 있다.
 
 ### 2.3 주의할 점
 ***

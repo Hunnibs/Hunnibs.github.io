@@ -275,6 +275,8 @@ hydejack:
     # Set to `true` to allow visitors to switch between light and dark mode.
     icon:              true
 
+    sunrise: 6
+    sunset: 18
   # ⚡️ DANGER ZONE ⚡️
   # ----------------
   # This is an _experimental_ feature.
@@ -334,7 +336,6 @@ plugins:
   - jekyll-titles-from-headings
   - jekyll-include-cache
   - jekyll-last-modified-at
-  - jekyll-toc
 
 
 # SEO Tag

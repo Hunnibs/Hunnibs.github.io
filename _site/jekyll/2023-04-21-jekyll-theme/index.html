@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en"><!--
+ __  __                __                                     __
+/\ \/\ \              /\ \             __                    /\ \
+\ \ \_\ \   __  __    \_\ \      __   /\_\      __       ___ \ \ \/'\
+ \ \  _  \ /\ \/\ \   /'_` \   /'__`\ \/\ \   /'__`\    /'___\\ \ , <
+  \ \ \ \ \\ \ \_\ \ /\ \L\ \ /\  __/  \ \ \ /\ \L\.\_ /\ \__/ \ \ \\`\
+   \ \_\ \_\\/`____ \\ \___,_\\ \____\ _\ \ \\ \__/.\_\\ \____\ \ \_\ \_\
+    \/_/\/_/ `/___/> \\/__,_ / \/____//\ \_\ \\/__/\/_/ \/____/  \/_/\/_/
+                /\___/                \ \____/
+                \/__/                  \/___/
+
+Powered by Hydejack v9.1.6 <https://hydejack.com/>
+-->
+
+
+
+
+
+
+
+<head>
+  
+
+
+
+
+
+
+  
+    
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>[Jekyll] GitHub 블로그 개발일지(2) | Hunnibs</title>
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="[Jekyll] GitHub 블로그 개발일지(2)" />
+<meta name="author" content="<Lee> <ByungHeon>" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="“빠르게 찾아온 더 이쁜 테마에 대한 열망”" />
+<meta property="og:description" content="“빠르게 찾아온 더 이쁜 테마에 대한 열망”" />
+<link rel="canonical" href="http://localhost:4000/jekyll/2023-04-21-jekyll-theme/" />
+<meta property="og:url" content="http://localhost:4000/jekyll/2023-04-21-jekyll-theme/" />
+<meta property="og:site_name" content="Hunnibs" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-04-21T00:00:00+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[Jekyll] GitHub 블로그 개발일지(2)" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"<Lee> <ByungHeon>"},"dateModified":"2023-04-26T21:23:38+09:00","datePublished":"2023-04-21T00:00:00+09:00","description":"“빠르게 찾아온 더 이쁜 테마에 대한 열망”","headline":"[Jekyll] GitHub 블로그 개발일지(2)","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/2023-04-21-jekyll-theme/"},"url":"http://localhost:4000/jekyll/2023-04-21-jekyll-theme/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+  
+
+
+
+  <meta name="theme-color" content="rgb(25,55,71)">
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Hunnibs">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+<meta name="application-name" content="Hunnibs">
+
+<meta name="generator" content="Hydejack v9.1.6" />
+
+
+<link rel="alternate" href="http://localhost:4000/jekyll/2023-04-21-jekyll-theme/" hreflang="en">
+
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Hunnibs" />
+
+
+<link rel="shortcut icon"    href="/assets/icons/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/icons/icon-192x192.png">
+
+<link rel="manifest" href="/assets/site.webmanifest">
+
+<link rel="dns-prefetch" href="https://fonts.googleapis.com"><link rel="dns-prefetch" href="https://fonts.gstatic.com">
+
+
+
+<link rel="preload" href="/assets/img/swipe.svg" as="image" id="_hrefSwipeSVG">
+
+
+
+
+
+
+<script>!function(r,c){"use strict";function a(e,t,n,o){e.addEventListener?e.addEventListener(t,n,o):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n}r.loadJS=function(e,t){var n=c.createElement("script"),e=(n.src=e,t&&a(n,"load",t,{once:!0}),c.scripts[0]);return e.parentNode.insertBefore(n,e),n},r._loaded=!1,r.loadJSDeferred=function(e,t){var n=c.createElement("script");function o(){r._loaded=!0,t&&a(n,"load",t,{once:!0});var e=c.scripts[0];e.parentNode.insertBefore(n,e)}return n.src=e,r._loaded?o():a(r,"load",o,{once:!0}),n},r.setRel=r.setRelStylesheet=function(e){a(c.getElementById(e),"load",function(){this.rel="stylesheet"},{once:!0})}}(window,document);
+!function(a){"use strict";var b=function(b,c,d){function e(a){return h.body?a():void setTimeout(function(){e(a)})}function f(){i.addEventListener&&i.removeEventListener("load",f),i.media=d||"all"}var g,h=a.document,i=h.createElement("link");if(c)g=c;else{var j=(h.body||h.getElementsByTagName("head")[0]).childNodes;g=j[j.length-1]}var k=h.styleSheets;i.rel="stylesheet",i.href=b,i.media="only x",e(function(){g.parentNode.insertBefore(i,c?g:g.nextSibling)});var l=function(a){for(var b=i.href,c=k.length;c--;)if(k[c].href===b)return a();setTimeout(function(){l(a)})};return i.addEventListener&&i.addEventListener("load",f),i.onloadcssdefined=l,l(f),i};"undefined"!=typeof exports?exports.loadCSS=b:a.loadCSS=b}("undefined"!=typeof global?global:this);
+!function(a){if(a.loadCSS){var b=loadCSS.relpreload={};if(b.support=function(){try{return a.document.createElement("link").relList.supports("preload")}catch(b){return!1}},b.poly=function(){for(var b=a.document.getElementsByTagName("link"),c=0;c<b.length;c++){var d=b[c];"preload"===d.rel&&"style"===d.getAttribute("as")&&(a.loadCSS(d.href,d,d.getAttribute("media")),d.rel=null)}},!b.support()){b.poly();var c=a.setInterval(b.poly,300);a.addEventListener&&a.addEventListener("load",function(){b.poly(),a.clearInterval(c)}),a.attachEvent&&a.attachEvent("onload",function(){a.clearInterval(c)})}}}(this);
+!function(w) {
+  w._baseURL = '/';
+  w._publicPath = '/assets/js/';
+  w._noPushState = false;
+  w._noDrawer = false;
+  w._noNavbar = false;
+  w._noToc = false;
+  w._noSearch = false;
+  w._search = {
+    DATA_URL: '/assets/sitedata.json?no-cache',
+    STORAGE_KEY: 'mini-search/',
+    INDEX_KEY: 'index--2023-04-26T22:31:09+09:00',
+  };
+  w._clapButton = true;
+}(window);</script>
+
+
+<script async src="/assets/bower_components/MathJax/es5/tex-mml-chtml.js" id="_MathJax"></script>
+
+
+<!--[if gt IE 8]><!---->
+
+  
+
+
+
+
+<link rel="stylesheet" href="/assets/css/hydejack-9.1.6.css" id="_stylePreload">
+<link rel="stylesheet" href="/assets/icomoon/style.css" id="_iconsPreload">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:700%7CNoto+Sans:400,400i,700,700i&display=swap" id="_fontsPreload">
+
+
+
+  <style id="_pageStyle">
+
+html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.5);--accent-color-highlight: rgba(79, 177, 186, 0.1);--accent-color-darkened: #409ba3;--theme-color: rgb(25,55,71)}
+</style>
+
+
+<!--<![endif]-->
+
+
+
+
+
+</head>
+
+<body class="no-break-layout">
+  
+
+
+<hy-push-state
+  id="_pushState"
+  replace-selector="#_main"
+  link-selector="a[href]:not([href^='/assets/']):not(.external):not(.no-push-state)"
+  script-selector="script"
+  duration="500"
+  hashchange
+>
+  
+  
+  <div id="_navbar" class="navbar fixed-top">
+  <div class="content">
+    <span class="sr-only">Jump to:</span>
+    <div class="nav-btn-bar">
+      <a id="_menu" class="nav-btn no-hover" href="#_drawer--opened">
+        <span class="sr-only">Navigation</span>
+        <span class="icon-menu"></span>
+      </a>
+      <div class="nav-span"></div>
+    </div>
+  </div>
+</div>
+<hr class="sr-only" hidden />
+
+  <main
+  id="_main"
+  class="content layout-post"
+  role="main"
+>
+  <nav id="breadcrumbs" class="screen-only"><ul>
+  
+  
+    <li><a href="/">home</a></li>
+    
+      <li>
+        
+          <span>/</span>
+          
+          
+          <a href="/jekyll/">jekyll</a>
+        
+      </li>
+    
+      <li>
+        
+          <span>/</span>
+          <span>2023-04-21-jekyll-theme</span>
+        
+      </li>
+    
+  
+</ul></nav>
+  
+
+
+
+
+
+
+
+
+
+
+<article id="post-jekyll-jekyll-theme" class="page post mb6" role="article">
+  <header>
+    <h1 class="post-title flip-project-title">
+      
+        [Jekyll] GitHub 블로그 개발일지(2)
+      
+    </h1>
+
+    <div class="post-date">
+      
+      <span class="ellipsis mr1">
+        <time datetime="2023-04-21T00:00:00+09:00">21 Apr 2023</time> in <a href="/jekyll/" class="flip-title">Jekyll</a> 
+      </span>
+      
+    </div>
+
+    
+    
+
+    
+
+
+
+  
+    <p class="note-sm" >
+      “빠르게 찾아온 더 이쁜 테마에 대한 열망”
+
+    </p>
+  
+
+
+  </header>
+
+  
+    <ul id="markdown-toc">
+  <li><a href="#21-새로운-테마-선정" id="markdown-toc-21-새로운-테마-선정">2.1 새로운 테마 선정</a></li>
+  <li><a href="#22-새로운-테마-적용" id="markdown-toc-22-새로운-테마-적용">2.2 새로운 테마 적용</a></li>
+  <li><a href="#23-주의할-점" id="markdown-toc-23-주의할-점">2.3 주의할 점</a></li>
+</ul>
+
+<hr />
+<h3 id="21-새로운-테마-선정">2.1 새로운 테마 선정</h3>
+<hr />
+<ul>
+  <li><a href="https://velog.io/@juxgsiroo/github-page-pt2">juxgsiroo 님 Velog</a> 추천 참조</li>
+</ul>
+
+<blockquote>
+  <p>기존에 쓰던 테마가 너무 단순하고 밋밋하다는 생각이 들던 때에 새로운 테마를 구경하게 되었고 지금까지 했던걸
+과감히 버리고서라도 변경하기로 결정했다</p>
+</blockquote>
+
+<h3 id="22-새로운-테마-적용">2.2 새로운 테마 적용</h3>
+<ul>
+  <li>기존에 저장했던 Markdown 폴더들을 전부 따로 빼준 뒤 레포지토리를 비워주었다</li>
+  <li>이전에 했던 것 처럼 Hydejack을 Zip으로 가져와 레포지토리에 넣어주는 방식을 활용</li>
+  <li><a href="https://github.com/hydecorp/hydejack">hydecorp/hydejack Repository</a></li>
+  <li>
+    <p>당연히 해당 repository를 가져오면 될 것이라 생각했지만 이 파일에는 gemfile이 존재하지 않는다</p>
+
+    <p><img src="/assets/img/jekyll/noGem.png" alt="Nogem" /></p>
+  </li>
+</ul>
+
+<blockquote>
+  <p>gemfile이 없다면 ‘bundle exec jekyll serve’ 를 실행 시
+‘Could not locate Gemfile’ 이라는 Error가 발생한다.</p>
+</blockquote>
+
+<ul>
+  <li>해결방법은 간단하다</li>
+  <li><a href="https://github.com/hydecorp/hydejack-starter-kit">hydecorp/hydejack-starter-kit</a></li>
+  <li>해당 레포지토리로 이동하면 스타터킷 답게 다 포함되어있는 것을 확인할 수 있다.</li>
+  <li>(추가) masterkit으로 다운받았지만 현재 버전과 다른 점이 많아 버전에 맞춰 다운받는것이 편할 수도 있다.</li>
+</ul>
+
+<h3 id="23-주의할-점">2.3 주의할 점</h3>
+<hr />
+<ul>
+  <li>minimal mistakes 테마를 사용하던 때와는 다르게 조심해줘야할 점들이 많았다.</li>
+  <li>많이 안 쓰는 테마여서 웬만해서는 Guide나 Demo site와 코드를 비교해보며 알아가야했다.</li>
+</ul>
+
+<p><strong>2.3.1</strong> _config.yml Theme 설정</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    
+    # Theme
+    # ---------------------------------------------------------------------------------------
+    
+    #theme: jekyll-theme-hydejack
+    remote_theme: hydecorp/hydejack@v9
+
+</code></pre></div></div>
+
+<ul>
+  <li>해당 코드를 보면 theme와 remote_theme가 나누어져있다</li>
+  <li>local에서 테스트 해볼 때는 theme를 주석처리를 풀고 remote_theme를 주석처리</li>
+  <li>서버에 올릴 떄는 위의 예시코드처럼 사용해주어야함</li>
+</ul>
+
+<blockquote>
+  <p>따로 layout 폴더를 만들지 않고 Jekyll에서 기본으로 주어지는 layout plugin을 사용하기 때문에
+상황에 맞게 바꿔주지 않으면 해당 부분이 로드되지 않는다.</p>
+</blockquote>
+
+<p><strong>2.3.2</strong> 폴더 경로 설정</p>
+<ul>
+  <li>가장 시간을 많이 잡아먹었고 스트레스 받았던 부분이다.
+    <ul>
+      <li>아래와 같이 Local에서는 제대로 동작해도 서버에 올리면 다르게 동작하는 등 많은 문제점이 발생했다.</li>
+    </ul>
+
+    <p><img src="/assets/img/jekyll/pathError.png" alt="Error" /></p>
+  </li>
+  <li>우선 _featured_categories 폴더에 카테고리 별로 분류를 해주기 위한 Markdown 파일을 작성</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    
+    ---
+    # Featured tags need to have either the `list` or `grid` layout (PRO only).
+    layout: list
+    
+    # The title of the tag's page.
+    title: Algorithm
+    
+    # The name of the tag, used in a post's front matter (e.g. tags: [&lt;slug&gt;]).
+    slug: algorithm
+    
+    # (Optional) Write a short (~150 characters) description of this featured tag.
+    description: &gt;
+        알고리즘 문제 풀이
+    
+    # (Optional) You can disable grouping posts by date.
+    # no_groups: true
+    
+    sitemap: false
+    ---
+
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p>다음으로 카테고리에 post를 올리기 위해서는 해당 사진처럼 해준다</p>
+
+    <p><img src="/assets/img/jekyll/path.png" width="450px" height="100px" /></p>
+  </li>
+  <li>
+    <p>주의해야할 점은 _config 파일에 해당 포맷대로 파일명을 작성해줘야 인식한다는 점이다.</p>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+    # Format of the permalinks
+    permalink:             /:categories/:year-:month-:day-:title/
+
+</code></pre></div></div>
+
+<blockquote>
+  <p>이외에도 필자는 Blog라는 키워드는 CHANGELOG.md 파일의 특정 부분과 문제를 일으켜서 사용 시 버그가 발생하는 문제점이 있었다.
+누군가는 이글을 보며 조금이라도 편하게 Hydejack 테마를 이용할 수 있기를 바라는 마음에 작성한다.</p>
+</blockquote>
+
+  
+</article>
+
+
+
+  <hr class="dingbat related mb6" />
+
+
+
+
+
+
+  
+     
+
+
+  <aside class="about related mt4 mb4" role="complementary">
+    
+    
+
+<div class="author mt4">
+  
+
+  
+    
+
+
+<img
+  
+    src="https://via.placeholder.com/128x128"
+    srcset="https://via.placeholder.com/128x128 1x,https://via.placeholder.com/256x256 2x"
+    
+  
+  alt="<Lee> <ByungHeon>"
+  class="avatar"
+  
+  width="120"
+  height="120"
+  loading="lazy"
+/>
+
+  
+
+  
+  
+  <h2  class="page-title hr-bottom">
+    About
+  </h2>
+
+  <p>꾸준하게 공부한 내용을 정리하자!</p>
+
+
+  <div class="sidebar-social">
+    <span class="sr-only">Social:</span>
+<ul>
+  
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://github.com/Hunnibs" title="GitHub" class="no-mark-external">
+      <span class="icon-github"></span>
+      <span class="sr-only">GitHub</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="mailto:cqqudgjs@hufs.ac.kr" title="Email" class="no-mark-external">
+      <span class="icon-mail"></span>
+      <span class="sr-only">Email</span>
+    </a>
+  </li>
+
+
+    
+  
+</ul>
+
+  </div>
+</div>
+
+  </aside>
+
+
+  
+
+  
+  
+
+  
+    
+
+
+  <aside class="related mb4" role="complementary">  <h2 class="hr-bottom">Related Posts</h2>  <ul class="related-posts">                  <li class="h4">  <a href="/jekyll/2023-04-26-2023-04-25-jekyll-setting(2)/" class="flip-title"><span></span></a>  <time class="faded fine" datetime="2023-04-26T22:31:09+09:00">26 Apr 2023</time></li>                        <li class="h4">  <a href="/it/2023-04-26-it-metaverse/" class="flip-title"><span>메타버스</span></a>  <time class="faded fine" datetime="2023-04-26T00:00:00+09:00">26 Apr 2023</time></li>                        <li class="h4">  <a href="/study/2023-04-25-algorithmStudy-dp/" class="flip-title"><span>[알고리즘] D.P 알고리즘</span></a>  <time class="faded fine" datetime="2023-04-25T00:00:00+09:00">25 Apr 2023</time></li>            </ul></aside>
+
+  
+
+  
+  
+
+  
+    
+
+  
+
+
+  
+<footer class="content" role="contentinfo">
+  <hr/>
+  
+    <p><small class="copyright">© 2021. All rights reserved.
+</small></p>
+  
+  
+    <nav class="legal"><small>
+    
+      
+      <a class="heading flip-title" href="/LICENSE/">LICENSE</a>
+      |
+    
+      
+      <a class="heading flip-title" href="/NOTICE/">NOTICE</a>
+      |
+    
+      
+      <a class="heading flip-title" href="/CHANGELOG/">CHANGELOG</a>
+      
+    
+    </small></nav>
+  
+    <p><small>Powered by <a class="external" href="https://hydejack.com/">Hydejack</a> v<span id="_version">9.1.6</span></small></p>
+  <hr class="sr-only"/>
+</footer>
+
+
+</main>
+
+  <hy-drawer
+  id="_drawer"
+  class=""
+  side="left"
+  threshold="10"
+  noscroll
+  
+>
+  <header id="_sidebar" class="sidebar" role="banner">
+    
+
+
+
+
+<div class="sidebar-bg sidebar-overlay" style="background-color:rgb(25,55,71);background-image:url(/assets/img/sidebar-bg.jpg)"></div>
+
+    <div class="sidebar-sticky">
+  <div class="sidebar-about">
+    
+    <a class="sidebar-title" href="/"><h2 class="h1">Hunnibs</h2></a>
+    
+    
+      <p class="">
+        A journey of 1000 miles begin with a single step.
+
+      </p>
+    
+  </div>
+
+  <nav class="sidebar-nav heading" role="navigation">
+    <span class="sr-only">Navigation:</span>
+<ul>
+  
+    
+      
+      <li>
+        <a
+          id="_drawer--opened"
+          href="/algorithm/"
+          class="sidebar-nav-item "
+          
+        >
+          Algorithm
+        </a>
+      </li>
+    
+      
+      <li>
+        <a
+          
+          href="/study/"
+          class="sidebar-nav-item "
+          
+        >
+          Algorithm Study
+        </a>
+      </li>
+    
+      
+      <li>
+        <a
+          
+          href="/it/"
+          class="sidebar-nav-item "
+          
+        >
+          It
+        </a>
+      </li>
+    
+      
+      <li>
+        <a
+          
+          href="/jekyll/"
+          class="sidebar-nav-item "
+          
+        >
+          Jekyll
+        </a>
+      </li>
+    
+  
+</ul>
+
+  </nav>
+
+  
+  <div class="sidebar-social">
+    <span class="sr-only">Social:</span>
+<ul>
+  
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://github.com/Hunnibs" title="GitHub" class="no-mark-external">
+      <span class="icon-github"></span>
+      <span class="sr-only">GitHub</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="mailto:cqqudgjs@hufs.ac.kr" title="Email" class="no-mark-external">
+      <span class="icon-mail"></span>
+      <span class="sr-only">Email</span>
+    </a>
+  </li>
+
+
+    
+  
+</ul>
+
+  </div>
+</div>
+  </header>
+</hy-drawer>
+<hr class="sr-only" hidden />
+
+</hy-push-state>
+
+
+  <!--[if gt IE 10]><!---->
+  <script nomodule>!function(){var t,n=document.createElement("script");!("noModule"in n)&&"onbeforeload"in n&&(t=!1,document.addEventListener("beforeload",function(e){if(e.target===n)t=!0;else if(!e.target.hasAttribute("nomodule")||!t)return;e.preventDefault()},!0),n.type="module",n.src=".",document.head.appendChild(n),n.remove())}();
+</script>
+  <script src="/assets/js/hydejack-9.1.6.js" type="module"></script>
+  <script src="/assets/js/LEGACY-hydejack-9.1.6.js" nomodule defer></script>
+  
+
+  
+
+<!--<![endif]-->
+  
+
+
+
+<div hidden>
+  
+  <h2 class="sr-only">Templates (for web app):</h2>
+
+  <template id="_animation-template">
+  <div class="animation-main fixed-top">
+    <nav id="breadcrumbs" class="screen-only"><ul>
+  
+  
+</ul></nav>
+    <div class="content">
+      <div class="page"></div>
+    </div>
+  </div>
+</template>
+
+  <template id="_loading-template">
+  <div class="loading nav-btn fr">
+    <span class="sr-only">Loading…</span>
+    <span class="icon-cog"></span>
+  </div>
+</template>
+
+  <template id="_error-template">
+  <div class="page">
+    <h1 class="page-title">Error</h1>
+    
+    
+    <p class="lead">
+      Sorry, an error occurred while loading <a class="this-link" href=""></a>.
+
+    </p>
+  </div>
+</template>
+
+  <template id="_permalink-template">
+  <a href="#" class="permalink">
+    <span class="sr-only">Permalink</span>
+    <span class="content-hash"></span>
+  </a>
+</template>
+
+</div>
+
+
+</body>
+</html>

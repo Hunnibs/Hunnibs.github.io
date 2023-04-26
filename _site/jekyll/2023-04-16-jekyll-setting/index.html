@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en"><!--
+ __  __                __                                     __
+/\ \/\ \              /\ \             __                    /\ \
+\ \ \_\ \   __  __    \_\ \      __   /\_\      __       ___ \ \ \/'\
+ \ \  _  \ /\ \/\ \   /'_` \   /'__`\ \/\ \   /'__`\    /'___\\ \ , <
+  \ \ \ \ \\ \ \_\ \ /\ \L\ \ /\  __/  \ \ \ /\ \L\.\_ /\ \__/ \ \ \\`\
+   \ \_\ \_\\/`____ \\ \___,_\\ \____\ _\ \ \\ \__/.\_\\ \____\ \ \_\ \_\
+    \/_/\/_/ `/___/> \\/__,_ / \/____//\ \_\ \\/__/\/_/ \/____/  \/_/\/_/
+                /\___/                \ \____/
+                \/__/                  \/___/
+
+Powered by Hydejack v9.1.6 <https://hydejack.com/>
+-->
+
+
+
+
+
+
+
+<head>
+  
+
+
+
+
+
+
+  
+    
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>[Jekyll] GitHub 블로그 개발일지(1) | Hunnibs</title>
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="[Jekyll] GitHub 블로그 개발일지(1)" />
+<meta name="author" content="<Lee> <ByungHeon>" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="“간단하게 적어놓는 초기 세팅 과정”" />
+<meta property="og:description" content="“간단하게 적어놓는 초기 세팅 과정”" />
+<link rel="canonical" href="http://localhost:4000/jekyll/2023-04-16-jekyll-setting/" />
+<meta property="og:url" content="http://localhost:4000/jekyll/2023-04-16-jekyll-setting/" />
+<meta property="og:site_name" content="Hunnibs" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-04-16T00:00:00+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="[Jekyll] GitHub 블로그 개발일지(1)" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"<Lee> <ByungHeon>"},"dateModified":"2023-04-25T17:43:32+09:00","datePublished":"2023-04-16T00:00:00+09:00","description":"“간단하게 적어놓는 초기 세팅 과정”","headline":"[Jekyll] GitHub 블로그 개발일지(1)","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/2023-04-16-jekyll-setting/"},"url":"http://localhost:4000/jekyll/2023-04-16-jekyll-setting/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+  
+
+
+
+  <meta name="theme-color" content="rgb(25,55,71)">
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Hunnibs">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+<meta name="application-name" content="Hunnibs">
+
+<meta name="generator" content="Hydejack v9.1.6" />
+
+
+<link rel="alternate" href="http://localhost:4000/jekyll/2023-04-16-jekyll-setting/" hreflang="en">
+
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Hunnibs" />
+
+
+<link rel="shortcut icon"    href="/assets/icons/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/icons/icon-192x192.png">
+
+<link rel="manifest" href="/assets/site.webmanifest">
+
+<link rel="dns-prefetch" href="https://fonts.googleapis.com"><link rel="dns-prefetch" href="https://fonts.gstatic.com">
+
+
+
+<link rel="preload" href="/assets/img/swipe.svg" as="image" id="_hrefSwipeSVG">
+
+
+
+
+
+
+<script>!function(r,c){"use strict";function a(e,t,n,o){e.addEventListener?e.addEventListener(t,n,o):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n}r.loadJS=function(e,t){var n=c.createElement("script"),e=(n.src=e,t&&a(n,"load",t,{once:!0}),c.scripts[0]);return e.parentNode.insertBefore(n,e),n},r._loaded=!1,r.loadJSDeferred=function(e,t){var n=c.createElement("script");function o(){r._loaded=!0,t&&a(n,"load",t,{once:!0});var e=c.scripts[0];e.parentNode.insertBefore(n,e)}return n.src=e,r._loaded?o():a(r,"load",o,{once:!0}),n},r.setRel=r.setRelStylesheet=function(e){a(c.getElementById(e),"load",function(){this.rel="stylesheet"},{once:!0})}}(window,document);
+!function(a){"use strict";var b=function(b,c,d){function e(a){return h.body?a():void setTimeout(function(){e(a)})}function f(){i.addEventListener&&i.removeEventListener("load",f),i.media=d||"all"}var g,h=a.document,i=h.createElement("link");if(c)g=c;else{var j=(h.body||h.getElementsByTagName("head")[0]).childNodes;g=j[j.length-1]}var k=h.styleSheets;i.rel="stylesheet",i.href=b,i.media="only x",e(function(){g.parentNode.insertBefore(i,c?g:g.nextSibling)});var l=function(a){for(var b=i.href,c=k.length;c--;)if(k[c].href===b)return a();setTimeout(function(){l(a)})};return i.addEventListener&&i.addEventListener("load",f),i.onloadcssdefined=l,l(f),i};"undefined"!=typeof exports?exports.loadCSS=b:a.loadCSS=b}("undefined"!=typeof global?global:this);
+!function(a){if(a.loadCSS){var b=loadCSS.relpreload={};if(b.support=function(){try{return a.document.createElement("link").relList.supports("preload")}catch(b){return!1}},b.poly=function(){for(var b=a.document.getElementsByTagName("link"),c=0;c<b.length;c++){var d=b[c];"preload"===d.rel&&"style"===d.getAttribute("as")&&(a.loadCSS(d.href,d,d.getAttribute("media")),d.rel=null)}},!b.support()){b.poly();var c=a.setInterval(b.poly,300);a.addEventListener&&a.addEventListener("load",function(){b.poly(),a.clearInterval(c)}),a.attachEvent&&a.attachEvent("onload",function(){a.clearInterval(c)})}}}(this);
+!function(w) {
+  w._baseURL = '/';
+  w._publicPath = '/assets/js/';
+  w._noPushState = false;
+  w._noDrawer = false;
+  w._noNavbar = false;
+  w._noToc = false;
+  w._noSearch = false;
+  w._search = {
+    DATA_URL: '/assets/sitedata.json?no-cache',
+    STORAGE_KEY: 'mini-search/',
+    INDEX_KEY: 'index--2023-04-26T22:31:09+09:00',
+  };
+  w._clapButton = true;
+}(window);</script>
+
+
+<script async src="/assets/bower_components/MathJax/es5/tex-mml-chtml.js" id="_MathJax"></script>
+
+
+<!--[if gt IE 8]><!---->
+
+  
+
+
+
+
+<link rel="stylesheet" href="/assets/css/hydejack-9.1.6.css" id="_stylePreload">
+<link rel="stylesheet" href="/assets/icomoon/style.css" id="_iconsPreload">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:700%7CNoto+Sans:400,400i,700,700i&display=swap" id="_fontsPreload">
+
+
+
+  <style id="_pageStyle">
+
+html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.5);--accent-color-highlight: rgba(79, 177, 186, 0.1);--accent-color-darkened: #409ba3;--theme-color: rgb(25,55,71)}
+</style>
+
+
+<!--<![endif]-->
+
+
+
+
+
+</head>
+
+<body class="no-break-layout">
+  
+
+
+<hy-push-state
+  id="_pushState"
+  replace-selector="#_main"
+  link-selector="a[href]:not([href^='/assets/']):not(.external):not(.no-push-state)"
+  script-selector="script"
+  duration="500"
+  hashchange
+>
+  
+  
+  <div id="_navbar" class="navbar fixed-top">
+  <div class="content">
+    <span class="sr-only">Jump to:</span>
+    <div class="nav-btn-bar">
+      <a id="_menu" class="nav-btn no-hover" href="#_drawer--opened">
+        <span class="sr-only">Navigation</span>
+        <span class="icon-menu"></span>
+      </a>
+      <div class="nav-span"></div>
+    </div>
+  </div>
+</div>
+<hr class="sr-only" hidden />
+
+  <main
+  id="_main"
+  class="content layout-post"
+  role="main"
+>
+  <nav id="breadcrumbs" class="screen-only"><ul>
+  
+  
+    <li><a href="/">home</a></li>
+    
+      <li>
+        
+          <span>/</span>
+          
+          
+          <a href="/jekyll/">jekyll</a>
+        
+      </li>
+    
+      <li>
+        
+          <span>/</span>
+          <span>2023-04-16-jekyll-setting</span>
+        
+      </li>
+    
+  
+</ul></nav>
+  
+
+
+
+
+
+
+
+
+
+
+<article id="post-jekyll-jekyll-setting" class="page post mb6" role="article">
+  <header>
+    <h1 class="post-title flip-project-title">
+      
+        [Jekyll] GitHub 블로그 개발일지(1)
+      
+    </h1>
+
+    <div class="post-date">
+      
+      <span class="ellipsis mr1">
+        <time datetime="2023-04-16T00:00:00+09:00">16 Apr 2023</time> in <a href="/jekyll/" class="flip-title">Jekyll</a> 
+      </span>
+      
+    </div>
+
+    
+    
+
+    
+
+
+
+  
+    <p class="note-sm" >
+      “간단하게 적어놓는 초기 세팅 과정”
+
+    </p>
+  
+
+
+  </header>
+
+  
+    <ul id="markdown-toc">
+  <li><a href="#11-개인-레포지토리-생성" id="markdown-toc-11-개인-레포지토리-생성">1.1. 개인 레포지토리 생성</a></li>
+  <li><a href="#12-루비-설치" id="markdown-toc-12-루비-설치">1.2. 루비 설치</a></li>
+  <li><a href="#13-블로그-테마-적용" id="markdown-toc-13-블로그-테마-적용">1.3. 블로그 테마 적용</a></li>
+  <li><a href="#14-블로그포스팅" id="markdown-toc-14-블로그포스팅">1.4. 블로그포스팅</a></li>
+  <li><a href="#15-navigaionyml-파일-설정" id="markdown-toc-15-navigaionyml-파일-설정">1.5. Navigaion.yml 파일 설정</a></li>
+  <li><a href="#참조" id="markdown-toc-참조">참조</a></li>
+</ul>
+<hr />
+<h3 id="11-개인-레포지토리-생성">1.1. 개인 레포지토리 생성</h3>
+<hr />
+<ul>
+  <li>
+    <p>“username.github.io”로 github repository 생성</p>
+
+    <p><img src="/assets/img/jekyll/createRepo.png" width="450px" height="300px" /></p>
+  </li>
+  <li>
+    <p>Github Desktop 앱을 이용해 만들어둔 repository를 local 저장소로 가져옵니다.</p>
+  </li>
+</ul>
+
+<h3 id="12-루비-설치">1.2. 루비 설치</h3>
+<hr />
+<ul>
+  <li><a href="https://jekyllrb.com/">https://jekyllrb.com/</a> 참조</li>
+  <li>DOCS -&gt; Quickstart 순서대로 진행</li>
+</ul>
+
+<h3 id="13-블로그-테마-적용">1.3. 블로그 테마 적용</h3>
+<hr />
+<ul>
+  <li><a href="https://github.com/mmistakes/minimal-mistakes">https://github.com/mmistakes/minimal-mistakes</a></li>
+  <li>code 전체 Zip 파일 다운로드</li>
+  <li>
+    <p>압축 푼 후, local 저장소에 가져온 레포지토리 파일에 복사 붙여넣기를 해줍니다.</p>
+  </li>
+  <li>gemfile.lock에서 버전 오류가 발생할 수 도 있으므로 삭제후 bundle install 권장</li>
+</ul>
+
+<h3 id="14-블로그포스팅">1.4. 블로그포스팅</h3>
+<hr />
+<p>1.4.1.</p>
+<ul>
+  <li>_pages 폴더에 카테고리를 추가</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+    ---
+    title: "블로그 개발일지"
+    layout: archive
+    permalink: /blog/
+    author_profile: true
+    sidebar_main: true
+    ---
+    
+</code></pre></div></div>
+
+<ul>
+  <li>archive 활용 목적을 title에 적어주고 permalink는 앞으로 연결될 링크로 지정해줄것</li>
+</ul>
+
+<p>1.4.2.</p>
+<ul>
+  <li>_posts 폴더를 생성</li>
+  <li>markdown 파일들은 여기에 보관할 예정</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+    ---
+    title:  "[Jekyll] 블로그 포스팅 테스트"
+    excerpt: "업로드 확인용"
+    
+    categories:
+      - blog
+    
+    tags:
+    
+      - [Blog, jekyll, Github, Git]
+    
+    toc: true
+    toc_sticky: true
+    
+    date: 2023-04-14
+    last_modified_at: 2023-04-14
+    ---
+    
+</code></pre></div></div>
+
+<ul>
+  <li>categories.blog로 문서저장경로를 지정해준다.</li>
+</ul>
+
+<h3 id="15-navigaionyml-파일-설정">1.5. Navigaion.yml 파일 설정</h3>
+<hr />
+<ul>
+  <li>1.4를 모두 마무리 했다면 _data/navigation.yml 파일로 이동</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+    main:
+  - title: "HOME"
+    url: "/"
+  - title: "ALGORITHM"
+    url: /categories/algorithm/
+  - title: "BLOG"
+    url: /categories/blog/
+  - title: "SPRING"
+    url: /categories/spring/
+        
+</code></pre></div></div>
+
+<ul>
+  <li>위와 같이 지정해준다면 페이지 상단에 해당 카테고리로 이동할 수 있는 네비게이션 바가 생성된다.</li>
+</ul>
+
+<h3 id="참조">참조</h3>
+<hr />
+<ul>
+  <li><a href="https://jekyllrb.com/">Jekyll 공식 사이트</a></li>
+  <li><a href="https://mmistakes.github.io/minimal-mistakes/">Minimal mistakes</a></li>
+  <li><a href="https://ansohxxn.github.io/">공부하는 식빵맘 님 블로그</a></li>
+</ul>
+
+  
+</article>
+
+
+
+  <hr class="dingbat related mb6" />
+
+
+
+
+
+
+  
+     
+
+
+  <aside class="about related mt4 mb4" role="complementary">
+    
+    
+
+<div class="author mt4">
+  
+
+  
+    
+
+
+<img
+  
+    src="https://via.placeholder.com/128x128"
+    srcset="https://via.placeholder.com/128x128 1x,https://via.placeholder.com/256x256 2x"
+    
+  
+  alt="<Lee> <ByungHeon>"
+  class="avatar"
+  
+  width="120"
+  height="120"
+  loading="lazy"
+/>
+
+  
+
+  
+  
+  <h2  class="page-title hr-bottom">
+    About
+  </h2>
+
+  <p>꾸준하게 공부한 내용을 정리하자!</p>
+
+
+  <div class="sidebar-social">
+    <span class="sr-only">Social:</span>
+<ul>
+  
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://github.com/Hunnibs" title="GitHub" class="no-mark-external">
+      <span class="icon-github"></span>
+      <span class="sr-only">GitHub</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="mailto:cqqudgjs@hufs.ac.kr" title="Email" class="no-mark-external">
+      <span class="icon-mail"></span>
+      <span class="sr-only">Email</span>
+    </a>
+  </li>
+
+
+    
+  
+</ul>
+
+  </div>
+</div>
+
+  </aside>
+
+
+  
+
+  
+  
+
+  
+    
+
+
+  <aside class="related mb4" role="complementary">  <h2 class="hr-bottom">Related Posts</h2>  <ul class="related-posts">                  <li class="h4">  <a href="/jekyll/2023-04-26-2023-04-25-jekyll-setting(2)/" class="flip-title"><span></span></a>  <time class="faded fine" datetime="2023-04-26T22:31:09+09:00">26 Apr 2023</time></li>                        <li class="h4">  <a href="/it/2023-04-26-it-metaverse/" class="flip-title"><span>메타버스</span></a>  <time class="faded fine" datetime="2023-04-26T00:00:00+09:00">26 Apr 2023</time></li>                        <li class="h4">  <a href="/study/2023-04-25-algorithmStudy-dp/" class="flip-title"><span>[알고리즘] D.P 알고리즘</span></a>  <time class="faded fine" datetime="2023-04-25T00:00:00+09:00">25 Apr 2023</time></li>            </ul></aside>
+
+  
+
+  
+  
+
+  
+    
+
+  
+
+
+  
+<footer class="content" role="contentinfo">
+  <hr/>
+  
+    <p><small class="copyright">© 2021. All rights reserved.
+</small></p>
+  
+  
+    <nav class="legal"><small>
+    
+      
+      <a class="heading flip-title" href="/LICENSE/">LICENSE</a>
+      |
+    
+      
+      <a class="heading flip-title" href="/NOTICE/">NOTICE</a>
+      |
+    
+      
+      <a class="heading flip-title" href="/CHANGELOG/">CHANGELOG</a>
+      
+    
+    </small></nav>
+  
+    <p><small>Powered by <a class="external" href="https://hydejack.com/">Hydejack</a> v<span id="_version">9.1.6</span></small></p>
+  <hr class="sr-only"/>
+</footer>
+
+
+</main>
+
+  <hy-drawer
+  id="_drawer"
+  class=""
+  side="left"
+  threshold="10"
+  noscroll
+  
+>
+  <header id="_sidebar" class="sidebar" role="banner">
+    
+
+
+
+
+<div class="sidebar-bg sidebar-overlay" style="background-color:rgb(25,55,71);background-image:url(/assets/img/sidebar-bg.jpg)"></div>
+
+    <div class="sidebar-sticky">
+  <div class="sidebar-about">
+    
+    <a class="sidebar-title" href="/"><h2 class="h1">Hunnibs</h2></a>
+    
+    
+      <p class="">
+        A journey of 1000 miles begin with a single step.
+
+      </p>
+    
+  </div>
+
+  <nav class="sidebar-nav heading" role="navigation">
+    <span class="sr-only">Navigation:</span>
+<ul>
+  
+    
+      
+      <li>
+        <a
+          id="_drawer--opened"
+          href="/algorithm/"
+          class="sidebar-nav-item "
+          
+        >
+          Algorithm
+        </a>
+      </li>
+    
+      
+      <li>
+        <a
+          
+          href="/study/"
+          class="sidebar-nav-item "
+          
+        >
+          Algorithm Study
+        </a>
+      </li>
+    
+      
+      <li>
+        <a
+          
+          href="/it/"
+          class="sidebar-nav-item "
+          
+        >
+          It
+        </a>
+      </li>
+    
+      
+      <li>
+        <a
+          
+          href="/jekyll/"
+          class="sidebar-nav-item "
+          
+        >
+          Jekyll
+        </a>
+      </li>
+    
+  
+</ul>
+
+  </nav>
+
+  
+  <div class="sidebar-social">
+    <span class="sr-only">Social:</span>
+<ul>
+  
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://github.com/Hunnibs" title="GitHub" class="no-mark-external">
+      <span class="icon-github"></span>
+      <span class="sr-only">GitHub</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="mailto:cqqudgjs@hufs.ac.kr" title="Email" class="no-mark-external">
+      <span class="icon-mail"></span>
+      <span class="sr-only">Email</span>
+    </a>
+  </li>
+
+
+    
+  
+</ul>
+
+  </div>
+</div>
+  </header>
+</hy-drawer>
+<hr class="sr-only" hidden />
+
+</hy-push-state>
+
+
+  <!--[if gt IE 10]><!---->
+  <script nomodule>!function(){var t,n=document.createElement("script");!("noModule"in n)&&"onbeforeload"in n&&(t=!1,document.addEventListener("beforeload",function(e){if(e.target===n)t=!0;else if(!e.target.hasAttribute("nomodule")||!t)return;e.preventDefault()},!0),n.type="module",n.src=".",document.head.appendChild(n),n.remove())}();
+</script>
+  <script src="/assets/js/hydejack-9.1.6.js" type="module"></script>
+  <script src="/assets/js/LEGACY-hydejack-9.1.6.js" nomodule defer></script>
+  
+
+  
+
+<!--<![endif]-->
+  
+
+
+
+<div hidden>
+  
+  <h2 class="sr-only">Templates (for web app):</h2>
+
+  <template id="_animation-template">
+  <div class="animation-main fixed-top">
+    <nav id="breadcrumbs" class="screen-only"><ul>
+  
+  
+</ul></nav>
+    <div class="content">
+      <div class="page"></div>
+    </div>
+  </div>
+</template>
+
+  <template id="_loading-template">
+  <div class="loading nav-btn fr">
+    <span class="sr-only">Loading…</span>
+    <span class="icon-cog"></span>
+  </div>
+</template>
+
+  <template id="_error-template">
+  <div class="page">
+    <h1 class="page-title">Error</h1>
+    
+    
+    <p class="lead">
+      Sorry, an error occurred while loading <a class="this-link" href=""></a>.
+
+    </p>
+  </div>
+</template>
+
+  <template id="_permalink-template">
+  <a href="#" class="permalink">
+    <span class="sr-only">Permalink</span>
+    <span class="content-hash"></span>
+  </a>
+</template>
+
+</div>
+
+
+</body>
+</html>
