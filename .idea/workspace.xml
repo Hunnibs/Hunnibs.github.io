@@ -5,19 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="665d9854-24e4-4d31-bb39-8a8ccf9eea53" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NOTICE.md" beforeDir="false" afterPath="$PROJECT_DIR$/NOTICE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/my-body.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/my-body.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/my-head.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/my-head.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/my-inline.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/my-inline.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/my-style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/my-style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jekyll/_posts/2023-04-21-jekyll-theme.md" beforeDir="false" afterPath="$PROJECT_DIR$/jekyll/_posts/2023-04-21-jekyll-theme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/it/_posts/2023-04-26-it-metaverse.md" beforeDir="false" afterPath="$PROJECT_DIR$/it/_posts/2023-04-26-it-metaverse.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
