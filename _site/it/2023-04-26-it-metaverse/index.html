@@ -45,7 +45,7 @@ Powered by Hydejack v9.1.6 <https://hydejack.com/>
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="메타버스" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"<Lee> <ByungHeon>"},"dateModified":"2023-04-26T22:27:29+09:00","datePublished":"2023-04-26T00:00:00+09:00","description":"“메타버스 기술 관련”","headline":"메타버스","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/it/2023-04-26-it-metaverse/"},"url":"http://localhost:4000/it/2023-04-26-it-metaverse/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"<Lee> <ByungHeon>"},"dateModified":"2023-04-27T15:36:59+09:00","datePublished":"2023-04-26T00:00:00+09:00","description":"“메타버스 기술 관련”","headline":"메타버스","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/it/2023-04-26-it-metaverse/"},"url":"http://localhost:4000/it/2023-04-26-it-metaverse/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -108,7 +108,7 @@ Powered by Hydejack v9.1.6 <https://hydejack.com/>
   w._search = {
     DATA_URL: '/assets/sitedata.json?no-cache',
     STORAGE_KEY: 'mini-search/',
-    INDEX_KEY: 'index--2023-04-26T22:31:09+09:00',
+    INDEX_KEY: 'index--2023-04-27T16:19:32+09:00',
   };
   w._clapButton = true;
 }(window);</script>
@@ -137,6 +137,39 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
 
 
 <!--<![endif]-->
+
+
+<script type="module">
+  document.querySelector('hy-push-state').addEventListener('load', () => {
+      let tocElement = document.getElementById("markdown-toc");
+
+      if(tocElement){
+          let affixedDiv = document.createElement("div");
+          affixedDiv.style.position = "relative";
+          affixedDiv.style.top = "-1rem";
+          tocElement.parentNode.insertBefore(affixedDiv, tocElement);
+
+          let headerList = document.getElementsByClassName("permalink");
+          let prevElement;
+          window.addEventListener("scroll", () => {
+              let hurdleTop = affixedDiv.getBoundingClientRect().top;
+              if(hurdleTop <= 0) tocElement.classList.add("affix");
+              else tocElement.classList.remove("affix");
+
+              for(let i=0;i<headerList.length;i++){
+                  if(headerList[i].getBoundingClientRect().top >= 0){
+                  prevElement?.style.removeProperty("font-weight");
+                  let tocId = "markdown-toc-" + headerList[i].parentNode.id;
+                  prevElement = document.getElementById(tocId);
+                  prevElement.style.fontWeight = "bold";;
+
+                  break;
+                  }
+              }
+          });
+      }
+  });
+  </script>
 
 
 
@@ -229,6 +262,14 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
           
           
           
+            
+            
+            <span class="ellipsis" data-tippy-content="Last modified at: 27 Apr 2023">
+              <span class="sr-only">Last modified at:</span>
+              <span class="icon-history"></span>
+              <time datetime="2023-04-27T15:36:59+09:00">2023-04-27</time>
+            </span>
+          
         
       
     </div>
@@ -255,12 +296,13 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
   <li><a href="#정의" id="markdown-toc-정의">정의</a></li>
   <li><a href="#메타버스의-4가지-유형" id="markdown-toc-메타버스의-4가지-유형">메타버스의 4가지 유형</a></li>
   <li><a href="#특징" id="markdown-toc-특징">특징</a></li>
+  <li><a href="#메타버스가-활성화되기-위한-방안" id="markdown-toc-메타버스가-활성화되기-위한-방안">메타버스가 활성화되기 위한 방안</a></li>
   <li><a href="#참조" id="markdown-toc-참조">참조</a></li>
 </ul>
 <hr />
 <h3 id="정의">정의</h3>
 <hr />
-<p>메타버스(metaverse)는 ‘웹상에서 아바타를 이용하여 사회, 경제, 문화적 활동을 하는 따위처럼 가상 세계와 현실 세계의 경계가 허물어지는 것을 이르는 말’이다.</p>
+<p>메타버스(metaverse)는 ‘웹상에서 아바타를 이용하여 사회, 경제, 문화적 활동을 하는 활동처럼 가상 세계와 현실 세계의 경계가 허물어지는 것을 이르는 말’이다.</p>
 
 <h3 id="메타버스의-4가지-유형">메타버스의 4가지 유형</h3>
 <hr />
@@ -336,6 +378,25 @@ ex) 제페토, 로블록스</dd>
   </li>
   <li>이외에도 제페토, 로블록스도 아이템 제작자가 판매할 수 있는 거래를 지원한다.</li>
 </ul>
+
+<h3 id="메타버스가-활성화되기-위한-방안">메타버스가 활성화되기 위한 방안</h3>
+<hr />
+<ol>
+  <li>
+    <p>기술의 발전이 필요하다. <br />
+가상현실 기반 영화 레디플레이어원처럼 메타버스 상에서 더 많은 경험을 할 수 있다면 사람들의 흥미를 돋울 수 있을 것이다.</p>
+  </li>
+  <li>
+    <p>안전성이 중요하다. <br />
+예를 들어, 최근 인기를 끌었던 본디라는 플랫폼은 개인정보유출 문제로 인해 단기간에 이용자들이 급감하는 일을 겪었다. 
+따라서 메타버스를 활성화시키기 위해서는 보안 문제를 확실히 해결해야할 필요가 있다.</p>
+  </li>
+  <li>
+    <p>주 타켓층을 늘려야한다. <br />
+메타버스의 주요 타켓은 현재 한정적이다. 예를 들어, 디자이너, 인플루언서, 10대들로 그들을 제외한 나머지 사람들의 참여가 저조한 편이다.
+이를 해결하기 위해서는 메타버스 내에서 그들의 커리어를 쌓거나 혹은 흥미를 돋울 수 있는 다양한 경험을 제공할 필요가 있어보인다.</p>
+  </li>
+</ol>
 
 <h3 id="참조">참조</h3>
 <hr />
@@ -466,7 +527,7 @@ ex) 제페토, 로블록스</dd>
     
 
 
-  <aside class="related mb4" role="complementary">  <h2 class="hr-bottom">Related Posts</h2>  <ul class="related-posts">                  <li class="h4">  <a href="/jekyll/2023-04-26-2023-04-25-jekyll-setting(2)/" class="flip-title"><span></span></a>  <time class="faded fine" datetime="2023-04-26T22:31:09+09:00">26 Apr 2023</time></li>                        <li class="h4">  <a href="/study/2023-04-25-algorithmStudy-dp/" class="flip-title"><span>[알고리즘] D.P 알고리즘</span></a>  <time class="faded fine" datetime="2023-04-25T00:00:00+09:00">25 Apr 2023</time></li>                        <li class="h4">  <a href="/study/2023-04-25-algorithmStudy-dijkstra/" class="flip-title"><span>[알고리즘] Dijkstra 알고리즘</span></a>  <time class="faded fine" datetime="2023-04-25T00:00:00+09:00">25 Apr 2023</time></li>            </ul></aside>
+  <aside class="related mb4" role="complementary">  <h2 class="hr-bottom">Related Posts</h2>  <ul class="related-posts">                  <li class="h4">  <a href="/study/2023-04-25-algorithmStudy-dp/" class="flip-title"><span>[알고리즘] D.P 알고리즘</span></a>  <time class="faded fine" datetime="2023-04-25T00:00:00+09:00">25 Apr 2023</time></li>                        <li class="h4">  <a href="/study/2023-04-25-algorithmStudy-dijkstra/" class="flip-title"><span>[알고리즘] Dijkstra 알고리즘</span></a>  <time class="faded fine" datetime="2023-04-25T00:00:00+09:00">25 Apr 2023</time></li>                        <li class="h4">  <a href="/study/2023-04-25-algorithmStudy-dfsbfs/" class="flip-title"><span>[알고리즘] BFS & DFS 알고리즘</span></a>  <time class="faded fine" datetime="2023-04-25T00:00:00+09:00">25 Apr 2023</time></li>            </ul></aside>
 
   
 

@@ -1,37 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-04-26T22:31:09+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hunnibs</title><subtitle>About my work history &amp; review
-</subtitle><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><entry><title type="html"></title><link href="http://localhost:4000/jekyll/2023-04-26-2023-04-25-jekyll-setting(2)/" rel="alternate" type="text/html" title="" /><published>2023-04-26T22:31:09+09:00</published><updated>2023-04-26T21:26:13+09:00</updated><id>http://localhost:4000/jekyll/2023-04-25-jekyll-setting(2)</id><content type="html" xml:base="http://localhost:4000/jekyll/2023-04-26-2023-04-25-jekyll-setting(2)/"><![CDATA[<ul id="markdown-toc">
-  <li><a href="#toctable-of-content" id="markdown-toc-toctable-of-content">TOC(Table of Content)</a></li>
-</ul>
-
-<hr />
-<h3 id="toctable-of-content">TOC(Table of Content)</h3>
-<hr />
-<p>HydeJack Theme에서는 따로 TOC 기능을 제공하고 있지 않아 추가해주어야하는데 방법은 매우 간단하다.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-    ---
-    layout: post
-    title:  "[Jekyll] GitHub 블로그 개발일지(3)"
-    description: &gt;
-    "블로그 관련 꾸며가는 과정"
-    
-    hide_last_modified: true
-    ---
-    * TOC
-    {:toc}
-
-</code></pre></div></div>
-
-<p>다음과 같이 본문이 시작되기 전 두 문장만 추가로 넣어주면 된다.</p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="jekyll" /></entry><entry><title type="html">메타버스</title><link href="http://localhost:4000/it/2023-04-26-it-metaverse/" rel="alternate" type="text/html" title="메타버스" /><published>2023-04-26T00:00:00+09:00</published><updated>2023-04-26T22:27:29+09:00</updated><id>http://localhost:4000/it/it-metaverse</id><content type="html" xml:base="http://localhost:4000/it/2023-04-26-it-metaverse/"><![CDATA[<ul id="markdown-toc">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-04-27T16:19:32+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hunnibs</title><subtitle>About my work history &amp; review
+</subtitle><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><entry><title type="html">메타버스</title><link href="http://localhost:4000/it/2023-04-26-it-metaverse/" rel="alternate" type="text/html" title="메타버스" /><published>2023-04-26T00:00:00+09:00</published><updated>2023-04-27T15:36:59+09:00</updated><id>http://localhost:4000/it/it-metaverse</id><content type="html" xml:base="http://localhost:4000/it/2023-04-26-it-metaverse/"><![CDATA[<ul id="markdown-toc">
   <li><a href="#정의" id="markdown-toc-정의">정의</a></li>
   <li><a href="#메타버스의-4가지-유형" id="markdown-toc-메타버스의-4가지-유형">메타버스의 4가지 유형</a></li>
   <li><a href="#특징" id="markdown-toc-특징">특징</a></li>
+  <li><a href="#메타버스가-활성화되기-위한-방안" id="markdown-toc-메타버스가-활성화되기-위한-방안">메타버스가 활성화되기 위한 방안</a></li>
   <li><a href="#참조" id="markdown-toc-참조">참조</a></li>
 </ul>
 <hr />
 <h3 id="정의">정의</h3>
 <hr />
-<p>메타버스(metaverse)는 ‘웹상에서 아바타를 이용하여 사회, 경제, 문화적 활동을 하는 따위처럼 가상 세계와 현실 세계의 경계가 허물어지는 것을 이르는 말’이다.</p>
+<p>메타버스(metaverse)는 ‘웹상에서 아바타를 이용하여 사회, 경제, 문화적 활동을 하는 활동처럼 가상 세계와 현실 세계의 경계가 허물어지는 것을 이르는 말’이다.</p>
 
 <h3 id="메타버스의-4가지-유형">메타버스의 4가지 유형</h3>
 <hr />
@@ -108,11 +86,30 @@ ex) 제페토, 로블록스</dd>
   <li>이외에도 제페토, 로블록스도 아이템 제작자가 판매할 수 있는 거래를 지원한다.</li>
 </ul>
 
+<h3 id="메타버스가-활성화되기-위한-방안">메타버스가 활성화되기 위한 방안</h3>
+<hr />
+<ol>
+  <li>
+    <p>기술의 발전이 필요하다. <br />
+가상현실 기반 영화 레디플레이어원처럼 메타버스 상에서 더 많은 경험을 할 수 있다면 사람들의 흥미를 돋울 수 있을 것이다.</p>
+  </li>
+  <li>
+    <p>안전성이 중요하다. <br />
+예를 들어, 최근 인기를 끌었던 본디라는 플랫폼은 개인정보유출 문제로 인해 단기간에 이용자들이 급감하는 일을 겪었다. 
+따라서 메타버스를 활성화시키기 위해서는 보안 문제를 확실히 해결해야할 필요가 있다.</p>
+  </li>
+  <li>
+    <p>주 타켓층을 늘려야한다. <br />
+메타버스의 주요 타켓은 현재 한정적이다. 예를 들어, 디자이너, 인플루언서, 10대들로 그들을 제외한 나머지 사람들의 참여가 저조한 편이다.
+이를 해결하기 위해서는 메타버스 내에서 그들의 커리어를 쌓거나 혹은 흥미를 돋울 수 있는 다양한 경험을 제공할 필요가 있어보인다.</p>
+  </li>
+</ol>
+
 <h3 id="참조">참조</h3>
 <hr />
 <p>미래수업: 메가트렌드 메타버스 <br />
 <a href="https://spri.kr/posts/view/23297?code=industry_trend">SPRI_소프트웨어정책연구소 포스트</a> <br />
-<a href="https://m.blog.naver.com/PostList.naver?blogId=thesandboxkorea">더 샌드박스</a></p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="it" /><summary type="html"><![CDATA["메타버스 기술 관련"]]></summary></entry><entry><title type="html">[알고리즘] Backtracking 알고리즘</title><link href="http://localhost:4000/study/2023-04-25-algorithmStudy-backtracking/" rel="alternate" type="text/html" title="[알고리즘] Backtracking 알고리즘" /><published>2023-04-25T00:00:00+09:00</published><updated>2023-04-25T20:15:03+09:00</updated><id>http://localhost:4000/study/algorithmStudy-backtracking</id><content type="html" xml:base="http://localhost:4000/study/2023-04-25-algorithmStudy-backtracking/"><![CDATA[<ul id="markdown-toc">
+<a href="https://m.blog.naver.com/PostList.naver?blogId=thesandboxkorea">더 샌드박스</a></p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="it" /><summary type="html"><![CDATA["메타버스 기술 관련"]]></summary></entry><entry><title type="html">[알고리즘] Backtracking 알고리즘</title><link href="http://localhost:4000/study/2023-04-25-algorithmStudy-backtracking/" rel="alternate" type="text/html" title="[알고리즘] Backtracking 알고리즘" /><published>2023-04-25T00:00:00+09:00</published><updated>2023-04-27T15:36:59+09:00</updated><id>http://localhost:4000/study/algorithmStudy-backtracking</id><content type="html" xml:base="http://localhost:4000/study/2023-04-25-algorithmStudy-backtracking/"><![CDATA[<ul id="markdown-toc">
   <li><a href="#백트래킹이란" id="markdown-toc-백트래킹이란">백트래킹이란?</a></li>
   <li><a href="#구현-방법" id="markdown-toc-구현-방법">구현 방법</a></li>
 </ul>
@@ -140,7 +137,7 @@ ex) 제페토, 로블록스</dd>
 <blockquote>
   <p>가지치기(pruning) <br />
 -&gt; 유망하지 않는 노드가 포함된 경로는 더 이상 탐색X</p>
-</blockquote>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="study" /><summary type="html"><![CDATA["내용 정리"]]></summary></entry><entry><title type="html">[알고리즘] D.P 알고리즘</title><link href="http://localhost:4000/study/2023-04-25-algorithmStudy-dp/" rel="alternate" type="text/html" title="[알고리즘] D.P 알고리즘" /><published>2023-04-25T00:00:00+09:00</published><updated>2023-04-25T20:39:43+09:00</updated><id>http://localhost:4000/study/algorithmStudy-dp</id><content type="html" xml:base="http://localhost:4000/study/2023-04-25-algorithmStudy-dp/"><![CDATA[<ul id="markdown-toc">
+</blockquote>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="study" /><summary type="html"><![CDATA["내용 정리"]]></summary></entry><entry><title type="html">[알고리즘] D.P 알고리즘</title><link href="http://localhost:4000/study/2023-04-25-algorithmStudy-dp/" rel="alternate" type="text/html" title="[알고리즘] D.P 알고리즘" /><published>2023-04-25T00:00:00+09:00</published><updated>2023-04-27T15:36:59+09:00</updated><id>http://localhost:4000/study/algorithmStudy-dp</id><content type="html" xml:base="http://localhost:4000/study/2023-04-25-algorithmStudy-dp/"><![CDATA[<ul id="markdown-toc">
   <li><a href="#dpdynamic-programming이란" id="markdown-toc-dpdynamic-programming이란">DP(Dynamic Programming)이란?</a></li>
   <li><a href="#구현-방법" id="markdown-toc-구현-방법">구현 방법</a></li>
   <li><a href="#주의할-점" id="markdown-toc-주의할-점">주의할 점</a></li>
@@ -193,7 +190,7 @@ DP의 핵심이 되는 기술이다.</p>
 <ul>
   <li>배열이 있을 때 해당 배열까지의 총 합을 따로 배열에 저장하는 방식</li>
   <li>시간복잡도 상 큰 이득을 가져다주는 경우가 많다</li>
-</ul>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="study" /><summary type="html"><![CDATA["내용 정리"]]></summary></entry><entry><title type="html">[알고리즘] Dijkstra 알고리즘</title><link href="http://localhost:4000/study/2023-04-25-algorithmStudy-dijkstra/" rel="alternate" type="text/html" title="[알고리즘] Dijkstra 알고리즘" /><published>2023-04-25T00:00:00+09:00</published><updated>2023-04-25T20:09:38+09:00</updated><id>http://localhost:4000/study/algorithmStudy-dijkstra</id><content type="html" xml:base="http://localhost:4000/study/2023-04-25-algorithmStudy-dijkstra/"><![CDATA[<ul id="markdown-toc">
+</ul>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="study" /><summary type="html"><![CDATA["내용 정리"]]></summary></entry><entry><title type="html">[알고리즘] Dijkstra 알고리즘</title><link href="http://localhost:4000/study/2023-04-25-algorithmStudy-dijkstra/" rel="alternate" type="text/html" title="[알고리즘] Dijkstra 알고리즘" /><published>2023-04-25T00:00:00+09:00</published><updated>2023-04-27T15:36:59+09:00</updated><id>http://localhost:4000/study/algorithmStudy-dijkstra</id><content type="html" xml:base="http://localhost:4000/study/2023-04-25-algorithmStudy-dijkstra/"><![CDATA[<ul id="markdown-toc">
   <li><a href="#다익스트라-알고리즘이란" id="markdown-toc-다익스트라-알고리즘이란">다익스트라 알고리즘이란?</a></li>
   <li><a href="#구현-방법" id="markdown-toc-구현-방법">구현 방법</a></li>
   <li><a href="#구현-코드" id="markdown-toc-구현-코드">구현 코드</a></li>
@@ -285,7 +282,7 @@ DP의 핵심이 되는 기술이다.</p>
 <h3 id="참조">참조</h3>
 <hr />
 <p><a href="https://www.youtube.com/watch?v=0NrlN88D9Fs&amp;list=PLsMufJgu5932XYejsOwcUDJ2F75f56nrl&amp;index=49&amp;pp=iAQB">신찬수 교수님 유튜브 강의영상</a> <br />
-<a href="https://m.blog.naver.com/ndb796/221234424646">안경잡이개발자 님 네이버 블로그</a></p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="study" /><summary type="html"><![CDATA["내용 정리"]]></summary></entry><entry><title type="html">[알고리즘] BFS &amp;amp; DFS 알고리즘</title><link href="http://localhost:4000/study/2023-04-25-algorithmStudy-dfsbfs/" rel="alternate" type="text/html" title="[알고리즘] BFS &amp;amp; DFS 알고리즘" /><published>2023-04-25T00:00:00+09:00</published><updated>2023-04-25T20:56:11+09:00</updated><id>http://localhost:4000/study/algorithmStudy-dfsbfs</id><content type="html" xml:base="http://localhost:4000/study/2023-04-25-algorithmStudy-dfsbfs/"><![CDATA[<ul id="markdown-toc">
+<a href="https://m.blog.naver.com/ndb796/221234424646">안경잡이개발자 님 네이버 블로그</a></p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="study" /><summary type="html"><![CDATA["내용 정리"]]></summary></entry><entry><title type="html">[알고리즘] BFS &amp;amp; DFS 알고리즘</title><link href="http://localhost:4000/study/2023-04-25-algorithmStudy-dfsbfs/" rel="alternate" type="text/html" title="[알고리즘] BFS &amp;amp; DFS 알고리즘" /><published>2023-04-25T00:00:00+09:00</published><updated>2023-04-27T15:36:59+09:00</updated><id>http://localhost:4000/study/algorithmStudy-dfsbfs</id><content type="html" xml:base="http://localhost:4000/study/2023-04-25-algorithmStudy-dfsbfs/"><![CDATA[<ul id="markdown-toc">
   <li><a href="#bfsbreadth-first-search" id="markdown-toc-bfsbreadth-first-search">BFS(Breadth-first search)</a>    <ul>
       <li><a href="#너비-우선-탐색이란" id="markdown-toc-너비-우선-탐색이란">너비 우선 탐색이란?</a></li>
       <li><a href="#구현-방법" id="markdown-toc-구현-방법">구현 방법</a></li>
@@ -424,7 +421,7 @@ DP의 핵심이 되는 기술이다.</p>
     result = []
     DFS(V)
 
-</code></pre></div></div>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="study" /><summary type="html"><![CDATA["내용 정리"]]></summary></entry><entry><title type="html">[알고리즘] Binary Search 알고리즘</title><link href="http://localhost:4000/study/2023-04-25-algorithmStudy-binarysearch/" rel="alternate" type="text/html" title="[알고리즘] Binary Search 알고리즘" /><published>2023-04-25T00:00:00+09:00</published><updated>2023-04-25T20:36:58+09:00</updated><id>http://localhost:4000/study/algorithmStudy-binarysearch</id><content type="html" xml:base="http://localhost:4000/study/2023-04-25-algorithmStudy-binarysearch/"><![CDATA[<ul id="markdown-toc">
+</code></pre></div></div>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="study" /><summary type="html"><![CDATA["내용 정리"]]></summary></entry><entry><title type="html">[알고리즘] Binary Search 알고리즘</title><link href="http://localhost:4000/study/2023-04-25-algorithmStudy-binarysearch/" rel="alternate" type="text/html" title="[알고리즘] Binary Search 알고리즘" /><published>2023-04-25T00:00:00+09:00</published><updated>2023-04-27T15:36:59+09:00</updated><id>http://localhost:4000/study/algorithmStudy-binarysearch</id><content type="html" xml:base="http://localhost:4000/study/2023-04-25-algorithmStudy-binarysearch/"><![CDATA[<ul id="markdown-toc">
   <li><a href="#이진탐색이란" id="markdown-toc-이진탐색이란">이진탐색이란?</a></li>
   <li><a href="#구현-방법" id="markdown-toc-구현-방법">구현 방법</a></li>
   <li><a href="#구현-코드" id="markdown-toc-구현-코드">구현 코드</a></li>
@@ -489,7 +486,7 @@ DP의 핵심이 되는 기술이다.</p>
         
         return
 
-</code></pre></div></div>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="study" /><summary type="html"><![CDATA["내용 정리"]]></summary></entry><entry><title type="html">블록체인</title><link href="http://localhost:4000/it/2023-04-24-it-blockchain/" rel="alternate" type="text/html" title="블록체인" /><published>2023-04-24T00:00:00+09:00</published><updated>2023-04-25T19:28:24+09:00</updated><id>http://localhost:4000/it/it-blockchain</id><content type="html" xml:base="http://localhost:4000/it/2023-04-24-it-blockchain/"><![CDATA[<ul id="markdown-toc">
+</code></pre></div></div>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="study" /><summary type="html"><![CDATA["내용 정리"]]></summary></entry><entry><title type="html">블록체인</title><link href="http://localhost:4000/it/2023-04-24-it-blockchain/" rel="alternate" type="text/html" title="블록체인" /><published>2023-04-24T00:00:00+09:00</published><updated>2023-04-27T15:36:59+09:00</updated><id>http://localhost:4000/it/it-blockchain</id><content type="html" xml:base="http://localhost:4000/it/2023-04-24-it-blockchain/"><![CDATA[<ul id="markdown-toc">
   <li><a href="#정의" id="markdown-toc-정의">정의</a></li>
   <li><a href="#기술의-특징" id="markdown-toc-기술의-특징">기술의 특징</a></li>
   <li><a href="#핵심-구성-요소" id="markdown-toc-핵심-구성-요소">핵심 구성 요소</a></li>
@@ -632,7 +629,7 @@ DP의 핵심이 되는 기술이다.</p>
 <hr />
 <p><a href="https://aws.amazon.com/ko/what-is/blockchain/?aws-products-all.sort-by=item.additionalFields.productNameLowercase&amp;aws-products-all.sort-order=asc">AWS 블록체인 관련 문서</a> <br />
 <a href="https://www.sap.com/korea/insights/what-is-blockchain.html">SAP 블록체인 관련 문서</a> <br />
-<a href="https://www.youtube.com/watch?v=TljQRfHRId8&amp;list=PL7jH19IHhOLOJfXeVqjtiawzNQLxOgTdq">노마드 코더 영상</a></p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="it" /><summary type="html"><![CDATA["블록체인 기술 관련"]]></summary></entry><entry><title type="html">[Jekyll] GitHub 블로그 개발일지(2)</title><link href="http://localhost:4000/jekyll/2023-04-21-jekyll-theme/" rel="alternate" type="text/html" title="[Jekyll] GitHub 블로그 개발일지(2)" /><published>2023-04-21T00:00:00+09:00</published><updated>2023-04-26T21:23:38+09:00</updated><id>http://localhost:4000/jekyll/jekyll-theme</id><content type="html" xml:base="http://localhost:4000/jekyll/2023-04-21-jekyll-theme/"><![CDATA[<ul id="markdown-toc">
+<a href="https://www.youtube.com/watch?v=TljQRfHRId8&amp;list=PL7jH19IHhOLOJfXeVqjtiawzNQLxOgTdq">노마드 코더 영상</a></p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="it" /><summary type="html"><![CDATA["블록체인 기술 관련"]]></summary></entry><entry><title type="html">[Jekyll] GitHub 블로그 개발일지(2)</title><link href="http://localhost:4000/jekyll/2023-04-21-jekyll-theme/" rel="alternate" type="text/html" title="[Jekyll] GitHub 블로그 개발일지(2)" /><published>2023-04-21T00:00:00+09:00</published><updated>2023-04-27T15:36:59+09:00</updated><id>http://localhost:4000/jekyll/jekyll-theme</id><content type="html" xml:base="http://localhost:4000/jekyll/2023-04-21-jekyll-theme/"><![CDATA[<ul id="markdown-toc">
   <li><a href="#21-새로운-테마-선정" id="markdown-toc-21-새로운-테마-선정">2.1 새로운 테마 선정</a></li>
   <li><a href="#22-새로운-테마-적용" id="markdown-toc-22-새로운-테마-적용">2.2 새로운 테마 적용</a></li>
   <li><a href="#23-주의할-점" id="markdown-toc-23-주의할-점">2.3 주의할 점</a></li>
@@ -758,7 +755,7 @@ DP의 핵심이 되는 기술이다.</p>
 <blockquote>
   <p>이외에도 필자는 Blog라는 키워드는 CHANGELOG.md 파일의 특정 부분과 문제를 일으켜서 사용 시 버그가 발생하는 문제점이 있었다.
 누군가는 이글을 보며 조금이라도 편하게 Hydejack 테마를 이용할 수 있기를 바라는 마음에 작성한다.</p>
-</blockquote>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="jekyll" /><summary type="html"><![CDATA["빠르게 찾아온 더 이쁜 테마에 대한 열망"]]></summary></entry><entry><title type="html">[Programmers] 단속 카메라</title><link href="http://localhost:4000/algorithm/2023-04-20-algorithm-%EB%8B%A8%EC%86%8D%EC%B9%B4%EB%A9%94%EB%9D%BC/" rel="alternate" type="text/html" title="[Programmers] 단속 카메라" /><published>2023-04-20T00:00:00+09:00</published><updated>2023-04-21T13:32:42+09:00</updated><id>http://localhost:4000/algorithm/algorithm-%EB%8B%A8%EC%86%8D%EC%B9%B4%EB%A9%94%EB%9D%BC</id><content type="html" xml:base="http://localhost:4000/algorithm/2023-04-20-algorithm-%EB%8B%A8%EC%86%8D%EC%B9%B4%EB%A9%94%EB%9D%BC/"><![CDATA[<blockquote>
+</blockquote>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="jekyll" /><summary type="html"><![CDATA["빠르게 찾아온 더 이쁜 테마에 대한 열망"]]></summary></entry><entry><title type="html">[Programmers] 단속 카메라</title><link href="http://localhost:4000/algorithm/2023-04-20-algorithm-%EB%8B%A8%EC%86%8D%EC%B9%B4%EB%A9%94%EB%9D%BC/" rel="alternate" type="text/html" title="[Programmers] 단속 카메라" /><published>2023-04-20T00:00:00+09:00</published><updated>2023-04-27T15:36:58+09:00</updated><id>http://localhost:4000/algorithm/algorithm-%EB%8B%A8%EC%86%8D%EC%B9%B4%EB%A9%94%EB%9D%BC</id><content type="html" xml:base="http://localhost:4000/algorithm/2023-04-20-algorithm-%EB%8B%A8%EC%86%8D%EC%B9%B4%EB%A9%94%EB%9D%BC/"><![CDATA[<blockquote>
   <p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/42884">https://school.programmers.co.kr/learn/courses/30/lessons/42884</a></p>
 </blockquote>
 
@@ -832,4 +829,48 @@ DP의 핵심이 되는 기술이다.</p>
 <blockquote>
   <p>람다식을 활용한다는 생각을 하지못해 많은 시간을 소비했다.
 총 소요 시간 1H 30M</p>
-</blockquote>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="algorithm" /><summary type="html"><![CDATA["Greedy 알고리즘 활용 문제"]]></summary></entry></feed>
+</blockquote>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="algorithm" /><summary type="html"><![CDATA["Greedy 알고리즘 활용 문제"]]></summary></entry><entry><title type="html">[알고리즘] Greedy 알고리즘</title><link href="http://localhost:4000/study/2023-04-20-algorithmStudy-Greedy/" rel="alternate" type="text/html" title="[알고리즘] Greedy 알고리즘" /><published>2023-04-20T00:00:00+09:00</published><updated>2023-04-27T15:36:59+09:00</updated><id>http://localhost:4000/study/algorithmStudy-Greedy</id><content type="html" xml:base="http://localhost:4000/study/2023-04-20-algorithmStudy-Greedy/"><![CDATA[<ul id="markdown-toc">
+  <li><a href="#greedy-알고리즘이란" id="markdown-toc-greedy-알고리즘이란">Greedy 알고리즘이란?</a></li>
+  <li><a href="#사용-조건은" id="markdown-toc-사용-조건은">사용 조건은?</a></li>
+  <li><a href="#관련-문제-풀이" id="markdown-toc-관련-문제-풀이">관련 문제 풀이</a></li>
+</ul>
+<hr />
+<h3 id="greedy-알고리즘이란">Greedy 알고리즘이란?</h3>
+<hr />
+<ul>
+  <li>Greedy 알고리즘은 최적해를 구하는 데에 사용되는 근사적인 방법</li>
+  <li>여러 경우가 주어질 때 가장 최적의 선택만을 계속하면서 최종적인 해답에 도달하는 것</li>
+  <li>확실한 답을 구하는 알고리즘에 비해 계산속도가 빠르다는 장점</li>
+</ul>
+
+<p>but, 주의할 점!</p>
+<ul>
+  <li>최적의 선택들을 계속 한다해서 결과도 최적이라는 보장은 없다</li>
+</ul>
+
+<h3 id="사용-조건은">사용 조건은?</h3>
+<hr />
+<ul>
+  <li>Greedy 알고리즘을 사용하기 위해서는 두 가지 조건이 필요
+    <ol>
+      <li>선택으로 인해 발생하는 결과가 무조건 최적해가 되야한다.
+        <blockquote>
+          <p>최적의 선택들을 계속 한다해서 결과가 최적이라는 보장이 없기 때문에 
+최적의 선택들을 계속했을 때 나오는 결과가 <strong><em>최적해라는 조건이 충족할 때</em></strong> 사용</p>
+        </blockquote>
+      </li>
+    </ol>
+  </li>
+</ul>
+
+<ol>
+  <li>최종 해결 방법이 부분 문제 해결 방법과 동일해야한다.
+    <blockquote>
+      <p>단계별로 최적의 선택만을 거듭하기 때문에 전체 문제가 아닌 중간 단계까지만 선택을 완료했다하더라도
+중간 단계에 나오는 결과는 최적이 되어야한다.</p>
+    </blockquote>
+  </li>
+</ol>
+
+<h3 id="관련-문제-풀이">관련 문제 풀이</h3>
+<hr />]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="study" /><summary type="html"><![CDATA["내용 정리"]]></summary></entry></feed>

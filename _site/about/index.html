@@ -46,7 +46,7 @@ Powered by Hydejack v9.1.6 <https://hydejack.com/>
 <meta property="twitter:image" content="http://localhost:4000/assets/img/blog/hydejack-9.jpg" />
 <meta property="twitter:title" content="About" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"<Lee> <ByungHeon>"},"dateModified":"2023-04-26T22:30:23+09:00","description":"A boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.","headline":"About","image":"http://localhost:4000/assets/img/blog/hydejack-9.jpg","name":"Hunnibs","url":"http://localhost:4000/about/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"<Lee> <ByungHeon>"},"dateModified":"2023-04-27T15:36:58+09:00","description":"A boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.","headline":"About","image":"http://localhost:4000/assets/img/blog/hydejack-9.jpg","name":"Hunnibs","url":"http://localhost:4000/about/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -109,7 +109,7 @@ Powered by Hydejack v9.1.6 <https://hydejack.com/>
   w._search = {
     DATA_URL: '/assets/sitedata.json?no-cache',
     STORAGE_KEY: 'mini-search/',
-    INDEX_KEY: 'index--2023-04-26T22:31:09+09:00',
+    INDEX_KEY: 'index--2023-04-27T16:19:32+09:00',
   };
   w._clapButton = true;
 }(window);</script>
@@ -138,6 +138,39 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
 
 
 <!--<![endif]-->
+
+
+<script type="module">
+  document.querySelector('hy-push-state').addEventListener('load', () => {
+      let tocElement = document.getElementById("markdown-toc");
+
+      if(tocElement){
+          let affixedDiv = document.createElement("div");
+          affixedDiv.style.position = "relative";
+          affixedDiv.style.top = "-1rem";
+          tocElement.parentNode.insertBefore(affixedDiv, tocElement);
+
+          let headerList = document.getElementsByClassName("permalink");
+          let prevElement;
+          window.addEventListener("scroll", () => {
+              let hurdleTop = affixedDiv.getBoundingClientRect().top;
+              if(hurdleTop <= 0) tocElement.classList.add("affix");
+              else tocElement.classList.remove("affix");
+
+              for(let i=0;i<headerList.length;i++){
+                  if(headerList[i].getBoundingClientRect().top >= 0){
+                  prevElement?.style.removeProperty("font-weight");
+                  let tocId = "markdown-toc-" + headerList[i].parentNode.id;
+                  prevElement = document.getElementById(tocId);
+                  prevElement.style.fontWeight = "bold";;
+
+                  break;
+                  }
+              }
+          });
+      }
+  });
+  </script>
 
 
 
