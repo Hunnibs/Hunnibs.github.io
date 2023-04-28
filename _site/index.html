@@ -45,7 +45,7 @@ Powered by Hydejack v9.1.6 <https://hydejack.com/>
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Blog" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"<Lee> <ByungHeon>"},"dateModified":"2023-04-27T15:36:59+09:00","description":"백엔드 개발자가 되고싶은 사람의 공간","headline":"Blog","name":"Hunnibs","url":"http://localhost:4000/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"<Lee> <ByungHeon>"},"dateModified":"2023-04-26T22:31:09+09:00","description":"백엔드 개발자가 되고싶은 사람의 공간","headline":"Blog","name":"Hunnibs","url":"http://localhost:4000/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -108,7 +108,7 @@ Powered by Hydejack v9.1.6 <https://hydejack.com/>
   w._search = {
     DATA_URL: '/assets/sitedata.json?no-cache',
     STORAGE_KEY: 'mini-search/',
-    INDEX_KEY: 'index--2023-04-27T18:32:48+09:00',
+    INDEX_KEY: 'index--2023-04-28T17:43:09+09:00',
   };
   w._clapButton = true;
 }(window);</script>
@@ -137,39 +137,6 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
 
 
 <!--<![endif]-->
-
-
-<script type="module">
-  document.querySelector('hy-push-state').addEventListener('load', () => {
-      let tocElement = document.getElementById("markdown-toc");
-
-      if(tocElement){
-          let affixedDiv = document.createElement("div");
-          affixedDiv.style.position = "relative";
-          affixedDiv.style.top = "-1rem";
-          tocElement.parentNode.insertBefore(affixedDiv, tocElement);
-
-          let headerList = document.getElementsByClassName("permalink");
-          let prevElement;
-          window.addEventListener("scroll", () => {
-              let hurdleTop = affixedDiv.getBoundingClientRect().top;
-              if(hurdleTop <= 0) tocElement.classList.add("affix");
-              else tocElement.classList.remove("affix");
-
-              for(let i=0;i<headerList.length;i++){
-                  if(headerList[i].getBoundingClientRect().top >= 0){
-                  prevElement?.style.removeProperty("font-weight");
-                  let tocId = "markdown-toc-" + headerList[i].parentNode.id;
-                  prevElement = document.getElementById(tocId);
-                  prevElement.style.fontWeight = "bold";;
-
-                  break;
-                  }
-              }
-          });
-      }
-  });
-  </script>
 
 
 
@@ -248,6 +215,18 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
     <h2 id="y-2023" class="hr-bottom">2023</h2>
     <ul class="related-posts">
     
+  
+  
+
+
+<li class="h4">
+  <a href="/algorithm/2023-04-28-algorithm-BOJ_15686/" class="flip-title"><span>[BOJ] 15686_치킨배달</span></a>
+  <time class="faded fine" datetime="2023-04-28T00:00:00+09:00">28 Apr</time>
+</li>
+
+  
+
+  
   
   
 

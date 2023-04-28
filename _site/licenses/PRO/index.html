@@ -46,7 +46,7 @@ Powered by Hydejack v9.1.6 <https://hydejack.com/>
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="PRO License" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"<Lee> <ByungHeon>"},"dateModified":"2023-04-27T15:36:59+09:00","description":"About my work history &amp; review","headline":"PRO License","url":"http://localhost:4000/licenses/PRO/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"<Lee> <ByungHeon>"},"dateModified":"2022-02-07T13:23:49+09:00","description":"About my work history &amp; review","headline":"PRO License","url":"http://localhost:4000/licenses/PRO/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -109,7 +109,7 @@ Powered by Hydejack v9.1.6 <https://hydejack.com/>
   w._search = {
     DATA_URL: '/assets/sitedata.json?no-cache',
     STORAGE_KEY: 'mini-search/',
-    INDEX_KEY: 'index--2023-04-27T18:32:48+09:00',
+    INDEX_KEY: 'index--2023-04-28T17:43:09+09:00',
   };
   w._clapButton = true;
 }(window);</script>
@@ -138,39 +138,6 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
 
 
 <!--<![endif]-->
-
-
-<script type="module">
-  document.querySelector('hy-push-state').addEventListener('load', () => {
-      let tocElement = document.getElementById("markdown-toc");
-
-      if(tocElement){
-          let affixedDiv = document.createElement("div");
-          affixedDiv.style.position = "relative";
-          affixedDiv.style.top = "-1rem";
-          tocElement.parentNode.insertBefore(affixedDiv, tocElement);
-
-          let headerList = document.getElementsByClassName("permalink");
-          let prevElement;
-          window.addEventListener("scroll", () => {
-              let hurdleTop = affixedDiv.getBoundingClientRect().top;
-              if(hurdleTop <= 0) tocElement.classList.add("affix");
-              else tocElement.classList.remove("affix");
-
-              for(let i=0;i<headerList.length;i++){
-                  if(headerList[i].getBoundingClientRect().top >= 0){
-                  prevElement?.style.removeProperty("font-weight");
-                  let tocId = "markdown-toc-" + headerList[i].parentNode.id;
-                  prevElement = document.getElementById(tocId);
-                  prevElement.style.fontWeight = "bold";;
-
-                  break;
-                  }
-              }
-          });
-      }
-  });
-  </script>
 
 
 
