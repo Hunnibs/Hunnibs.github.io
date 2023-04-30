@@ -1,5 +1,72 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-04-28T17:43:09+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hunnibs</title><subtitle>About my work history &amp; review
-</subtitle><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><entry><title type="html">[BOJ] 15686_치킨배달</title><link href="http://localhost:4000/algorithm/2023-04-28-algorithm-BOJ_15686/" rel="alternate" type="text/html" title="[BOJ] 15686_치킨배달" /><published>2023-04-28T00:00:00+09:00</published><updated>2023-04-28T17:43:09+09:00</updated><id>http://localhost:4000/algorithm/algorithm-BOJ_15686</id><content type="html" xml:base="http://localhost:4000/algorithm/2023-04-28-algorithm-BOJ_15686/"><![CDATA[<ul id="markdown-toc">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-04-30T21:33:14+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hunnibs</title><subtitle>About my work history &amp; review
+</subtitle><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><entry><title type="html">[Programmers] 실패율</title><link href="http://localhost:4000/categories/algorithm/2023-04-30-algorithm-%EC%8B%A4%ED%8C%A8%EC%9C%A8/" rel="alternate" type="text/html" title="[Programmers] 실패율" /><published>2023-04-30T00:00:00+09:00</published><updated>2023-04-30T21:03:59+09:00</updated><id>http://localhost:4000/categories/algorithm/algorithm-%EC%8B%A4%ED%8C%A8%EC%9C%A8</id><content type="html" xml:base="http://localhost:4000/categories/algorithm/2023-04-30-algorithm-%EC%8B%A4%ED%8C%A8%EC%9C%A8/"><![CDATA[<blockquote>
+  <p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/42889">https://school.programmers.co.kr/learn/courses/30/lessons/42889</a> <br />
+어려운 문제는 아니었지만 Zerodivisionerror를 포스팅 할 겸 정리</p>
+</blockquote>
+
+<h3 id="문제-해결방안">문제 해결방안</h3>
+<hr />
+<p><strong>문제 해석</strong></p>
+<ul>
+  <li>문제는 스테이지 당 통과 사람과 통과하지 못한 사람의 비율로 실패율을 계산</li>
+  <li>각 스테이지마다 해당 계산을 반복해 실패율을 계산</li>
+  <li>실패율이 높은 스테이지 순으로 정리해서 출력</li>
+</ul>
+
+<p><strong>접근 방식</strong></p>
+<ul>
+  <li>모든 스테이지를 다 깬 사람 수를 먼저 파악</li>
+  <li>가장 뒷 스테이지부터 내려오는 방식을 택했음
+    <ul>
+      <li>성공한 사람들의 수를 누적합으로 구해주기 위함</li>
+    </ul>
+  </li>
+  <li>스테이지 실패율 리스트를 만들어 스테이지 당 실패율을 저장해줌</li>
+  <li>리스트 내 max 함수를 통해 실패율이 높은 것 부터 answer에 넣어주고 -1로 값을 변경</li>
+</ul>
+
+<p><strong>문제점</strong></p>
+<blockquote>
+  <p>ZeroDivisionError <br />
+어떠한 수를 0으로 나눌 때 발생하는 Error Case</p>
+</blockquote>
+
+<ul>
+  <li>해당 문제에서는 마지막 스테이지에 도달한 사람도 없을 경우 0을 0으로 나누게 되어 발생한다.</li>
+  <li>예외처리를 해줌으로써 간단하게 해결 가능하다.</li>
+</ul>
+
+<h3 id="전체-코드">전체 코드</h3>
+<hr />
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+    def solution(N, stages):
+        answer = []
+        
+        clear = stages.count(N+1)
+        
+        result = [-1 for _ in range(N+1)]
+        for stage in range(N, 0, -1):
+            fail = stages.count(stage)
+            clear += fail
+            if clear == 0:
+                result[stage] = 0.0
+            else:
+                result[stage] = fail / clear 
+            
+        for _ in range(N):
+            idx = result.index(max(result))
+            answer.append(idx)
+            result[idx] = -1
+        return answer
+
+</code></pre></div></div>
+
+<h3 id="문제-풀이-후기">문제 풀이 후기</h3>
+<hr />
+<p>시간복잡도가 끔찍하지만 실제 코딩테스트 기출문제다 보니 우선 시간 안에 푸는 것에 집중했다.</p>
+
+<p>총 소요시간 : 0H 20M</p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="algorithm" /><summary type="html"><![CDATA["구현 문제"]]></summary></entry><entry><title type="html">[BOJ] 15686_치킨배달</title><link href="http://localhost:4000/categories/algorithm/2023-04-28-algorithm-BOJ_15686/" rel="alternate" type="text/html" title="[BOJ] 15686_치킨배달" /><published>2023-04-28T00:00:00+09:00</published><updated>2023-04-28T17:43:09+09:00</updated><id>http://localhost:4000/categories/algorithm/algorithm-BOJ_15686</id><content type="html" xml:base="http://localhost:4000/categories/algorithm/2023-04-28-algorithm-BOJ_15686/"><![CDATA[<ul id="markdown-toc">
   <li><a href="#문제-해결-과정" id="markdown-toc-문제-해결-과정">문제 해결 과정</a></li>
   <li><a href="#순열permutation과-조합combination" id="markdown-toc-순열permutation과-조합combination">순열(Permutation)과 조합(Combination)</a></li>
   <li><a href="#전체-코드" id="markdown-toc-전체-코드">전체 코드</a></li>
@@ -117,7 +184,7 @@
 <h3 id="문제풀이후기">문제풀이후기</h3>
 <hr />
 <p>격자 문제가 주어지면 자동으로 DFS, BFS 쓸 생각부터 하게된다. 물론 많은 문제가 그렇지만 조금 문제를 잘 읽어보고 확실하게 결정해서 생각하는 것이 필요할 것 같다. <br />
-총 소요시간: 1H 10M</p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="algorithm" /><summary type="html"><![CDATA["조합 활용 문제"]]></summary></entry><entry><title type="html">클라우드</title><link href="http://localhost:4000/it/2023-04-27-it-cloud/" rel="alternate" type="text/html" title="클라우드" /><published>2023-04-27T00:00:00+09:00</published><updated>2023-04-28T14:00:32+09:00</updated><id>http://localhost:4000/it/it-cloud</id><content type="html" xml:base="http://localhost:4000/it/2023-04-27-it-cloud/"><![CDATA[<ul id="markdown-toc">
+총 소요시간: 1H 10M</p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="algorithm" /><summary type="html"><![CDATA["조합 활용 문제"]]></summary></entry><entry><title type="html">클라우드</title><link href="http://localhost:4000/categories/it/2023-04-27-it-cloud/" rel="alternate" type="text/html" title="클라우드" /><published>2023-04-27T00:00:00+09:00</published><updated>2023-04-28T14:00:32+09:00</updated><id>http://localhost:4000/categories/it/it-cloud</id><content type="html" xml:base="http://localhost:4000/categories/it/2023-04-27-it-cloud/"><![CDATA[<ul id="markdown-toc">
   <li><a href="#정의" id="markdown-toc-정의">정의</a></li>
   <li><a href="#클라우드-4가지-유형" id="markdown-toc-클라우드-4가지-유형">클라우드 4가지 유형</a></li>
   <li><a href="#클라우드-사용-이점" id="markdown-toc-클라우드-사용-이점">클라우드 사용 이점</a></li>
@@ -214,7 +281,7 @@ ex) 마이크로소프트365, 드롭박스, 슬랙 등</p>
 <p><a href="https://docs.aws.amazon.com/ko_kr/whitepapers/latest/aws-overview/what-is-cloud-computing.html">AWS</a> <br />
 <a href="https://www.redhat.com/ko/topics/cloud-computing/what-are-cloud-services#:~:text=%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C%EB%8A%94%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EC%A0%84%EC%B2%B4%EC%97%90%EC%84%9C,%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C%20%EC%BB%B4%ED%93%A8%ED%8C%85%EC%9D%84%20%EC%A7%80%EC%9B%90%ED%95%A9%EB%8B%88%EB%8B%A4.">Red Hat</a> <br />
 <a href="https://www.cloudflare.com/ko-kr/learning/cloud/what-is-the-cloud/">Cloudflare</a> <br />
-<a href="https://azure.microsoft.com/ko-kr/resources/cloud-computing-dictionary/what-are-private-public-hybrid-clouds/#deployment-options">Microsoft Azure</a></p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="it" /><summary type="html"><![CDATA["클라우드 기술 관련"]]></summary></entry><entry><title type="html">메타버스</title><link href="http://localhost:4000/it/2023-04-26-it-metaverse/" rel="alternate" type="text/html" title="메타버스" /><published>2023-04-26T00:00:00+09:00</published><updated>2023-04-27T10:31:47+09:00</updated><id>http://localhost:4000/it/it-metaverse</id><content type="html" xml:base="http://localhost:4000/it/2023-04-26-it-metaverse/"><![CDATA[<ul id="markdown-toc">
+<a href="https://azure.microsoft.com/ko-kr/resources/cloud-computing-dictionary/what-are-private-public-hybrid-clouds/#deployment-options">Microsoft Azure</a></p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="it" /><summary type="html"><![CDATA["클라우드 기술 관련"]]></summary></entry><entry><title type="html">메타버스</title><link href="http://localhost:4000/categories/it/2023-04-26-it-metaverse/" rel="alternate" type="text/html" title="메타버스" /><published>2023-04-26T00:00:00+09:00</published><updated>2023-04-27T10:31:47+09:00</updated><id>http://localhost:4000/categories/it/it-metaverse</id><content type="html" xml:base="http://localhost:4000/categories/it/2023-04-26-it-metaverse/"><![CDATA[<ul id="markdown-toc">
   <li><a href="#정의" id="markdown-toc-정의">정의</a></li>
   <li><a href="#메타버스의-4가지-유형" id="markdown-toc-메타버스의-4가지-유형">메타버스의 4가지 유형</a></li>
   <li><a href="#특징" id="markdown-toc-특징">특징</a></li>
@@ -324,7 +391,152 @@ ex) 제페토, 로블록스</dd>
 <hr />
 <p>미래수업: 메가트렌드 메타버스 <br />
 <a href="https://spri.kr/posts/view/23297?code=industry_trend">SPRI_소프트웨어정책연구소 포스트</a> <br />
-<a href="https://m.blog.naver.com/PostList.naver?blogId=thesandboxkorea">더 샌드박스</a></p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="it" /><summary type="html"><![CDATA["메타버스 기술 관련"]]></summary></entry><entry><title type="html">[알고리즘] BFS &amp;amp; DFS 알고리즘</title><link href="http://localhost:4000/study/2023-04-25-algorithmStudy-dfsbfs/" rel="alternate" type="text/html" title="[알고리즘] BFS &amp;amp; DFS 알고리즘" /><published>2023-04-25T00:00:00+09:00</published><updated>2023-04-25T20:56:11+09:00</updated><id>http://localhost:4000/study/algorithmStudy-dfsbfs</id><content type="html" xml:base="http://localhost:4000/study/2023-04-25-algorithmStudy-dfsbfs/"><![CDATA[<ul id="markdown-toc">
+<a href="https://m.blog.naver.com/PostList.naver?blogId=thesandboxkorea">더 샌드박스</a></p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="it" /><summary type="html"><![CDATA["메타버스 기술 관련"]]></summary></entry><entry><title type="html">[알고리즘] D.P 알고리즘</title><link href="http://localhost:4000/categories/study/2023-04-25-algorithmStudy-dp/" rel="alternate" type="text/html" title="[알고리즘] D.P 알고리즘" /><published>2023-04-25T00:00:00+09:00</published><updated>2023-04-25T20:39:43+09:00</updated><id>http://localhost:4000/categories/study/algorithmStudy-dp</id><content type="html" xml:base="http://localhost:4000/categories/study/2023-04-25-algorithmStudy-dp/"><![CDATA[<ul id="markdown-toc">
+  <li><a href="#dpdynamic-programming이란" id="markdown-toc-dpdynamic-programming이란">DP(Dynamic Programming)이란?</a></li>
+  <li><a href="#구현-방법" id="markdown-toc-구현-방법">구현 방법</a></li>
+  <li><a href="#주의할-점" id="markdown-toc-주의할-점">주의할 점</a></li>
+  <li><a href="#dp-활용방식" id="markdown-toc-dp-활용방식">DP 활용방식</a></li>
+</ul>
+<hr />
+<h3 id="dpdynamic-programming이란">DP(Dynamic Programming)이란?</h3>
+<hr />
+<p>문제를 작은 문제로 (중복될 수도 있지만) 분할하여 분할된 문제의 해답을 기록해 놓은 후 더 큰 문제의 해답을 계산할 때 재사용하는 방법을 의미한다.</p>
+
+<h3 id="구현-방법">구현 방법</h3>
+<hr />
+<p>DP 알고리즘의 4단계 분류</p>
+<ol>
+  <li>해답의 구조를 파악해 어떻게 부문제로 나눌 지 결정</li>
+  <li>부문제의 해답을 어떻게 조합해 더 큰 문제의 해답을 만들 수 있는지 식을 마련</li>
+  <li>작은 문제에서 큰 문제로 적당한 순서에 따라 해답을 계산하여 테이블에 저장하고 재사용하여 답을 계산</li>
+  <li>위의 단계들이 원래 문제의 답을 항상 출력함을 증명하고 답을 리턴</li>
+</ol>
+
+<h3 id="주의할-점">주의할 점</h3>
+<hr />
+<ul>
+  <li>DP Table을 만들 때 list index error에 대한 고려 항상 해줄 것</li>
+</ul>
+
+<h3 id="dp-활용방식">DP 활용방식</h3>
+<hr />
+<p><strong>Bottom-up 방식</strong></p>
+<ul>
+  <li>우리말로 ‘상향식’</li>
+  <li>가장 작은 문제들부터 답을 찾아 가면서 마지막에는 전체 문제의 답을 구하는 방식</li>
+  <li>반복문으로 구현하므로 시간과 메모리의 사용량이 상대적으로 적음</li>
+</ul>
+
+<p><strong>Top-down 방식</strong></p>
+<ul>
+  <li>우리말로 ‘하향식’</li>
+  <li>큰 문제를 해결하기 위해 작은 문제를 호출하는 방식</li>
+  <li>재귀호출을 통해 구한다. 함수 호출의 횟수를 줄이기 위해 메모이제이션 기법을 활용</li>
+</ul>
+
+<blockquote>
+  <p>메모이제이션 기법 <br />
+-&gt; 컴퓨터 프로그램이 동일한 계산을 반복할 때, 이전에 계산한 값을 메모리에 저장해놓는 방법
+DP의 핵심이 되는 기술이다.</p>
+</blockquote>
+
+<p><strong>누적 합 활용 방식</strong></p>
+<ul>
+  <li>배열이 있을 때 해당 배열까지의 총 합을 따로 배열에 저장하는 방식</li>
+  <li>시간복잡도 상 큰 이득을 가져다주는 경우가 많다</li>
+</ul>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="study" /><summary type="html"><![CDATA["내용 정리"]]></summary></entry><entry><title type="html">[알고리즘] Dijkstra 알고리즘</title><link href="http://localhost:4000/categories/study/2023-04-25-algorithmStudy-dijkstra/" rel="alternate" type="text/html" title="[알고리즘] Dijkstra 알고리즘" /><published>2023-04-25T00:00:00+09:00</published><updated>2023-04-25T20:09:38+09:00</updated><id>http://localhost:4000/categories/study/algorithmStudy-dijkstra</id><content type="html" xml:base="http://localhost:4000/categories/study/2023-04-25-algorithmStudy-dijkstra/"><![CDATA[<ul id="markdown-toc">
+  <li><a href="#다익스트라-알고리즘이란" id="markdown-toc-다익스트라-알고리즘이란">다익스트라 알고리즘이란?</a></li>
+  <li><a href="#구현-방법" id="markdown-toc-구현-방법">구현 방법</a></li>
+  <li><a href="#구현-코드" id="markdown-toc-구현-코드">구현 코드</a></li>
+  <li><a href="#참조" id="markdown-toc-참조">참조</a></li>
+</ul>
+<hr />
+<h3 id="다익스트라-알고리즘이란">다익스트라 알고리즘이란?</h3>
+<hr />
+<p>다익스트라 알고리즘은 그래프에서 두 정점 간의 최단 경로를 찾는 알고리즘이다. 간선에 가중치가 주어진 방향 그래프를 대상으로만 사용할 수 있다는 특징이 있다.</p>
+
+<p><img src="/assets/img/study/graph.png" alt="graph" /></p>
+
+<p>이 알고리즘은 최단 경로를 구하는 과정에서 최단 경로 트리가 만들어지는데 최단 경로 트리는 출발점으로 정한 정점에서 각 정점까지의 최단 경로를 저장해 놓은 트리를 뜻한다.</p>
+
+<p>예를 들어, 위 그림에서 a에서 i까지의 최단경로를 구한다면 다익스트라 알고리즘은 a에서 정점 g 혹은 h까지의 최단거리를 구한 후 다시 i까지를 계산한다. <br />
+식으로 정리하면, 시작 정점에서 x 정점까지의 최단경로를 dist[x], 간선에 가중치를 x-&gt;y라 표현</p>
+
+<blockquote>
+  <p>dist[i] = min(dist[g] + g-&gt;i, dist[h] + h-&gt;i)</p>
+</blockquote>
+
+<p>즉, i까지의 최단경로를 구하려면 저 과정을 거쳐 각 정점마다 최단경로를 구하며 찾아간다. 그래서 우리는 i까지 가는 경로 내에 있는 정점들의 최단경로를 구할 수 있는 것이다.</p>
+
+<h3 id="구현-방법">구현 방법</h3>
+<hr />
+<ul>
+  <li>다익스트라 알고리즘은 우선 <strong>가중치가 주어진 방향 그래프</strong>에만 사용이 가능</li>
+  <li>우선순위 큐를 이용해 최소가 되는 것부터 지워나가는 것이 중요하다.</li>
+  <li>
+    <p>만약 정점에 연결된 다른 모든 정점들의 가중치를 비교해나간다면 벨만-포드 알고리즘으로 시간복잡도가 O(N^3)까지 증가한다.</p>
+  </li>
+  <li>단계별 정리
+    <ol>
+      <li>출발 정점과 도착 정점을 정한다.</li>
+      <li>정점과 정점 사이의 연결관계와 가중치를 저장해준다.</li>
+      <li>우선순위 큐를 활용한다.</li>
+      <li>우선순위 큐에 현재 정점에 연결된 정점의 정보와 가중치를 넣어준다.</li>
+      <li>가중치가 적은 것부터 꺼내서 비교하고 업데이트 시켜준다.</li>
+      <li>위 4,5번 과정을 반복한다.</li>
+    </ol>
+  </li>
+</ul>
+
+<h3 id="구현-코드">구현 코드</h3>
+<hr />
+<p><a href="https://www.acmicpc.net/problem/1753">백준 1753 최단경로 문제</a></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+    import math
+    import sys
+    import heapq
+    
+    def dijkstra():
+        heap = []
+        heapq.heappush(heap, (0, K))
+        while heap:
+            currentWeight, currentVertex = heapq.heappop(heap)
+    
+            for nextVertex, weight in graph[currentVertex]:
+                nextWeight = currentWeight + weight
+                # 이미 해당 정점까지 계산된 경로가 지금 계산하려는 값보다 작다면 이미 최단경로이다
+                if shortPath[nextVertex-1] &gt; nextWeight:  
+                    shortPath[nextVertex-1] = nextWeight
+                    heapq.heappush(heap, (nextWeight, nextVertex))
+    
+    # input
+    input = sys.stdin.readline
+    inf = math.inf
+    
+    V, E = map(int, input().split())
+    K = int(input())
+    
+    graph = [[] for _ in range(V+1)]
+    for _ in range(E):
+        u, v, w = map(int, input().split())
+        graph[u].append([v, w])
+    
+    # main
+    shortPath = [inf for _ in range(V)]
+    shortPath[K-1] = 0  # 시작점은 0
+    dijkstra()
+
+</code></pre></div></div>
+
+<ul>
+  <li>그래프 구현 시 2차원 배열을 생성해 가중치를 저장해주는 방식도 있으나 메모리가 많이 소모된다는 단점이 있다.</li>
+</ul>
+
+<h3 id="참조">참조</h3>
+<hr />
+<p><a href="https://www.youtube.com/watch?v=0NrlN88D9Fs&amp;list=PLsMufJgu5932XYejsOwcUDJ2F75f56nrl&amp;index=49&amp;pp=iAQB">신찬수 교수님 유튜브 강의영상</a> <br />
+<a href="https://m.blog.naver.com/ndb796/221234424646">안경잡이개발자 님 네이버 블로그</a></p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="study" /><summary type="html"><![CDATA["내용 정리"]]></summary></entry><entry><title type="html">[알고리즘] BFS &amp;amp; DFS 알고리즘</title><link href="http://localhost:4000/categories/study/2023-04-25-algorithmStudy-dfsbfs/" rel="alternate" type="text/html" title="[알고리즘] BFS &amp;amp; DFS 알고리즘" /><published>2023-04-25T00:00:00+09:00</published><updated>2023-04-25T20:56:11+09:00</updated><id>http://localhost:4000/categories/study/algorithmStudy-dfsbfs</id><content type="html" xml:base="http://localhost:4000/categories/study/2023-04-25-algorithmStudy-dfsbfs/"><![CDATA[<ul id="markdown-toc">
   <li><a href="#bfsbreadth-first-search" id="markdown-toc-bfsbreadth-first-search">BFS(Breadth-first search)</a>    <ul>
       <li><a href="#너비-우선-탐색이란" id="markdown-toc-너비-우선-탐색이란">너비 우선 탐색이란?</a></li>
       <li><a href="#구현-방법" id="markdown-toc-구현-방법">구현 방법</a></li>
@@ -463,7 +675,7 @@ ex) 제페토, 로블록스</dd>
     result = []
     DFS(V)
 
-</code></pre></div></div>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="study" /><summary type="html"><![CDATA["내용 정리"]]></summary></entry><entry><title type="html">[알고리즘] Binary Search 알고리즘</title><link href="http://localhost:4000/study/2023-04-25-algorithmStudy-binarysearch/" rel="alternate" type="text/html" title="[알고리즘] Binary Search 알고리즘" /><published>2023-04-25T00:00:00+09:00</published><updated>2023-04-25T20:36:58+09:00</updated><id>http://localhost:4000/study/algorithmStudy-binarysearch</id><content type="html" xml:base="http://localhost:4000/study/2023-04-25-algorithmStudy-binarysearch/"><![CDATA[<ul id="markdown-toc">
+</code></pre></div></div>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="study" /><summary type="html"><![CDATA["내용 정리"]]></summary></entry><entry><title type="html">[알고리즘] Binary Search 알고리즘</title><link href="http://localhost:4000/categories/study/2023-04-25-algorithmStudy-binarysearch/" rel="alternate" type="text/html" title="[알고리즘] Binary Search 알고리즘" /><published>2023-04-25T00:00:00+09:00</published><updated>2023-04-25T20:36:58+09:00</updated><id>http://localhost:4000/categories/study/algorithmStudy-binarysearch</id><content type="html" xml:base="http://localhost:4000/categories/study/2023-04-25-algorithmStudy-binarysearch/"><![CDATA[<ul id="markdown-toc">
   <li><a href="#이진탐색이란" id="markdown-toc-이진탐색이란">이진탐색이란?</a></li>
   <li><a href="#구현-방법" id="markdown-toc-구현-방법">구현 방법</a></li>
   <li><a href="#구현-코드" id="markdown-toc-구현-코드">구현 코드</a></li>
@@ -528,152 +740,7 @@ ex) 제페토, 로블록스</dd>
         
         return
 
-</code></pre></div></div>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="study" /><summary type="html"><![CDATA["내용 정리"]]></summary></entry><entry><title type="html">[알고리즘] D.P 알고리즘</title><link href="http://localhost:4000/study/2023-04-25-algorithmStudy-dp/" rel="alternate" type="text/html" title="[알고리즘] D.P 알고리즘" /><published>2023-04-25T00:00:00+09:00</published><updated>2023-04-25T20:39:43+09:00</updated><id>http://localhost:4000/study/algorithmStudy-dp</id><content type="html" xml:base="http://localhost:4000/study/2023-04-25-algorithmStudy-dp/"><![CDATA[<ul id="markdown-toc">
-  <li><a href="#dpdynamic-programming이란" id="markdown-toc-dpdynamic-programming이란">DP(Dynamic Programming)이란?</a></li>
-  <li><a href="#구현-방법" id="markdown-toc-구현-방법">구현 방법</a></li>
-  <li><a href="#주의할-점" id="markdown-toc-주의할-점">주의할 점</a></li>
-  <li><a href="#dp-활용방식" id="markdown-toc-dp-활용방식">DP 활용방식</a></li>
-</ul>
-<hr />
-<h3 id="dpdynamic-programming이란">DP(Dynamic Programming)이란?</h3>
-<hr />
-<p>문제를 작은 문제로 (중복될 수도 있지만) 분할하여 분할된 문제의 해답을 기록해 놓은 후 더 큰 문제의 해답을 계산할 때 재사용하는 방법을 의미한다.</p>
-
-<h3 id="구현-방법">구현 방법</h3>
-<hr />
-<p>DP 알고리즘의 4단계 분류</p>
-<ol>
-  <li>해답의 구조를 파악해 어떻게 부문제로 나눌 지 결정</li>
-  <li>부문제의 해답을 어떻게 조합해 더 큰 문제의 해답을 만들 수 있는지 식을 마련</li>
-  <li>작은 문제에서 큰 문제로 적당한 순서에 따라 해답을 계산하여 테이블에 저장하고 재사용하여 답을 계산</li>
-  <li>위의 단계들이 원래 문제의 답을 항상 출력함을 증명하고 답을 리턴</li>
-</ol>
-
-<h3 id="주의할-점">주의할 점</h3>
-<hr />
-<ul>
-  <li>DP Table을 만들 때 list index error에 대한 고려 항상 해줄 것</li>
-</ul>
-
-<h3 id="dp-활용방식">DP 활용방식</h3>
-<hr />
-<p><strong>Bottom-up 방식</strong></p>
-<ul>
-  <li>우리말로 ‘상향식’</li>
-  <li>가장 작은 문제들부터 답을 찾아 가면서 마지막에는 전체 문제의 답을 구하는 방식</li>
-  <li>반복문으로 구현하므로 시간과 메모리의 사용량이 상대적으로 적음</li>
-</ul>
-
-<p><strong>Top-down 방식</strong></p>
-<ul>
-  <li>우리말로 ‘하향식’</li>
-  <li>큰 문제를 해결하기 위해 작은 문제를 호출하는 방식</li>
-  <li>재귀호출을 통해 구한다. 함수 호출의 횟수를 줄이기 위해 메모이제이션 기법을 활용</li>
-</ul>
-
-<blockquote>
-  <p>메모이제이션 기법 <br />
--&gt; 컴퓨터 프로그램이 동일한 계산을 반복할 때, 이전에 계산한 값을 메모리에 저장해놓는 방법
-DP의 핵심이 되는 기술이다.</p>
-</blockquote>
-
-<p><strong>누적 합 활용 방식</strong></p>
-<ul>
-  <li>배열이 있을 때 해당 배열까지의 총 합을 따로 배열에 저장하는 방식</li>
-  <li>시간복잡도 상 큰 이득을 가져다주는 경우가 많다</li>
-</ul>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="study" /><summary type="html"><![CDATA["내용 정리"]]></summary></entry><entry><title type="html">[알고리즘] Dijkstra 알고리즘</title><link href="http://localhost:4000/study/2023-04-25-algorithmStudy-dijkstra/" rel="alternate" type="text/html" title="[알고리즘] Dijkstra 알고리즘" /><published>2023-04-25T00:00:00+09:00</published><updated>2023-04-25T20:09:38+09:00</updated><id>http://localhost:4000/study/algorithmStudy-dijkstra</id><content type="html" xml:base="http://localhost:4000/study/2023-04-25-algorithmStudy-dijkstra/"><![CDATA[<ul id="markdown-toc">
-  <li><a href="#다익스트라-알고리즘이란" id="markdown-toc-다익스트라-알고리즘이란">다익스트라 알고리즘이란?</a></li>
-  <li><a href="#구현-방법" id="markdown-toc-구현-방법">구현 방법</a></li>
-  <li><a href="#구현-코드" id="markdown-toc-구현-코드">구현 코드</a></li>
-  <li><a href="#참조" id="markdown-toc-참조">참조</a></li>
-</ul>
-<hr />
-<h3 id="다익스트라-알고리즘이란">다익스트라 알고리즘이란?</h3>
-<hr />
-<p>다익스트라 알고리즘은 그래프에서 두 정점 간의 최단 경로를 찾는 알고리즘이다. 간선에 가중치가 주어진 방향 그래프를 대상으로만 사용할 수 있다는 특징이 있다.</p>
-
-<p><img src="/assets/img/study/graph.png" alt="graph" /></p>
-
-<p>이 알고리즘은 최단 경로를 구하는 과정에서 최단 경로 트리가 만들어지는데 최단 경로 트리는 출발점으로 정한 정점에서 각 정점까지의 최단 경로를 저장해 놓은 트리를 뜻한다.</p>
-
-<p>예를 들어, 위 그림에서 a에서 i까지의 최단경로를 구한다면 다익스트라 알고리즘은 a에서 정점 g 혹은 h까지의 최단거리를 구한 후 다시 i까지를 계산한다. <br />
-식으로 정리하면, 시작 정점에서 x 정점까지의 최단경로를 dist[x], 간선에 가중치를 x-&gt;y라 표현</p>
-
-<blockquote>
-  <p>dist[i] = min(dist[g] + g-&gt;i, dist[h] + h-&gt;i)</p>
-</blockquote>
-
-<p>즉, i까지의 최단경로를 구하려면 저 과정을 거쳐 각 정점마다 최단경로를 구하며 찾아간다. 그래서 우리는 i까지 가는 경로 내에 있는 정점들의 최단경로를 구할 수 있는 것이다.</p>
-
-<h3 id="구현-방법">구현 방법</h3>
-<hr />
-<ul>
-  <li>다익스트라 알고리즘은 우선 <strong>가중치가 주어진 방향 그래프</strong>에만 사용이 가능</li>
-  <li>우선순위 큐를 이용해 최소가 되는 것부터 지워나가는 것이 중요하다.</li>
-  <li>
-    <p>만약 정점에 연결된 다른 모든 정점들의 가중치를 비교해나간다면 벨만-포드 알고리즘으로 시간복잡도가 O(N^3)까지 증가한다.</p>
-  </li>
-  <li>단계별 정리
-    <ol>
-      <li>출발 정점과 도착 정점을 정한다.</li>
-      <li>정점과 정점 사이의 연결관계와 가중치를 저장해준다.</li>
-      <li>우선순위 큐를 활용한다.</li>
-      <li>우선순위 큐에 현재 정점에 연결된 정점의 정보와 가중치를 넣어준다.</li>
-      <li>가중치가 적은 것부터 꺼내서 비교하고 업데이트 시켜준다.</li>
-      <li>위 4,5번 과정을 반복한다.</li>
-    </ol>
-  </li>
-</ul>
-
-<h3 id="구현-코드">구현 코드</h3>
-<hr />
-<p><a href="https://www.acmicpc.net/problem/1753">백준 1753 최단경로 문제</a></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-    import math
-    import sys
-    import heapq
-    
-    def dijkstra():
-        heap = []
-        heapq.heappush(heap, (0, K))
-        while heap:
-            currentWeight, currentVertex = heapq.heappop(heap)
-    
-            for nextVertex, weight in graph[currentVertex]:
-                nextWeight = currentWeight + weight
-                # 이미 해당 정점까지 계산된 경로가 지금 계산하려는 값보다 작다면 이미 최단경로이다
-                if shortPath[nextVertex-1] &gt; nextWeight:  
-                    shortPath[nextVertex-1] = nextWeight
-                    heapq.heappush(heap, (nextWeight, nextVertex))
-    
-    # input
-    input = sys.stdin.readline
-    inf = math.inf
-    
-    V, E = map(int, input().split())
-    K = int(input())
-    
-    graph = [[] for _ in range(V+1)]
-    for _ in range(E):
-        u, v, w = map(int, input().split())
-        graph[u].append([v, w])
-    
-    # main
-    shortPath = [inf for _ in range(V)]
-    shortPath[K-1] = 0  # 시작점은 0
-    dijkstra()
-
-</code></pre></div></div>
-
-<ul>
-  <li>그래프 구현 시 2차원 배열을 생성해 가중치를 저장해주는 방식도 있으나 메모리가 많이 소모된다는 단점이 있다.</li>
-</ul>
-
-<h3 id="참조">참조</h3>
-<hr />
-<p><a href="https://www.youtube.com/watch?v=0NrlN88D9Fs&amp;list=PLsMufJgu5932XYejsOwcUDJ2F75f56nrl&amp;index=49&amp;pp=iAQB">신찬수 교수님 유튜브 강의영상</a> <br />
-<a href="https://m.blog.naver.com/ndb796/221234424646">안경잡이개발자 님 네이버 블로그</a></p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="study" /><summary type="html"><![CDATA["내용 정리"]]></summary></entry><entry><title type="html">[알고리즘] Backtracking 알고리즘</title><link href="http://localhost:4000/study/2023-04-25-algorithmStudy-backtracking/" rel="alternate" type="text/html" title="[알고리즘] Backtracking 알고리즘" /><published>2023-04-25T00:00:00+09:00</published><updated>2023-04-25T20:15:03+09:00</updated><id>http://localhost:4000/study/algorithmStudy-backtracking</id><content type="html" xml:base="http://localhost:4000/study/2023-04-25-algorithmStudy-backtracking/"><![CDATA[<ul id="markdown-toc">
+</code></pre></div></div>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="study" /><summary type="html"><![CDATA["내용 정리"]]></summary></entry><entry><title type="html">[알고리즘] Backtracking 알고리즘</title><link href="http://localhost:4000/categories/study/2023-04-25-algorithmStudy-backtracking/" rel="alternate" type="text/html" title="[알고리즘] Backtracking 알고리즘" /><published>2023-04-25T00:00:00+09:00</published><updated>2023-04-25T20:15:03+09:00</updated><id>http://localhost:4000/categories/study/algorithmStudy-backtracking</id><content type="html" xml:base="http://localhost:4000/categories/study/2023-04-25-algorithmStudy-backtracking/"><![CDATA[<ul id="markdown-toc">
   <li><a href="#백트래킹이란" id="markdown-toc-백트래킹이란">백트래킹이란?</a></li>
   <li><a href="#구현-방법" id="markdown-toc-구현-방법">구현 방법</a></li>
 </ul>
@@ -701,7 +768,7 @@ DP의 핵심이 되는 기술이다.</p>
 <blockquote>
   <p>가지치기(pruning) <br />
 -&gt; 유망하지 않는 노드가 포함된 경로는 더 이상 탐색X</p>
-</blockquote>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="study" /><summary type="html"><![CDATA["내용 정리"]]></summary></entry><entry><title type="html">블록체인</title><link href="http://localhost:4000/it/2023-04-24-it-blockchain/" rel="alternate" type="text/html" title="블록체인" /><published>2023-04-24T00:00:00+09:00</published><updated>2023-04-25T19:28:24+09:00</updated><id>http://localhost:4000/it/it-blockchain</id><content type="html" xml:base="http://localhost:4000/it/2023-04-24-it-blockchain/"><![CDATA[<ul id="markdown-toc">
+</blockquote>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="study" /><summary type="html"><![CDATA["내용 정리"]]></summary></entry><entry><title type="html">블록체인</title><link href="http://localhost:4000/categories/it/2023-04-24-it-blockchain/" rel="alternate" type="text/html" title="블록체인" /><published>2023-04-24T00:00:00+09:00</published><updated>2023-04-25T19:28:24+09:00</updated><id>http://localhost:4000/categories/it/it-blockchain</id><content type="html" xml:base="http://localhost:4000/categories/it/2023-04-24-it-blockchain/"><![CDATA[<ul id="markdown-toc">
   <li><a href="#정의" id="markdown-toc-정의">정의</a></li>
   <li><a href="#기술의-특징" id="markdown-toc-기술의-특징">기술의 특징</a></li>
   <li><a href="#핵심-구성-요소" id="markdown-toc-핵심-구성-요소">핵심 구성 요소</a></li>
@@ -844,130 +911,4 @@ DP의 핵심이 되는 기술이다.</p>
 <hr />
 <p><a href="https://aws.amazon.com/ko/what-is/blockchain/?aws-products-all.sort-by=item.additionalFields.productNameLowercase&amp;aws-products-all.sort-order=asc">AWS 블록체인 관련 문서</a> <br />
 <a href="https://www.sap.com/korea/insights/what-is-blockchain.html">SAP 블록체인 관련 문서</a> <br />
-<a href="https://www.youtube.com/watch?v=TljQRfHRId8&amp;list=PL7jH19IHhOLOJfXeVqjtiawzNQLxOgTdq">노마드 코더 영상</a></p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="it" /><summary type="html"><![CDATA["블록체인 기술 관련"]]></summary></entry><entry><title type="html">[Jekyll] GitHub 블로그 개발일지(2)</title><link href="http://localhost:4000/jekyll/2023-04-21-jekyll-theme/" rel="alternate" type="text/html" title="[Jekyll] GitHub 블로그 개발일지(2)" /><published>2023-04-21T00:00:00+09:00</published><updated>2023-04-26T21:23:38+09:00</updated><id>http://localhost:4000/jekyll/jekyll-theme</id><content type="html" xml:base="http://localhost:4000/jekyll/2023-04-21-jekyll-theme/"><![CDATA[<ul id="markdown-toc">
-  <li><a href="#21-새로운-테마-선정" id="markdown-toc-21-새로운-테마-선정">2.1 새로운 테마 선정</a></li>
-  <li><a href="#22-새로운-테마-적용" id="markdown-toc-22-새로운-테마-적용">2.2 새로운 테마 적용</a></li>
-  <li><a href="#23-주의할-점" id="markdown-toc-23-주의할-점">2.3 주의할 점</a></li>
-</ul>
-
-<hr />
-<h3 id="21-새로운-테마-선정">2.1 새로운 테마 선정</h3>
-<hr />
-<ul>
-  <li><a href="https://velog.io/@juxgsiroo/github-page-pt2">juxgsiroo 님 Velog</a> 추천 참조</li>
-</ul>
-
-<blockquote>
-  <p>기존에 쓰던 테마가 너무 단순하고 밋밋하다는 생각이 들던 때에 새로운 테마를 구경하게 되었고 지금까지 했던걸
-과감히 버리고서라도 변경하기로 결정했다</p>
-</blockquote>
-
-<h3 id="22-새로운-테마-적용">2.2 새로운 테마 적용</h3>
-<ul>
-  <li>기존에 저장했던 Markdown 폴더들을 전부 따로 빼준 뒤 레포지토리를 비워주었다</li>
-  <li>이전에 했던 것 처럼 Hydejack을 Zip으로 가져와 레포지토리에 넣어주는 방식을 활용</li>
-  <li><a href="https://github.com/hydecorp/hydejack">hydecorp/hydejack Repository</a></li>
-  <li>
-    <p>당연히 해당 repository를 가져오면 될 것이라 생각했지만 이 파일에는 gemfile이 존재하지 않는다</p>
-
-    <p><img src="/assets/img/jekyll/noGem.png" alt="Nogem" /></p>
-  </li>
-</ul>
-
-<blockquote>
-  <p>gemfile이 없다면 ‘bundle exec jekyll serve’ 를 실행 시
-‘Could not locate Gemfile’ 이라는 Error가 발생한다.</p>
-</blockquote>
-
-<ul>
-  <li>해결방법은 간단하다</li>
-  <li><a href="https://github.com/hydecorp/hydejack-starter-kit">hydecorp/hydejack-starter-kit</a></li>
-  <li>해당 레포지토리로 이동하면 스타터킷 답게 다 포함되어있는 것을 확인할 수 있다.</li>
-  <li>(추가) masterkit으로 다운받았지만 현재 버전과 다른 점이 많아 버전에 맞춰 다운받는것이 편할 수도 있다.</li>
-</ul>
-
-<h3 id="23-주의할-점">2.3 주의할 점</h3>
-<hr />
-<ul>
-  <li>minimal mistakes 테마를 사용하던 때와는 다르게 조심해줘야할 점들이 많았다.</li>
-  <li>많이 안 쓰는 테마여서 웬만해서는 Guide나 Demo site와 코드를 비교해보며 알아가야했다.</li>
-</ul>
-
-<p><strong>2.3.1</strong> _config.yml Theme 설정</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    
-    # Theme
-    # ---------------------------------------------------------------------------------------
-    
-    #theme: jekyll-theme-hydejack
-    remote_theme: hydecorp/hydejack@v9
-
-</code></pre></div></div>
-
-<ul>
-  <li>해당 코드를 보면 theme와 remote_theme가 나누어져있다</li>
-  <li>local에서 테스트 해볼 때는 theme를 주석처리를 풀고 remote_theme를 주석처리</li>
-  <li>서버에 올릴 떄는 위의 예시코드처럼 사용해주어야함</li>
-</ul>
-
-<blockquote>
-  <p>따로 layout 폴더를 만들지 않고 Jekyll에서 기본으로 주어지는 layout plugin을 사용하기 때문에
-상황에 맞게 바꿔주지 않으면 해당 부분이 로드되지 않는다.</p>
-</blockquote>
-
-<p><strong>2.3.2</strong> 폴더 경로 설정</p>
-<ul>
-  <li>가장 시간을 많이 잡아먹었고 스트레스 받았던 부분이다.
-    <ul>
-      <li>아래와 같이 Local에서는 제대로 동작해도 서버에 올리면 다르게 동작하는 등 많은 문제점이 발생했다.</li>
-    </ul>
-
-    <p><img src="/assets/img/jekyll/pathError.png" alt="Error" /></p>
-  </li>
-  <li>우선 _featured_categories 폴더에 카테고리 별로 분류를 해주기 위한 Markdown 파일을 작성</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    
-    ---
-    # Featured tags need to have either the `list` or `grid` layout (PRO only).
-    layout: list
-    
-    # The title of the tag's page.
-    title: Algorithm
-    
-    # The name of the tag, used in a post's front matter (e.g. tags: [&lt;slug&gt;]).
-    slug: algorithm
-    
-    # (Optional) Write a short (~150 characters) description of this featured tag.
-    description: &gt;
-        알고리즘 문제 풀이
-    
-    # (Optional) You can disable grouping posts by date.
-    # no_groups: true
-    
-    sitemap: false
-    ---
-
-</code></pre></div></div>
-
-<ul>
-  <li>
-    <p>다음으로 카테고리에 post를 올리기 위해서는 해당 사진처럼 해준다</p>
-
-    <p><img src="/assets/img/jekyll/path.png" width="450px" height="100px" /></p>
-  </li>
-  <li>
-    <p>주의해야할 점은 _config 파일에 해당 포맷대로 파일명을 작성해줘야 인식한다는 점이다.</p>
-  </li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-    # Format of the permalinks
-    permalink:             /:categories/:year-:month-:day-:title/
-
-</code></pre></div></div>
-
-<blockquote>
-  <p>이외에도 필자는 Blog라는 키워드는 CHANGELOG.md 파일의 특정 부분과 문제를 일으켜서 사용 시 버그가 발생하는 문제점이 있었다.
-누군가는 이글을 보며 조금이라도 편하게 Hydejack 테마를 이용할 수 있기를 바라는 마음에 작성한다.</p>
-</blockquote>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="jekyll" /><summary type="html"><![CDATA["빠르게 찾아온 더 이쁜 테마에 대한 열망"]]></summary></entry></feed>
+<a href="https://www.youtube.com/watch?v=TljQRfHRId8&amp;list=PL7jH19IHhOLOJfXeVqjtiawzNQLxOgTdq">노마드 코더 영상</a></p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="it" /><summary type="html"><![CDATA["블록체인 기술 관련"]]></summary></entry></feed>

@@ -5,9 +5,276 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="665d9854-24e4-4d31-bb39-8a8ccf9eea53" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/algorithm/_posts/2023-04-30-algorithm-실패율.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.babelrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Hunnibs.github.io.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scripts/build-css.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scripts/version.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NOTICE.md" beforeDir="false" afterPath="$PROJECT_DIR$/NOTICE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/base-classes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/body/analytics.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/body/breadcrumbs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/body/comments.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/body/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/body/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/body/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/body/menu.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/body/nav.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/body/scripts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/body/sidebar-bg.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/body/sidebar-sticky.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/body/sidebar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/components/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/components/author.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/components/avatar-tag.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/components/dingbat.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/components/hy-img.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/components/link.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/components/message.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/components/pagination.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/components/post-list-item.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/components/post.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/components/related-posts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/components/social-list-item.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/components/social.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/components/tag-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/head/css/inline" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/head/feed-tag.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/head/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/head/links-static.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/head/links.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/head/meta-static.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/head/meta.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/head/page-style.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/head/scripts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/head/seo-fallback.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/head/seo-tag.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/head/styles-inline.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/head/styles-layout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/head/styles-no-inline.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/head/styles.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/header.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/icon-github.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/if-non-null" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/my-body.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/my-body.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/my-comments.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/my-head.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/my-head.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/my-scripts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/scripts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/scripts/cssrelpreload.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/scripts/load-js.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/scripts/load-js.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/scripts/loadCSS.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/scripts/nomodule.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/scripts/nomodule.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/smart-url" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/smart-url.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/styles/common.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/styles/inline.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/styles/page-style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/styles/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/styles/variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/templates/animation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/templates/error.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/templates/loading.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/templates/permalink.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_js/lib/modernizr-custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_js/lib/version.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_js/src/clap-button.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_js/src/common.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_js/src/cross-fader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_js/src/drawer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_js/src/entry.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_js/src/flip/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_js/src/flip/title.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_js/src/languages.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_js/src/navbar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_js/src/polyfills/fetch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_js/src/polyfills/resize-observer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_js/src/polyfills/shadydom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_js/src/polyfills/webcomponents.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_js/src/push-state.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_js/src/upgrades.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/blog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/compress.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/default.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/not-found.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/plain.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/post.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/redirect.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/_reboot-mod.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/_spinner.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/_syntax.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/_tippy.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/html.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/hydejack/__inline__/_avatar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/hydejack/__inline__/_base.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/hydejack/__inline__/_break-layout.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/hydejack/__inline__/_content.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/hydejack/__inline__/_footer.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/hydejack/__inline__/_images.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/hydejack/__inline__/_katex.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/hydejack/__inline__/_links.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/hydejack/__inline__/_mark-external.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/hydejack/__inline__/_menu.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/hydejack/__inline__/_sidebar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/hydejack/__inline__/_social.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/hydejack/__inline__/_toc.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/hydejack/__inline__/_utilities.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/hydejack/__link__/_avatar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/hydejack/__link__/_base.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/hydejack/__link__/_break-layout.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/hydejack/__link__/_content.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/hydejack/__link__/_footer.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/hydejack/__link__/_images.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/hydejack/__link__/_katex.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/hydejack/__link__/_links.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/hydejack/__link__/_mark-external.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/hydejack/__link__/_menu.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/hydejack/__link__/_sidebar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/hydejack/__link__/_social.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/hydejack/__link__/_toc.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/hydejack/__link__/_utilities.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/hydejack/_avatar.pre.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/hydejack/_base.pre.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/hydejack/_break-layout.pre.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/hydejack/_content.pre.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/hydejack/_footer.pre.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/hydejack/_images.pre.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/hydejack/_katex.pre.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/hydejack/_links.pre.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/hydejack/_mark-external.pre.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/hydejack/_menu.pre.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/hydejack/_sidebar.pre.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/hydejack/_social.pre.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/hydejack/_toc.pre.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/hydejack/_utilities.pre.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/my-inline.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/my-inline.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/my-style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/my-style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/my-variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/pooleparty/__inline__/_base.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/pooleparty/__inline__/_code.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/pooleparty/__inline__/_footer.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/pooleparty/__inline__/_footnotes.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/pooleparty/__inline__/_message.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/pooleparty/__inline__/_pagination.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/pooleparty/__inline__/_posts.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/pooleparty/__inline__/_read-more.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/pooleparty/__inline__/_related.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/pooleparty/__inline__/_table.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/pooleparty/__inline__/_type.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/pooleparty/__link__/_base.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/pooleparty/__link__/_code.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/pooleparty/__link__/_footer.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/pooleparty/__link__/_footnotes.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/pooleparty/__link__/_message.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/pooleparty/__link__/_pagination.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/pooleparty/__link__/_posts.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/pooleparty/__link__/_read-more.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/pooleparty/__link__/_related.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/pooleparty/__link__/_table.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/pooleparty/__link__/_type.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/pooleparty/_base.pre.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/pooleparty/_code.pre.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/pooleparty/_footer.pre.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/pooleparty/_footnotes.pre.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/pooleparty/_message.pre.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/pooleparty/_pagination.pre.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/pooleparty/_posts.pre.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/pooleparty/_read-more.pre.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/pooleparty/_related.pre.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/pooleparty/_table.pre.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/pooleparty/_type.pre.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/tippyjs/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/tippyjs/_vars.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/tippyjs/animations/fade.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/tippyjs/index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/CHANGELOG/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/CHANGELOG/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/LICENSE/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/LICENSE/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/NOTICE/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/NOTICE/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/_site/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/about/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/algorithm/2023-04-17-algorithm-BOJ_1932/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/algorithm/2023-04-19-algorithm-BOJ_14502/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/algorithm/2023-04-20-algorithm-단속카메라/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/algorithm/2023-04-28-algorithm-BOJ_15686/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/algorithm/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/algorithm/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/css/hydejack-9.1.6.css" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/css/hydejack-9.1.6.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/docs/7.5.0/forms-by-example/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/docs/7.5.1/forms-by-example/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/download/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/download/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/forms-by-example/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/it/2023-04-24-it-blockchain/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/it/2023-04-26-it-metaverse/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/it/2023-04-27-it-cloud/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/it/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/it/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/jekyll-theme-hydejack.gemspec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/jekyll/2023-04-16-jekyll-setting/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/jekyll/2023-04-21-jekyll-theme/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/jekyll/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/jekyll/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/licenses/Apache-2.0/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/licenses/Apache-2.0/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/licenses/GPL-3.0/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/licenses/GPL-3.0/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/licenses/MIT/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/licenses/MIT/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/licenses/PRO/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/licenses/PRO/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/licenses/W3C-20150513/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/licenses/W3C-20150513/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/licenses/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/licenses/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/posts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/posts/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/redirects.json" beforeDir="false" afterPath="$PROJECT_DIR$/_site/redirects.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/study/2023-04-20-algorithmStudy-Greedy/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/study/2023-04-25-algorithmStudy-backtracking/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/study/2023-04-25-algorithmStudy-binarysearch/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/study/2023-04-25-algorithmStudy-dfsbfs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/study/2023-04-25-algorithmStudy-dijkstra/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/study/2023-04-25-algorithmStudy-dp/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/study/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/study/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/webpack.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/_posts/2023-04-17-algorithm-BOJ_1932.md" beforeDir="false" afterPath="$PROJECT_DIR$/categories/algorithm/_posts/2023-04-17-algorithm-BOJ_1932.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/_posts/2023-04-19-algorithm-BOJ_14502.md" beforeDir="false" afterPath="$PROJECT_DIR$/categories/algorithm/_posts/2023-04-19-algorithm-BOJ_14502.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/_posts/2023-04-20-algorithm-단속카메라.md" beforeDir="false" afterPath="$PROJECT_DIR$/categories/algorithm/_posts/2023-04-20-algorithm-단속카메라.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/_posts/2023-04-28-algorithm-BOJ_15686.md" beforeDir="false" afterPath="$PROJECT_DIR$/categories/algorithm/_posts/2023-04-28-algorithm-BOJ_15686.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/_posts/2023-04-30-algorithm-실패율.md" beforeDir="false" afterPath="$PROJECT_DIR$/categories/algorithm/_posts/2023-04-30-algorithm-실패율.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forms-by-example.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/it/_posts/2023-04-24-it-blockchain.md" beforeDir="false" afterPath="$PROJECT_DIR$/categories/it/_posts/2023-04-24-it-blockchain.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/it/_posts/2023-04-26-it-metaverse.md" beforeDir="false" afterPath="$PROJECT_DIR$/categories/it/_posts/2023-04-26-it-metaverse.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/it/_posts/2023-04-27-it-cloud.md" beforeDir="false" afterPath="$PROJECT_DIR$/categories/it/_posts/2023-04-27-it-cloud.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jekyll-theme-hydejack.gemspec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jekyll/_posts/2023-04-16-jekyll-setting.md" beforeDir="false" afterPath="$PROJECT_DIR$/categories/jekyll/_posts/2023-04-16-jekyll-setting.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jekyll/_posts/2023-04-21-jekyll-theme.md" beforeDir="false" afterPath="$PROJECT_DIR$/categories/jekyll/_posts/2023-04-21-jekyll-theme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/_posts/2023-04-20-algorithmStudy-Greedy.md" beforeDir="false" afterPath="$PROJECT_DIR$/categories/study/_posts/2023-04-20-algorithmStudy-Greedy.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/_posts/2023-04-25-algorithmStudy-backtracking.md" beforeDir="false" afterPath="$PROJECT_DIR$/categories/study/_posts/2023-04-25-algorithmStudy-backtracking.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/_posts/2023-04-25-algorithmStudy-binarysearch.md" beforeDir="false" afterPath="$PROJECT_DIR$/categories/study/_posts/2023-04-25-algorithmStudy-binarysearch.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/_posts/2023-04-25-algorithmStudy-dfsbfs.md" beforeDir="false" afterPath="$PROJECT_DIR$/categories/study/_posts/2023-04-25-algorithmStudy-dfsbfs.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/_posts/2023-04-25-algorithmStudy-dijkstra.md" beforeDir="false" afterPath="$PROJECT_DIR$/categories/study/_posts/2023-04-25-algorithmStudy-dijkstra.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/_posts/2023-04-25-algorithmStudy-dp.md" beforeDir="false" afterPath="$PROJECT_DIR$/categories/study/_posts/2023-04-25-algorithmStudy-dp.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,11 +305,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\cqqud\Documents\GitHub\Hunnibs.github.io\categories" />
       <recent name="C:\Users\cqqud\Documents\GitHub\Hunnibs.github.io\assets\img\study" />
       <recent name="C:\Users\cqqud\Documents\GitHub\Hunnibs.github.io\it\_posts" />
       <recent name="C:\Users\cqqud\Documents\GitHub\Hunnibs.github.io\assets\img\jekyll" />
       <recent name="C:\Users\cqqud\Documents\GitHub\Hunnibs.github.io\blog\_posts" />
-      <recent name="C:\Users\cqqud\Documents\GitHub\Hunnibs.github.io\categories" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
