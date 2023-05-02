@@ -47,7 +47,7 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             Algorithm
+  - title:             BOJ & Programmers
     url:               /algorithm/
   - title:             Algorithm Study
     url:               /study/
