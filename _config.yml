@@ -47,10 +47,10 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             BOJ & Programmers
-    url:               /algorithm/
   - title:             Algorithm Study
     url:               /study/
+  - title:             BOJ & Programmers
+    url:               /algorithm/
   - title:             It
     url:               /it/
   - title:             Jekyll
