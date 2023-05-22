@@ -1,914 +1,1037 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-04-30T21:33:14+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hunnibs</title><subtitle>About my work history &amp; review
-</subtitle><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><entry><title type="html">[Programmers] 실패율</title><link href="http://localhost:4000/categories/algorithm/2023-04-30-algorithm-%EC%8B%A4%ED%8C%A8%EC%9C%A8/" rel="alternate" type="text/html" title="[Programmers] 실패율" /><published>2023-04-30T00:00:00+09:00</published><updated>2023-04-30T21:03:59+09:00</updated><id>http://localhost:4000/categories/algorithm/algorithm-%EC%8B%A4%ED%8C%A8%EC%9C%A8</id><content type="html" xml:base="http://localhost:4000/categories/algorithm/2023-04-30-algorithm-%EC%8B%A4%ED%8C%A8%EC%9C%A8/"><![CDATA[<blockquote>
-  <p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/42889">https://school.programmers.co.kr/learn/courses/30/lessons/42889</a> <br />
-어려운 문제는 아니었지만 Zerodivisionerror를 포스팅 할 겸 정리</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-05-23T01:03:20+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hunnibs</title><subtitle>About my work history &amp; review
+</subtitle><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><entry><title type="html">[Java] 변수</title><link href="http://localhost:4000/categories/java/2023-05-23-java-variable/" rel="alternate" type="text/html" title="[Java] 변수" /><published>2023-05-23T00:00:00+09:00</published><updated>2023-05-23T00:39:36+09:00</updated><id>http://localhost:4000/categories/java/java-variable</id><content type="html" xml:base="http://localhost:4000/categories/java/2023-05-23-java-variable/"><![CDATA[<ul id="markdown-toc">
+  <li><a href="#기본-데이터-타입" id="markdown-toc-기본-데이터-타입">기본 데이터 타입</a></li>
+</ul>
+<hr />
+<h3 id="기본-데이터-타입">기본 데이터 타입</h3>
+<hr />
+
+<p><img src="assets\img\java\DataTypes.png" alt="DataType" /></p>
+
+<p>데이터 타입은 크게 논리형, 문자형, 정수형, 실수형으로 나누어진다.</p>
+
+<p><strong>논리형</strong></p>
+<ul>
+  <li>true, false와 같은 참, 거짓을 판별하는 Data를 저장하는 변수</li>
+  <li>1byte의 크기를 가진다.</li>
+</ul>
+
+<p><strong>문자형</strong></p>
+<ul>
+  <li>딱 하나의 문자만을 저장할 수 있는 변수, 하나 이상의 문자를 저장할 시 오류가 발생한다.</li>
+  <li>2byte의 크기를 가진다.</li>
+</ul>
+
+<p><strong>정수형</strong></p>
+<ul>
+  <li>
+    <p>Data 크기와 저장할 수 있는 값의 범위에 따라 다양하게 나뉜다.</p>
+
+    <ul>
+      <li>byte는 1byte로 가장 작은 크기이며 -128 ~ 127까지만을 저장할 수 있다.</li>
+      <li>short와 char는 2byte의 크기를 가지며 short는 음수와 양수를 반반 씩, char는 양수범위만 저장한다.</li>
+      <li>int는 4byte로 더 넓은 범위를 저장할 수 있다.</li>
+      <li>long은 8byte로 웬만하면 모든 범위의 수를 저장할 수 있다.
+        <ul>
+          <li>단, 변수 선언시 long big = 234141515<em>L</em>로 L을 붙여줘야한다.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>실수형</strong></p>
+<ul>
+  <li>
+    <p>소수점 아래 자리까지 저장할 수 있는 type으로 크기는 두 가지로 나뉜다.</p>
+
+    <ul>
+      <li>float은 4byte</li>
+      <li>double 8byte</li>
+    </ul>
+  </li>
+</ul>
+
+<blockquote>
+  <p>👉 상수</p>
+
+  <p>기본 데이터 타입 앞에 final을 붙여서 불변성을 가진 data 저장공간을 만들 수 있다. <br />
+ex) final int number = 3; 이면, number는 3이라는 값으로 고정된다.</p>
+</blockquote>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="java" /><summary type="html"><![CDATA["변수"]]></summary></entry><entry><title type="html">[SWEA] 1928_Base64 Decoder</title><link href="http://localhost:4000/categories/algorithm/2023-05-19-algorithm-SWEA_1928/" rel="alternate" type="text/html" title="[SWEA] 1928_Base64 Decoder" /><published>2023-05-19T00:00:00+09:00</published><updated>2023-05-19T14:58:50+09:00</updated><id>http://localhost:4000/categories/algorithm/algorithm-SWEA_1928</id><content type="html" xml:base="http://localhost:4000/categories/algorithm/2023-05-19-algorithm-SWEA_1928/"><![CDATA[<blockquote>
+  <p><a href="https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5PR4DKAG0DFAUq">https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5PR4DKAG0DFAUq</a></p>
 </blockquote>
 
-<h3 id="문제-해결방안">문제 해결방안</h3>
+<h3 id="문제-해결-과정">문제 해결 과정</h3>
 <hr />
 <p><strong>문제 해석</strong></p>
 <ul>
-  <li>문제는 스테이지 당 통과 사람과 통과하지 못한 사람의 비율로 실패율을 계산</li>
-  <li>각 스테이지마다 해당 계산을 반복해 실패율을 계산</li>
-  <li>실패율이 높은 스테이지 순으로 정리해서 출력</li>
+  <li>이 부분은 문제에 대한 이해가 가지 않아 <em>최준아_0847231님</em>의 댓글을 참고했다.</li>
+</ul>
+
+<blockquote>
+  <p>문제요약</p>
+  <ol>
+    <li>표1을 보고 입력받은 문자들을 각각 대응하는 숫자로 변경한다.</li>
+    <li>각 숫자들을 6자리 이진수로 표현하고, 이 이진수들을 한 줄로 쭉 이어 붙인다.</li>
+    <li>한 줄로 쭉 이어붙인 이진수들을 8자리씩 끊어서 십진수로 바꾼다.</li>
+    <li>각각의 십진수를 아스키 코드로 변환한다.</li>
+  </ol>
+</blockquote>
+
+<p><strong>접근 방식</strong></p>
+<ul>
+  <li>
+    <p>문제가 어렵다기보다는 아스키 코드를 활용할 수 없다면 풀 수가 없는 문제였다.</p>
+
+    <p><a href="https://hunnibs.github.io/categories/study/2023-05-03-algorithmStudy-ascii/">[기본 지식] Ascii Code</a> 해당 포스트 내용 참조</p>
+  </li>
+</ul>
+
+<h3 id="풀이-코드">풀이 코드</h3>
+<hr />
+
+<p><strong>코드 구성 설명</strong></p>
+<ol>
+  <li>주어진 문자열에서 문자 하나하나 당 아스키코드 변환식을 통해 자연수로 바꿔준다.</li>
+  <li>바꿔준 자연수를 decoding(num) 함수에 넣어 이진수로 변환해준다.</li>
+  <li>전부 이진수로 변환했다면 translate(sum) 함수에 넣어 8자리씩 슬라이스를 이용해 끊어준 뒤, 다시 정수로 변환시켜준다.</li>
+  <li>정수로 변환시켜주고 아스키코드 변환을 이용해 다시 문자열로 변환해준다.</li>
+  <li>3~4 과정을 끝까지 반복하면 완전한 문장이 완성된다.</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+    def decoding(num):
+        decode = ''
+        for i in range(5, -1, -1):
+            if num - (2**i) &gt;= 0:
+                decode += '1'
+                num = num - (2**i)
+            else:
+                decode += '0'
+
+        return decode
+
+    def translate(sum):
+        result = ''
+
+        a = len(sum) // 8
+        for i in range(a):
+            b = i * 8
+            tmp = sum[b:b+8]
+
+            num = 0
+            i = 7
+            for t in tmp:
+                t = int(t)
+                num += t * (2**i)
+                i -= 1
+
+            result += chr(num)
+        return result
+
+    # input
+    T = int(input())
+    for t in range(1, T+1):
+        base = input()
+        sum = ''
+
+    # main
+        for word in base:
+            if 48 &lt;= ord(word) &lt;= 57:
+                num = ord(word)+4
+                sum += decoding(num)
+
+            elif 65 &lt;= ord(word) &lt;= 90:
+                num = ord(word)-65
+                sum += decoding(num)
+
+            elif 97 &lt;= ord(word) &lt;= 122:
+                num = ord(word)-71
+                sum += decoding(num)
+
+            elif word == '+':
+                num = 62
+                sum += decoding(num)
+
+            else:
+                num = 63
+                sum += decoding(num)
+        
+        result = translate(sum)
+        
+        print('#' + str(t), result)
+
+</code></pre></div></div>
+
+<h3 id="문제풀이-후기">문제풀이 후기</h3>
+<hr />
+<p>오랜만에 풀어보는 재밌는 문제였던 것 같다. 알고리즘을 푼다는 생각보다는 암호해석을 하는 듯 하여 재밌었다. 문제 자체의 난이도는 높지 않은 것 같으나 본인도 아스키코드 표를 참조하지 않고는 풀기가 힘들었던 문제였다. 그만큼 아스키 코드에 대해 다 외우고 있지 못한다면 풀기 어려운 문제라고 생각한다.</p>
+
+<p>총 소요시간: 0H 30M</p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="algorithm" /><summary type="html"><![CDATA["구현 문제(Ascii code표 활용)"]]></summary></entry><entry><title type="html">[SWEA] 1244_최대상금</title><link href="http://localhost:4000/categories/algorithm/2023-05-17-algorithm-SWEA_1244/" rel="alternate" type="text/html" title="[SWEA] 1244_최대상금" /><published>2023-05-17T00:00:00+09:00</published><updated>2023-05-18T11:18:43+09:00</updated><id>http://localhost:4000/categories/algorithm/algorithm-SWEA_1244</id><content type="html" xml:base="http://localhost:4000/categories/algorithm/2023-05-17-algorithm-SWEA_1244/"><![CDATA[<blockquote>
+  <p><a href="https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=2&amp;problemLevel=3&amp;contestProbId=AV15Khn6AN0CFAYD&amp;categoryId=AV15Khn6AN0CFAYD&amp;categoryType=CODE&amp;problemTitle=&amp;orderBy=RECOMMEND_COUNT&amp;selectCodeLang=ALL&amp;select-1=3&amp;pageSize=10&amp;pageIndex=1">https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=2&amp;problemLevel=3&amp;contestProbId=AV15Khn6AN0CFAYD&amp;categoryId=AV15Khn6AN0CFAYD&amp;categoryType=CODE&amp;problemTitle=&amp;orderBy=RECOMMEND_COUNT&amp;selectCodeLang=ALL&amp;select-1=3&amp;pageSize=10&amp;pageIndex=1</a></p>
+</blockquote>
+
+<h3 id="문제-해결-과정">문제 해결 과정</h3>
+<hr />
+<p><strong>문제 해석</strong></p>
+<ul>
+  <li>정해진 횟수만큼 두 숫자의 위치를 바꿨을 때(중복 가능), 가장 큰 숫자가 나와야한다.</li>
 </ul>
 
 <p><strong>접근 방식</strong></p>
 <ul>
-  <li>모든 스테이지를 다 깬 사람 수를 먼저 파악</li>
-  <li>가장 뒷 스테이지부터 내려오는 방식을 택했음
-    <ul>
-      <li>성공한 사람들의 수를 누적합으로 구해주기 위함</li>
-    </ul>
+  <li>
+    <p>Greedy 알고리즘 활용(잘못된 접근)</p>
+
+    <p>매 번 최선의 선택을 하면 결과값이 최선일거라는 실수를 저질렀다. greedy 방식의 경우는 최적의 선택들을 계속 한다해서 결과가 최적이라는 보장이 없다는 것을 공부할 때 정리하고도 문제를 풀 때 생각없이 사용했다.</p>
+
+    <p><a href="https://hunnibs.github.io/categories/study/2023-04-20-algorithmStudy-Greedy/">[알고리즘] Greedy 알고리즘</a> 해당 포스트 내용 참조</p>
   </li>
-  <li>스테이지 실패율 리스트를 만들어 스테이지 당 실패율을 저장해줌</li>
-  <li>리스트 내 max 함수를 통해 실패율이 높은 것 부터 answer에 넣어주고 -1로 값을 변경</li>
 </ul>
 
-<p><strong>문제점</strong></p>
 <blockquote>
-  <p>ZeroDivisionError <br />
-어떠한 수를 0으로 나눌 때 발생하는 Error Case</p>
+  <p>조건을 다시 생각</p>
+  <ol>
+    <li>max값을 가장 맨 앞에 오게 하는 것이 최대가 되게 하는 방식</li>
+    <li>max값이 여러개라면? 일일히 탐색해보며 결과가 가장 최대가 될 때를 고르자</li>
+  </ol>
+
+  <p>해당 문제는 최대 6자리 교환횟수 10번 이내이므로 DFS 알고리즘과 브루트포스 알고리즘을 함께 사용해 모든 경우를 다 탐색해봐도 가능할 것이라고 생각했다.</p>
 </blockquote>
 
 <ul>
-  <li>해당 문제에서는 마지막 스테이지에 도달한 사람도 없을 경우 0을 0으로 나누게 되어 발생한다.</li>
-  <li>예외처리를 해줌으로써 간단하게 해결 가능하다.</li>
+  <li>
+    <p>Queue를 활용한 DFS 알고리즘 활용(잘못된 접근)</p>
+
+    <p>max 값을 가장 앞으로 이동시켰을 때 popleft를 통해 제거해준다면 시간복잡도가 더 단순해질 것으로 생각했다. 하지만 여러가지 조건들을 추가하다보니 재귀문에서 돌아올 때 제거했던 값을 다시 넣어주는 것이 너무 복잡했고 계속해서 index error가 발생해서 포기했다.</p>
+  </li>
+  <li>
+    <p>DFS 알고리즘 활용(실제 풀이)</p>
+
+    <p>시간이 오래걸리더라도 가장 깔끔하게 답을 구할 수 있는 방식으로 조건이 까다로운 부분만 해결하면 문제없이 구현할 수 있었다.</p>
+  </li>
 </ul>
 
-<h3 id="전체-코드">전체 코드</h3>
+<h3 id="풀이-코드">풀이 코드</h3>
 <hr />
 
+<ul>
+  <li>코드가 매우 난잡해 최대한 주석을 달아 설명하려함</li>
+</ul>
+
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-    def solution(N, stages):
-        answer = []
-        
-        clear = stages.count(N+1)
-        
-        result = [-1 for _ in range(N+1)]
-        for stage in range(N, 0, -1):
-            fail = stages.count(stage)
-            clear += fail
-            if clear == 0:
-                result[stage] = 0.0
+    # cnt는 남은 반복 횟수, 0 ~ C는 이미 정렬된 숫자를 의미한다. 즉, C는 이제 가장 큰 숫자가 와야하는 index값
+    def sol(cnt, C):
+        # 해당 조건문은 깊이가 최대에 달했을 때를 처리
+        if cnt == 0:
+            tmp = []
+            for i in range(len(answer)):
+                tmp.append(str(answer[i]))
+            for i in range(C, len(nums)):
+                tmp.append(str(nums[i]))
+
+            result.append(''.join(tmp))
+
+            return
+
+        # 해당 루프문은 만약 가장 큰 숫자가 가장 앞에 있는 경우는 변경할 필요가 없어 처리해줌
+        while max(nums) == nums[C]:
+            answer.append(nums[C])
+            nums[C] = -1
+            C += 1
+
+            if C == len(nums):
+                break
+
+        # cnt는 남았는데 이미 최대금액으로 정렬된 경우
+        if C == len(nums):
+            if cnt % 2 == 0 or status:  
+            # 중복되는 숫자가 있다면 그 숫자들만 자리를 바꿔주거나 
+            # or 중복되지않아도 남은 횟수가 짝수면 다시 원래대로 돌려놓을 수 있다.
+                tmp = []
+                for i in range(len(answer)):
+                    tmp.append(str(answer[i]))
+                result.append(''.join(tmp))
+            # 자리를 바꿔줘야하는 경우
             else:
-                result[stage] = fail / clear 
-            
-        for _ in range(N):
-            idx = result.index(max(result))
-            answer.append(idx)
-            result[idx] = -1
-        return answer
+                tmp = answer[-1]
+                answer[-1] = answer[-2]
+                answer[-2] = tmp
+                tmp = []
+                for i in range(len(answer)):
+                    tmp.append(str(answer[i]))
+                result.append(''.join(tmp))
+
+            return
+
+        maxNum = max(nums)
+
+        # DFS 동작 코드
+        for i in range(len(nums)):
+            if nums[i] == maxNum:
+                nums[i] = nums[C]
+                nums[C] = -1
+                answer.append(maxNum)
+                sol(cnt-1, C+1)
+                answer.pop()
+                nums[C] = nums[i]
+                nums[i] = maxNum
+
+    # input
+    T = int(input())
+    for t in range(1, T+1):
+        result = []
+        answer = []
+
+        nums, cnt = input().split(' ')
+
+    # main
+        cnt = int(cnt)
+        nums = list(nums)
+        for i in range(len(nums)):
+            nums[i] = int(nums[i])
+
+        status = 0
+        # 중복 Status
+        if len(set(nums)) != len(nums):
+            status = 1
+
+        sol(cnt, 0)
+
+        ans = 0
+        while not ans:
+            if len(max(result)) != len(nums):
+                result[result.index(max(result))] = ''
+            else:
+                ans = max(result)
+
+        print('#' + str(t), ans)
+
+</code></pre></div></div>
+
+<h3 id="문제풀이-후기">문제풀이 후기</h3>
+<hr />
+<p>체감 상 굉장히 까다로운 문제였다. 조건이 많고 시간과 공간복잡도를 생각했을 때 섣불리 코드를 짜기가 어려워 줄이려고 노력하다가 시간이 오래걸렸던 것 같다. 느꼈던 건 뭔가 구현문제에 가까웠던 것 같다.</p>
+
+<p>총 소요시간: 3H</p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="algorithm" /><summary type="html"><![CDATA["구현 문제"]]></summary></entry><entry><title type="html">[SWEA] 1859_백만 장자 프로젝트</title><link href="http://localhost:4000/categories/algorithm/2023-05-15-algorithm-SWEA_1859/" rel="alternate" type="text/html" title="[SWEA] 1859_백만 장자 프로젝트" /><published>2023-05-15T00:00:00+09:00</published><updated>2023-05-18T11:18:18+09:00</updated><id>http://localhost:4000/categories/algorithm/algorithm-SWEA_1859</id><content type="html" xml:base="http://localhost:4000/categories/algorithm/2023-05-15-algorithm-SWEA_1859/"><![CDATA[<blockquote>
+  <p><a href="https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=2&amp;contestProbId=AV5LrsUaDxcDFAXc&amp;categoryId=AV5LrsUaDxcDFAXc&amp;categoryType=CODE&amp;problemTitle=&amp;orderBy=RECOMMEND_COUNT&amp;selectCodeLang=ALL&amp;select-1=2&amp;pageSize=10&amp;pageIndex=1">https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=2&amp;contestProbId=AV5LrsUaDxcDFAXc&amp;categoryId=AV5LrsUaDxcDFAXc&amp;categoryType=CODE&amp;problemTitle=&amp;orderBy=RECOMMEND_COUNT&amp;selectCodeLang=ALL&amp;select-1=2&amp;pageSize=10&amp;pageIndex=1</a></p>
+</blockquote>
+
+<h3 id="문제-해결-과정">문제 해결 과정</h3>
+<hr />
+<p><strong>문제 해석</strong></p>
+<ul>
+  <li>N일 동안의 매매가가 각각 주어졌을 때 저점에 매수해 고점에 파는 것을 반복해 최대 이익을 구하는 것</li>
+</ul>
+
+<p><strong>접근 방식</strong></p>
+<ol>
+  <li>
+    <p>이중 for문을 이용한 간단한 구현 방식(Time Error)</p>
+
+    <p>1일차부터 N-1일차까지 뒤 전부를 돌며 가장 고점에 판매하는 방식으로 구현만 가능할 뿐 시간복잡도가 O(n^2)으로 복잡한 편이다.</p>
+  </li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+    import sys
+
+    # input
+    input = sys.stdin.readline
+
+    T = int(input())
+
+    for t in range(1, T+1):
+        N = int(input())
+        value = list(map(int, input().split()))
+        result = 0
+        for i in range(N-1):
+            tmp = 0
+            for j in range(i+1, N):
+                if value[i] &lt; value[j]:
+                    tmp = max(tmp, value[j]-value[i])
+            result += tmp
+
+        print('#' + str(t), result)
+
+</code></pre></div></div>
+
+<ol>
+  <li>
+    <p>max값을 이용한 구현 방식</p>
+
+    <ul>
+      <li>매매가 정보가 리스트로 주어졌을 때 가장 고점인 날을 구한다.</li>
+      <li>가장 고점인 날을 high라고 했을 때, 1일차부터 high-1일차까지는 전부 매수하고 high에서 전부 매도한다.</li>
+      <li>큐의 특성을 이용해 1일차부터 순서대로 나아가면서 리스트에서 없애준다.</li>
+      <li>계속해서 하락장인 경우 O(N^2)까지 증가할 수 있으나 O(N)에 보통 해결 가능하다.</li>
+    </ul>
+  </li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+    import sys
+    from collections import deque
+
+    # input
+    input = sys.stdin.readline
+
+    T = int(input())
+
+    for t in range(1, T+1):
+        N = int(input())
+        value = list(map(int, input().split()))
+
+        value = deque(value)
+        answer = 0
+        while value:
+            high = max(value)
+            idx = value.index(high)
+            for _ in range(idx):
+                answer += (high - value.popleft())
+            value.popleft()
+
+        print('#' + str(t), answer)
 
 </code></pre></div></div>
 
 <h3 id="문제-풀이-후기">문제 풀이 후기</h3>
 <hr />
-<p>시간복잡도가 끔찍하지만 실제 코딩테스트 기출문제다 보니 우선 시간 안에 푸는 것에 집중했다.</p>
+<p>시간복잡도 생각 안하고 풀지말고 따져보면서 효율적인 코드 작성하려고 노력하자</p>
 
-<p>총 소요시간 : 0H 20M</p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="algorithm" /><summary type="html"><![CDATA["구현 문제"]]></summary></entry><entry><title type="html">[BOJ] 15686_치킨배달</title><link href="http://localhost:4000/categories/algorithm/2023-04-28-algorithm-BOJ_15686/" rel="alternate" type="text/html" title="[BOJ] 15686_치킨배달" /><published>2023-04-28T00:00:00+09:00</published><updated>2023-04-28T17:43:09+09:00</updated><id>http://localhost:4000/categories/algorithm/algorithm-BOJ_15686</id><content type="html" xml:base="http://localhost:4000/categories/algorithm/2023-04-28-algorithm-BOJ_15686/"><![CDATA[<ul id="markdown-toc">
-  <li><a href="#문제-해결-과정" id="markdown-toc-문제-해결-과정">문제 해결 과정</a></li>
-  <li><a href="#순열permutation과-조합combination" id="markdown-toc-순열permutation과-조합combination">순열(Permutation)과 조합(Combination)</a></li>
-  <li><a href="#전체-코드" id="markdown-toc-전체-코드">전체 코드</a></li>
-  <li><a href="#문제풀이후기" id="markdown-toc-문제풀이후기">문제풀이후기</a></li>
-</ul>
-<hr />
+<p>총 소요시간: 0H 30M</p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="algorithm" /><summary type="html"><![CDATA["구현 문제(큐 활용)"]]></summary></entry><entry><title type="html">[BOJ] 1238_파티</title><link href="http://localhost:4000/categories/algorithm/2023-05-09-algorithm-BOJ_1238/" rel="alternate" type="text/html" title="[BOJ] 1238_파티" /><published>2023-05-09T00:00:00+09:00</published><updated>2023-05-18T11:17:45+09:00</updated><id>http://localhost:4000/categories/algorithm/algorithm-BOJ_1238</id><content type="html" xml:base="http://localhost:4000/categories/algorithm/2023-05-09-algorithm-BOJ_1238/"><![CDATA[<blockquote>
+  <p><a href="https://www.acmicpc.net/problem/1238">https://www.acmicpc.net/problem/1238</a></p>
+</blockquote>
+
 <h3 id="문제-해결-과정">문제 해결 과정</h3>
 <hr />
+<p><strong>문제 해석</strong></p>
 <ul>
-  <li>잘못된 접근 방법</li>
+  <li>각 노드를 출발해 정해진 노드에 방문하고 다시 출발 노드로 되돌아오는 최단경로를 구하는 문제</li>
 </ul>
 
-<p>처음 문제를 봤을 때는 2차원 배열에 장소를 찾는 문제이므로 BFS 혹은 DFS 문제일 것이라고 생각했다. <br />
-집에서 가장 가까운 치킨집으로의 최단거리를 구하고 그렇게 나온 최단거리 치킨집이 M값보다 작다면 그 결과값을 출력하고 아니라면 가장 적게 가는 치킨집을 줄이는 방식으로 구현하려했다.</p>
-
-<p>이 방법은 ‘어떤’ 치킨집에 ‘최단경로’로 도착해야하고 만약 M값보다 치킨집이 더 많다면 가장 적게 방문했다는 정보를 기준으로 치킨집을 그냥 도로인 0으로 줄여야하는 로직을 짜야했다.</p>
-
-<p>결론부터 이야기하자면 문제를 제대로 읽지않아 조건을 제대로 활용하지 못하고 첫 생각부터 잘못했다.</p>
-
+<p><strong>접근 방식</strong></p>
 <ul>
-  <li>실제 풀이 방법</li>
+  <li>최단경로 문제 풀이 방식은 정해져있음</li>
+  <li>최단경로를 구할 때 그래프에 <strong>가중치</strong>가 정해져있다면 BFS가 아닌 Dijkstra 알고리즘을 활용 <br />
+<a href="https://hunnibs.github.io/categories/study/2023-04-25-algorithmStudy-dijkstra/">[알고리즘] 다익스트라 알고리즘</a> 해당 포스트 내용 참조</li>
+  <li>해당 구분만 하면 다익스트라 알고리즘만 구현하면 문제 풀이는 끝</li>
 </ul>
 
-<p>문제에는 조건이 하나 주어진다.</p>
-
-<blockquote>
-  <p>임의의 두 칸 (r1, c1)과 (r2, c2) 사이의 거리는 |r1-r2| + |c1-c2|로 구한다. <br />
-집에서 치킨집까지의 경로 <strong>Dist = abs(r1-r2) + abs(c1-c2)</strong></p>
-</blockquote>
-
-<p>즉, 치킨집과 집의 위치 좌표를 알고있다면 어떤 치킨집이 가장 가까운지 알 수 있고 최단 경로는 (치킨집의 개수 * 집의 개수) 연산 만으로 계산해낼 수 있다.</p>
-
-<p>여전히 문제인 것은 치킨집을 M값보다 작게 만들어줘야한다는 점이었는데 이는 <strong>조합</strong>을 이용해서 해결했다. <br />
-치킨집 위치좌표들을 조합을 이용해 M개 만큼씩 만들어주고 이를 전부 돌아서 가장 최단경로인 경우를 출력해주면 된다.</p>
-
-<h3 id="순열permutation과-조합combination">순열(Permutation)과 조합(Combination)</h3>
-<hr />
+<p>단, 해당 문제는 목표노드에 도달하면 끝나는 것이 아니라 다시 출발 노드로 돌아와야하므로 조건을 추가해야한다.</p>
 <ul>
-  <li>수학에서 조합은 유한 개의 원소에서 주어진 수만큼의 원소들을 고르는 방법이다.</li>
-  <li>
-    <p>수학에서 순열은 유한 개의 원소에서 주어진 수만큼의 원소들을 고르는데 고르는 원소의 순서에 따라 다르게 취급하는 방법이다.</p>
-  </li>
-  <li>파이썬에서는 라이브러리를 제공한다.</li>
+  <li>목표 노드 X를 출발점으로 잡고 해당 노드에서 다른 노드까지의 최단경로를 저장해준 리스트를 만들어준다.</li>
+  <li>목표 노드를 제외한 나머지 노드들부터 목표 노드까지 최단경로를 찾아준다.</li>
+  <li>기존에 구했던 목표노드부터 출발노드까지의 최단경로와 방금 구한 목표노드까지의 최단경로를 더해서 각 노드 별로 저장해준다.</li>
+  <li>각 노드 당 목표노드를 들렀다 복귀하는 최단경로가 저장된 리스트를 얻을 수 있다.</li>
+  <li>이 중 최대값이 해당 문제에서 요구하는 정답이다.</li>
 </ul>
 
-<p><strong>순열</strong></p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-    from itertools import permutations
-    
-    items = [1, 2, 3, 4]
-    perm = list(permutations(items, num)  # num에는 몇 개를 묶을건지를 결정해주는 변수
-    # [(1, 2), (1, 3), (1, 4), (2, 1), (2, 3), (2, 4), (3, 1), (3, 2), (3, 4), (4, 1), (4, 2), (4, 3)]
-
-</code></pre></div></div>
-
-<p><strong>조합</strong></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-    from itertools import combinations
-    
-    items = [1, 2, 3, 4]
-    comb = list(combinations(items, num)  # num에는 몇 개를 묶을건지를 결정해주는 변수
-    # [(1, 2), (1, 3), (1, 4), (2, 3), (2, 4), (3, 4)] 
-
-</code></pre></div></div>
-
-<h3 id="전체-코드">전체 코드</h3>
+<h3 id="풀이-코드">풀이 코드</h3>
 <hr />
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+    import heapq
     import sys
-    from itertools import combinations
     from math import inf
-    
+
+    def dijkstra(i, shortPath):
+        heap = []
+        heapq.heappush(heap, (0, i))
+        while heap:
+            currentW, currentV = heapq.heappop(heap)
+
+            for nextV, w in graph[currentV]:
+                nextW = currentW + w
+                if shortPath[nextV] &gt; nextW:
+                    shortPath[nextV] = nextW
+                    heapq.heappush(heap, (nextW, nextV))
+
+        return shortPath
+
     # input
     input = sys.stdin.readline
-    
-    N, M = map(int, input().split())
-    
-    street = []
-    for _ in range(N):
-        street.append(list(map(int, input().split())))
-    
+
+    N, M, X = map(int, input().split())
+
+    graph = [[] for _ in range(N+1)]
+    for _ in range(M):
+        u, v, w = map(int, input().split())
+        graph[u].append([v, w])
+
     # main
-    chicken = []
-    house = []
-    for x in range(N):
-        for y in range(N):
-            if street[x][y] == 2:
-                chicken.append([x, y])
-            elif street[x][y] == 1:
-                house.append([x, y])
-    
-    min_chickenHouse = list(combinations(chicken, M))
-    result = inf
-    for i in range(len(min_chickenHouse)):
-        total_dist = 0
-        for x in range(len(house)):
-            r1, c1 = house[x]
-            dist = inf
-            for y in range(len(min_chickenHouse[i])):
-                r2, c2 = min_chickenHouse[i][y]
-                dist = min(dist, abs(r1-r2)+abs(c1-c2))
-            total_dist += dist
-            if total_dist &gt; result:
-                break
-    
-        if total_dist &lt; result:
-            result = total_dist
-    
-    print(result)
+    result = [0 for _ in range(N+1)]
+
+    shortPathX = [inf for _ in range(N+1)]
+    shortPathX[X] = 0
+    shortPathX = dijkstra(X, shortPathX)
+
+    for i in range(1, N+1):
+        if i == X:
+            continue
+
+        shortPath = [inf for _ in range(N+1)]
+        shortPath[i] = 0
+        shortPath = dijkstra(i, shortPath)
+        result[i] = shortPath[X] + shortPathX[i]
+
+    print(max(result))
 
 </code></pre></div></div>
 
-<h3 id="문제풀이후기">문제풀이후기</h3>
-<hr />
-<p>격자 문제가 주어지면 자동으로 DFS, BFS 쓸 생각부터 하게된다. 물론 많은 문제가 그렇지만 조금 문제를 잘 읽어보고 확실하게 결정해서 생각하는 것이 필요할 것 같다. <br />
-총 소요시간: 1H 10M</p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="algorithm" /><summary type="html"><![CDATA["조합 활용 문제"]]></summary></entry><entry><title type="html">클라우드</title><link href="http://localhost:4000/categories/it/2023-04-27-it-cloud/" rel="alternate" type="text/html" title="클라우드" /><published>2023-04-27T00:00:00+09:00</published><updated>2023-04-28T14:00:32+09:00</updated><id>http://localhost:4000/categories/it/it-cloud</id><content type="html" xml:base="http://localhost:4000/categories/it/2023-04-27-it-cloud/"><![CDATA[<ul id="markdown-toc">
-  <li><a href="#정의" id="markdown-toc-정의">정의</a></li>
-  <li><a href="#클라우드-4가지-유형" id="markdown-toc-클라우드-4가지-유형">클라우드 4가지 유형</a></li>
-  <li><a href="#클라우드-사용-이점" id="markdown-toc-클라우드-사용-이점">클라우드 사용 이점</a></li>
-  <li><a href="#클라우드-배포-유형" id="markdown-toc-클라우드-배포-유형">클라우드 배포 유형</a></li>
-  <li><a href="#참조" id="markdown-toc-참조">참조</a></li>
-</ul>
-<hr />
-<h3 id="정의">정의</h3>
-<hr />
-<p><strong>클라우드</strong>는 인터넷을 통해 엑세스할 수 있는 서버와 이러한 서버에서 작동하는 소프트웨어와 데이터베이스를 의미한다. <br />
-클라우드 서버는 전 세계 데이터 센터에 위치하고 있고 자체 서버에서 소프트웨어를 실행시키는 것이 아니라 클라우드 내에서 제공해주기 때문에 사용자와 기업은 어디에서든 다양한 장치를 이용하여 파일과 애플리케이션에 접근할 수 있습니다.</p>
-
-<h3 id="클라우드-4가지-유형">클라우드 4가지 유형</h3>
-<hr />
-<p>클라우드의 서비스 모델은 사용 목적에 따라 크게 4가지로 나누어집니다.</p>
-
-<p align="center"><img src="/assets/img/it/cloudService.png" width="500px" height="300px" title="px(픽셀) 크기 설정" alt="cloudService" /></p>
-
-<p>우선 서비스형에 대해 이해를 할 필요가 있다.</p>
-<blockquote>
-  <p>서비스형(as-a-Service)이란?      <br />
-클라우드 서비스 모델에 서비스형이 붙는 이유는 클라우드가 기본적으로 고객을 대신해서 클라우드 컴퓨팅 서비스를 관리하기 때문이다.
-그래서 고객은 서버 관리보다는 다른 더 중요한 업무에 중요할 수 있는 이점이 있다.</p>
-</blockquote>
-
-<p>다음은 클라우드 서비스의 4가지 유형이다.</p>
-<ol>
-  <li>
-    <p>IaaS(Infrastructure-as-a-Service)_서비스형 인프라: <br />
-이 모델은 클라우드로부터 필요한 서버와 저장소를 제공한다. 기업은 제공받은 클라우드 인프라를 활용해 자체 응용 프로그램을 구축할 수 있게 된다. <br />
-쉽게 정리하면 집을 짓기 위해 땅을 빌렸지만 땅 이외의 모든 것은 고객이 해결하는 것이다.</p>
-  </li>
-  <li>
-    <p>Paas(Platform-as-a-Service)_서비스형 플랫폼: <br />
-이 모델은 클라우드로부터 필요한 서버와 저장소를 빌리고 개발에 필요한 모든 것들을 제공한다. Iaas보다는 더 간편하게 개발을 시작하고 자체 응용프로그램을 구출할 수 있다.
-이 모델은 집을 짓기 위해 땅만 빌리는 Iaas 방식에 추가로 집을 짓기 위한 도구까지 빌리는 것이다. <br />
-ex) Heroku, Microsoft Azure</p>
-  </li>
-  <li>
-    <p>Saas(Software-as-a-Service)_서비스형 소프트웨어: <br />
-이 모델은 클라우드가 모든 것을 제공하는 것이다. 클라우드 서비스 형태 중 가장 완성된 형태의 클라우드 서비스라고 볼 수 있다. <br />
-간단하게 지금까지 뭔가를 빌려서 직접 집을 만들었다면 이 방법은 완성된 집 자체를 빌리는 방식이라고 얘기할 수 있다. <br />
-ex) 마이크로소프트365, 드롭박스, 슬랙 등</p>
-  </li>
-  <li>
-    <p>Faas(Function-as-a-Service)_서비스로서의 기능: <br />
-이 모델은 나온지 얼마 되지 않은 이벤트 기반 실행 모델로서, 결론부터 말하면 집 전체를 빌리는 것이 아니라 목적에 맞게 일부만 빌리는 것이다. <br />
-이는 더 낮은 비용으로 간편하게 개발을 할 수 있다는 장점이 있다.</p>
-  </li>
-</ol>
-
-<h3 id="클라우드-사용-이점">클라우드 사용 이점</h3>
-<hr />
 <ul>
-  <li>
-    <p>개발 속도 향상: <br />
-가장 중요한 부분 중 하나로 클라우드 컴퓨팅을 사용하면 개발자들이 리소스를 사용하기 위해 걸리는 시간이 단축된다.</p>
-  </li>
-  <li>
-    <p>데이터 센터 운영 및 유지 관리 비용 절감: <br />
-서버를 따로 관리할 필요 없이 클라우드 서비스에 맡기면 되므로 온전히 사용자만의 소프트웨어를 만들고 배포하는데 집중할 수 있다.</p>
-  </li>
-  <li>
-    <p>용량 추정 불필요: <br />
-필요한 인프라 용량을 추정할 필요없이 개발단계에 따라 확장하거나 축소하는 것이 가능하다.</p>
-  </li>
-  <li>
-    <p>배포의 용이함:
-클라우드 데이터 센터는 전세계 어디에나 있기 때문에 세계 곳곳에 손쉽게 배포가 가능하다.</p>
-  </li>
+  <li>자세한 다익스트라 구현 방식은 남겨둔 포스트를 참조할 것</li>
 </ul>
 
-<h3 id="클라우드-배포-유형">클라우드 배포 유형</h3>
+<h3 id="문제-풀이-후기">문제 풀이 후기</h3>
 <hr />
-<ul>
-  <li>
-    <p>퍼블릭 클라우드: <br />
-클라우드 컴퓨팅 배포의 가장 일반적인 유형이다. 클라우드 리소스를 클라우드 서비스 공급자가 소유하고 운영하며 인터넷을 통해 제공한다. <br />
-퍼블릭 클라우드는 다수의 조직에서 공유해서 여러 회사에서 클라우드 내 서버 공간을 임대하는 방식이다.</p>
-  </li>
-  <li>
-    <p>프라이빗 클라우드: <br />
-단일 조직에서 독점적으로 사용하는 클라우드이다. 프라이빗 클라우드는 조직의 현장 데이터 센터에 있거나 서비스 공급자가 호스팅하는 방식을 활용한다.<br />
-서비스와 인프라가 항상 프라이빗 네트워크에서 유지 관리되어 전용으로 사용할 수 있어 보안이 철저하다.</p>
-  </li>
-  <li>
-    <p>하이브리드 클라우드: <br />
-조직은 프라이빗 클라우드 내 데이터 센터에 매우 중요한 데이터를 유지하면서 퍼블릭 클라우드로 특정 워크로드를 실행하여 퍼블릭 클라우드에서 제공하는 유연성을 가지고 있다.</p>
-  </li>
-</ul>
+<p>아직은 Dijkstra 알고리즘 사용이 익숙하지 않고 Heap을 자유롭게 사용하지 못해 포스트 내용을 참조해서 문제를 풀어야했다. 그래도 문제를 보고 어떤 알고리즘을 써야할지 빠르게 파악했다는 점에 공부가 되고있다는 생각이 들었던 문제였던 것 같다.</p>
 
-<h3 id="참조">참조</h3>
-<hr />
-<p><a href="https://docs.aws.amazon.com/ko_kr/whitepapers/latest/aws-overview/what-is-cloud-computing.html">AWS</a> <br />
-<a href="https://www.redhat.com/ko/topics/cloud-computing/what-are-cloud-services#:~:text=%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C%EB%8A%94%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EC%A0%84%EC%B2%B4%EC%97%90%EC%84%9C,%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C%20%EC%BB%B4%ED%93%A8%ED%8C%85%EC%9D%84%20%EC%A7%80%EC%9B%90%ED%95%A9%EB%8B%88%EB%8B%A4.">Red Hat</a> <br />
-<a href="https://www.cloudflare.com/ko-kr/learning/cloud/what-is-the-cloud/">Cloudflare</a> <br />
-<a href="https://azure.microsoft.com/ko-kr/resources/cloud-computing-dictionary/what-are-private-public-hybrid-clouds/#deployment-options">Microsoft Azure</a></p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="it" /><summary type="html"><![CDATA["클라우드 기술 관련"]]></summary></entry><entry><title type="html">메타버스</title><link href="http://localhost:4000/categories/it/2023-04-26-it-metaverse/" rel="alternate" type="text/html" title="메타버스" /><published>2023-04-26T00:00:00+09:00</published><updated>2023-04-27T10:31:47+09:00</updated><id>http://localhost:4000/categories/it/it-metaverse</id><content type="html" xml:base="http://localhost:4000/categories/it/2023-04-26-it-metaverse/"><![CDATA[<ul id="markdown-toc">
-  <li><a href="#정의" id="markdown-toc-정의">정의</a></li>
-  <li><a href="#메타버스의-4가지-유형" id="markdown-toc-메타버스의-4가지-유형">메타버스의 4가지 유형</a></li>
-  <li><a href="#특징" id="markdown-toc-특징">특징</a></li>
-  <li><a href="#메타버스가-활성화되기-위한-방안" id="markdown-toc-메타버스가-활성화되기-위한-방안">메타버스가 활성화되기 위한 방안</a></li>
-  <li><a href="#참조" id="markdown-toc-참조">참조</a></li>
-</ul>
-<hr />
-<h3 id="정의">정의</h3>
-<hr />
-<p>메타버스(metaverse)는 ‘웹상에서 아바타를 이용하여 사회, 경제, 문화적 활동을 하는 활동처럼 가상 세계와 현실 세계의 경계가 허물어지는 것을 이르는 말’이다.</p>
-
-<h3 id="메타버스의-4가지-유형">메타버스의 4가지 유형</h3>
-<hr />
-<p>메타버스는 간단하게는 가상세계를 뜻하는 개념이지만 4개로 분류하여 훨씬 더 확장적인 의미로 사용하고 있다.</p>
-
-<p align="center"><img src="/assets/img/it/metaverse.jpg" width="400px" height="400px" title="px(픽셀) 크기 설정" alt="metaverse" /></p>
-
-<ol>
-  <li>
-    <dl>
-      <dt>AR(AUGMENTED REALITY)</dt>
-      <dd>증강현실을 뜻하며 현실의 이미지나 배경에 3차원 가상 이미지를 겹쳐서 하나의 영상으로 보여주는 기술 <br />
-ex) 포켓몬고, Google SKY Map</dd>
-    </dl>
-  </li>
-  <li>
-    <dl>
-      <dt>LIFELOGGING</dt>
-      <dd>개인의 일상을 인터넷 또는 스마트 기기에 기록하는 것으로, ‘일상의 디지털화’라고 할 수 있다. <br />
-ex) 스마트밴드, SNS</dd>
-    </dl>
-  </li>
-  <li>
-    <dl>
-      <dt>MIRROR WORLD</dt>
-      <dd>AR과 달리 현실세계를 인터넷에 3차원 CG로 재현하여 시뮬레이션 등을 통한 의사결정 증강지원 시스템이다.  <br />
-ex) 구글어스</dd>
-    </dl>
-  </li>
-  <li>
-    <dl>
-      <dt>VR(VIRTUAL WORLDS)</dt>
-      <dd>흔히 아는 가상현실을 뜻하며 컴퓨터 등을 사용한 인공적인 기술로 만들어낸 실제와 유사하지만 실제가 아닌 어떤 특정한 환경이나 상황 혹은 그 기술 자체를 의미한다. <br />
-ex) 제페토, 로블록스</dd>
-    </dl>
-  </li>
-</ol>
-
-<h3 id="특징">특징</h3>
-<hr />
-<p><strong>- NFT의 활용이 가능하다!</strong></p>
-<ul>
-  <li>디지털 아트의 소유권을 공식화하는 방법으로 시작</li>
-  <li>현재는 디지털 부동산 등 다른 유형의 디지털 자산마저 NFT로 만들어졌다</li>
-  <li>더 샌드박스, 제페토, 로블록스 등 대부분의 메타버스 플랫폼에서 이를 도입해 일부 디지털 자산을 NFT로 만들었다</li>
-</ul>
-
-<blockquote>
-  <p>NFT(non-fungible token)란? <br />
-대체 불가능한 토큰을 뜻한다.
-블록체인에 저장된 데이터 단위로 흔히 아는 암호화폐와는 다르게 고유하면서 상호 교환할 수 없는 특징을 가진다. <br />
-쉽게 말하면 암호화폐마다 고유한 번호가 매겨져있기 때문에 각각이 다른 가치를 가지고 대체가 될 수 없다는 것을 뜻한다.
-그래서 NFT는 한 번 발행되면 제 3자가 이를 복제하거나 위조할 수가 없고 소유권과 거래내역이 명시되어 ‘디지털 소유 증명서’처럼 활용이 가능하다.</p>
-</blockquote>
-
-<p><img src="/assets/img/it/sandbox.png" alt="sandbox" /></p>
-
-<ul>
-  <li>더 샌드박스 NFT를 예시로 들었을 때 모든 토큰은 각자 고유의 가치와 활용성을 지니고 상호작용 할 수 있도록 디자인되었다.</li>
-  <li>이는 독창성을 입증할 수 있기 때문에 가치나 유일성을 입증할 수 있는 좋은 방법으로 보인다.
-<br /></li>
-</ul>
-
-<p><strong>- 가상세계에서의 경제활동이 가능하다!</strong></p>
-<ul>
-  <li>메타버스는 NFT를 활용하는 것 이외에도 경제활동이 가능하다.</li>
-  <li>NFT가 자신의 디지털 자산이라면 그것을 사고 팔기 위한 경제활동이 가능하다는 뜻</li>
-  <li>경제활동을 하는 가장 흥미있는 메타버스는 ‘어스2’
-    <ul>
-      <li>어스2는 지구의 땅을 그대로 본 떠 메타버스로 구현</li>
-      <li>가상 부동산 플랫폼으로 원하는 지역의 땅을 자유롭게 사고 팔 수가 있다.</li>
-    </ul>
-  </li>
-  <li>이외에도 제페토, 로블록스도 아이템 제작자가 판매할 수 있는 거래를 지원한다.</li>
-</ul>
-
-<h3 id="메타버스가-활성화되기-위한-방안">메타버스가 활성화되기 위한 방안</h3>
-<hr />
-<ol>
-  <li>
-    <p>기술의 발전이 필요하다. <br />
-가상현실 기반 영화 레디플레이어원처럼 메타버스 상에서 더 많은 경험을 할 수 있다면 사람들의 흥미를 돋울 수 있을 것이다.</p>
-  </li>
-  <li>
-    <p>안전성이 중요하다. <br />
-예를 들어, 최근 인기를 끌었던 본디라는 플랫폼은 개인정보유출 문제로 인해 단기간에 이용자들이 급감하는 일을 겪었다. 
-따라서 메타버스를 활성화시키기 위해서는 보안 문제를 확실히 해결해야할 필요가 있다.</p>
-  </li>
-  <li>
-    <p>주 타켓층을 늘려야한다. <br />
-메타버스의 주요 타켓은 현재 한정적이다. 예를 들어, 디자이너, 인플루언서, 10대들로 그들을 제외한 나머지 사람들의 참여가 저조한 편이다.
-이를 해결하기 위해서는 메타버스 내에서 그들의 커리어를 쌓거나 혹은 흥미를 돋울 수 있는 다양한 경험을 제공할 필요가 있어보인다.</p>
-  </li>
-</ol>
-
-<h3 id="참조">참조</h3>
-<hr />
-<p>미래수업: 메가트렌드 메타버스 <br />
-<a href="https://spri.kr/posts/view/23297?code=industry_trend">SPRI_소프트웨어정책연구소 포스트</a> <br />
-<a href="https://m.blog.naver.com/PostList.naver?blogId=thesandboxkorea">더 샌드박스</a></p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="it" /><summary type="html"><![CDATA["메타버스 기술 관련"]]></summary></entry><entry><title type="html">[알고리즘] D.P 알고리즘</title><link href="http://localhost:4000/categories/study/2023-04-25-algorithmStudy-dp/" rel="alternate" type="text/html" title="[알고리즘] D.P 알고리즘" /><published>2023-04-25T00:00:00+09:00</published><updated>2023-04-25T20:39:43+09:00</updated><id>http://localhost:4000/categories/study/algorithmStudy-dp</id><content type="html" xml:base="http://localhost:4000/categories/study/2023-04-25-algorithmStudy-dp/"><![CDATA[<ul id="markdown-toc">
-  <li><a href="#dpdynamic-programming이란" id="markdown-toc-dpdynamic-programming이란">DP(Dynamic Programming)이란?</a></li>
-  <li><a href="#구현-방법" id="markdown-toc-구현-방법">구현 방법</a></li>
-  <li><a href="#주의할-점" id="markdown-toc-주의할-점">주의할 점</a></li>
-  <li><a href="#dp-활용방식" id="markdown-toc-dp-활용방식">DP 활용방식</a></li>
-</ul>
-<hr />
-<h3 id="dpdynamic-programming이란">DP(Dynamic Programming)이란?</h3>
-<hr />
-<p>문제를 작은 문제로 (중복될 수도 있지만) 분할하여 분할된 문제의 해답을 기록해 놓은 후 더 큰 문제의 해답을 계산할 때 재사용하는 방법을 의미한다.</p>
-
-<h3 id="구현-방법">구현 방법</h3>
-<hr />
-<p>DP 알고리즘의 4단계 분류</p>
-<ol>
-  <li>해답의 구조를 파악해 어떻게 부문제로 나눌 지 결정</li>
-  <li>부문제의 해답을 어떻게 조합해 더 큰 문제의 해답을 만들 수 있는지 식을 마련</li>
-  <li>작은 문제에서 큰 문제로 적당한 순서에 따라 해답을 계산하여 테이블에 저장하고 재사용하여 답을 계산</li>
-  <li>위의 단계들이 원래 문제의 답을 항상 출력함을 증명하고 답을 리턴</li>
-</ol>
-
-<h3 id="주의할-점">주의할 점</h3>
-<hr />
-<ul>
-  <li>DP Table을 만들 때 list index error에 대한 고려 항상 해줄 것</li>
-</ul>
-
-<h3 id="dp-활용방식">DP 활용방식</h3>
-<hr />
-<p><strong>Bottom-up 방식</strong></p>
-<ul>
-  <li>우리말로 ‘상향식’</li>
-  <li>가장 작은 문제들부터 답을 찾아 가면서 마지막에는 전체 문제의 답을 구하는 방식</li>
-  <li>반복문으로 구현하므로 시간과 메모리의 사용량이 상대적으로 적음</li>
-</ul>
-
-<p><strong>Top-down 방식</strong></p>
-<ul>
-  <li>우리말로 ‘하향식’</li>
-  <li>큰 문제를 해결하기 위해 작은 문제를 호출하는 방식</li>
-  <li>재귀호출을 통해 구한다. 함수 호출의 횟수를 줄이기 위해 메모이제이션 기법을 활용</li>
-</ul>
-
-<blockquote>
-  <p>메모이제이션 기법 <br />
--&gt; 컴퓨터 프로그램이 동일한 계산을 반복할 때, 이전에 계산한 값을 메모리에 저장해놓는 방법
-DP의 핵심이 되는 기술이다.</p>
-</blockquote>
-
-<p><strong>누적 합 활용 방식</strong></p>
-<ul>
-  <li>배열이 있을 때 해당 배열까지의 총 합을 따로 배열에 저장하는 방식</li>
-  <li>시간복잡도 상 큰 이득을 가져다주는 경우가 많다</li>
-</ul>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="study" /><summary type="html"><![CDATA["내용 정리"]]></summary></entry><entry><title type="html">[알고리즘] Dijkstra 알고리즘</title><link href="http://localhost:4000/categories/study/2023-04-25-algorithmStudy-dijkstra/" rel="alternate" type="text/html" title="[알고리즘] Dijkstra 알고리즘" /><published>2023-04-25T00:00:00+09:00</published><updated>2023-04-25T20:09:38+09:00</updated><id>http://localhost:4000/categories/study/algorithmStudy-dijkstra</id><content type="html" xml:base="http://localhost:4000/categories/study/2023-04-25-algorithmStudy-dijkstra/"><![CDATA[<ul id="markdown-toc">
-  <li><a href="#다익스트라-알고리즘이란" id="markdown-toc-다익스트라-알고리즘이란">다익스트라 알고리즘이란?</a></li>
+<p>총 소요시간: 0H 45M</p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="algorithm" /><summary type="html"><![CDATA["다익스트라 활용 문제"]]></summary></entry><entry><title type="html">[알고리즘] Floyd-Warshall 알고리즘</title><link href="http://localhost:4000/categories/study/2023-05-09-algorithmStudy-Floyd/" rel="alternate" type="text/html" title="[알고리즘] Floyd-Warshall 알고리즘" /><published>2023-05-09T00:00:00+09:00</published><updated>2023-05-10T16:02:28+09:00</updated><id>http://localhost:4000/categories/study/algorithmStudy-Floyd</id><content type="html" xml:base="http://localhost:4000/categories/study/2023-05-09-algorithmStudy-Floyd/"><![CDATA[<ul id="markdown-toc">
+  <li><a href="#플로이드-워셜-알고리즘이란" id="markdown-toc-플로이드-워셜-알고리즘이란">플로이드-워셜 알고리즘이란?</a></li>
   <li><a href="#구현-방법" id="markdown-toc-구현-방법">구현 방법</a></li>
   <li><a href="#구현-코드" id="markdown-toc-구현-코드">구현 코드</a></li>
   <li><a href="#참조" id="markdown-toc-참조">참조</a></li>
 </ul>
 <hr />
-<h3 id="다익스트라-알고리즘이란">다익스트라 알고리즘이란?</h3>
+<h3 id="플로이드-워셜-알고리즘이란">플로이드-워셜 알고리즘이란?</h3>
 <hr />
-<p>다익스트라 알고리즘은 그래프에서 두 정점 간의 최단 경로를 찾는 알고리즘이다. 간선에 가중치가 주어진 방향 그래프를 대상으로만 사용할 수 있다는 특징이 있다.</p>
+<p>플로이드-워셜 알고리즘(Floyd-Warshall Algorithm)은 변의 가중치가 음이거나 양인 (음수 사이클은 없는) 가중 그래프에서 최단 경로들을 찾는 알고리즘이다. All-to-all shortest path라고도 표현하며 해당 알고리즘은 DP 알고리즘을 활용해야한다. <br />
+목적은 모든 노드 간의 최단 경로의 길이를 찾는 것이다.</p>
 
-<p><img src="/assets/img/study/graph.png" alt="graph" /></p>
+<p><strong>Wikipedia 예시</strong> <br />
+<img src="\assets\img\study\Floyd_Wiki.png" alt="graph" /></p>
 
-<p>이 알고리즘은 최단 경로를 구하는 과정에서 최단 경로 트리가 만들어지는데 최단 경로 트리는 출발점으로 정한 정점에서 각 정점까지의 최단 경로를 저장해 놓은 트리를 뜻한다.</p>
-
-<p>예를 들어, 위 그림에서 a에서 i까지의 최단경로를 구한다면 다익스트라 알고리즘은 a에서 정점 g 혹은 h까지의 최단거리를 구한 후 다시 i까지를 계산한다. <br />
-식으로 정리하면, 시작 정점에서 x 정점까지의 최단경로를 dist[x], 간선에 가중치를 x-&gt;y라 표현</p>
-
-<blockquote>
-  <p>dist[i] = min(dist[g] + g-&gt;i, dist[h] + h-&gt;i)</p>
-</blockquote>
-
-<p>즉, i까지의 최단경로를 구하려면 저 과정을 거쳐 각 정점마다 최단경로를 구하며 찾아간다. 그래서 우리는 i까지 가는 경로 내에 있는 정점들의 최단경로를 구할 수 있는 것이다.</p>
+<p>아래는 dist 리스트의 변화를 K 값에 따라 보여준다.(K값은 반드시 지나야하는 경로를 뜻함) <br />
+<img src="\assets\img\study\Floyd_WikiG.png" alt="table" /></p>
 
 <h3 id="구현-방법">구현 방법</h3>
 <hr />
 <ul>
-  <li>다익스트라 알고리즘은 우선 <strong>가중치가 주어진 방향 그래프</strong>에만 사용이 가능</li>
-  <li>우선순위 큐를 이용해 최소가 되는 것부터 지워나가는 것이 중요하다.</li>
+  <li>플로이드-워셜 알고리즘도 다익스트라 알고리즘과 같이 <strong>가중치가 주어진 방향 그래프</strong>에만 사용이 가능</li>
   <li>
-    <p>만약 정점에 연결된 다른 모든 정점들의 가중치를 비교해나간다면 벨만-포드 알고리즘으로 시간복잡도가 O(N^3)까지 증가한다.</p>
+    <p>시간 복잡도는 복잡하지만 모든 정점들 사이의 최단경로를 구하는 점과 음수 가중치에 대해서도(음수 사이클은 존재하지 않아야한다.) 처리할 수가 있다.</p>
   </li>
   <li>단계별 정리
     <ol>
-      <li>출발 정점과 도착 정점을 정한다.</li>
-      <li>정점과 정점 사이의 연결관계와 가중치를 저장해준다.</li>
-      <li>우선순위 큐를 활용한다.</li>
-      <li>우선순위 큐에 현재 정점에 연결된 정점의 정보와 가중치를 넣어준다.</li>
-      <li>가중치가 적은 것부터 꺼내서 비교하고 업데이트 시켜준다.</li>
-      <li>위 4,5번 과정을 반복한다.</li>
+      <li>경유하는 노드가 없을 때 최단거리를 저장해준다.(이 때, 서로 연결된 간선이 없는 노드 간은 inf로 저장한다)</li>
+      <li>경유하는 노드를 1부터 n번 노드까지 정해준다.</li>
+      <li>각 노드 별로 경유하는 노드를 지나 다른 노드로 갈 때의 거리와 원래 다른 노드로 갈 때의 거리를 비교한다.</li>
+      <li>만약, 경유해서 가는 거리가 더 짧다면 최단거리를 업데이트 한다.</li>
     </ol>
   </li>
 </ul>
 
 <h3 id="구현-코드">구현 코드</h3>
 <hr />
-<p><a href="https://www.acmicpc.net/problem/1753">백준 1753 최단경로 문제</a></p>
+<p><a href="https://www.acmicpc.net/problem/11404">백준 11404 플로이드 문제</a></p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-    import math
     import sys
-    import heapq
-    
-    def dijkstra():
-        heap = []
-        heapq.heappush(heap, (0, K))
-        while heap:
-            currentWeight, currentVertex = heapq.heappop(heap)
-    
-            for nextVertex, weight in graph[currentVertex]:
-                nextWeight = currentWeight + weight
-                # 이미 해당 정점까지 계산된 경로가 지금 계산하려는 값보다 작다면 이미 최단경로이다
-                if shortPath[nextVertex-1] &gt; nextWeight:  
-                    shortPath[nextVertex-1] = nextWeight
-                    heapq.heappush(heap, (nextWeight, nextVertex))
-    
+    from math import inf
+
     # input
     input = sys.stdin.readline
-    inf = math.inf
-    
-    V, E = map(int, input().split())
-    K = int(input())
-    
-    graph = [[] for _ in range(V+1)]
-    for _ in range(E):
-        u, v, w = map(int, input().split())
-        graph[u].append([v, w])
-    
+
+    n = int(input())
+    m = int(input())
+
+    graph = [[inf for _ in range(n)] for _ in range(n)]
+    for _ in range(m):
+        a, b, c = map(int, input().split())
+        graph[a-1][b-1] = min(graph[a-1][b-1], c)
+
     # main
-    shortPath = [inf for _ in range(V)]
-    shortPath[K-1] = 0  # 시작점은 0
-    dijkstra()
+    for K in range(n):
+        for i in range(n):
+            for j in range(n):
+                graph[i][j] = min(graph[i][j], graph[i][K] + graph[K][j])
+
+    for i in range(n):
+        graph[i][i] = 0
+
+    for i in range(n):
+        for j in range(n):
+            if graph[i][j] == inf:
+                print(0, end=' ')
+            else:
+                print(graph[i][j], end=' ')
+        print()
 
 </code></pre></div></div>
 
 <ul>
-  <li>그래프 구현 시 2차원 배열을 생성해 가중치를 저장해주는 방식도 있으나 메모리가 많이 소모된다는 단점이 있다.</li>
+  <li>실제 Floyd-Warshall 코드는 # main 아래 5줄이 전부이다.</li>
+  <li>해당 문제에서는 시작도시와 도착도시가 같은 경우는 없어야하므로 0으로 초기화해줬다.</li>
 </ul>
 
 <h3 id="참조">참조</h3>
 <hr />
-<p><a href="https://www.youtube.com/watch?v=0NrlN88D9Fs&amp;list=PLsMufJgu5932XYejsOwcUDJ2F75f56nrl&amp;index=49&amp;pp=iAQB">신찬수 교수님 유튜브 강의영상</a> <br />
-<a href="https://m.blog.naver.com/ndb796/221234424646">안경잡이개발자 님 네이버 블로그</a></p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="study" /><summary type="html"><![CDATA["내용 정리"]]></summary></entry><entry><title type="html">[알고리즘] BFS &amp;amp; DFS 알고리즘</title><link href="http://localhost:4000/categories/study/2023-04-25-algorithmStudy-dfsbfs/" rel="alternate" type="text/html" title="[알고리즘] BFS &amp;amp; DFS 알고리즘" /><published>2023-04-25T00:00:00+09:00</published><updated>2023-04-25T20:56:11+09:00</updated><id>http://localhost:4000/categories/study/algorithmStudy-dfsbfs</id><content type="html" xml:base="http://localhost:4000/categories/study/2023-04-25-algorithmStudy-dfsbfs/"><![CDATA[<ul id="markdown-toc">
-  <li><a href="#bfsbreadth-first-search" id="markdown-toc-bfsbreadth-first-search">BFS(Breadth-first search)</a>    <ul>
-      <li><a href="#너비-우선-탐색이란" id="markdown-toc-너비-우선-탐색이란">너비 우선 탐색이란?</a></li>
-      <li><a href="#구현-방법" id="markdown-toc-구현-방법">구현 방법</a></li>
-      <li><a href="#구현-코드" id="markdown-toc-구현-코드">구현 코드</a></li>
-    </ul>
-  </li>
-  <li><a href="#dfsdepth_first-search" id="markdown-toc-dfsdepth_first-search">DFS(Depth_First Search)</a>    <ul>
-      <li><a href="#깊이-우선-탐색이란" id="markdown-toc-깊이-우선-탐색이란">깊이 우선 탐색이란?</a></li>
-      <li><a href="#구현-방법-1" id="markdown-toc-구현-방법-1">구현 방법</a></li>
-      <li><a href="#구현-코드-1" id="markdown-toc-구현-코드-1">구현 코드</a></li>
-    </ul>
-  </li>
-</ul>
-<hr />
-<h2 id="bfsbreadth-first-search">BFS(Breadth-first search)</h2>
-
-<h3 id="너비-우선-탐색이란">너비 우선 탐색이란?</h3>
-<hr />
-<p>시작 정점을 방문한 후 시작 정점에 인접한 모든 정점들을 우선 방문하는 방법이다. 더 이상 방문하지 않은 정점이 없을 때까지 방문하지 않은 모든 정점들에 대해서 BFS 방식을 적용한다.</p>
-
-<p>List로 구현할 경우 큐  방식을 활용해야만 레벨 순서대로 접근이 가능하다.</p>
-
-<ul>
-  <li>장점
-    <ul>
-      <li>출발 노드에서 목표 노드까지 최단 길이 경로를 보장한다.</li>
-    </ul>
-  </li>
-  <li>단점
-    <ul>
-      <li>경로가 매우 길 경우에는 탐색 가지가 급격히 증가함에 따라 많은 기억 공간을 필요로 하게 된다.</li>
-    </ul>
-  </li>
-</ul>
-
-<h3 id="구현-방법">구현 방법</h3>
-<hr />
-<p>BFS의 경우 queue를 이용해 구현하게 된다.</p>
-
-<ol>
-  <li>queue와 방문기록을 남겨줄 visited를 함께 만들어준다.</li>
-  <li>queue에는 우선 루트 노드만을 저장한다.</li>
-  <li>루프문을 돌면서 큐에서 노드를 꺼내 해당 노드와 연결된 노드들을 검사한다.</li>
-  <li>만약 연결된 노드가 방문하지 않은 노드라면 결과에 추가해주고 queue에 연결된 노드를 넣어주는 것을 반복한다.</li>
-  <li>위 3,4번 과정을 반복하면 너비 우선 탐색을 진행한다.</li>
-</ol>
-
-<h3 id="구현-코드">구현 코드</h3>
-<hr />
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-    from collections import deque
-    
-    def BFS():
-        while queue:
-            node = queue.popleft()
-            result2.append(node)
-            for i in range(N+1):
-                if arr[node][i] == 1 and visited2[i] == 0:
-                    queue.append(i)
-                    visited2[i] = 1
-    
-    # input
-    N, M, V = map(int, input().split())
-    
-    arr = list([0] * (N+1) for _ in range(N+1))
-    visited2 = [0] * (N+1)
-    for _ in range(M):
-        a, b = map(int, input().split())
-        arr[a][b] = 1
-        arr[b][a] = 1
-    
-    result2 = []
-    visited2[V] = 1
-    queue = deque()
-    queue.append(V)
-    BFS()
-
-</code></pre></div></div>
-
-<h2 id="dfsdepth_first-search">DFS(Depth_First Search)</h2>
-
-<h3 id="깊이-우선-탐색이란">깊이 우선 탐색이란?</h3>
-<hr />
-<p>탐색 트리에서 최근에 첨가된 노드를 선택하고, 이 노드에 적용 가능한 다음 노드를 자식 노드로 첨가하며, 첨가된 자식 노드가 목표 노드일 때까지 같은 방식을 반복해 나가는 방식이다.</p>
-
-<p>깊이 제한에 도달한 경우에는 최근에 첨가되었던 부모 노드로 되돌아와서, 다른 적용 가능한 자식 노드를 첨가하며 다시 진행한다.</p>
-
-<p>장점</p>
-<ul>
-  <li>저장공간의 수요가 적다</li>
-  <li>목표 노드가 깊은 단계에 있을 경우 해를 빠르게 구할 수 있다.</li>
-</ul>
-
-<p>단점</p>
-<ul>
-  <li>해가 없는 경로에 들어가도 끝까지 탐색을 하게 된다.</li>
-  <li>얻어진 해가 최단 경로가 된다는 보장은 없다. 목표에 이르는 경로가 다수인 문제에 대해서 DFS는 해를 구하면 탐색을 끝내버리므로, 얻은 해가 최적이 아닐 수도 있다.</li>
-</ul>
-
-<h3 id="구현-방법-1">구현 방법</h3>
-<hr />
-<p>재귀를 이용하여 DFS를 하는 방법을 알아보겠다.</p>
-
-<ol>
-  <li>방문기록을 저장해 줄 visited를 만들어준다.</li>
-  <li>루트 노드부터 탐색을 시작한다.</li>
-  <li>현재 노드를 결과에 추가한다.</li>
-  <li>현재 노드와 연결된 노드들을 검사한다.</li>
-  <li>연결된 노드가 방문하지 않은 노드라면 우선 그 노드로 들어간다.</li>
-  <li>계속해서 3,4,5번을 반복하다가 더 이상 탐색할 노드가 없다면 트리를 하나씩 올라온다.</li>
-  <li>만약 다시 올라온 노드에 탐색할 노드가 남아있다면 다시 그 노드를 탐색하러 들어가는 것을 반복한다.</li>
-</ol>
-
-<h3 id="구현-코드-1">구현 코드</h3>
-<hr />
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-    def DFS(V):
-        result.append(V)
-        visited[V] = 1
-        for i in range(N+1):
-            if arr[V][i] == 1 and visited[i] == 0:
-                DFS(i)
-    
-    # input
-    N, M, V = map(int, input().split())
-    
-    arr = list([0] * (N+1) for _ in range(N+1))
-    visited = [0] * (N+1)
-    for _ in range(M):
-        a, b = map(int, input().split())
-        arr[a][b] = 1
-        arr[b][a] = 1
-    
-    result = []
-    DFS(V)
-
-</code></pre></div></div>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="study" /><summary type="html"><![CDATA["내용 정리"]]></summary></entry><entry><title type="html">[알고리즘] Binary Search 알고리즘</title><link href="http://localhost:4000/categories/study/2023-04-25-algorithmStudy-binarysearch/" rel="alternate" type="text/html" title="[알고리즘] Binary Search 알고리즘" /><published>2023-04-25T00:00:00+09:00</published><updated>2023-04-25T20:36:58+09:00</updated><id>http://localhost:4000/categories/study/algorithmStudy-binarysearch</id><content type="html" xml:base="http://localhost:4000/categories/study/2023-04-25-algorithmStudy-binarysearch/"><![CDATA[<ul id="markdown-toc">
-  <li><a href="#이진탐색이란" id="markdown-toc-이진탐색이란">이진탐색이란?</a></li>
-  <li><a href="#구현-방법" id="markdown-toc-구현-방법">구현 방법</a></li>
-  <li><a href="#구현-코드" id="markdown-toc-구현-코드">구현 코드</a></li>
-</ul>
-<hr />
-<h3 id="이진탐색이란">이진탐색이란?</h3>
-<hr />
-<p>데이터가 정렬돼 있는 리스트에서 특정한 값을 찾아내기 위한 알고리즘 <br />
-검색이 반복될 때마다 완전탐색과는 다르게 검색 범위를 절반으로 줄일 수 있는 장점이 있다.</p>
-
-<h3 id="구현-방법">구현 방법</h3>
-<hr />
-<p>리스트 내 Left, Mid, right 값을 사용하며 찾고자 하는 값에 따라 Mid 값을 계속해서 계산해준다.</p>
-
-<ol>
-  <li>리스트 내 첫 인덱스를 Left(= 0)라 지정하고 가장 마지막을 Right(= len(list)-1)라고 지정한다.</li>
-  <li>mid = (left + right) // 2, 계산해서 중간 인덱스값을 구한다.</li>
-  <li>찾고싶은 값이 list[mid]보다 작으면 right = mid-1, 크다면 left = mid+1로 업데이트 시켜준다.</li>
-  <li>2,3번 과정을 반복하면 찾고자하는 값을 구할 수 있다.</li>
-</ol>
-
-<p>이런 특징 때문에 이진탐색은 무조건 정렬되어있는 리스트에서만 사용이 가능하다.</p>
-
-<h3 id="구현-코드">구현 코드</h3>
-<hr />
-<p>2가지 방법이 존재하며 재귀함수로 구현하는 것과 반복문으로 구현하는 것이 있다.</p>
-<ol>
-  <li>재귀 함수로 구현한 이진 탐색</li>
-</ol>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-    def binary_search_recursive(list, target, left, right):
-        if left &gt; right:
-            return
-    
-        mid = (left + right) // 2
-        
-        if list[mid] == target:
-            return mid
-        elif list[mid] &gt; target:
-            return binary_search_recursive(list, target, left, mid-1)
-        else:
-            return binary_search_recursive(list, target, left, mid - 1)
-
-</code></pre></div></div>
-
-<ol>
-  <li>반복문으로 구현한 이진탐색</li>
-</ol>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-    def binary_search_iter(list, target, left, right):
-        while left &lt;= right:
-            mid = (left + right) // 2
-            
-            if list[mid] == target:
-                return mid
-            elif list[mid] &gt; target:
-                right = mid - 1
-            else:
-                left = mid + 1
-        
-        return
-
-</code></pre></div></div>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="study" /><summary type="html"><![CDATA["내용 정리"]]></summary></entry><entry><title type="html">[알고리즘] Backtracking 알고리즘</title><link href="http://localhost:4000/categories/study/2023-04-25-algorithmStudy-backtracking/" rel="alternate" type="text/html" title="[알고리즘] Backtracking 알고리즘" /><published>2023-04-25T00:00:00+09:00</published><updated>2023-04-25T20:15:03+09:00</updated><id>http://localhost:4000/categories/study/algorithmStudy-backtracking</id><content type="html" xml:base="http://localhost:4000/categories/study/2023-04-25-algorithmStudy-backtracking/"><![CDATA[<ul id="markdown-toc">
-  <li><a href="#백트래킹이란" id="markdown-toc-백트래킹이란">백트래킹이란?</a></li>
-  <li><a href="#구현-방법" id="markdown-toc-구현-방법">구현 방법</a></li>
-</ul>
-<hr />
-<h3 id="백트래킹이란">백트래킹이란?</h3>
-<hr />
-<ul>
-  <li>해를 찾는 도중 해가 아니어서 막히면, 되돌아가서 다시 해를 찾아가는 기법을 말한다.</li>
-  <li>주로 최적화 문제와 결정 문제를 푸는 방법이 된다.</li>
-</ul>
-
-<h3 id="구현-방법">구현 방법</h3>
-<hr />
-<ul>
-  <li>해를 찾아가는 도중, 지금의 경로가 해가 될 것 같지 않으면 그 경로를 더 이상 가지 않고 되돌아간다.</li>
-</ul>
-
-<ol>
-  <li>어떤 노드를 방문하였을 때 그 노드를 포함한 경로가 해답이 될 수 없다고 판단 하면 유망성이 없다, 그렇지 않다면 유망성이 있다고 한다.</li>
-  <li>어떤 노드의 유망성을 점검한 후에 유망하지 않다고 결정되면 그 노드의 부모로 되돌아가 다음 자식 노드 탐색을 시작한다. 이 과정을 <strong>가지치기</strong>라 한다.</li>
-  <li>반대로 어떤 노드의 점검 결과가 유망하다고 결정되면 탐색을 계속한다.</li>
-  <li>위 2,3 과정을 반복하면서 탐색을 계속한다.</li>
-</ol>
-
-<blockquote>
-  <p>가지치기(pruning) <br />
--&gt; 유망하지 않는 노드가 포함된 경로는 더 이상 탐색X</p>
-</blockquote>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="study" /><summary type="html"><![CDATA["내용 정리"]]></summary></entry><entry><title type="html">블록체인</title><link href="http://localhost:4000/categories/it/2023-04-24-it-blockchain/" rel="alternate" type="text/html" title="블록체인" /><published>2023-04-24T00:00:00+09:00</published><updated>2023-04-25T19:28:24+09:00</updated><id>http://localhost:4000/categories/it/it-blockchain</id><content type="html" xml:base="http://localhost:4000/categories/it/2023-04-24-it-blockchain/"><![CDATA[<ul id="markdown-toc">
+<p><a href="https://www.youtube.com/watch?v=bKa7bfXQi3A&amp;list=PLsMufJgu5932XYejsOwcUDJ2F75f56nrl&amp;index=52&amp;t=1163s">신찬수 교수님 유튜브 강의영상</a> <br />
+<a href="https://ko.wikipedia.org/wiki/%ED%94%8C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%9B%8C%EC%85%9C_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98">Wikipedia 플로이드-워셜 알고리즘</a></p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="study" /><summary type="html"><![CDATA["내용 정리"]]></summary></entry><entry><title type="html">AI</title><link href="http://localhost:4000/categories/it/2023-05-05-it-AI/" rel="alternate" type="text/html" title="AI" /><published>2023-05-05T00:00:00+09:00</published><updated>2023-05-09T13:41:10+09:00</updated><id>http://localhost:4000/categories/it/it-AI</id><content type="html" xml:base="http://localhost:4000/categories/it/2023-05-05-it-AI/"><![CDATA[<ul id="markdown-toc">
   <li><a href="#정의" id="markdown-toc-정의">정의</a></li>
-  <li><a href="#기술의-특징" id="markdown-toc-기술의-특징">기술의 특징</a></li>
-  <li><a href="#핵심-구성-요소" id="markdown-toc-핵심-구성-요소">핵심 구성 요소</a></li>
-  <li><a href="#블록체인-연결되는-방식" id="markdown-toc-블록체인-연결되는-방식">블록체인 연결되는 방식</a></li>
-  <li><a href="#블록체인-네트워크-유형" id="markdown-toc-블록체인-네트워크-유형">블록체인 네트워크 유형</a></li>
+  <li><a href="#인공지능-종류" id="markdown-toc-인공지능-종류">인공지능 종류</a></li>
+  <li><a href="#ai-장단점" id="markdown-toc-ai-장단점">AI 장단점</a></li>
+  <li><a href="#ai-적용-사례" id="markdown-toc-ai-적용-사례">AI 적용 사례</a></li>
   <li><a href="#참조" id="markdown-toc-참조">참조</a></li>
 </ul>
 <hr />
 <h3 id="정의">정의</h3>
 <hr />
 <ul>
-  <li>
-    <p>블록체인은 블록들을 체인으로 연결해놓은 것</p>
-  </li>
-  <li><strong>블록</strong>이라고 하는 소규모 데이터들이 관리 대상 데이터를 P2P 방식을 기반으로 생성된 체인 형태의 연결고리 기반 분산 데이터 저장 환경에 저장하는 방식</li>
-  <li>합의 없이 체인을 삭제하거나 수정할 수 없으므로 데이터가 시간 순서대로 일관성이 있음</li>
-  <li>결과적으로 주문, 결제, 계정, 기타 트랜잭션을 추적하기 위해 변경 불가능한 분산 원장을 생성할 수 있음</li>
+  <li>AI는 학습, 문제 해결, 빅데이터 등과 같이 인간 지능과 연결된 인지 문제를 해결하는데 주력하는 분야이다.</li>
+  <li>컴퓨터 공학 분야뿐만 아니라 데이터 분석 및 통계, 하드웨어 및 소프트웨어 엔지니어링, 언어학, 신경과학은 물론 철학과 심리학도 포함되는 광범위한 분야이다.</li>
+  <li>우리가 주로 아는 AI는 머신러닝과 딥러닝을 기반으로 하는 기술모음으로 데이터 분석, 예상 및 예측, 객체 분류, 자연어 처리, 추천, 등을 수행한다.</li>
 </ul>
 
-<blockquote>
-  <p>분산 원장이란? <br />
-분산 원장은 탈중앙화의 특징을 가진 트랜잭션 데이터베이스를 뜻한다. 여기서 원장은 거래 장부를 뜻하는데 거래에 참여하는 각 당사자는
-동일한 거래 장부 사본을 소유하며, 변경 내용은 모두 함께 업데이트 된다.</p>
-</blockquote>
-
-<h3 id="기술의-특징">기술의 특징</h3>
-<hr />
-
-<p><strong>탈중앙화</strong></p>
-
-<ul>
-  <li>중앙 집중식 엔티티에서 분산 네트워크로 이전</li>
-  <li>투명성을 사용해 서로 간에 신뢰 필요성이 줄어듬</li>
-</ul>
-
-<p><strong>불변성</strong></p>
-
-<ul>
-  <li>공유 원장에 거래를 기록하면 참여자는 거래를 조작할 수 없다.</li>
-  <li>오류가 발생했을 때는 이전 거래를 지우고 수정하는게 아니라 새로운 거래를 추가해야한다. <br />
-(→ 네트워크 내 기록에는 두 개의 거래가 모두 남게된다)</li>
-</ul>
-
-<p><strong>합의</strong></p>
-
-<ul>
-  <li>거래 기록을 위한 참여자 동의에 관한 규칙을 설정</li>
-  <li>과반수가 동의한 경우에만 새로운 거래를 기록 가능</li>
-</ul>
-
-<h3 id="핵심-구성-요소">핵심 구성 요소</h3>
-<hr />
-
-<p><strong>분산 원장</strong></p>
-
-<ul>
-  <li>블록체인 네트워크의 공유 데이터베이스</li>
-</ul>
-
-<p><strong>스마트 계약</strong></p>
-
-<ul>
-  <li>서드 파티를 지원할 필요 없이 비즈니스 계약을 자체 관리</li>
-  <li>미리 정해진 조건이 충족되면 자동으로 실행되는 블록체인 시스템 내 프로그램</li>
-</ul>
-
-<p><strong>퍼블릭 키 암호화</strong></p>
-
-<ul>
-  <li>블록체인 네트워크 참여자를 고유하게 식별하는 보안 기능, 두 세트로 주어짐</li>
-  <li>퍼블릭 키: 모든 사람에게 공통적으로 주어지는 키</li>
-  <li>프라이빗 키: 구성원 고유의 키</li>
-  <li>두 개의 키가 함께 작동하여 원장의 데이터 잠금을 해제하는 방식</li>
-</ul>
-
-<h3 id="블록체인-연결되는-방식">블록체인 연결되는 방식</h3>
-<hr />
-
-<p><img src="/assets/img/it/block.png" alt="blockchain" /></p>
-
-<ul>
-  <li>블록은 계속해서 만들어져 나온다.</li>
-  <li>블록에 데이터를 저장해서 <em>블록체인</em>에 연결을 시키기 위해서는 일련의 과정이 필요하다.</li>
-</ul>
-
+<p>인공지능 기능</p>
 <ol>
-  <li>블록체인 내 연결할 블록의 해시값을 가져온다.</li>
-  <li>저장하고 싶은 데이터를 해싱을 통해 해시값을 생성해낸다.</li>
-  <li>두 개의 해시값에 채굴자가 Nonce 값을 찾아내 새로운 해시값을 생성해낸다.</li>
+  <li>학습(Learning): <br />
+과거의 패턴들로부터 학습할 수 있는 능력을 가지고 있다.</li>
+  <li>문제 해결(Problem Solving): <br />
+복잡한 문제를 분석하고 해결할 수 있는 능력을 가지고 있다.</li>
+  <li>빅데이터(Big Data): <br />
+아주 큰 용량의 변화하는 데이터를 처리할 수 있다.</li>
+  <li>추론(Reasoning): <br />
+주위의 상황으로부터 추록할 수 있는 능력을 가지고 있다.</li>
 </ol>
 
-<blockquote>
-  <p>Nonce란? <br />
-새로운 해시값은 제약조건이 존재하기 때문에 적절한 Nonce 값을 찾아줘야한다. <br />
-적절한 Nonce 값을 찾기 위해서 계속해서 변경되기 때문에 ‘임시값’이라고도 한다.</p>
-</blockquote>
-
 <ul>
-  <li>위 과정을 거쳐 블록들이 연결되기 때문에 이미 블록에 저장되어있는 데이터를 변경하려하면 데이터의 해시값이 변하게 된다.(불변성)</li>
+  <li>아래는 인공지능 기술 활용방안에 따라 나눠지는 관계도이다.</li>
 </ul>
 
-<h3 id="블록체인-네트워크-유형">블록체인 네트워크 유형</h3>
+<p align="center"><img src="/assets/img/it/AI.png" width="300px" height="300px" title="px(픽셀) 크기 설정" alt="AI" /></p>
+
+<ul>
+  <li>인공지능: <br />
+사람의 지적 능력을 컴퓨터를 통해 구현하는 기술</li>
+  <li>머신러닝: <br />
+사람이 정한 모델과 특징 추출 방법을 이용하여 데이터를 기반으로 학습해서 추론할 수 있게 하는 기술</li>
+  <li>딥러닝: <br />
+인공신경망 방법을 이용해 만든 머신러닝 기술로, 빅데이터 학습에 적합한 기술</li>
+</ul>
+
+<h3 id="인공지능-종류">인공지능 종류</h3>
 <hr />
-
-<p><strong>퍼블릭 블록체인</strong></p>
-
-<ul>
-  <li>모든 사람이 블록체인에 참여할 수 있다.</li>
-  <li>모든 구성원은 Read &amp; Write 과 Validation을 할 권리를 갖는다</li>
-  <li>암호화폐의 대부분은 퍼블릭 블록체인을 사용한다(ex. Bitcoin, Ethereum)</li>
-</ul>
-
-<p><strong>프라이빗 블록체인</strong></p>
-
-<ul>
-  <li>단일 조직의 관리형 블록체인이라고도 불린다.</li>
-  <li>해당 조직에서 구성원과 권한을 결정할 수 있다.</li>
-  <li>따라서, 접근 제한을 위해 부분적으로만 분산시켜 놓는 특징이 있다</li>
-</ul>
-
-<p><strong>하이브리드 블록체인</strong></p>
-
-<ul>
-  <li>프라이빗 &amp; 퍼블릭 네트워크 결합</li>
-  <li>기존 퍼블릭 시스템에 권한 기반 프라이빗 시스템을 설정하는 것</li>
-  <li>블록체인 내 특정 데이터에 대한 액세스는 제어하면서 나머지 데이터는 공개</li>
-  <li>
-    <p>예를 들어, 퍼블릭 회원이 프라이빗 거래가 완료되었는지를 확인할 수는 있지만 프라이빗 거래 내역에 접근해 거래 내용을 확인하는 행위 등을 제한할 수 있게 하는 방법이 있다.</p>
-  </li>
-  <li>장점
+<ol>
+  <li>ANI(Artificial Narrow Intelligence)
     <ul>
-      <li>폐쇄형 생태계에서 작동하므로 정보 유출에 대한 위험이 없다</li>
-      <li>목적에 따라 규칙을 바꿀 수 있다</li>
-      <li>일정한 노드만 참여가 가능하기 때문에 트랜잭션 비용이 저렴하다.</li>
+      <li>흔히 ‘약인공지능’이라고 부른다.</li>
+      <li>매우 복잡한 알고리즘과 신경망에 의해 구동될 수도 있지만 매우 목표지향적</li>
+      <li>기능이 부족하기 보다는 정의 상 진정한 지능으로 인정하는 인적요소를 갖추지 않아 Narrow intelligence라 칭함</li>
+      <li>ex) 얼굴 인식, 인터넷 검색, 자율주행차</li>
     </ul>
+  </li>
+  <li>AGI(Artificial General Intelligence)
+    <ul>
+      <li>흔히 ‘강인공지능’이라고 부른다.</li>
+      <li>인간이 할 수 있는 지능적인 작업을 성공적으로 수행할 수 있어야한다.</li>
+      <li>ANI와 같이 경험으로부터 학습하고 패턴을 발견 및 예측이 가능하다.</li>
+      <li>ANI와 다른 점은 AGI는 기존 알고리즘에서 다루지 않은 것도 추정할 수 있다는 점이다.</li>
+    </ul>
+  </li>
+  <li>ASI(Artificial Super Intelligence)
+    <ul>
+      <li>흔히 ‘초인공지능’이라고 부른다.</li>
+      <li>이론적으로는 완전히 자기를 인식하는 AI</li>
+      <li>인간의 행동을 흉내내거나 이해하는 정도를 벗어나 근본적으로 파악이 가능하다.</li>
+      <li>아직은 개념만 있을 뿐 먼 미래의 이야기이다.</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="ai-장단점">AI 장단점</h3>
+<hr />
+<p><strong>장점</strong></p>
+<ul>
+  <li>
+    <p>자동화 <br />
+사람들과 별개로 AI는 독립적이고 자율적으로 지속적인 작업이 가능하다.</p>
+  </li>
+  <li>
+    <p>사람의 실수 감소 <br />
+AI는 매번 동일한 프로세스를 따르는 자동화 및 알고리즘을 통해 작업을 하기 때문에 실수가 발생할 일이 드물다.</p>
+  </li>
+  <li>
+    <p>반복적인 작업 제거 <br />
+반복적인 작업을 수행하는 일에 알고리즘만 작성한다면 자동으로 수행해 그 일을 하던 인적 자원을 다른 곳에 투자 가능하다.</p>
+  </li>
+  <li>
+    <p>빠르고 정확함 <br />
+AI는 인간보다 더 빠르고 정확하게 일을 처리할 수 있으며 사람과 달리 휴식의 필요성이 없다. 이는 모든 작업에 가속도를 붙여줄 수 있다.</p>
+  </li>
+</ul>
+
+<p><strong>단점</strong></p>
+<ul>
+  <li>
+    <p>윤리적 문제점 <br />
+딥 페이크(Deepfake)와 가짜뉴스 같이 AI와 머신러닝을 사용한 외설적인 동영상을 만들거나 믿을만한 가짜뉴스를 생성하는 등 AI의 발전으로 생길 수 있는 문제점이 만들어진다.</p>
+  </li>
+  <li>
+    <p>AI 편향 <br />
+인공지능 시스템에 나타나는 특정 편향 문제를 해결할 수 있어야한다.</p>
+
+    <p>예를 들어, 아마존에서 개발하던 인공지능 채용 시스템에서 여성 차별적 인식이 드러나 폐기됐었다. 이유는 채용시스템에 쓰인 데이터에 10년간 아마존 지원자 데이터를 통한 분석 결과 남성 지원자가 압도적으로 많아 시스템 자체가 여성 지원자를 선호하지 않는 쪽으로 학습된 것이다.</p>
+  </li>
+</ul>
+
+<h3 id="ai-적용-사례">AI 적용 사례</h3>
+<hr />
+<ul>
+  <li>
+    <p>의료 부문 <br />
+데이터를 활용한 진단과 치료를 진행하는 방식</p>
+  </li>
+  <li>
+    <p>금융 부문 <br />
+가장 빠르게 도입한 분야 중 하나로 AI봇, 디지털 결제 어드바이저, 생체인식 부정행위 감지 메커니즘 등 효율성과 고객 서비스를 개선하기 위해 활용</p>
+  </li>
+  <li>
+    <p>제조 부문 <br />
+중앙 시스템을 통해 데이터를 주고 받기 위해 기기를 연결하면 IoT 네트워크를 구성한다. 해당 정보를 이용해 최상의 워크플로를 유지한다.</p>
+  </li>
+  <li>
+    <p>농업 부문 <br />
+수확량을 높이고 지속가능하도록 활용.  <br />
+재배 및 수확 단계에서 유통망과 수요까지 분석해 농부가 수확하기에 가장 효율적인 시기를 알려준다.</p>
   </li>
 </ul>
 
 <h3 id="참조">참조</h3>
 <hr />
-<p><a href="https://aws.amazon.com/ko/what-is/blockchain/?aws-products-all.sort-by=item.additionalFields.productNameLowercase&amp;aws-products-all.sort-order=asc">AWS 블록체인 관련 문서</a> <br />
-<a href="https://www.sap.com/korea/insights/what-is-blockchain.html">SAP 블록체인 관련 문서</a> <br />
-<a href="https://www.youtube.com/watch?v=TljQRfHRId8&amp;list=PL7jH19IHhOLOJfXeVqjtiawzNQLxOgTdq">노마드 코더 영상</a></p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="it" /><summary type="html"><![CDATA["블록체인 기술 관련"]]></summary></entry></feed>
+<p><a href="https://www.sap.com/korea/products/artificial-intelligence/what-is-artificial-intelligence.html">SAP</a> <br />
+<a href="https://cloud.google.com/learn/what-is-artificial-intelligence?hl=ko#section-3">Google Cloud</a> <br />
+<a href="https://tta.or.kr/data/androReport/ttaJnal/20220614094203135_cumq.pdf">인공지능 편향성 이슈와 신뢰성 확보방안</a></p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="it" /><summary type="html"><![CDATA["Artificial Intelligence(AI) 기술 관련"]]></summary></entry><entry><title type="html">[기본 지식] Ascii Code</title><link href="http://localhost:4000/categories/study/2023-05-03-algorithmStudy-ascii/" rel="alternate" type="text/html" title="[기본 지식] Ascii Code" /><published>2023-05-03T00:00:00+09:00</published><updated>2023-05-19T14:31:46+09:00</updated><id>http://localhost:4000/categories/study/algorithmStudy-ascii</id><content type="html" xml:base="http://localhost:4000/categories/study/2023-05-03-algorithmStudy-ascii/"><![CDATA[<ul id="markdown-toc">
+  <li><a href="#아스키-코드란" id="markdown-toc-아스키-코드란">아스키 코드란?</a></li>
+  <li><a href="#활용-예시" id="markdown-toc-활용-예시">활용 예시</a></li>
+</ul>
+<hr />
+<h3 id="아스키-코드란">아스키 코드란?</h3>
+<hr />
+<p><img src="/assets/img/study/ascii.gif" alt="ascii" /></p>
+
+<p>컴퓨터에서 기호 혹은 문자를 기억하고 있는 체계로 알아두면 좋은 것들이다. <br />
+대표적으로,</p>
+<ul>
+  <li>48 ~ 57: 실제 숫자 0~9를 담당</li>
+  <li>65 ~ 90: A ~ Z</li>
+  <li>97 ~ 122: a ~ z</li>
+</ul>
+
+<p>해당 구간은 반드시 외우는 것이 편하다.</p>
+
+<h3 id="활용-예시">활용 예시</h3>
+<hr />
+<blockquote>
+  <p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/72410">https://school.programmers.co.kr/learn/courses/30/lessons/72410</a></p>
+</blockquote>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+    def solution(new_id):
+        answer = ''
+        
+        for word in new_id:
+            if len(answer) == 15:
+                break
+            
+            if 65 &lt;= ord(word) &lt;= 90:
+                word = chr(ord(word)+ 32)
+                answer += word
+            elif 97 &lt;= ord(word) &lt;= 122:
+                answer += word
+            elif 48 &lt;= ord(word) &lt;= 57:
+                answer += word
+            elif word == '-' or word == '_':
+                answer += word
+            elif word == '.':
+                if not answer or answer[-1] == '.':
+                    continue
+                else:
+                    answer += word
+        
+        for i in range(len(answer)-1, -1, -1):
+            if answer[i] == '.':
+                answer = answer[:i]
+                print(answer)
+            else:
+                break
+        
+        while len(answer) &lt;= 2:
+            if not answer:
+                answer += 'a'
+            else:
+                answer += answer[-1]
+        
+        return answer
+
+</code></pre></div></div>
+
+<p>해당 문제를 Ascii 코드표를 활용해 풀어본 코드이다.</p>
+
+<p>대소문자 변환은 파이썬에서 ascii 코드표를 활용하지않고 간단하게 해결할 수 있는 방법이 존재한다.</p>
+<ul>
+  <li>String.upper() &amp; String.lower()</li>
+  <li>위를 사용하면 문자열 전체를 대소문자로 자동으로 변환해준다.</li>
+</ul>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="study" /><summary type="html"><![CDATA["내용 정리"]]></summary></entry><entry><title type="html">핀테크</title><link href="http://localhost:4000/categories/it/2023-05-02-it-fintech/" rel="alternate" type="text/html" title="핀테크" /><published>2023-05-02T00:00:00+09:00</published><updated>2023-05-02T15:32:43+09:00</updated><id>http://localhost:4000/categories/it/it-fintech</id><content type="html" xml:base="http://localhost:4000/categories/it/2023-05-02-it-fintech/"><![CDATA[<ul id="markdown-toc">
+  <li><a href="#정의" id="markdown-toc-정의">정의</a></li>
+  <li><a href="#핀테크-예시" id="markdown-toc-핀테크-예시">핀테크 예시</a></li>
+  <li><a href="#핀테크-사용-이유" id="markdown-toc-핀테크-사용-이유">핀테크 사용 이유</a></li>
+  <li><a href="#참조" id="markdown-toc-참조">참조</a></li>
+</ul>
+<hr />
+<h3 id="정의">정의</h3>
+<hr />
+<p>핀테크(Fintech)란 금융(<strong>Fin</strong>ance)에 IT 기술(<strong>Tech</strong>nology)을 접목하여 금융 관련 서비스를 효율적으로 제공하는 것을 뜻한다. <br />
+기존의 금융회사에서 모든 서비스를 제공하는 방식이 우리가 알고있는 인터넷 뱅킹이라면 핀테크는 금융 서비스를 쪼개어서 하나의 분야를 전문적으로 서비스하는 방법이다.</p>
+
+<blockquote>
+  <p>-&gt; 인터넷 뱅킹(internet banking): <br />
+전자 금융의 일종으로 인터넷 회선을 이용하여 은행과 사용자 간의 금융 업무를 처리하는 시스템이다.
+온라인 뱅킹, 홈 뱅킹은 유의어다.</p>
+</blockquote>
+
+<h3 id="핀테크-예시">핀테크 예시</h3>
+<hr />
+<p><strong>간편송금/지급결제</strong></p>
+<ul>
+  <li>모바일 기기를 이용한 간편결제 방식</li>
+  <li>기존의 공인인증서를 이용한 복잡한 인증 절차 없이 주로 자체 보안 방식(이체 비밀번호, 지문인식, 홍채인식, 얼굴인식 등)인 바이오인증을 활용한다.</li>
+  <li>ex) 토스, 카카오페이, 네이버페이, 페이코, 삼성페이</li>
+</ul>
+
+<p><strong>로보어드바이저</strong></p>
+<ul>
+  <li>컴퓨터 알고리즘을 이용한 자산운용 관련 자동화 서비스</li>
+  <li>자신이 원하는 수익률, 위험도 등을 정하면 자동으로 내 자산을 운용해 투자하거나 상품을 추천해준다.(일임형과 자문형으로 나뉜다) <br />
+but,</li>
+  <li>낮은 수수료와 편리한 접근성에도 불구하고 수익률이 낮은 편</li>
+  <li>ex) 불리오, 에임, 하이로보</li>
+</ul>
+
+<p><strong>금융상품 추천 서비스</strong></p>
+<ul>
+  <li>소비자들의 자산관리를 디지털화하여 제공하는 방식</li>
+  <li>로보어드바이저와 비슷해 보이지만 자산을 운용해 투자하는 로보어드바이저와 달리 자산을 관리하는데 중점</li>
+  <li>카드나 예적금, 대출, 보험 등 다양한 금융상품에 대해 나에게 맞는 상품을 찾을 수 있도록 도와준다.</li>
+  <li>ex) NERDWALLET, CREDIT KARMA, 뱅크샐러드</li>
+</ul>
+
+<p><strong>크라우드 펀딩</strong></p>
+<ul>
+  <li>자금이 필요한 개인, 단체, 기업이 웹이나 모바일 네트워크를 활용해 불특정 다수로부터 자금을 모으는 것</li>
+  <li>유형이 4가지로 나뉘어진다.
+    <ul>
+      <li>
+        <p>금융대출형:  <br />
+대출자의 다양한 데이터를 통해 신용등급을 평가하고 돈이 필요한 사람과 투자자를 매칭해 대출과 투자를 이어주는 방식
+ex) 테라펀딩, 렌딧, 8퍼센트</p>
+      </li>
+      <li>
+        <p>투자형: <br />
+신생기업이나 개발프로젝트에 투자하고 지분획득하는 방식
+ex) 와디즈</p>
+      </li>
+      <li>
+        <p>후원형: <br />
+금전적 보상과는 무관한 방식</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="핀테크-사용-이유">핀테크 사용 이유</h3>
+<hr />
+<p><strong>국내 추진 배경</strong></p>
+<ul>
+  <li>기존 금융회사 혁신 속도가 느린 문제점</li>
+  <li>핀테크는 모바일 결제시장이 열리면서 세계적으로 빠르게 성장하는 중</li>
+</ul>
+
+<p><strong>기대효과</strong></p>
+<ol>
+  <li>
+    <p>금융부문 경쟁촉진 <br />
+금융권이 공정하게 경쟁하면서 금융시장의 효율성은 높아진다.</p>
+  </li>
+  <li>
+    <p>일자리 창출 <br />
+IT와 금융이 융합된 산업인만큼 양질의 일자리 창출 파급력이 크다.</p>
+  </li>
+  <li>
+    <p>소비자 편익 향상 <br />
+모바일 결제를 비롯한 다양한 금융서비스를 활용한 편리한 생활이 가능해졌다.</p>
+  </li>
+</ol>
+
+<h3 id="참조">참조</h3>
+<hr />
+<p><a href="https://www.korea.kr/special/policyCurationView.do?newsId=148865913">대한민국 정책브리핑: 핀테크</a> <br />
+<a href="https://www.banksalad.com/contents/%ED%95%80%ED%85%8C%ED%81%AC-%EA%B0%9C%EB%85%90-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC-9752">뱅크샐러드 핀테크 완벽 정리</a> <br />
+<a href="https://happyedu.moe.go.kr/happy/bbs/selectHappyArticle.do?bbsId=BBSMSTR_000000005080&amp;nttId=9947">행복한 교육</a></p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="it" /><summary type="html"><![CDATA["핀테크 기술 관련"]]></summary></entry><entry><title type="html">[BOJ] 2206 벽 부수고 이동하기</title><link href="http://localhost:4000/categories/algorithm/2023-05-01-algorithm-BOJ_2206/" rel="alternate" type="text/html" title="[BOJ] 2206 벽 부수고 이동하기" /><published>2023-05-01T00:00:00+09:00</published><updated>2023-05-18T11:17:53+09:00</updated><id>http://localhost:4000/categories/algorithm/algorithm-BOJ_2206</id><content type="html" xml:base="http://localhost:4000/categories/algorithm/2023-05-01-algorithm-BOJ_2206/"><![CDATA[<blockquote>
+  <p><a href="https://www.acmicpc.net/problem/2206">https://www.acmicpc.net/problem/2206</a></p>
+</blockquote>
+
+<h3 id="문제-해결-과정">문제 해결 과정</h3>
+<hr />
+<p><strong>문제 해석</strong></p>
+<ul>
+  <li>벽은 단 하나만 필요에 의해 부술 수 있음</li>
+  <li>위 조건만 만족하면 그저 최단경로 문제</li>
+</ul>
+
+<p><strong>접근 방식</strong></p>
+<ul>
+  <li>BFS 혹은 DFS 사용한 풀이를 생각</li>
+  <li>벽을 부술 수 있는지 여부에 따라 탐색을 달리해야하므로 DFS를 처음에는 선택</li>
+  <li>
+    <p>BOJ 시스템에서는 재귀를 이용한 DFS 풀이 시 시간초과와 메모리초과가 발생했다</p>
+  </li>
+  <li>해당 코드는 아래와 같음</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    
+    import sys
+    sys.setrecursionlimit(10**9)
+    
+    def DFS(x, y, dist, hammer):
+        global result
+    
+        if result &lt; dist:
+            return
+    
+        if x == N-1 and y == M-1:
+            if dist &lt; result:
+                result = dist
+        else:
+            for i in range(4):
+                tx = x+dx[i]
+                ty = y+dy[i]
+                if 0 &lt;= tx &lt; N and 0 &lt;= ty &lt; M:
+                    if map[tx][ty] == 0 and not visited[tx][ty]:
+                        visited[tx][ty] = 1
+                        DFS(tx, ty, dist+1, hammer)
+                        visited[tx][ty] = 0
+                    elif map[tx][ty] == 1 and hammer:
+                        visited[tx][ty] = 1
+                        hammer = 0
+                        DFS(tx, ty, dist+1, hammer)
+                        visited[tx][ty] = 0
+                        hammer = 1
+    
+    # input
+    input = sys.stdin.readline
+    
+    N, M = map(int, input().split())
+    map = [(list(map(int, list(input().strip())))) for _ in range(N)]
+    
+    # main
+    visited = [[0 for _ in range(M)] for _ in range(N)]
+    dx = [0, 0, -1, 1]
+    dy = [1, -1, 0, 0]
+    
+    result = N * M
+    DFS(0, 0, 1, 1)
+    
+    if result == N * M:
+        print(-1)
+    else:
+        print(result)
+
+</code></pre></div></div>
+
+<ul>
+  <li>문제점이 뭔지 찾아보던 중 최단경로 문제는 <strong>반드시 BFS</strong>를 사용해야한다는 글을 읽었다. <br />
+<a href="https://hunnibs.github.io/categories/study/2023-04-25-algorithmStudy-dfsbfs/">[알고리즘] BFS &amp; DFS 알고리즘</a> 해당 포스트 내용 참조</li>
+  <li>그래서 BFS를 이용하고 벽을 부수술 있는가에 대한 유무를 판단하는 Status값을 큐에 함께 넣어주는 방식을 사용했다.</li>
+</ul>
+
+<p><strong>문제점</strong></p>
+<ul>
+  <li>완벽하게 풀었다고 생각했으나 시작점과 출발점이 같은 경우는 출력을 할 때 길이 없다고 판단했다.</li>
+  <li>따로 조건을 추가해서 해결했으나 조금 찝찝한 풀이로 완료한 느낌이다.</li>
+</ul>
+
+<h3 id="전체-코드">전체 코드</h3>
+<hr />
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    
+    import sys
+    from collections import deque
+    
+    def BFS():
+        while queue:
+            x, y, hammer = queue.popleft()  # hammer는 벽을 부술수있는지 여부를 확인하는 Status값
+    
+            for i in range(4):
+                tx = x + dx[i]
+                ty = y + dy[i]
+                if 0 &lt;= tx &lt; N and 0 &lt;= ty &lt; M:
+                    # 벽을 부술 수 있는 경우
+                    if hammer:
+                        # 벽을 부술 필요가 없는 경우
+                        if map[tx][ty] == 0:
+                            if not dist[tx][ty]:  # 한 번도 방문하지 않은 경우 업데이트
+                                dist[tx][ty] = dist[x][y] + 1
+                                queue.append([tx, ty, 1])
+                            else:  # 이미 정해진 최단경로보다 값이 작을 때만 탐색을 더 진행한다.
+                                if dist[tx][ty] &gt; dist[x][y] + 1:
+                                    dist[tx][ty] = dist[x][y] + 1
+                                    queue.append([tx, ty, 1])
+                        벽을 부숴야하는 경우
+                        else:
+                            dist_noHam[tx][ty] = dist[x][y] + 1
+                            queue.append([tx, ty, 0])
+                    # 벽을 부술 수 없는 경우
+                    else:
+                        if map[tx][ty] == 0:
+                            if not dist_noHam[tx][ty]:  # 한 번도 방문하지 않은 경우 업데이트
+                                dist_noHam[tx][ty] = dist_noHam[x][y] + 1
+                                queue.append([tx, ty, 0])
+                            else:  # 이미 정해진 최단경로보다 값이 작을 때만 탐색을 더 진행한다.
+                                if dist_noHam[tx][ty] &gt; dist_noHam[x][y] + 1:
+                                    dist_noHam[tx][ty] = dist_noHam[x][y] + 1
+                                    queue.append([tx, ty, 0])
+    
+    # input
+    input = sys.stdin.readline
+    
+    N, M = map(int, input().split())
+    map = [(list(map(int, list(input().strip())))) for _ in range(N)]
+    
+    # main
+    dist = [[0 for _ in range(M)] for _ in range(N)]
+    dist_noHam = [[0 for _ in range(M)] for _ in range(N)]
+    # 방향 정보
+    dx = [0, 0, -1, 1]
+    dy = [1, -1, 0, 0]
+    
+    queue = deque()
+    queue.append([0, 0, 1])
+    BFS()
+    
+    ham = dist[N-1][M-1]
+    noHam = dist_noHam[N-1][M-1]
+    
+    if ham and noHam:
+        if ham &gt; noHam:
+            print(noHam+1)
+        else:
+            print(ham+1)
+    elif ham:
+        print(ham+1)
+    elif noHam:
+        print(noHam+1)
+    elif N == 1 and M == 1:
+        print(1)
+    else:
+        print(-1)
+
+</code></pre></div></div>
+
+<h3 id="문제-풀이-후기">문제 풀이 후기</h3>
+<hr />
+<p>처음에 DFS로 풀자고 마음을 먹은 것부터 DFS와 BFS를 제대로 이해하지 못했던 것 같다. <br />
+최적해를 구하긴하지만 확실한 최단경로를 구하기 위해서는 BFS를 사용해야한다는 것을 알 수 있었던 문제였다.</p>
+
+<p>총 소요 시간: 2H 30M</p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="algorithm" /><summary type="html"><![CDATA["BFS 활용 문제"]]></summary></entry></feed>
