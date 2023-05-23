@@ -53,8 +53,8 @@ menu:
     url:               /algorithm/
   - title:             It
     url:               /it/
-  - title:             Java
-    url:               /java/
+  - title:             Java Study
+    url:               /javaStudy/
   - title:             Jekyll
     url:               /jekyll/
 
