@@ -12,7 +12,7 @@ hide_last_modified: false
 ### 기본 데이터 타입
 ***
 
-![DataType](assets\img\javaStudy\DataTypes.png)
+![DataType](\assets\img\javaStudy\DataTypes.png)
 
 데이터 타입은 크게 논리형, 문자형, 정수형, 실수형으로 나누어진다.
 

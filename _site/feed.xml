@@ -1,12 +1,163 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-05-23T01:03:20+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hunnibs</title><subtitle>About my work history &amp; review
-</subtitle><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><entry><title type="html">[Java] 변수</title><link href="http://localhost:4000/categories/java/2023-05-23-java-variable/" rel="alternate" type="text/html" title="[Java] 변수" /><published>2023-05-23T00:00:00+09:00</published><updated>2023-05-23T00:39:36+09:00</updated><id>http://localhost:4000/categories/java/java-variable</id><content type="html" xml:base="http://localhost:4000/categories/java/2023-05-23-java-variable/"><![CDATA[<ul id="markdown-toc">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-05-24T23:48:03+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hunnibs</title><subtitle>About my work history &amp; review
+</subtitle><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><entry><title type="html">[Java] 배열</title><link href="http://localhost:4000/categories/javastudy/2023-05-24-javaStudy-array/" rel="alternate" type="text/html" title="[Java] 배열" /><published>2023-05-24T00:00:00+09:00</published><updated>2023-05-24T23:48:03+09:00</updated><id>http://localhost:4000/categories/javastudy/javaStudy-array</id><content type="html" xml:base="http://localhost:4000/categories/javastudy/2023-05-24-javaStudy-array/"><![CDATA[<ul id="markdown-toc">
+  <li><a href="#1차원-배열-생성" id="markdown-toc-1차원-배열-생성">1차원 배열 생성</a></li>
+  <li><a href="#2차원-배열-생성" id="markdown-toc-2차원-배열-생성">2차원 배열 생성</a></li>
+  <li><a href="#배열을-활용한-제어문" id="markdown-toc-배열을-활용한-제어문">배열을 활용한 제어문</a></li>
+</ul>
+<hr />
+<h3 id="1차원-배열-생성">1차원 배열 생성</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+    int[] array = new int[100];  // 100개의 int형 변수를 저장해줄 수 있는 배열 생성
+    int[] array2 = new int[] {1, 2, 3, 4}  // 배열 생성과 동시에 안에 값을 배정해주는 방식
+    int[] array3 = {1, 2, 3, 4}  // 이런 방식으로도 가능하다. 
+   
+</code></pre></div></div>
+
+<h3 id="2차원-배열-생성">2차원 배열 생성</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+    int[][] array = new int[3][4]; // 3행 4열짜리 배열 생성
+    
+    int[][] array2 = new int[3][]; // 3행만 생성
+    array2[0] = new int[3];  // 이런 식으로 따로 행 별로 배열 생성
+
+    int[][] array3 = {1, 2, 3}, {4, 5, 6}, {7, 8, 9}  // 3행 3열짜리 값을 배정완료   
+    
+    // {}로 전체를 싸줘야하는데 그러면 Liquid Error가 발생해서 포스팅이 안된다..
+
+</code></pre></div></div>
+
+<h3 id="배열을-활용한-제어문">배열을 활용한 제어문</h3>
+
+<p><strong>foreach문</strong></p>
+<ul>
+  <li>배열에서 차례대로 하나씩 꺼낸다고 생각하면 이해가 편함</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+    int[] iarr = {10,20,30,40,50};
+
+    for(int value:iarr){
+        System.out.println(value);
+    }
+
+</code></pre></div></div>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="javaStudy" /><summary type="html"><![CDATA["배열"]]></summary></entry><entry><title type="html">[Java] 연산자</title><link href="http://localhost:4000/categories/javastudy/2023-05-24-javaStudy-operator/" rel="alternate" type="text/html" title="[Java] 연산자" /><published>2023-05-24T00:00:00+09:00</published><updated>2023-05-24T16:32:24+09:00</updated><id>http://localhost:4000/categories/javastudy/javaStudy-operator</id><content type="html" xml:base="http://localhost:4000/categories/javastudy/2023-05-24-javaStudy-operator/"><![CDATA[<ul id="markdown-toc">
+  <li><a href="#산술연산자" id="markdown-toc-산술연산자">산술연산자</a></li>
+  <li><a href="#비교연산자" id="markdown-toc-비교연산자">비교연산자</a></li>
+</ul>
+<hr />
+<h3 id="산술연산자">산술연산자</h3>
+<hr />
+<ul>
+  <li>+(더하기), -(빼기), *(곱하기), /(나누기), %(나머지)가 포함된다.</li>
+</ul>
+
+<blockquote>
+  <p>❗ / 연산자 사용 시 변수형에 따른 데이터 저장</p>
+
+  <p>int a, int b를 나누기 연산을 이용해서 나눴을 경우 저장되는 값은 int형으로 저장되므로 소수점 아래로 계산결과가 발생해도 반영되지 않는다. <br />
+그러므로 이를 해결하기 위해 명시적형변환을 사용해 하나는 double 혹은 float형으로 바꾸어주어야한다.</p>
+</blockquote>
+
+<ul>
+  <li>++, –
+    <ul>
+      <li>++a 혹은 a++이런 식으로 사용한다.</li>
+      <li>ex) <br />
+  b == ++a -&gt; 먼저 증가를 시킨 값을 a에 저장해주고 증가시킨 값을 b에 저장
+  b == a++ -&gt; b에 a값을 저장해준 뒤 a 값을 증가</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="비교연산자">비교연산자</h3>
+<hr />
+<ul>
+  <li>==, !=, &gt;, &lt;가 포함된다.</li>
+  <li>주로 조건문에서 대소비교 혹은 참 거짓을 판별할 때 많이 사용</li>
+</ul>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="javaStudy" /><summary type="html"><![CDATA["연산자"]]></summary></entry><entry><title type="html">[Java] 제어문</title><link href="http://localhost:4000/categories/javastudy/2023-05-24-javaStudy-condition/" rel="alternate" type="text/html" title="[Java] 제어문" /><published>2023-05-24T00:00:00+09:00</published><updated>2023-05-24T17:25:26+09:00</updated><id>http://localhost:4000/categories/javastudy/javaStudy-condition</id><content type="html" xml:base="http://localhost:4000/categories/javastudy/2023-05-24-javaStudy-condition/"><![CDATA[<ul id="markdown-toc">
+  <li><a href="#if문" id="markdown-toc-if문">If문</a></li>
+  <li><a href="#switch문" id="markdown-toc-switch문">Switch문</a></li>
+  <li><a href="#while문" id="markdown-toc-while문">while문</a></li>
+  <li><a href="#do-while문" id="markdown-toc-do-while문">Do-While문</a></li>
+  <li><a href="#for문" id="markdown-toc-for문">for문</a></li>
+</ul>
+<hr />
+<h3 id="if문">If문</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+    if (조건식){
+        실행문;
+    }
+    else if(조건식){
+        실행문;
+    }
+    else{
+        실행문;
+    }
+
+</code></pre></div></div>
+
+<h3 id="switch문">Switch문</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+    int value = 1;
+
+    switch(value){
+        case 1:
+            실행문;
+            break;  // 반드시 break문을 작성해줘야함
+        case 2:  
+        case 3:
+        case 4:  // 이런식으로 케이스를 묶어서도 가능
+            실행문;
+            break;
+
+        default:  // 아무것도 해당 안될 때 실행하는 케이스
+            실행문;
+            break;
+    }
+
+</code></pre></div></div>
+
+<h3 id="while문">while문</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+    while(조건식){
+        실행문;
+    }
+
+</code></pre></div></div>
+
+<h3 id="do-while문">Do-While문</h3>
+<ul>
+  <li>while문은 조건이 충족되지 않는다면 한 번도 실행하지 않지만 Do-while문을 사용하면 최소 한 번의 실행문 실행을 보장한다.</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+    do{
+        실행문;
+    }while(조건문)
+
+</code></pre></div></div>
+
+<h3 id="for문">for문</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+    for(초기화식; 조건식; 증감식){
+        실행문;
+    }
+
+</code></pre></div></div>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="javaStudy" /><summary type="html"><![CDATA["제어문"]]></summary></entry><entry><title type="html">[Java] 변수</title><link href="http://localhost:4000/categories/javastudy/2023-05-23-javaStudy-variable/" rel="alternate" type="text/html" title="[Java] 변수" /><published>2023-05-23T00:00:00+09:00</published><updated>2023-05-24T23:41:27+09:00</updated><id>http://localhost:4000/categories/javastudy/javaStudy-variable</id><content type="html" xml:base="http://localhost:4000/categories/javastudy/2023-05-23-javaStudy-variable/"><![CDATA[<ul id="markdown-toc">
   <li><a href="#기본-데이터-타입" id="markdown-toc-기본-데이터-타입">기본 데이터 타입</a></li>
+  <li><a href="#type-형변환" id="markdown-toc-type-형변환">Type 형변환</a></li>
 </ul>
 <hr />
 <h3 id="기본-데이터-타입">기본 데이터 타입</h3>
 <hr />
 
-<p><img src="assets\img\java\DataTypes.png" alt="DataType" /></p>
+<p><img src="\assets\img\javaStudy\DataTypes.png" alt="DataType" /></p>
 
 <p>데이터 타입은 크게 논리형, 문자형, 정수형, 실수형으로 나누어진다.</p>
 
@@ -57,7 +208,65 @@
 
   <p>기본 데이터 타입 앞에 final을 붙여서 불변성을 가진 data 저장공간을 만들 수 있다. <br />
 ex) final int number = 3; 이면, number는 3이라는 값으로 고정된다.</p>
-</blockquote>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="java" /><summary type="html"><![CDATA["변수"]]></summary></entry><entry><title type="html">[SWEA] 1928_Base64 Decoder</title><link href="http://localhost:4000/categories/algorithm/2023-05-19-algorithm-SWEA_1928/" rel="alternate" type="text/html" title="[SWEA] 1928_Base64 Decoder" /><published>2023-05-19T00:00:00+09:00</published><updated>2023-05-19T14:58:50+09:00</updated><id>http://localhost:4000/categories/algorithm/algorithm-SWEA_1928</id><content type="html" xml:base="http://localhost:4000/categories/algorithm/2023-05-19-algorithm-SWEA_1928/"><![CDATA[<blockquote>
+</blockquote>
+
+<h3 id="type-형변환">Type 형변환</h3>
+<hr />
+<p>정수형과 실수형 사이에서는 Type 형변환이 가능하다. 이 때 정수는 실수에 포함된다는 사실을 기억해야한다.</p>
+
+<ol>
+  <li>묵시적 형변환
+    <ul>
+      <li>int형 변수를 float형으로 바꾸는 경우</li>
+      <li>실수는 정수를 애초에 포함하고 있기 때문에 암묵적으로 변환을 해준다.</li>
+    </ul>
+  </li>
+  <li>명시적 형변환
+    <ul>
+      <li>반대로 float형을 int형으로 바꾸는 경우</li>
+      <li>float type 변수에 5와 같은 정수가 저장되어있더라도 변환이 불가능하다.</li>
+      <li>그래서 이런 경우에는 강제로 형변환을 시도해주어야한다.</li>
+      <li>ex)</li>
+    </ul>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+     float number = 5;
+     int number2 = (int)number;
+
+</code></pre></div>    </div>
+  </li>
+</ol>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="javaStudy" /><summary type="html"><![CDATA["변수"]]></summary></entry><entry><title type="html">[Jekyll] GitHub 블로그 개발일지(3)</title><link href="http://localhost:4000/categories/jekyll/2023-05-23-jekyll-nameError/" rel="alternate" type="text/html" title="[Jekyll] GitHub 블로그 개발일지(3)" /><published>2023-05-23T00:00:00+09:00</published><updated>2023-05-24T16:01:44+09:00</updated><id>http://localhost:4000/categories/jekyll/jekyll-nameError</id><content type="html" xml:base="http://localhost:4000/categories/jekyll/2023-05-23-jekyll-nameError/"><![CDATA[<ul id="markdown-toc">
+  <li><a href="#3-1-경로-설정-문제-발생" id="markdown-toc-3-1-경로-설정-문제-발생">3. 1 경로 설정 문제 발생</a></li>
+  <li><a href="#3-2-문제-해결-방법" id="markdown-toc-3-2-문제-해결-방법">3. 2 문제 해결 방법</a></li>
+</ul>
+<h3 id="3-1-경로-설정-문제-발생">3. 1 경로 설정 문제 발생</h3>
+<hr />
+<ul>
+  <li>이전 포스팅 내용에 이어지는 오류</li>
+</ul>
+
+<p>굉장히 갑작스러운 오류 발생이었다. <br />
+Java를 공부하기 위해 공부내용을 정리할 포스팅 공간을 만들었는데 이전과 똑같이 directory를 추가하고 yml파일과 경로 설정을 해주고 서버에 올렸는데 화면이 뜨지 않는 문제점이 발생했다. 당황해서 로컬 환경에서 테스팅을 해봤지만 로컬 환경에서는 문제가 발생하지 않았다.</p>
+
+<ul>
+  <li>아래는 문제점이 발생한 상황</li>
+</ul>
+
+<p><img src="assets\img\jekyll\pathError2.png" alt="pathError" /></p>
+
+<h3 id="3-2-문제-해결-방법">3. 2 문제 해결 방법</h3>
+<hr />
+<p>처음에는 해당 테마가 같은 문제가 계속 일어나 다른 테마로의 변경을 고민했었다. 하지만 마음에 드는 테마라 이 악물고 고치기로 결정 <br />
+어이없게도 간단하게 해결했다.</p>
+
+<ul>
+  <li>이전에 Blog라는 path를 지정해줬을 때 문제가 생겼던 것 처럼 java라는 단어에 문제가 있을거라고 생각했다.</li>
+  <li>
+    <p>해당 포스팅 directory의 이름을 전부 javaStudy로 바꿔줬다 -&gt; 그래도 인식을 하지 못하는 문제가 발생</p>
+  </li>
+  <li>Url을 확인해보니 어째서인지 서버를 작동시키면 javaStudy경로가 javastudy로 나타난다.</li>
+  <li>대문자를 인식못하는 것 같아 javastudy로 바꾸어주었더니 해당 문제가 해결되고 정상적으로 작동한다.</li>
+</ul>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="jekyll" /><summary type="html"><![CDATA["Path 설정의 중요성(이전 포스팅 마지막에 추가되는 오류 사항)"]]></summary></entry><entry><title type="html">[SWEA] 1928_Base64 Decoder</title><link href="http://localhost:4000/categories/algorithm/2023-05-19-algorithm-SWEA_1928/" rel="alternate" type="text/html" title="[SWEA] 1928_Base64 Decoder" /><published>2023-05-19T00:00:00+09:00</published><updated>2023-05-19T14:58:50+09:00</updated><id>http://localhost:4000/categories/algorithm/algorithm-SWEA_1928</id><content type="html" xml:base="http://localhost:4000/categories/algorithm/2023-05-19-algorithm-SWEA_1928/"><![CDATA[<blockquote>
   <p><a href="https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5PR4DKAG0DFAUq">https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5PR4DKAG0DFAUq</a></p>
 </blockquote>
 
@@ -568,470 +777,4 @@ ex) final int number = 3; 이면, number는 3이라는 값으로 고정된다.</
 <h3 id="참조">참조</h3>
 <hr />
 <p><a href="https://www.youtube.com/watch?v=bKa7bfXQi3A&amp;list=PLsMufJgu5932XYejsOwcUDJ2F75f56nrl&amp;index=52&amp;t=1163s">신찬수 교수님 유튜브 강의영상</a> <br />
-<a href="https://ko.wikipedia.org/wiki/%ED%94%8C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%9B%8C%EC%85%9C_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98">Wikipedia 플로이드-워셜 알고리즘</a></p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="study" /><summary type="html"><![CDATA["내용 정리"]]></summary></entry><entry><title type="html">AI</title><link href="http://localhost:4000/categories/it/2023-05-05-it-AI/" rel="alternate" type="text/html" title="AI" /><published>2023-05-05T00:00:00+09:00</published><updated>2023-05-09T13:41:10+09:00</updated><id>http://localhost:4000/categories/it/it-AI</id><content type="html" xml:base="http://localhost:4000/categories/it/2023-05-05-it-AI/"><![CDATA[<ul id="markdown-toc">
-  <li><a href="#정의" id="markdown-toc-정의">정의</a></li>
-  <li><a href="#인공지능-종류" id="markdown-toc-인공지능-종류">인공지능 종류</a></li>
-  <li><a href="#ai-장단점" id="markdown-toc-ai-장단점">AI 장단점</a></li>
-  <li><a href="#ai-적용-사례" id="markdown-toc-ai-적용-사례">AI 적용 사례</a></li>
-  <li><a href="#참조" id="markdown-toc-참조">참조</a></li>
-</ul>
-<hr />
-<h3 id="정의">정의</h3>
-<hr />
-<ul>
-  <li>AI는 학습, 문제 해결, 빅데이터 등과 같이 인간 지능과 연결된 인지 문제를 해결하는데 주력하는 분야이다.</li>
-  <li>컴퓨터 공학 분야뿐만 아니라 데이터 분석 및 통계, 하드웨어 및 소프트웨어 엔지니어링, 언어학, 신경과학은 물론 철학과 심리학도 포함되는 광범위한 분야이다.</li>
-  <li>우리가 주로 아는 AI는 머신러닝과 딥러닝을 기반으로 하는 기술모음으로 데이터 분석, 예상 및 예측, 객체 분류, 자연어 처리, 추천, 등을 수행한다.</li>
-</ul>
-
-<p>인공지능 기능</p>
-<ol>
-  <li>학습(Learning): <br />
-과거의 패턴들로부터 학습할 수 있는 능력을 가지고 있다.</li>
-  <li>문제 해결(Problem Solving): <br />
-복잡한 문제를 분석하고 해결할 수 있는 능력을 가지고 있다.</li>
-  <li>빅데이터(Big Data): <br />
-아주 큰 용량의 변화하는 데이터를 처리할 수 있다.</li>
-  <li>추론(Reasoning): <br />
-주위의 상황으로부터 추록할 수 있는 능력을 가지고 있다.</li>
-</ol>
-
-<ul>
-  <li>아래는 인공지능 기술 활용방안에 따라 나눠지는 관계도이다.</li>
-</ul>
-
-<p align="center"><img src="/assets/img/it/AI.png" width="300px" height="300px" title="px(픽셀) 크기 설정" alt="AI" /></p>
-
-<ul>
-  <li>인공지능: <br />
-사람의 지적 능력을 컴퓨터를 통해 구현하는 기술</li>
-  <li>머신러닝: <br />
-사람이 정한 모델과 특징 추출 방법을 이용하여 데이터를 기반으로 학습해서 추론할 수 있게 하는 기술</li>
-  <li>딥러닝: <br />
-인공신경망 방법을 이용해 만든 머신러닝 기술로, 빅데이터 학습에 적합한 기술</li>
-</ul>
-
-<h3 id="인공지능-종류">인공지능 종류</h3>
-<hr />
-<ol>
-  <li>ANI(Artificial Narrow Intelligence)
-    <ul>
-      <li>흔히 ‘약인공지능’이라고 부른다.</li>
-      <li>매우 복잡한 알고리즘과 신경망에 의해 구동될 수도 있지만 매우 목표지향적</li>
-      <li>기능이 부족하기 보다는 정의 상 진정한 지능으로 인정하는 인적요소를 갖추지 않아 Narrow intelligence라 칭함</li>
-      <li>ex) 얼굴 인식, 인터넷 검색, 자율주행차</li>
-    </ul>
-  </li>
-  <li>AGI(Artificial General Intelligence)
-    <ul>
-      <li>흔히 ‘강인공지능’이라고 부른다.</li>
-      <li>인간이 할 수 있는 지능적인 작업을 성공적으로 수행할 수 있어야한다.</li>
-      <li>ANI와 같이 경험으로부터 학습하고 패턴을 발견 및 예측이 가능하다.</li>
-      <li>ANI와 다른 점은 AGI는 기존 알고리즘에서 다루지 않은 것도 추정할 수 있다는 점이다.</li>
-    </ul>
-  </li>
-  <li>ASI(Artificial Super Intelligence)
-    <ul>
-      <li>흔히 ‘초인공지능’이라고 부른다.</li>
-      <li>이론적으로는 완전히 자기를 인식하는 AI</li>
-      <li>인간의 행동을 흉내내거나 이해하는 정도를 벗어나 근본적으로 파악이 가능하다.</li>
-      <li>아직은 개념만 있을 뿐 먼 미래의 이야기이다.</li>
-    </ul>
-  </li>
-</ol>
-
-<h3 id="ai-장단점">AI 장단점</h3>
-<hr />
-<p><strong>장점</strong></p>
-<ul>
-  <li>
-    <p>자동화 <br />
-사람들과 별개로 AI는 독립적이고 자율적으로 지속적인 작업이 가능하다.</p>
-  </li>
-  <li>
-    <p>사람의 실수 감소 <br />
-AI는 매번 동일한 프로세스를 따르는 자동화 및 알고리즘을 통해 작업을 하기 때문에 실수가 발생할 일이 드물다.</p>
-  </li>
-  <li>
-    <p>반복적인 작업 제거 <br />
-반복적인 작업을 수행하는 일에 알고리즘만 작성한다면 자동으로 수행해 그 일을 하던 인적 자원을 다른 곳에 투자 가능하다.</p>
-  </li>
-  <li>
-    <p>빠르고 정확함 <br />
-AI는 인간보다 더 빠르고 정확하게 일을 처리할 수 있으며 사람과 달리 휴식의 필요성이 없다. 이는 모든 작업에 가속도를 붙여줄 수 있다.</p>
-  </li>
-</ul>
-
-<p><strong>단점</strong></p>
-<ul>
-  <li>
-    <p>윤리적 문제점 <br />
-딥 페이크(Deepfake)와 가짜뉴스 같이 AI와 머신러닝을 사용한 외설적인 동영상을 만들거나 믿을만한 가짜뉴스를 생성하는 등 AI의 발전으로 생길 수 있는 문제점이 만들어진다.</p>
-  </li>
-  <li>
-    <p>AI 편향 <br />
-인공지능 시스템에 나타나는 특정 편향 문제를 해결할 수 있어야한다.</p>
-
-    <p>예를 들어, 아마존에서 개발하던 인공지능 채용 시스템에서 여성 차별적 인식이 드러나 폐기됐었다. 이유는 채용시스템에 쓰인 데이터에 10년간 아마존 지원자 데이터를 통한 분석 결과 남성 지원자가 압도적으로 많아 시스템 자체가 여성 지원자를 선호하지 않는 쪽으로 학습된 것이다.</p>
-  </li>
-</ul>
-
-<h3 id="ai-적용-사례">AI 적용 사례</h3>
-<hr />
-<ul>
-  <li>
-    <p>의료 부문 <br />
-데이터를 활용한 진단과 치료를 진행하는 방식</p>
-  </li>
-  <li>
-    <p>금융 부문 <br />
-가장 빠르게 도입한 분야 중 하나로 AI봇, 디지털 결제 어드바이저, 생체인식 부정행위 감지 메커니즘 등 효율성과 고객 서비스를 개선하기 위해 활용</p>
-  </li>
-  <li>
-    <p>제조 부문 <br />
-중앙 시스템을 통해 데이터를 주고 받기 위해 기기를 연결하면 IoT 네트워크를 구성한다. 해당 정보를 이용해 최상의 워크플로를 유지한다.</p>
-  </li>
-  <li>
-    <p>농업 부문 <br />
-수확량을 높이고 지속가능하도록 활용.  <br />
-재배 및 수확 단계에서 유통망과 수요까지 분석해 농부가 수확하기에 가장 효율적인 시기를 알려준다.</p>
-  </li>
-</ul>
-
-<h3 id="참조">참조</h3>
-<hr />
-<p><a href="https://www.sap.com/korea/products/artificial-intelligence/what-is-artificial-intelligence.html">SAP</a> <br />
-<a href="https://cloud.google.com/learn/what-is-artificial-intelligence?hl=ko#section-3">Google Cloud</a> <br />
-<a href="https://tta.or.kr/data/androReport/ttaJnal/20220614094203135_cumq.pdf">인공지능 편향성 이슈와 신뢰성 확보방안</a></p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="it" /><summary type="html"><![CDATA["Artificial Intelligence(AI) 기술 관련"]]></summary></entry><entry><title type="html">[기본 지식] Ascii Code</title><link href="http://localhost:4000/categories/study/2023-05-03-algorithmStudy-ascii/" rel="alternate" type="text/html" title="[기본 지식] Ascii Code" /><published>2023-05-03T00:00:00+09:00</published><updated>2023-05-19T14:31:46+09:00</updated><id>http://localhost:4000/categories/study/algorithmStudy-ascii</id><content type="html" xml:base="http://localhost:4000/categories/study/2023-05-03-algorithmStudy-ascii/"><![CDATA[<ul id="markdown-toc">
-  <li><a href="#아스키-코드란" id="markdown-toc-아스키-코드란">아스키 코드란?</a></li>
-  <li><a href="#활용-예시" id="markdown-toc-활용-예시">활용 예시</a></li>
-</ul>
-<hr />
-<h3 id="아스키-코드란">아스키 코드란?</h3>
-<hr />
-<p><img src="/assets/img/study/ascii.gif" alt="ascii" /></p>
-
-<p>컴퓨터에서 기호 혹은 문자를 기억하고 있는 체계로 알아두면 좋은 것들이다. <br />
-대표적으로,</p>
-<ul>
-  <li>48 ~ 57: 실제 숫자 0~9를 담당</li>
-  <li>65 ~ 90: A ~ Z</li>
-  <li>97 ~ 122: a ~ z</li>
-</ul>
-
-<p>해당 구간은 반드시 외우는 것이 편하다.</p>
-
-<h3 id="활용-예시">활용 예시</h3>
-<hr />
-<blockquote>
-  <p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/72410">https://school.programmers.co.kr/learn/courses/30/lessons/72410</a></p>
-</blockquote>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-    def solution(new_id):
-        answer = ''
-        
-        for word in new_id:
-            if len(answer) == 15:
-                break
-            
-            if 65 &lt;= ord(word) &lt;= 90:
-                word = chr(ord(word)+ 32)
-                answer += word
-            elif 97 &lt;= ord(word) &lt;= 122:
-                answer += word
-            elif 48 &lt;= ord(word) &lt;= 57:
-                answer += word
-            elif word == '-' or word == '_':
-                answer += word
-            elif word == '.':
-                if not answer or answer[-1] == '.':
-                    continue
-                else:
-                    answer += word
-        
-        for i in range(len(answer)-1, -1, -1):
-            if answer[i] == '.':
-                answer = answer[:i]
-                print(answer)
-            else:
-                break
-        
-        while len(answer) &lt;= 2:
-            if not answer:
-                answer += 'a'
-            else:
-                answer += answer[-1]
-        
-        return answer
-
-</code></pre></div></div>
-
-<p>해당 문제를 Ascii 코드표를 활용해 풀어본 코드이다.</p>
-
-<p>대소문자 변환은 파이썬에서 ascii 코드표를 활용하지않고 간단하게 해결할 수 있는 방법이 존재한다.</p>
-<ul>
-  <li>String.upper() &amp; String.lower()</li>
-  <li>위를 사용하면 문자열 전체를 대소문자로 자동으로 변환해준다.</li>
-</ul>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="study" /><summary type="html"><![CDATA["내용 정리"]]></summary></entry><entry><title type="html">핀테크</title><link href="http://localhost:4000/categories/it/2023-05-02-it-fintech/" rel="alternate" type="text/html" title="핀테크" /><published>2023-05-02T00:00:00+09:00</published><updated>2023-05-02T15:32:43+09:00</updated><id>http://localhost:4000/categories/it/it-fintech</id><content type="html" xml:base="http://localhost:4000/categories/it/2023-05-02-it-fintech/"><![CDATA[<ul id="markdown-toc">
-  <li><a href="#정의" id="markdown-toc-정의">정의</a></li>
-  <li><a href="#핀테크-예시" id="markdown-toc-핀테크-예시">핀테크 예시</a></li>
-  <li><a href="#핀테크-사용-이유" id="markdown-toc-핀테크-사용-이유">핀테크 사용 이유</a></li>
-  <li><a href="#참조" id="markdown-toc-참조">참조</a></li>
-</ul>
-<hr />
-<h3 id="정의">정의</h3>
-<hr />
-<p>핀테크(Fintech)란 금융(<strong>Fin</strong>ance)에 IT 기술(<strong>Tech</strong>nology)을 접목하여 금융 관련 서비스를 효율적으로 제공하는 것을 뜻한다. <br />
-기존의 금융회사에서 모든 서비스를 제공하는 방식이 우리가 알고있는 인터넷 뱅킹이라면 핀테크는 금융 서비스를 쪼개어서 하나의 분야를 전문적으로 서비스하는 방법이다.</p>
-
-<blockquote>
-  <p>-&gt; 인터넷 뱅킹(internet banking): <br />
-전자 금융의 일종으로 인터넷 회선을 이용하여 은행과 사용자 간의 금융 업무를 처리하는 시스템이다.
-온라인 뱅킹, 홈 뱅킹은 유의어다.</p>
-</blockquote>
-
-<h3 id="핀테크-예시">핀테크 예시</h3>
-<hr />
-<p><strong>간편송금/지급결제</strong></p>
-<ul>
-  <li>모바일 기기를 이용한 간편결제 방식</li>
-  <li>기존의 공인인증서를 이용한 복잡한 인증 절차 없이 주로 자체 보안 방식(이체 비밀번호, 지문인식, 홍채인식, 얼굴인식 등)인 바이오인증을 활용한다.</li>
-  <li>ex) 토스, 카카오페이, 네이버페이, 페이코, 삼성페이</li>
-</ul>
-
-<p><strong>로보어드바이저</strong></p>
-<ul>
-  <li>컴퓨터 알고리즘을 이용한 자산운용 관련 자동화 서비스</li>
-  <li>자신이 원하는 수익률, 위험도 등을 정하면 자동으로 내 자산을 운용해 투자하거나 상품을 추천해준다.(일임형과 자문형으로 나뉜다) <br />
-but,</li>
-  <li>낮은 수수료와 편리한 접근성에도 불구하고 수익률이 낮은 편</li>
-  <li>ex) 불리오, 에임, 하이로보</li>
-</ul>
-
-<p><strong>금융상품 추천 서비스</strong></p>
-<ul>
-  <li>소비자들의 자산관리를 디지털화하여 제공하는 방식</li>
-  <li>로보어드바이저와 비슷해 보이지만 자산을 운용해 투자하는 로보어드바이저와 달리 자산을 관리하는데 중점</li>
-  <li>카드나 예적금, 대출, 보험 등 다양한 금융상품에 대해 나에게 맞는 상품을 찾을 수 있도록 도와준다.</li>
-  <li>ex) NERDWALLET, CREDIT KARMA, 뱅크샐러드</li>
-</ul>
-
-<p><strong>크라우드 펀딩</strong></p>
-<ul>
-  <li>자금이 필요한 개인, 단체, 기업이 웹이나 모바일 네트워크를 활용해 불특정 다수로부터 자금을 모으는 것</li>
-  <li>유형이 4가지로 나뉘어진다.
-    <ul>
-      <li>
-        <p>금융대출형:  <br />
-대출자의 다양한 데이터를 통해 신용등급을 평가하고 돈이 필요한 사람과 투자자를 매칭해 대출과 투자를 이어주는 방식
-ex) 테라펀딩, 렌딧, 8퍼센트</p>
-      </li>
-      <li>
-        <p>투자형: <br />
-신생기업이나 개발프로젝트에 투자하고 지분획득하는 방식
-ex) 와디즈</p>
-      </li>
-      <li>
-        <p>후원형: <br />
-금전적 보상과는 무관한 방식</p>
-      </li>
-    </ul>
-  </li>
-</ul>
-
-<h3 id="핀테크-사용-이유">핀테크 사용 이유</h3>
-<hr />
-<p><strong>국내 추진 배경</strong></p>
-<ul>
-  <li>기존 금융회사 혁신 속도가 느린 문제점</li>
-  <li>핀테크는 모바일 결제시장이 열리면서 세계적으로 빠르게 성장하는 중</li>
-</ul>
-
-<p><strong>기대효과</strong></p>
-<ol>
-  <li>
-    <p>금융부문 경쟁촉진 <br />
-금융권이 공정하게 경쟁하면서 금융시장의 효율성은 높아진다.</p>
-  </li>
-  <li>
-    <p>일자리 창출 <br />
-IT와 금융이 융합된 산업인만큼 양질의 일자리 창출 파급력이 크다.</p>
-  </li>
-  <li>
-    <p>소비자 편익 향상 <br />
-모바일 결제를 비롯한 다양한 금융서비스를 활용한 편리한 생활이 가능해졌다.</p>
-  </li>
-</ol>
-
-<h3 id="참조">참조</h3>
-<hr />
-<p><a href="https://www.korea.kr/special/policyCurationView.do?newsId=148865913">대한민국 정책브리핑: 핀테크</a> <br />
-<a href="https://www.banksalad.com/contents/%ED%95%80%ED%85%8C%ED%81%AC-%EA%B0%9C%EB%85%90-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC-9752">뱅크샐러드 핀테크 완벽 정리</a> <br />
-<a href="https://happyedu.moe.go.kr/happy/bbs/selectHappyArticle.do?bbsId=BBSMSTR_000000005080&amp;nttId=9947">행복한 교육</a></p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="it" /><summary type="html"><![CDATA["핀테크 기술 관련"]]></summary></entry><entry><title type="html">[BOJ] 2206 벽 부수고 이동하기</title><link href="http://localhost:4000/categories/algorithm/2023-05-01-algorithm-BOJ_2206/" rel="alternate" type="text/html" title="[BOJ] 2206 벽 부수고 이동하기" /><published>2023-05-01T00:00:00+09:00</published><updated>2023-05-18T11:17:53+09:00</updated><id>http://localhost:4000/categories/algorithm/algorithm-BOJ_2206</id><content type="html" xml:base="http://localhost:4000/categories/algorithm/2023-05-01-algorithm-BOJ_2206/"><![CDATA[<blockquote>
-  <p><a href="https://www.acmicpc.net/problem/2206">https://www.acmicpc.net/problem/2206</a></p>
-</blockquote>
-
-<h3 id="문제-해결-과정">문제 해결 과정</h3>
-<hr />
-<p><strong>문제 해석</strong></p>
-<ul>
-  <li>벽은 단 하나만 필요에 의해 부술 수 있음</li>
-  <li>위 조건만 만족하면 그저 최단경로 문제</li>
-</ul>
-
-<p><strong>접근 방식</strong></p>
-<ul>
-  <li>BFS 혹은 DFS 사용한 풀이를 생각</li>
-  <li>벽을 부술 수 있는지 여부에 따라 탐색을 달리해야하므로 DFS를 처음에는 선택</li>
-  <li>
-    <p>BOJ 시스템에서는 재귀를 이용한 DFS 풀이 시 시간초과와 메모리초과가 발생했다</p>
-  </li>
-  <li>해당 코드는 아래와 같음</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    
-    import sys
-    sys.setrecursionlimit(10**9)
-    
-    def DFS(x, y, dist, hammer):
-        global result
-    
-        if result &lt; dist:
-            return
-    
-        if x == N-1 and y == M-1:
-            if dist &lt; result:
-                result = dist
-        else:
-            for i in range(4):
-                tx = x+dx[i]
-                ty = y+dy[i]
-                if 0 &lt;= tx &lt; N and 0 &lt;= ty &lt; M:
-                    if map[tx][ty] == 0 and not visited[tx][ty]:
-                        visited[tx][ty] = 1
-                        DFS(tx, ty, dist+1, hammer)
-                        visited[tx][ty] = 0
-                    elif map[tx][ty] == 1 and hammer:
-                        visited[tx][ty] = 1
-                        hammer = 0
-                        DFS(tx, ty, dist+1, hammer)
-                        visited[tx][ty] = 0
-                        hammer = 1
-    
-    # input
-    input = sys.stdin.readline
-    
-    N, M = map(int, input().split())
-    map = [(list(map(int, list(input().strip())))) for _ in range(N)]
-    
-    # main
-    visited = [[0 for _ in range(M)] for _ in range(N)]
-    dx = [0, 0, -1, 1]
-    dy = [1, -1, 0, 0]
-    
-    result = N * M
-    DFS(0, 0, 1, 1)
-    
-    if result == N * M:
-        print(-1)
-    else:
-        print(result)
-
-</code></pre></div></div>
-
-<ul>
-  <li>문제점이 뭔지 찾아보던 중 최단경로 문제는 <strong>반드시 BFS</strong>를 사용해야한다는 글을 읽었다. <br />
-<a href="https://hunnibs.github.io/categories/study/2023-04-25-algorithmStudy-dfsbfs/">[알고리즘] BFS &amp; DFS 알고리즘</a> 해당 포스트 내용 참조</li>
-  <li>그래서 BFS를 이용하고 벽을 부수술 있는가에 대한 유무를 판단하는 Status값을 큐에 함께 넣어주는 방식을 사용했다.</li>
-</ul>
-
-<p><strong>문제점</strong></p>
-<ul>
-  <li>완벽하게 풀었다고 생각했으나 시작점과 출발점이 같은 경우는 출력을 할 때 길이 없다고 판단했다.</li>
-  <li>따로 조건을 추가해서 해결했으나 조금 찝찝한 풀이로 완료한 느낌이다.</li>
-</ul>
-
-<h3 id="전체-코드">전체 코드</h3>
-<hr />
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    
-    import sys
-    from collections import deque
-    
-    def BFS():
-        while queue:
-            x, y, hammer = queue.popleft()  # hammer는 벽을 부술수있는지 여부를 확인하는 Status값
-    
-            for i in range(4):
-                tx = x + dx[i]
-                ty = y + dy[i]
-                if 0 &lt;= tx &lt; N and 0 &lt;= ty &lt; M:
-                    # 벽을 부술 수 있는 경우
-                    if hammer:
-                        # 벽을 부술 필요가 없는 경우
-                        if map[tx][ty] == 0:
-                            if not dist[tx][ty]:  # 한 번도 방문하지 않은 경우 업데이트
-                                dist[tx][ty] = dist[x][y] + 1
-                                queue.append([tx, ty, 1])
-                            else:  # 이미 정해진 최단경로보다 값이 작을 때만 탐색을 더 진행한다.
-                                if dist[tx][ty] &gt; dist[x][y] + 1:
-                                    dist[tx][ty] = dist[x][y] + 1
-                                    queue.append([tx, ty, 1])
-                        벽을 부숴야하는 경우
-                        else:
-                            dist_noHam[tx][ty] = dist[x][y] + 1
-                            queue.append([tx, ty, 0])
-                    # 벽을 부술 수 없는 경우
-                    else:
-                        if map[tx][ty] == 0:
-                            if not dist_noHam[tx][ty]:  # 한 번도 방문하지 않은 경우 업데이트
-                                dist_noHam[tx][ty] = dist_noHam[x][y] + 1
-                                queue.append([tx, ty, 0])
-                            else:  # 이미 정해진 최단경로보다 값이 작을 때만 탐색을 더 진행한다.
-                                if dist_noHam[tx][ty] &gt; dist_noHam[x][y] + 1:
-                                    dist_noHam[tx][ty] = dist_noHam[x][y] + 1
-                                    queue.append([tx, ty, 0])
-    
-    # input
-    input = sys.stdin.readline
-    
-    N, M = map(int, input().split())
-    map = [(list(map(int, list(input().strip())))) for _ in range(N)]
-    
-    # main
-    dist = [[0 for _ in range(M)] for _ in range(N)]
-    dist_noHam = [[0 for _ in range(M)] for _ in range(N)]
-    # 방향 정보
-    dx = [0, 0, -1, 1]
-    dy = [1, -1, 0, 0]
-    
-    queue = deque()
-    queue.append([0, 0, 1])
-    BFS()
-    
-    ham = dist[N-1][M-1]
-    noHam = dist_noHam[N-1][M-1]
-    
-    if ham and noHam:
-        if ham &gt; noHam:
-            print(noHam+1)
-        else:
-            print(ham+1)
-    elif ham:
-        print(ham+1)
-    elif noHam:
-        print(noHam+1)
-    elif N == 1 and M == 1:
-        print(1)
-    else:
-        print(-1)
-
-</code></pre></div></div>
-
-<h3 id="문제-풀이-후기">문제 풀이 후기</h3>
-<hr />
-<p>처음에 DFS로 풀자고 마음을 먹은 것부터 DFS와 BFS를 제대로 이해하지 못했던 것 같다. <br />
-최적해를 구하긴하지만 확실한 최단경로를 구하기 위해서는 BFS를 사용해야한다는 것을 알 수 있었던 문제였다.</p>
-
-<p>총 소요 시간: 2H 30M</p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="algorithm" /><summary type="html"><![CDATA["BFS 활용 문제"]]></summary></entry></feed>
+<a href="https://ko.wikipedia.org/wiki/%ED%94%8C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%9B%8C%EC%85%9C_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98">Wikipedia 플로이드-워셜 알고리즘</a></p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="study" /><summary type="html"><![CDATA["내용 정리"]]></summary></entry></feed>
