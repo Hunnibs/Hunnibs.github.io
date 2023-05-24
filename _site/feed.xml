@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-05-24T23:48:03+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hunnibs</title><subtitle>About my work history &amp; review
-</subtitle><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><entry><title type="html">[Java] 배열</title><link href="http://localhost:4000/categories/javastudy/2023-05-24-javaStudy-array/" rel="alternate" type="text/html" title="[Java] 배열" /><published>2023-05-24T00:00:00+09:00</published><updated>2023-05-24T23:48:03+09:00</updated><id>http://localhost:4000/categories/javastudy/javaStudy-array</id><content type="html" xml:base="http://localhost:4000/categories/javastudy/2023-05-24-javaStudy-array/"><![CDATA[<ul id="markdown-toc">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-05-25T00:20:13+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hunnibs</title><subtitle>About my work history &amp; review
+</subtitle><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><entry><title type="html">[Java] 배열</title><link href="http://localhost:4000/categories/javastudy/2023-05-24-javaStudy-array/" rel="alternate" type="text/html" title="[Java] 배열" /><published>2023-05-24T00:00:00+09:00</published><updated>2023-05-25T00:08:01+09:00</updated><id>http://localhost:4000/categories/javastudy/javaStudy-array</id><content type="html" xml:base="http://localhost:4000/categories/javastudy/2023-05-24-javaStudy-array/"><![CDATA[<ul id="markdown-toc">
   <li><a href="#1차원-배열-생성" id="markdown-toc-1차원-배열-생성">1차원 배열 생성</a></li>
   <li><a href="#2차원-배열-생성" id="markdown-toc-2차원-배열-생성">2차원 배열 생성</a></li>
   <li><a href="#배열을-활용한-제어문" id="markdown-toc-배열을-활용한-제어문">배열을 활용한 제어문</a></li>
@@ -22,7 +22,7 @@
     int[][] array2 = new int[3][]; // 3행만 생성
     array2[0] = new int[3];  // 이런 식으로 따로 행 별로 배열 생성
 
-    int[][] array3 = {1, 2, 3}, {4, 5, 6}, {7, 8, 9}  // 3행 3열짜리 값을 배정완료   
+    int[][] array3 = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};  // 3행 3열짜리 값을 배정완료   
     
     // {}로 전체를 싸줘야하는데 그러면 Liquid Error가 발생해서 포스팅이 안된다..
 
@@ -42,7 +42,58 @@
         System.out.println(value);
     }
 
-</code></pre></div></div>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="javaStudy" /><summary type="html"><![CDATA["배열"]]></summary></entry><entry><title type="html">[Java] 연산자</title><link href="http://localhost:4000/categories/javastudy/2023-05-24-javaStudy-operator/" rel="alternate" type="text/html" title="[Java] 연산자" /><published>2023-05-24T00:00:00+09:00</published><updated>2023-05-24T16:32:24+09:00</updated><id>http://localhost:4000/categories/javastudy/javaStudy-operator</id><content type="html" xml:base="http://localhost:4000/categories/javastudy/2023-05-24-javaStudy-operator/"><![CDATA[<ul id="markdown-toc">
+</code></pre></div></div>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="javaStudy" /><summary type="html"><![CDATA["배열"]]></summary></entry><entry><title type="html">[Jekyll] GitHub 블로그 개발일지(4)</title><link href="http://localhost:4000/categories/jekyll/2023-05-24-jekyll-error1/" rel="alternate" type="text/html" title="[Jekyll] GitHub 블로그 개발일지(4)" /><published>2023-05-24T00:00:00+09:00</published><updated>2023-05-25T00:20:13+09:00</updated><id>http://localhost:4000/categories/jekyll/jekyll-error1</id><content type="html" xml:base="http://localhost:4000/categories/jekyll/2023-05-24-jekyll-error1/"><![CDATA[<ul id="markdown-toc">
+  <li><a href="#41-상상치도-못한-error-발생" id="markdown-toc-41-상상치도-못한-error-발생">4.1 상상치도 못한 Error 발생</a></li>
+  <li><a href="#42-error-해결과정" id="markdown-toc-42-error-해결과정">4.2 Error 해결과정</a></li>
+</ul>
+<h3 id="41-상상치도-못한-error-발생">4.1 상상치도 못한 Error 발생</h3>
+<hr />
+<ul>
+  <li>로컬 환경 Error 내용
+    <blockquote>
+      <p>Liquid Exception: Liquid syntax error (line 23): Variable ‘{{1, 2, 3}}’ was not properly terminated with regexp: /}}/ in C:/Users/cqqud/Documents/GitHub/Hunnibs.github.io/categories/javaStudy/_posts/2023-05-24-javaStudy-array.md</p>
+    </blockquote>
+  </li>
+  <li>Github page action Error 내용</li>
+</ul>
+<p align="center"><img src="\assets\img\jekyll\buildError.png" width="800px" height="300px" title="px(픽셀) 크기 설정" alt="BuildError" /></p>
+
+<p>아무것도 건드린거 없이 포스팅만 추가했는데 Error가 발생했다. 아무것도 하지 않았는데 발생한 Error라 머리 속이 새하얘졌다.</p>
+
+<h3 id="42-error-해결과정">4.2 Error 해결과정</h3>
+<hr />
+<ol>
+  <li>
+    <p>Error message에 나온 해당 파일에서만 문제가 발생하는지 확인부터 진행</p>
+
+    <ul>
+      <li>3개의 포스팅을 업로드 한 번에 업로드했어서 저 파일을 제외한 파일들을 올려봤다.</li>
+    </ul>
+  </li>
+  <li>문제없이 포스팅이 되는 것을 확인한 후 Error message의 해당 줄을 확인
+    <ul>
+      <li>Code 작성과 관련된 부분이 었는데 중괄호를 두 번 쓴 것이 문제라는 것 같았다.</li>
+    </ul>
+  </li>
+  <li>
+    <p>해당 Error가 일어나는 이유를 구글링으로 찾아 해결</p>
+
+    <ul>
+      <li>Liquid라는 루비 기반의 템플릿 언어는 {{, }}를 escape 문자로 활용하기 때문에 Error가 발생하는 것</li>
+    </ul>
+
+    <p>참조 -&gt; <a href="https://iamheesoo.github.io/blog/gitblog-sol-jekyll02">iamheesoo 님 깃헙 블로그</a></p>
+  </li>
+  <li>
+    <p>해결법</p>
+
+    <p><img src="\assets\img\jekyll\sentence.png" alt="sentence" /></p>
+    <ul>
+      <li>이 해당 문구는 그냥 적으면 없애버려서 이미지 파일로 첨부해야한다.</li>
+      <li>굉장히 불편한 부분</li>
+    </ul>
+  </li>
+</ol>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="jekyll" /><summary type="html"><![CDATA["Liquid Exception: Liquid syntax error"]]></summary></entry><entry><title type="html">[Java] 연산자</title><link href="http://localhost:4000/categories/javastudy/2023-05-24-javaStudy-operator/" rel="alternate" type="text/html" title="[Java] 연산자" /><published>2023-05-24T00:00:00+09:00</published><updated>2023-05-24T16:32:24+09:00</updated><id>http://localhost:4000/categories/javastudy/javaStudy-operator</id><content type="html" xml:base="http://localhost:4000/categories/javastudy/2023-05-24-javaStudy-operator/"><![CDATA[<ul id="markdown-toc">
   <li><a href="#산술연산자" id="markdown-toc-산술연산자">산술연산자</a></li>
   <li><a href="#비교연산자" id="markdown-toc-비교연산자">비교연산자</a></li>
 </ul>
@@ -696,85 +747,4 @@ Java를 공부하기 위해 공부내용을 정리할 포스팅 공간을 만들
 <hr />
 <p>아직은 Dijkstra 알고리즘 사용이 익숙하지 않고 Heap을 자유롭게 사용하지 못해 포스트 내용을 참조해서 문제를 풀어야했다. 그래도 문제를 보고 어떤 알고리즘을 써야할지 빠르게 파악했다는 점에 공부가 되고있다는 생각이 들었던 문제였던 것 같다.</p>
 
-<p>총 소요시간: 0H 45M</p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="algorithm" /><summary type="html"><![CDATA["다익스트라 활용 문제"]]></summary></entry><entry><title type="html">[알고리즘] Floyd-Warshall 알고리즘</title><link href="http://localhost:4000/categories/study/2023-05-09-algorithmStudy-Floyd/" rel="alternate" type="text/html" title="[알고리즘] Floyd-Warshall 알고리즘" /><published>2023-05-09T00:00:00+09:00</published><updated>2023-05-10T16:02:28+09:00</updated><id>http://localhost:4000/categories/study/algorithmStudy-Floyd</id><content type="html" xml:base="http://localhost:4000/categories/study/2023-05-09-algorithmStudy-Floyd/"><![CDATA[<ul id="markdown-toc">
-  <li><a href="#플로이드-워셜-알고리즘이란" id="markdown-toc-플로이드-워셜-알고리즘이란">플로이드-워셜 알고리즘이란?</a></li>
-  <li><a href="#구현-방법" id="markdown-toc-구현-방법">구현 방법</a></li>
-  <li><a href="#구현-코드" id="markdown-toc-구현-코드">구현 코드</a></li>
-  <li><a href="#참조" id="markdown-toc-참조">참조</a></li>
-</ul>
-<hr />
-<h3 id="플로이드-워셜-알고리즘이란">플로이드-워셜 알고리즘이란?</h3>
-<hr />
-<p>플로이드-워셜 알고리즘(Floyd-Warshall Algorithm)은 변의 가중치가 음이거나 양인 (음수 사이클은 없는) 가중 그래프에서 최단 경로들을 찾는 알고리즘이다. All-to-all shortest path라고도 표현하며 해당 알고리즘은 DP 알고리즘을 활용해야한다. <br />
-목적은 모든 노드 간의 최단 경로의 길이를 찾는 것이다.</p>
-
-<p><strong>Wikipedia 예시</strong> <br />
-<img src="\assets\img\study\Floyd_Wiki.png" alt="graph" /></p>
-
-<p>아래는 dist 리스트의 변화를 K 값에 따라 보여준다.(K값은 반드시 지나야하는 경로를 뜻함) <br />
-<img src="\assets\img\study\Floyd_WikiG.png" alt="table" /></p>
-
-<h3 id="구현-방법">구현 방법</h3>
-<hr />
-<ul>
-  <li>플로이드-워셜 알고리즘도 다익스트라 알고리즘과 같이 <strong>가중치가 주어진 방향 그래프</strong>에만 사용이 가능</li>
-  <li>
-    <p>시간 복잡도는 복잡하지만 모든 정점들 사이의 최단경로를 구하는 점과 음수 가중치에 대해서도(음수 사이클은 존재하지 않아야한다.) 처리할 수가 있다.</p>
-  </li>
-  <li>단계별 정리
-    <ol>
-      <li>경유하는 노드가 없을 때 최단거리를 저장해준다.(이 때, 서로 연결된 간선이 없는 노드 간은 inf로 저장한다)</li>
-      <li>경유하는 노드를 1부터 n번 노드까지 정해준다.</li>
-      <li>각 노드 별로 경유하는 노드를 지나 다른 노드로 갈 때의 거리와 원래 다른 노드로 갈 때의 거리를 비교한다.</li>
-      <li>만약, 경유해서 가는 거리가 더 짧다면 최단거리를 업데이트 한다.</li>
-    </ol>
-  </li>
-</ul>
-
-<h3 id="구현-코드">구현 코드</h3>
-<hr />
-<p><a href="https://www.acmicpc.net/problem/11404">백준 11404 플로이드 문제</a></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-    import sys
-    from math import inf
-
-    # input
-    input = sys.stdin.readline
-
-    n = int(input())
-    m = int(input())
-
-    graph = [[inf for _ in range(n)] for _ in range(n)]
-    for _ in range(m):
-        a, b, c = map(int, input().split())
-        graph[a-1][b-1] = min(graph[a-1][b-1], c)
-
-    # main
-    for K in range(n):
-        for i in range(n):
-            for j in range(n):
-                graph[i][j] = min(graph[i][j], graph[i][K] + graph[K][j])
-
-    for i in range(n):
-        graph[i][i] = 0
-
-    for i in range(n):
-        for j in range(n):
-            if graph[i][j] == inf:
-                print(0, end=' ')
-            else:
-                print(graph[i][j], end=' ')
-        print()
-
-</code></pre></div></div>
-
-<ul>
-  <li>실제 Floyd-Warshall 코드는 # main 아래 5줄이 전부이다.</li>
-  <li>해당 문제에서는 시작도시와 도착도시가 같은 경우는 없어야하므로 0으로 초기화해줬다.</li>
-</ul>
-
-<h3 id="참조">참조</h3>
-<hr />
-<p><a href="https://www.youtube.com/watch?v=bKa7bfXQi3A&amp;list=PLsMufJgu5932XYejsOwcUDJ2F75f56nrl&amp;index=52&amp;t=1163s">신찬수 교수님 유튜브 강의영상</a> <br />
-<a href="https://ko.wikipedia.org/wiki/%ED%94%8C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%9B%8C%EC%85%9C_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98">Wikipedia 플로이드-워셜 알고리즘</a></p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="study" /><summary type="html"><![CDATA["내용 정리"]]></summary></entry></feed>
+<p>총 소요시간: 0H 45M</p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="algorithm" /><summary type="html"><![CDATA["다익스트라 활용 문제"]]></summary></entry></feed>
