@@ -6,29 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="665d9854-24e4-4d31-bb39-8a8ccf9eea53" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/CHANGELOG/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/CHANGELOG/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/LICENSE/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/LICENSE/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/NOTICE/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/NOTICE/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/about/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/algorithm/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/algorithm/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/download/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/download/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/it/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/it/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/jekyll/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/jekyll/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/licenses/Apache-2.0/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/licenses/Apache-2.0/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/licenses/GPL-3.0/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/licenses/GPL-3.0/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/licenses/MIT/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/licenses/MIT/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/licenses/PRO/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/licenses/PRO/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/licenses/W3C-20150513/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/licenses/W3C-20150513/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/licenses/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/licenses/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/posts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/posts/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/sitemap.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/study/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/study/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/about.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/categories/study/_posts/2023-04-25-algorithmStudy-dijkstra.md" beforeDir="false" afterPath="$PROJECT_DIR$/categories/study/_posts/2023-04-25-algorithmStudy-dijkstra.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,22 +19,34 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
   <component name="ProjectId" id="2Ogul4bQ3yutskQuLlBBUhcpOsu" />
   <component name="ProjectViewState">
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
     <option name="sortByType" value="true" />
+    <option name="sortKey" value="BY_TYPE" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/cqqud/Documents/GitHub/DataStructure-Algorithm",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/cqqud/Documents/GitHub/Datastructure-Algorithm_Java",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -91,8 +81,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1681994697846</updated>
+      <workItem from="1693996617467" duration="2969000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
