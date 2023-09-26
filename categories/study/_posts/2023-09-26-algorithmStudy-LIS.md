@@ -65,7 +65,7 @@ hide_last_modified: true
 - 해당 방식은 동적으로 메모리를 할당하고 탐색 또한 이분 탐색을 활용하기 때문에 시간적으로도 이득이다.
 - 시간복잡도는 O(NlogN)이다.
 
-![img.png](../../../assets/img/study/LIS.png)
+![img.png](/assets/img/study/LIS.png)
 
 - 해당 그림은 업데이트 과정을 시각화 한 것이다.   
 
