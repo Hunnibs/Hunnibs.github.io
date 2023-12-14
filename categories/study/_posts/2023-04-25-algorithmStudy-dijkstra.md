@@ -84,6 +84,11 @@ hide_last_modified: true
             Info current = heap.poll();
             List<Info> currentVertex = graph.getEdgeList(current.vertex);
 
+            // 추가 -> 현재 가중치가 최단 경로에 저장되어있는 가중치 값보다 크다면 비교할 필요조차 없다 (pruning)
+            if (current.weight > shortestPath[current.vertex]) {
+                continue;
+            }
+
             for (Info next : currentVertex){
                 if (shortestPath[next.vertex] > next.weight + current.weight){
                     shortestPath[next.vertex] = next.weight + current.weight;
