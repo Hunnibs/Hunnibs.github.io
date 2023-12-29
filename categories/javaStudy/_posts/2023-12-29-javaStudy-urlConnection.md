@@ -125,7 +125,7 @@ WebClient는 스프링 5에서 소개된 비동기 및 논블록킹 웹 요청�
             String responseBody = webClient.get()
                     .retrieve()
                     .bodyToMono(String.class)
-                    .block(); // blocking for simplicity, consider using subscribe instead
+                    .block();
 
             map.put("response", responseBody);
         } catch (Exception e) {
