@@ -54,6 +54,10 @@ HttpURLConnection은 Java에서 기본적으로 제공하는 클래스이기 때
 
 ```
 
+### 결과 화면
+![urlConnection](/assets/img/javaStudy/httpconnection.png)
+
+
 ## RestTemplate
 ***
 ### 정의
@@ -86,6 +90,9 @@ Public class RestTemplate은 Spring 프레임워크에서 제공하는 HTTP 클�
     }
 
 ```
+
+### 결과 화면
+![restTemplate](/assets/img/javaStudy/restTemplate.png)
 
 ## WebClient
 ***
@@ -121,6 +128,10 @@ WebClient는 스프링 5에서 소개된 비동기 및 논블록킹 웹 요청�
         return Mono.just(new ResponseEntity<>(map, HttpStatus.OK));
     }
 ```
+
+### 결과 화면
+![webclient](/assets/img/javaStudy/webclient.png)
+
 
 ### 추가(Spring WebFlux)
 ***
