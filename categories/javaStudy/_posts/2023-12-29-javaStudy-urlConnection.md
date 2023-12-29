@@ -12,12 +12,14 @@ hide_last_modified: false
 ## HttpURLConnection
 ***
 ### 정의
+***
 public abstract class인 URLConnection의 Subclass로 URL 간의 통신 링크를 나타낸다.   
 각 HttpURLConnection instance는 단일 요청을 만드는 데 사용되며 요청 후 InputStream 혹은 OutputStream에서 close() 메소드를 호출 시 네트워크 리소스를 해제할 수 가 있다.
 또한, 서버에 다른 요청을 더 이상 보낼 필요가 없을 경우 disconnect() 메소드를 사용해서 연결을 해제할 수가 있다.   
 HttpURLConnection은 Java에서 기본적으로 제공하는 클래스이기 때문에 스프링 프레임워크를 사용할 필요성이 없다.
 
 ### 예시 코드
+***
 ```java
     @GetMapping("url_connection")
     public ResponseEntity<Map<String, Object>> getHttpURLConnection() throws IOException {
@@ -55,6 +57,7 @@ HttpURLConnection은 Java에서 기본적으로 제공하는 클래스이기 때
 ```
 
 ### 결과 화면
+***
 ![urlConnection](/assets/img/javaStudy/httpconnection.png)
 
 
@@ -64,6 +67,7 @@ HttpURLConnection은 Java에서 기본적으로 제공하는 클래스이기 때
 Public class RestTemplate은 Spring 프레임워크에서 제공하는 HTTP 클라이언트 라이브러리로 간단하게 HTTP 통신을 진행할 수가 있는 동기식 클라이언트이다.
 
 ### 예시 코드
+***
 ```java
     @GetMapping("rest_template")
     public ResponseEntity<Map<String, Object>> getRestTemplate(){
@@ -92,14 +96,17 @@ Public class RestTemplate은 Spring 프레임워크에서 제공하는 HTTP 클�
 ```
 
 ### 결과 화면
+***
 ![restTemplate](/assets/img/javaStudy/restTemplate.png)
 
 ## WebClient
 ***
 ### 정의
+***
 WebClient는 스프링 5에서 소개된 비동기 및 논블록킹 웹 요청을 수행하기 위해 사용되는 Reactive web 클라이언트이다.    
 
 ### 예시 코드
+***
 ```java
     @GetMapping("web_client")
     public Mono<ResponseEntity<Map<String, Object>>> getWebClient() {
@@ -130,6 +137,7 @@ WebClient는 스프링 5에서 소개된 비동기 및 논블록킹 웹 요청�
 ```
 
 ### 결과 화면
+***
 ![webclient](/assets/img/javaStudy/webclient.png)
 
 
