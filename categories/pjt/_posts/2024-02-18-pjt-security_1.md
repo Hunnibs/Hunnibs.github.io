@@ -106,6 +106,12 @@ org.springframework.security.web.access.intercept.AuthorizationFilter@169268a7]
 - 해당 코드는 진행했던 프로젝트의 Security Config 설정이다.
 - SecurityFilterChain 부분 코드를 보면 알 수 있듯이 Cors(Cross Origin Resource Sharing) 설정과 CSRF(Cross Site Request Forgery) 설정을 진행할 수 있다. 
 
+### Authentication Manager
+![Authentication Flow](</assets/img/pjt/SecurityManager.png>)
+- Security Filter Chain 내부 인증은 Authentication Manager가 맡아서 처리한다. 
+- Authentication Manager는 인증을 위한 Authentication Provider를 자동으로 매핑시켜주며 provider는 인증에 성공할 시 성공 정보를 반환해 Security Context에 넣어준다.
+- 이후 인증 과정에서 Security Context만을 확인하면 인증이 완료된 요청이라는 것을 알 수 있기 때문에 인증을 성공적으로 처리할 수 있다. 
+
 - 마지막으로 짧게 프로젝트 진행 간 CORS와 CSRF 설정에서 있었던 일을 정리
 
 - CORS  
