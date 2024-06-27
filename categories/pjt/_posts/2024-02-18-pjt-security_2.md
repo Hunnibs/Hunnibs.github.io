@@ -30,11 +30,10 @@ jjwt 0.12.4
 ### JWT 생성
 - 세부 설정을 숨기기 위해 yml 파일을 이용해 JWT에 들어갈 값들을 저장해준다. 
 ```yaml
-
 app:
   JWT_COOKIE_A: "ACCESS"
   JWT_COOKIE_R: "REFRESH"
-  JWT_KEY : "d1f33e03-f067-4315-af91-b03f91f4cb19"
+  JWT_KEY : ""
   JWT_REFRESH_EXPIRATION : "604800000"
   JWT_ACCESS_EXPIRATION : "1800000"
 ```
