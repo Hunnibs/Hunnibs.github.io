@@ -54,10 +54,10 @@ menu:
   - title:             It
     url:               /it/
   - title:             Java Study
-    url:               /javastudy/
+    url:               /java Study/
   - title:             Jekyll
     url:               /jekyll/
-  - title:            web
+  - title:            Web
     url:               /pjt/
 
 # Add links to the footer.
