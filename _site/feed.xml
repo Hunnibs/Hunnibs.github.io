@@ -1,750 +1,1471 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-05-25T00:20:13+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hunnibs</title><subtitle>About my work history &amp; review
-</subtitle><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><entry><title type="html">[Java] 배열</title><link href="http://localhost:4000/categories/javastudy/2023-05-24-javaStudy-array/" rel="alternate" type="text/html" title="[Java] 배열" /><published>2023-05-24T00:00:00+09:00</published><updated>2023-05-25T00:08:01+09:00</updated><id>http://localhost:4000/categories/javastudy/javaStudy-array</id><content type="html" xml:base="http://localhost:4000/categories/javastudy/2023-05-24-javaStudy-array/"><![CDATA[<ul id="markdown-toc">
-  <li><a href="#1차원-배열-생성" id="markdown-toc-1차원-배열-생성">1차원 배열 생성</a></li>
-  <li><a href="#2차원-배열-생성" id="markdown-toc-2차원-배열-생성">2차원 배열 생성</a></li>
-  <li><a href="#배열을-활용한-제어문" id="markdown-toc-배열을-활용한-제어문">배열을 활용한 제어문</a></li>
-</ul>
-<hr />
-<h3 id="1차원-배열-생성">1차원 배열 생성</h3>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-    int[] array = new int[100];  // 100개의 int형 변수를 저장해줄 수 있는 배열 생성
-    int[] array2 = new int[] {1, 2, 3, 4}  // 배열 생성과 동시에 안에 값을 배정해주는 방식
-    int[] array3 = {1, 2, 3, 4}  // 이런 방식으로도 가능하다. 
-   
-</code></pre></div></div>
-
-<h3 id="2차원-배열-생성">2차원 배열 생성</h3>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-    int[][] array = new int[3][4]; // 3행 4열짜리 배열 생성
-    
-    int[][] array2 = new int[3][]; // 3행만 생성
-    array2[0] = new int[3];  // 이런 식으로 따로 행 별로 배열 생성
-
-    int[][] array3 = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};  // 3행 3열짜리 값을 배정완료   
-    
-    // {}로 전체를 싸줘야하는데 그러면 Liquid Error가 발생해서 포스팅이 안된다..
-
-</code></pre></div></div>
-
-<h3 id="배열을-활용한-제어문">배열을 활용한 제어문</h3>
-
-<p><strong>foreach문</strong></p>
-<ul>
-  <li>배열에서 차례대로 하나씩 꺼낸다고 생각하면 이해가 편함</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-    int[] iarr = {10,20,30,40,50};
-
-    for(int value:iarr){
-        System.out.println(value);
-    }
-
-</code></pre></div></div>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="javaStudy" /><summary type="html"><![CDATA["배열"]]></summary></entry><entry><title type="html">[Jekyll] GitHub 블로그 개발일지(4)</title><link href="http://localhost:4000/categories/jekyll/2023-05-24-jekyll-error1/" rel="alternate" type="text/html" title="[Jekyll] GitHub 블로그 개발일지(4)" /><published>2023-05-24T00:00:00+09:00</published><updated>2023-05-25T00:20:13+09:00</updated><id>http://localhost:4000/categories/jekyll/jekyll-error1</id><content type="html" xml:base="http://localhost:4000/categories/jekyll/2023-05-24-jekyll-error1/"><![CDATA[<ul id="markdown-toc">
-  <li><a href="#41-상상치도-못한-error-발생" id="markdown-toc-41-상상치도-못한-error-발생">4.1 상상치도 못한 Error 발생</a></li>
-  <li><a href="#42-error-해결과정" id="markdown-toc-42-error-해결과정">4.2 Error 해결과정</a></li>
-</ul>
-<h3 id="41-상상치도-못한-error-발생">4.1 상상치도 못한 Error 발생</h3>
-<hr />
-<ul>
-  <li>로컬 환경 Error 내용
-    <blockquote>
-      <p>Liquid Exception: Liquid syntax error (line 23): Variable ‘{{1, 2, 3}}’ was not properly terminated with regexp: /}}/ in C:/Users/cqqud/Documents/GitHub/Hunnibs.github.io/categories/javaStudy/_posts/2023-05-24-javaStudy-array.md</p>
-    </blockquote>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2025-01-07T21:53:41+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hunnibs</title><subtitle>About my work history &amp; review
+</subtitle><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><entry><title type="html">[가상 면접 사례로 배우는 대규모 시스템 설계 기초] 안정 해시</title><link href="http://localhost:4000/categories/pjt/2024-06-30-pjt-consitentHash_1/" rel="alternate" type="text/html" title="[가상 면접 사례로 배우는 대규모 시스템 설계 기초] 안정 해시" /><published>2024-06-30T00:00:00+09:00</published><updated>2024-07-02T11:46:47+09:00</updated><id>http://localhost:4000/categories/pjt/pjt-consitentHash_1</id><content type="html" xml:base="http://localhost:4000/categories/pjt/2024-06-30-pjt-consitentHash_1/"><![CDATA[<ul id="markdown-toc">
+  <li><a href="#intro" id="markdown-toc-intro">Intro</a>    <ul>
+      <li><a href="#해싱hashing이란-무엇인가" id="markdown-toc-해싱hashing이란-무엇인가">해싱(Hashing)이란 무엇인가?</a></li>
+    </ul>
   </li>
-  <li>Github page action Error 내용</li>
+  <li><a href="#원인" id="markdown-toc-원인">원인</a>    <ul>
+      <li><a href="#해시-키-재배치refresh-문제" id="markdown-toc-해시-키-재배치refresh-문제">해시 키 재배치(refresh) 문제</a></li>
+    </ul>
+  </li>
+  <li><a href="#해결-방안" id="markdown-toc-해결-방안">해결 방안</a>    <ul>
+      <li><a href="#안정-해시consistent-hash" id="markdown-toc-안정-해시consistent-hash"><strong>안정 해시(Consistent Hash)</strong></a></li>
+      <li><a href="#hash-ring" id="markdown-toc-hash-ring">Hash ring</a></li>
+    </ul>
+  </li>
+  <li><a href="#안정-해시-문제점과-해결-방안" id="markdown-toc-안정-해시-문제점과-해결-방안">안정 해시 문제점과 해결 방안</a>    <ul>
+      <li><a href="#문제점" id="markdown-toc-문제점">문제점</a></li>
+      <li><a href="#해결-방안-1" id="markdown-toc-해결-방안-1">해결 방안</a></li>
+    </ul>
+  </li>
+  <li><a href="#마무리" id="markdown-toc-마무리">마무리</a></li>
 </ul>
-<p align="center"><img src="\assets\img\jekyll\buildError.png" width="800px" height="300px" title="px(픽셀) 크기 설정" alt="BuildError" /></p>
+<h2 id="intro">Intro</h2>
 
-<p>아무것도 건드린거 없이 포스팅만 추가했는데 Error가 발생했다. 아무것도 하지 않았는데 발생한 Error라 머리 속이 새하얘졌다.</p>
-
-<h3 id="42-error-해결과정">4.2 Error 해결과정</h3>
 <hr />
+
+<p>안정 해시는 수평적 확장을 고려할 때 각 서버에 균등하게 데이터를 나누기 위해 사용하는 방법.</p>
+
+<h3 id="해싱hashing이란-무엇인가">해싱(Hashing)이란 무엇인가?</h3>
+
+<p>해싱이란 다양한 길이의 입력값들에 대해서 고정된 길이의 출력값을 생성해주는 과정을 뜻한다. 이 출력값을 우리는 해시값(hash value)라고 부른다. 그리고 이 과정을 수행하기 위해 진행하는 과정에 쓰이는 것을 해시 함수(hash function)이라고 한다.</p>
+
+<h2 id="원인">원인</h2>
+
+<hr />
+
+<h3 id="해시-키-재배치refresh-문제">해시 키 재배치(refresh) 문제</h3>
+
+<ul>
+  <li>총 4개의 서버</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>키</th>
+      <th>해시</th>
+      <th>서버</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>key0</td>
+      <td>18358617</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>key1</td>
+      <td>26143584</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>key2</td>
+      <td>18131146</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>key3</td>
+      <td>34085809</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>key4</td>
+      <td>35863496</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>key5</td>
+      <td>27581703</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>key6</td>
+      <td>38164978</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>총 3개의 서버(1개 서버 다운)</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>키</th>
+      <th>해시</th>
+      <th>서버</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>key0</td>
+      <td>18358617</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>key1</td>
+      <td>26143584</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>key2</td>
+      <td>18131146</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>key3</td>
+      <td>34085809</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>key4</td>
+      <td>35863496</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>key5</td>
+      <td>27581703</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>key6</td>
+      <td>38164978</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>위 예제처럼 해시 값을 서버의 개수로 모듈러 연산을 진행하는 해시 함수를 사용해 키가 저장된 서버의 위치를 특정 짓는다고 가정해보자.</li>
+  <li>그러면 1개의 서버가 다운될 경우 모듈러 연산을 하는 기준이 4개에서 3개로 변경되면서 각 키에 해당하는 서버 Index는 모두 꼬이게 된다.</li>
+  <li>결론은 대규모 cache miss가 발생하게 되고 특정 서버에 몰리게 되면 과부하가 걸리며 서비스는 혼돈에 빠질 것이다..</li>
+</ul>
+
+<h2 id="해결-방안">해결 방안</h2>
+
+<hr />
+
+<h3 id="안정-해시consistent-hash"><strong>안정 해시(Consistent Hash)</strong></h3>
+
+<aside>
+💡 Wikipedia에서는 일관된 해싱이라는 명칭을 사용하고 있으며, 웹 서버의 개수가 변동하는 가운데 요청을 분산하는 방법이다.
+특징은 모든 키를 재배치 해야하는 일반적인 해시 기술과는 다르게 K/n(K : key, n: Server)만 재배치 하면 된다.
+
+</aside>
+
+<ul>
+  <li>작동 과정
+    <ol>
+      <li>해시 함수의 결과값에 대한 저장 공간 범위를 정한다. 이를 해시 공간(hash space)라 부른다.</li>
+      <li>이 공간을 해시 링으로 만든다.</li>
+      <li>모든 서버들을 해싱하고 동일하게 해시 링에 매핑 시킨다.</li>
+      <li>모든 키들도 3번과 동일하게 작업한다.</li>
+      <li>키들은 시계 방향으로 서버를 탐색한다.</li>
+    </ol>
+  </li>
+</ul>
+
+<h3 id="hash-ring">Hash ring</h3>
+
+<p><img src="/assets/img/pjt/hashring1.png" alt="hashring1" /></p>
+
+<p>회색 글씨로 쓰인 점들을 Server가 매핑된 곳, 파란색 글씨로 쓰인 점들을 key값이라고 가정했을 때,</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>키</th>
+      <th>해시</th>
+      <th>서버</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>key-0</td>
+      <td>15000</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>key-1</td>
+      <td>25678</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>key-2</td>
+      <td>29536</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>key-3</td>
+      <td>33357</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>key-4</td>
+      <td>36458</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>key-5</td>
+      <td>39600</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>key-6</td>
+      <td>58765</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>위 표와 같이 서버에 key 값이 분배되는 것을 확인할 수 있다.</p>
+
+<p><img src="/assets/img/pjt/hashring2.png" alt="hashring2" /></p>
+
+<ul>
+  <li>위 그림과 차이점은 S3 서버가 다운되어 없어졌다는 점이다.</li>
+  <li>hash ring을 사용한 안정 해시에서는 S2부터 S0까지의 키 값들만 재배치를 하면 된다.</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>키</th>
+      <th>해시</th>
+      <th>서버</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>key-0</td>
+      <td>15000</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>key-1</td>
+      <td>25678</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>key-2</td>
+      <td>29536</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>key-3</td>
+      <td>33357</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>key-4</td>
+      <td>36458</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>key-5</td>
+      <td>39600</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>key-6</td>
+      <td>58765</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>key-4와 key-5만 재배치가 완료되자 정상적으로 배정이 된 것을 확인할 수 있다.</li>
+</ul>
+
+<h2 id="안정-해시-문제점과-해결-방안">안정 해시 문제점과 해결 방안</h2>
+
+<h3 id="문제점">문제점</h3>
+
 <ol>
-  <li>
-    <p>Error message에 나온 해당 파일에서만 문제가 발생하는지 확인부터 진행</p>
-
+  <li>파티션 크기의 균등 유지
     <ul>
-      <li>3개의 포스팅을 업로드 한 번에 업로드했어서 저 파일을 제외한 파일들을 올려봤다.</li>
+      <li>서버가 삭제되거나 추가됐을 때 키의 재분배를 빠르게 처리가 가능하다는 장점이 있지만 해시 링 내에서 각 서버에 할당되는 해시 공간의 크기가 일정하지 않다는 문제점이 발생한다.</li>
+      <li>그림을 참고하면 S3 서버가 삭제되면서 S2와 S0 서버 사이의 해시 공간의 범위가 늘어난 것을 확인할 수 있다.</li>
     </ul>
   </li>
-  <li>문제없이 포스팅이 되는 것을 확인한 후 Error message의 해당 줄을 확인
+  <li>균등 분포의 문제점
     <ul>
-      <li>Code 작성과 관련된 부분이 었는데 중괄호를 두 번 쓴 것이 문제라는 것 같았다.</li>
+      <li>위 그림 예시처럼 하나의 서버에 많은 키값이 저장될 수 있는 것에 더해서 특정 서버에는 어떠한 키값도 저장되지 않는 문제점이 발생할 수도 있다.</li>
     </ul>
   </li>
-  <li>
-    <p>해당 Error가 일어나는 이유를 구글링으로 찾아 해결</p>
+</ol>
 
-    <ul>
-      <li>Liquid라는 루비 기반의 템플릿 언어는 {{, }}를 escape 문자로 활용하기 때문에 Error가 발생하는 것</li>
-    </ul>
-
-    <p>참조 -&gt; <a href="https://iamheesoo.github.io/blog/gitblog-sol-jekyll02">iamheesoo 님 깃헙 블로그</a></p>
-  </li>
-  <li>
-    <p>해결법</p>
-
-    <p><img src="\assets\img\jekyll\sentence.png" alt="sentence" /></p>
-    <ul>
-      <li>이 해당 문구는 그냥 적으면 없애버려서 이미지 파일로 첨부해야한다.</li>
-      <li>굉장히 불편한 부분</li>
-    </ul>
-  </li>
-</ol>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="jekyll" /><summary type="html"><![CDATA["Liquid Exception: Liquid syntax error"]]></summary></entry><entry><title type="html">[Java] 연산자</title><link href="http://localhost:4000/categories/javastudy/2023-05-24-javaStudy-operator/" rel="alternate" type="text/html" title="[Java] 연산자" /><published>2023-05-24T00:00:00+09:00</published><updated>2023-05-24T16:32:24+09:00</updated><id>http://localhost:4000/categories/javastudy/javaStudy-operator</id><content type="html" xml:base="http://localhost:4000/categories/javastudy/2023-05-24-javaStudy-operator/"><![CDATA[<ul id="markdown-toc">
-  <li><a href="#산술연산자" id="markdown-toc-산술연산자">산술연산자</a></li>
-  <li><a href="#비교연산자" id="markdown-toc-비교연산자">비교연산자</a></li>
-</ul>
-<hr />
-<h3 id="산술연산자">산술연산자</h3>
-<hr />
-<ul>
-  <li>+(더하기), -(빼기), *(곱하기), /(나누기), %(나머지)가 포함된다.</li>
-</ul>
-
-<blockquote>
-  <p>❗ / 연산자 사용 시 변수형에 따른 데이터 저장</p>
-
-  <p>int a, int b를 나누기 연산을 이용해서 나눴을 경우 저장되는 값은 int형으로 저장되므로 소수점 아래로 계산결과가 발생해도 반영되지 않는다. <br />
-그러므로 이를 해결하기 위해 명시적형변환을 사용해 하나는 double 혹은 float형으로 바꾸어주어야한다.</p>
-</blockquote>
+<h3 id="해결-방안-1">해결 방안</h3>
 
 <ul>
-  <li>++, –
+  <li>가상 노드(virtual node)의 활용
     <ul>
-      <li>++a 혹은 a++이런 식으로 사용한다.</li>
-      <li>ex) <br />
-  b == ++a -&gt; 먼저 증가를 시킨 값을 a에 저장해주고 증가시킨 값을 b에 저장
-  b == a++ -&gt; b에 a값을 저장해준 뒤 a 값을 증가</li>
+      <li>가상 노드를 각 서버마다 n개 생성해서 각 서버를 가르키도록 설정하고 해시 링 내에 매핑 시킨다.</li>
+      <li>키 값들은 시계 방향 탐색을 진행하며 가상 노드를 마주칠 경우 해당 서버에 키 값을 저장시킨다.</li>
+    </ul>
+  </li>
+  <li>특징
+    <ul>
+      <li>가상 노드의 개수가 많아질 수록 키의 분포는 더욱 균등해진다.</li>
+      <li>하지만, 가상 노드의 개수가 많아질 수록 해당 가상 노드의 데이터를 저장할 공간 또한 필요하므로 메모리 쪽 효율은 떨어질 수 밖에 없음에 주의하자.</li>
     </ul>
   </li>
 </ul>
 
-<h3 id="비교연산자">비교연산자</h3>
-<hr />
-<ul>
-  <li>==, !=, &gt;, &lt;가 포함된다.</li>
-  <li>주로 조건문에서 대소비교 혹은 참 거짓을 판별할 때 많이 사용</li>
-</ul>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="javaStudy" /><summary type="html"><![CDATA["연산자"]]></summary></entry><entry><title type="html">[Java] 제어문</title><link href="http://localhost:4000/categories/javastudy/2023-05-24-javaStudy-condition/" rel="alternate" type="text/html" title="[Java] 제어문" /><published>2023-05-24T00:00:00+09:00</published><updated>2023-05-24T17:25:26+09:00</updated><id>http://localhost:4000/categories/javastudy/javaStudy-condition</id><content type="html" xml:base="http://localhost:4000/categories/javastudy/2023-05-24-javaStudy-condition/"><![CDATA[<ul id="markdown-toc">
-  <li><a href="#if문" id="markdown-toc-if문">If문</a></li>
-  <li><a href="#switch문" id="markdown-toc-switch문">Switch문</a></li>
-  <li><a href="#while문" id="markdown-toc-while문">while문</a></li>
-  <li><a href="#do-while문" id="markdown-toc-do-while문">Do-While문</a></li>
-  <li><a href="#for문" id="markdown-toc-for문">for문</a></li>
-</ul>
-<hr />
-<h3 id="if문">If문</h3>
+<h2 id="마무리">마무리</h2>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-    if (조건식){
-        실행문;
-    }
-    else if(조건식){
-        실행문;
-    }
-    else{
-        실행문;
-    }
-
-</code></pre></div></div>
-
-<h3 id="switch문">Switch문</h3>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-    int value = 1;
-
-    switch(value){
-        case 1:
-            실행문;
-            break;  // 반드시 break문을 작성해줘야함
-        case 2:  
-        case 3:
-        case 4:  // 이런식으로 케이스를 묶어서도 가능
-            실행문;
-            break;
-
-        default:  // 아무것도 해당 안될 때 실행하는 케이스
-            실행문;
-            break;
-    }
-
-</code></pre></div></div>
-
-<h3 id="while문">while문</h3>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-    while(조건식){
-        실행문;
-    }
-
-</code></pre></div></div>
-
-<h3 id="do-while문">Do-While문</h3>
-<ul>
-  <li>while문은 조건이 충족되지 않는다면 한 번도 실행하지 않지만 Do-while문을 사용하면 최소 한 번의 실행문 실행을 보장한다.</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-    do{
-        실행문;
-    }while(조건문)
-
-</code></pre></div></div>
-
-<h3 id="for문">for문</h3>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-    for(초기화식; 조건식; 증감식){
-        실행문;
-    }
-
-</code></pre></div></div>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="javaStudy" /><summary type="html"><![CDATA["제어문"]]></summary></entry><entry><title type="html">[Java] 변수</title><link href="http://localhost:4000/categories/javastudy/2023-05-23-javaStudy-variable/" rel="alternate" type="text/html" title="[Java] 변수" /><published>2023-05-23T00:00:00+09:00</published><updated>2023-05-24T23:41:27+09:00</updated><id>http://localhost:4000/categories/javastudy/javaStudy-variable</id><content type="html" xml:base="http://localhost:4000/categories/javastudy/2023-05-23-javaStudy-variable/"><![CDATA[<ul id="markdown-toc">
-  <li><a href="#기본-데이터-타입" id="markdown-toc-기본-데이터-타입">기본 데이터 타입</a></li>
-  <li><a href="#type-형변환" id="markdown-toc-type-형변환">Type 형변환</a></li>
-</ul>
-<hr />
-<h3 id="기본-데이터-타입">기본 데이터 타입</h3>
-<hr />
-
-<p><img src="\assets\img\javaStudy\DataTypes.png" alt="DataType" /></p>
-
-<p>데이터 타입은 크게 논리형, 문자형, 정수형, 실수형으로 나누어진다.</p>
-
-<p><strong>논리형</strong></p>
-<ul>
-  <li>true, false와 같은 참, 거짓을 판별하는 Data를 저장하는 변수</li>
-  <li>1byte의 크기를 가진다.</li>
-</ul>
-
-<p><strong>문자형</strong></p>
-<ul>
-  <li>딱 하나의 문자만을 저장할 수 있는 변수, 하나 이상의 문자를 저장할 시 오류가 발생한다.</li>
-  <li>2byte의 크기를 가진다.</li>
-</ul>
-
-<p><strong>정수형</strong></p>
-<ul>
-  <li>
-    <p>Data 크기와 저장할 수 있는 값의 범위에 따라 다양하게 나뉜다.</p>
-
-    <ul>
-      <li>byte는 1byte로 가장 작은 크기이며 -128 ~ 127까지만을 저장할 수 있다.</li>
-      <li>short와 char는 2byte의 크기를 가지며 short는 음수와 양수를 반반 씩, char는 양수범위만 저장한다.</li>
-      <li>int는 4byte로 더 넓은 범위를 저장할 수 있다.</li>
-      <li>long은 8byte로 웬만하면 모든 범위의 수를 저장할 수 있다.
-        <ul>
-          <li>단, 변수 선언시 long big = 234141515<em>L</em>로 L을 붙여줘야한다.</li>
+<p>안정 해시가 필요한 이유는 핫스팟(hotspot) 키 문제를 줄일 수 있다는 점이다. 데이터베이스 내 특정 샤드에 접근이 지나치게 많이 이루어진다면 과부하가 발생할 수 밖에 없기 때문에 해당 문제점을 해결하는데 탁월하다.</p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="pjt" /><summary type="html"><![CDATA["안정 해싱 등장 배경"]]></summary></entry><entry><title type="html">[Spring Security] Security 기본 설정</title><link href="http://localhost:4000/categories/pjt/2024-02-18-pjt-security_1/" rel="alternate" type="text/html" title="[Spring Security] Security 기본 설정" /><published>2024-02-18T00:00:00+09:00</published><updated>2024-03-11T17:55:41+09:00</updated><id>http://localhost:4000/categories/pjt/pjt-security_1</id><content type="html" xml:base="http://localhost:4000/categories/pjt/2024-02-18-pjt-security_1/"><![CDATA[<ul id="markdown-toc">
+  <li><a href="#setting" id="markdown-toc-setting">Setting</a></li>
+  <li><a href="#spring-security" id="markdown-toc-spring-security">Spring Security</a>    <ul>
+      <li><a href="#왜-사용해야-하는가" id="markdown-toc-왜-사용해야-하는가">왜 사용해야 하는가?</a></li>
+      <li><a href="#security-architecture" id="markdown-toc-security-architecture">Security Architecture</a>        <ul>
+          <li><a href="#어떻게-동작하는가" id="markdown-toc-어떻게-동작하는가">어떻게 동작하는가?</a></li>
+        </ul>
+      </li>
+      <li><a href="#security-filter-chain" id="markdown-toc-security-filter-chain">Security Filter Chain</a>        <ul>
+          <li><a href="#filter-chain-내부-모습" id="markdown-toc-filter-chain-내부-모습">Filter Chain 내부 모습</a></li>
+          <li><a href="#security-config" id="markdown-toc-security-config">Security Config</a></li>
+          <li><a href="#authentication-manager" id="markdown-toc-authentication-manager">Authentication Manager</a></li>
+          <li><a href="#출처" id="markdown-toc-출처">출처</a></li>
         </ul>
       </li>
     </ul>
   </li>
 </ul>
+<h2 id="setting">Setting</h2>
+<p>Spring Boot 3.2.1 <br />
+Spring Security 6.2.1 <br />
+jjwt 0.12.4</p>
 
-<p><strong>실수형</strong></p>
+<h1 id="spring-security">Spring Security</h1>
+<h2 id="왜-사용해야-하는가">왜 사용해야 하는가?</h2>
 <ul>
-  <li>
-    <p>소수점 아래 자리까지 저장할 수 있는 type으로 크기는 두 가지로 나뉜다.</p>
+  <li>Spring Security는 자체적으로 인증/인가 로직을 도와주고 외부 공격을 방어해주는 기능을 수행한다.</li>
+</ul>
 
+<blockquote>
+  <p>현재 Spring Security는 7버전을 준비하면서 Lambda DSL을 사용하는 것으로 바뀌었다. <br />
+Deprecated 되어있는 Method들이 상당히 많기 때문에 찾아보고 사용하는 것을 권장한다.</p>
+</blockquote>
+
+<h2 id="security-architecture">Security Architecture</h2>
+<h3 id="어떻게-동작하는가">어떻게 동작하는가?</h3>
+<ul>
+  <li>Spring Security는 Servlet 내 FilterChain에서 들어오는 요청을 처리할 때 동작한다.</li>
+  <li>그러면 어떻게 Security는 Servlet Container에서 Spring Container에 접근해서 요청을 처리할 수 있을까?</li>
+</ul>
+
+<p><img src="/assets/img/pjt/filter_chain.png" alt="filter chain" /></p>
+
+<ul>
+  <li>DelegatingFilterProxy에서는 예외적으로 Spring container에 Servlet Container가 접근할 수 있도록 도와준다.</li>
+  <li>해당 DelegatingFilterProxy에 FilterChainProxy는 Spring Container 내의 SecurityFilterChain 이름으로 등록된 Bean을 찾아서 사용할 수 있게 해주는 것이다.</li>
+</ul>
+
+<h2 id="security-filter-chain">Security Filter Chain</h2>
+<h3 id="filter-chain-내부-모습">Filter Chain 내부 모습</h3>
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">2023-06-14T08:55:22.321-03:00  INFO 76975 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [
+org.springframework.security.web.session.DisableEncodeUrlFilter@404db674,
+org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@50f097b5,
+org.springframework.security.web.context.SecurityContextHolderFilter@6fc6deb7,
+org.springframework.security.web.header.HeaderWriterFilter@6f76c2cc,
+org.springframework.security.web.csrf.CsrfFilter@c29fe36,
+org.springframework.security.web.authentication.logout.LogoutFilter@ef60710,
+org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7c2dfa2,
+org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4397a639,
+org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7add838c,
+org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5cc9d3d0,
+org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7da39774,
+org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@32b0876c,
+org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3662bdff,
+org.springframework.security.web.access.ExceptionTranslationFilter@77681ce4,
+org.springframework.security.web.access.intercept.AuthorizationFilter@169268a7]
+</span></code></pre></div></div>
+
+<ul>
+  <li>Security Filter Chain의 내부 구조를 Info level에서 확인했을 때의 구조이다.</li>
+  <li>순서를 알고있을 필요는 없다고 얘기하지만 Custom Filter를 사용하기 위해서는 어느정도 알아두는 것을 추천한다.</li>
+</ul>
+
+<h3 id="security-config">Security Config</h3>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nd">@Configuration</span>
+    <span class="nd">@EnableWebSecurity</span>
+    <span class="nd">@RequiredArgsConstructor</span>
+    <span class="kd">public</span> <span class="kd">class</span> <span class="nc">SecurityConfig</span> <span class="o">{</span>
+        <span class="kd">private</span> <span class="kd">final</span> <span class="nc">JwtAuthenticationFilter</span> <span class="n">jwtAuthenticationFilter</span><span class="o">;</span>
+
+        <span class="nd">@Bean</span>
+        <span class="kd">public</span> <span class="nc">SecurityFilterChain</span> <span class="nf">securityFilterChain</span><span class="o">(</span><span class="nc">HttpSecurity</span> <span class="n">http</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">Exception</span> <span class="o">{</span>
+            <span class="n">http</span>
+                    <span class="o">.</span><span class="na">cors</span><span class="o">(</span><span class="n">cors</span> <span class="o">-&gt;</span> <span class="n">cors</span><span class="o">.</span><span class="na">configurationSource</span><span class="o">(</span><span class="n">configurationSource</span><span class="o">()))</span>
+                    <span class="o">.</span><span class="na">csrf</span><span class="o">(</span><span class="nl">AbstractHttpConfigurer:</span><span class="o">:</span><span class="n">disable</span><span class="o">)</span>
+                    <span class="o">.</span><span class="na">authorizeHttpRequests</span><span class="o">(</span><span class="n">authorize</span> <span class="o">-&gt;</span> <span class="n">authorize</span>
+                            <span class="o">.</span><span class="na">dispatcherTypeMatchers</span><span class="o">(</span><span class="no">FORWARD</span><span class="o">,</span> <span class="no">ERROR</span><span class="o">).</span><span class="na">permitAll</span><span class="o">()</span>
+                            <span class="o">.</span><span class="na">requestMatchers</span><span class="o">(</span><span class="s">"/member/login"</span><span class="o">,</span> <span class="s">"/member/signup"</span><span class="o">,</span> <span class="s">"/member/idcheck/**"</span><span class="o">,</span>
+                                    <span class="s">"/article/list/**"</span><span class="o">,</span> <span class="s">"/article/detail/**"</span><span class="o">,</span> <span class="s">"comment/list/**"</span><span class="o">,</span> <span class="s">"/article/size"</span><span class="o">,</span>
+                                    <span class="s">"/file/detail/**"</span><span class="o">,</span>
+                                    <span class="o">(</span><span class="s">"/auth/silent-refresh"</span><span class="o">))</span>
+                            <span class="o">.</span><span class="na">permitAll</span><span class="o">()</span>
+                            <span class="o">.</span><span class="na">anyRequest</span><span class="o">().</span><span class="na">authenticated</span><span class="o">()</span>
+                    <span class="o">)</span>
+                    <span class="o">.</span><span class="na">addFilterBefore</span><span class="o">(</span><span class="n">jwtAuthenticationFilter</span><span class="o">,</span> <span class="nc">UsernamePasswordAuthenticationFilter</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
+
+            <span class="k">return</span> <span class="n">http</span><span class="o">.</span><span class="na">build</span><span class="o">();</span>
+        <span class="o">}</span>
+
+        <span class="nd">@Bean</span>
+        <span class="kd">public</span> <span class="nc">CorsConfigurationSource</span> <span class="nf">configurationSource</span><span class="o">()</span> <span class="o">{</span>
+            <span class="nc">CorsConfiguration</span> <span class="n">config</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">CorsConfiguration</span><span class="o">();</span>
+            <span class="n">config</span><span class="o">.</span><span class="na">setAllowedOrigins</span><span class="o">(</span><span class="nc">Arrays</span><span class="o">.</span><span class="na">asList</span><span class="o">(</span><span class="s">"https://i10a608.p.ssafy.io"</span><span class="o">));</span>
+            <span class="n">config</span><span class="o">.</span><span class="na">setAllowedMethods</span><span class="o">(</span><span class="nc">Arrays</span><span class="o">.</span><span class="na">asList</span><span class="o">(</span><span class="s">"GET"</span><span class="o">,</span> <span class="s">"PUT"</span><span class="o">,</span> <span class="s">"POST"</span><span class="o">,</span> <span class="s">"DELETE"</span><span class="o">,</span> <span class="s">"OPTIONS"</span><span class="o">,</span> <span class="s">"PATCH"</span><span class="o">));</span>
+            <span class="n">config</span><span class="o">.</span><span class="na">setAllowCredentials</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>
+            <span class="n">config</span><span class="o">.</span><span class="na">setAllowedHeaders</span><span class="o">(</span><span class="nc">Arrays</span><span class="o">.</span><span class="na">asList</span><span class="o">(</span><span class="s">"Authorization"</span><span class="o">,</span> <span class="s">"content-type"</span><span class="o">,</span> <span class="s">"x-requested-with"</span><span class="o">));</span>
+            <span class="n">config</span><span class="o">.</span><span class="na">setMaxAge</span><span class="o">(</span><span class="mi">1800L</span><span class="o">);</span>
+
+            <span class="nc">UrlBasedCorsConfigurationSource</span> <span class="n">source</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">UrlBasedCorsConfigurationSource</span><span class="o">();</span>
+            <span class="n">source</span><span class="o">.</span><span class="na">registerCorsConfiguration</span><span class="o">(</span><span class="s">"/**"</span><span class="o">,</span> <span class="n">config</span><span class="o">);</span>
+
+            <span class="k">return</span> <span class="n">source</span><span class="o">;</span>
+        <span class="o">}</span>
+
+        <span class="nd">@Bean</span>
+        <span class="kd">public</span> <span class="nc">PasswordEncoder</span> <span class="nf">passwordEncoder</span><span class="o">()</span> <span class="o">{</span>
+            <span class="k">return</span> <span class="k">new</span> <span class="nf">BCryptPasswordEncoder</span><span class="o">();</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li>해당 코드는 진행했던 프로젝트의 Security Config 설정이다.</li>
+  <li>SecurityFilterChain 부분 코드를 보면 알 수 있듯이 Cors(Cross Origin Resource Sharing) 설정과 CSRF(Cross Site Request Forgery) 설정을 진행할 수 있다.</li>
+</ul>
+
+<h3 id="authentication-manager">Authentication Manager</h3>
+<p><img src="/assets/img/pjt/SecurityManager.PNG" alt="Authentication Flow" /></p>
+<ul>
+  <li>Security Filter Chain 내부 인증은 Authentication Manager가 맡아서 처리한다.</li>
+  <li>Authentication Manager는 인증을 위한 Authentication Provider를 자동으로 매핑시켜주며 provider는 인증에 성공할 시 성공 정보를 반환해 Security Context에 넣어준다.</li>
+  <li>
+    <p>이후 인증 과정에서 Security Context만을 확인하면 인증이 완료된 요청이라는 것을 알 수 있기 때문에 인증을 성공적으로 처리할 수 있다.</p>
+  </li>
+  <li>
+    <p>마지막으로 짧게 프로젝트 진행 간 CORS와 CSRF 설정에서 있었던 일을 정리</p>
+  </li>
+  <li>CORS
     <ul>
-      <li>float은 4byte</li>
-      <li>double 8byte</li>
+      <li>프로토콜이 다르거나(http, https), 도메인이 다르거나, 포트 번호가 다르다면 접근을 막아버린다.</li>
+      <li>Credentials 부분, 만약 false로 되어있다면 내가 인증 토큰을 원해도 request에 주지 않는다. 이는 로그인 유지가 안되는 치명적 결함으로 이어지기 때문에 반드시 true로 설정해주어야한다.</li>
+      <li>만약 Header에 Authorization에 토큰 값을 내려보낸다면 해당 부분도 추가를 해줘야 사용이 가능하다.</li>
+    </ul>
+  </li>
+  <li>CSRF
+    <ul>
+      <li>토큰으로 서버와 클라이언트 사이에 공유되는 인증값이다.</li>
+      <li>Rest Api 서버의 경우 stateless하다. 즉, 서버에 클라이언트의 상태를 저장해놓지 않는다. 이는 CSRF 토큰을 이용해서 세션 인증을 확인할 필요가 없다는 것이다.</li>
+      <li>api 서버는 jwt 혹은 auth를 이용해 받기 때문에 csrf를 사용하지 않고 보안 상의 이점을 가져갈 수 있다.</li>
     </ul>
   </li>
 </ul>
 
 <blockquote>
-  <p>👉 상수</p>
-
-  <p>기본 데이터 타입 앞에 final을 붙여서 불변성을 가진 data 저장공간을 만들 수 있다. <br />
-ex) final int number = 3; 이면, number는 3이라는 값으로 고정된다.</p>
+  <p>💡 브라우저에서 바로 요청을 보내면 브라우저에서 서버에 바로 요청을 보내고 브라우저에서 응답을 받기 때문에 동일 출처가 되는거고 내가 클라이언트를 거쳐서 서버에 요청을 보내는 경우는 브라우저가 아닌 클라이언트 서버를 거치는 과정이 생기기 때문에 브라우저 딴에서는 cors 정책 위반을 한다고 생각하는거야? <br />
+브라우저에서 직접 요청을 보내는 경우, 브라우저는 이를 “same-origin” 요청으로 간주합니다. 이는 브라우저가 요청을 보내는 출처와 요청이 보내지는 대상이 동일하다고 판단하기 때문입니다. 따라서 이 경우에는 CORS 정책이 적용되지 않습니다. <br />
+그러나 웹 애플리케이션을 통해 요청을 보내는 경우, 브라우저는 이를 “cross-origin” 요청으로 간주합니다. 이는 웹 애플리케이션(클라이언트)의 출처와 요청이 보내지는 대상(서버)이 다르다고 판단하기 때문입니다. 따라서 이 경우에는 CORS 정책이 적용되며, 서버는 CORS 헤더를 포함한 응답을 반환하여 브라우저에게 해당 도메인의 리소스에 접근을 허용한다는 것을 알려야 합니다. <br />
+따라서, 클라이언트를 거쳐서 서버에 요청을 보내는 경우에는 CORS 설정이 필요하며, 이 설정은 서버 측에서 이루어집니다. 이를 통해 서버는 특정 도메인의 클라이언트에서의 요청을 허용하도록 설정할 수 있습니다.</p>
 </blockquote>
 
-<h3 id="type-형변환">Type 형변환</h3>
-<hr />
-<p>정수형과 실수형 사이에서는 Type 형변환이 가능하다. 이 때 정수는 실수에 포함된다는 사실을 기억해야한다.</p>
-
-<ol>
-  <li>묵시적 형변환
-    <ul>
-      <li>int형 변수를 float형으로 바꾸는 경우</li>
-      <li>실수는 정수를 애초에 포함하고 있기 때문에 암묵적으로 변환을 해준다.</li>
+<h3 id="출처">출처</h3>
+<p><a href="https://docs.spring.io/spring-security/reference/">Spring Security</a></p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="pjt" /><summary type="html"><![CDATA["Spring Security 기본 구조 이해"]]></summary></entry><entry><title type="html">[Spring Security] JWT</title><link href="http://localhost:4000/categories/pjt/2024-02-18-pjt-security_2/" rel="alternate" type="text/html" title="[Spring Security] JWT" /><published>2024-02-18T00:00:00+09:00</published><updated>2024-06-27T16:20:31+09:00</updated><id>http://localhost:4000/categories/pjt/pjt-security_2</id><content type="html" xml:base="http://localhost:4000/categories/pjt/2024-02-18-pjt-security_2/"><![CDATA[<ul id="markdown-toc">
+  <li><a href="#setting" id="markdown-toc-setting">Setting</a></li>
+  <li><a href="#jwtjson-web-tokens" id="markdown-toc-jwtjson-web-tokens">JWT(Json Web Tokens)</a>    <ul>
+      <li><a href="#jwt-생성--검증" id="markdown-toc-jwt-생성--검증">JWT 생성 &amp; 검증</a>        <ul>
+          <li><a href="#알고리즘" id="markdown-toc-알고리즘">알고리즘</a></li>
+          <li><a href="#jwt-구조" id="markdown-toc-jwt-구조">JWT 구조</a></li>
+          <li><a href="#jwt-생성" id="markdown-toc-jwt-생성">JWT 생성</a></li>
+          <li><a href="#jwt-검증" id="markdown-toc-jwt-검증">JWT 검증</a></li>
+        </ul>
+      </li>
+      <li><a href="#jwt-이용한-인증" id="markdown-toc-jwt-이용한-인증">JWT 이용한 인증</a>        <ul>
+          <li><a href="#구현-코드" id="markdown-toc-구현-코드">구현 코드</a></li>
+          <li><a href="#개발-과정-인증-절차" id="markdown-toc-개발-과정-인증-절차">개발 과정 인증 절차</a></li>
+        </ul>
+      </li>
     </ul>
   </li>
-  <li>명시적 형변환
+</ul>
+<h2 id="setting">Setting</h2>
+<p>Spring Boot 3.2.1 <br />
+Spring Security 6.2.1 <br />
+jjwt 0.12.4</p>
+
+<h1 id="jwtjson-web-tokens">JWT(Json Web Tokens)</h1>
+<h2 id="jwt-생성--검증">JWT 생성 &amp; 검증</h2>
+<h3 id="알고리즘">알고리즘</h3>
+<ul>
+  <li>signature에 들어갈 알고리즘으로 가장 범용적인 HMAC512 알고리즘을 사용</li>
+  <li>다른 알고리즘도 존재하지만 대규모 프로젝트에 유효하고 범용적으로 사용되는 것은 HMAC 알고리즘</li>
+  <li>256과 512의 차이는 512가 더 빠른 특징이 있지만 CPU 32bit 이하의 성능에서는 256이 권장된다고 한다.</li>
+</ul>
+
+<h3 id="jwt-구조">JWT 구조</h3>
+<ul>
+  <li>토큰은 header, payload, signature로 이루어진다.
     <ul>
-      <li>반대로 float형을 int형으로 바꾸는 경우</li>
-      <li>float type 변수에 5와 같은 정수가 저장되어있더라도 변환이 불가능하다.</li>
-      <li>그래서 이런 경우에는 강제로 형변환을 시도해주어야한다.</li>
-      <li>ex)</li>
+      <li>header에는 기본정보를 저장</li>
+      <li>payload에는 issuer, userno, issuedate 등 필요한 정보들을 저장</li>
+      <li>signature에는 선택한 알고리즘과 payload등 부분들을 이용 Secret Key값과 함께 암호화해서 검증할 수 있는 검증 데이터가 들어간다.</li>
     </ul>
+  </li>
+</ul>
 
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-     float number = 5;
-     int number2 = (int)number;
-
+<h3 id="jwt-생성">JWT 생성</h3>
+<ul>
+  <li>세부 설정을 숨기기 위해 yml 파일을 이용해 JWT에 들어갈 값들을 저장해준다.
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">app</span><span class="pi">:</span>
+<span class="na">JWT_COOKIE_A</span><span class="pi">:</span> <span class="s2">"</span><span class="s">ACCESS"</span>
+<span class="na">JWT_COOKIE_R</span><span class="pi">:</span> <span class="s2">"</span><span class="s">REFRESH"</span>
+<span class="na">JWT_KEY </span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span>
+<span class="na">JWT_REFRESH_EXPIRATION </span><span class="pi">:</span> <span class="s2">"</span><span class="s">604800000"</span>
+<span class="na">JWT_ACCESS_EXPIRATION </span><span class="pi">:</span> <span class="s2">"</span><span class="s">1800000"</span>
 </code></pre></div>    </div>
   </li>
-</ol>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="javaStudy" /><summary type="html"><![CDATA["변수"]]></summary></entry><entry><title type="html">[Jekyll] GitHub 블로그 개발일지(3)</title><link href="http://localhost:4000/categories/jekyll/2023-05-23-jekyll-nameError/" rel="alternate" type="text/html" title="[Jekyll] GitHub 블로그 개발일지(3)" /><published>2023-05-23T00:00:00+09:00</published><updated>2023-05-24T16:01:44+09:00</updated><id>http://localhost:4000/categories/jekyll/jekyll-nameError</id><content type="html" xml:base="http://localhost:4000/categories/jekyll/2023-05-23-jekyll-nameError/"><![CDATA[<ul id="markdown-toc">
-  <li><a href="#3-1-경로-설정-문제-발생" id="markdown-toc-3-1-경로-설정-문제-발생">3. 1 경로 설정 문제 발생</a></li>
-  <li><a href="#3-2-문제-해결-방법" id="markdown-toc-3-2-문제-해결-방법">3. 2 문제 해결 방법</a></li>
-</ul>
-<h3 id="3-1-경로-설정-문제-발생">3. 1 경로 설정 문제 발생</h3>
-<hr />
-<ul>
-  <li>이전 포스팅 내용에 이어지는 오류</li>
 </ul>
 
-<p>굉장히 갑작스러운 오류 발생이었다. <br />
-Java를 공부하기 위해 공부내용을 정리할 포스팅 공간을 만들었는데 이전과 똑같이 directory를 추가하고 yml파일과 경로 설정을 해주고 서버에 올렸는데 화면이 뜨지 않는 문제점이 발생했다. 당황해서 로컬 환경에서 테스팅을 해봤지만 로컬 환경에서는 문제가 발생하지 않았다.</p>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="c1">// 실제 JWT 생성 코드</span>
+	<span class="kd">private</span> <span class="nc">String</span> <span class="nf">createAccessToken</span><span class="o">(</span><span class="kt">int</span> <span class="n">memberNo</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">Date</span> <span class="n">date</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Date</span><span class="o">();</span>
+        <span class="nc">SecretKey</span> <span class="n">key</span> <span class="o">=</span> <span class="nc">Keys</span><span class="o">.</span><span class="na">hmacShaKeyFor</span><span class="o">(</span><span class="no">JWT_KEY</span><span class="o">.</span><span class="na">getBytes</span><span class="o">(</span><span class="nc">StandardCharsets</span><span class="o">.</span><span class="na">UTF_8</span><span class="o">));</span>
 
-<ul>
-  <li>아래는 문제점이 발생한 상황</li>
-</ul>
+        <span class="k">return</span> <span class="nc">Jwts</span><span class="o">.</span><span class="na">builder</span><span class="o">()</span>
+                <span class="o">.</span><span class="na">issuer</span><span class="o">(</span><span class="s">"GoldZZok"</span><span class="o">)</span>
+                <span class="o">.</span><span class="na">claim</span><span class="o">(</span><span class="s">"id"</span><span class="o">,</span> <span class="n">memberNo</span><span class="o">)</span>
+                <span class="o">.</span><span class="na">issuedAt</span><span class="o">(</span><span class="n">date</span><span class="o">)</span>
+                <span class="o">.</span><span class="na">expiration</span><span class="o">(</span><span class="k">new</span> <span class="nc">Date</span><span class="o">(</span><span class="n">date</span><span class="o">.</span><span class="na">getTime</span><span class="o">()</span> <span class="o">+</span> <span class="nc">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="no">JWT_ACCESS_EXPIRE</span><span class="o">)))</span>  <span class="c1">// 30분 설정</span>
+                <span class="o">.</span><span class="na">signWith</span><span class="o">(</span><span class="n">key</span><span class="o">).</span><span class="na">compact</span><span class="o">();</span>
+    <span class="o">}</span>
 
-<p><img src="assets\img\jekyll\pathError2.png" alt="pathError" /></p>
+    <span class="kd">private</span> <span class="nc">String</span> <span class="nf">createRefreshToken</span><span class="o">(</span><span class="kt">int</span> <span class="n">memberNo</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">Date</span> <span class="n">date</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Date</span><span class="o">();</span>
+        <span class="nc">SecretKey</span> <span class="n">key</span> <span class="o">=</span> <span class="nc">Keys</span><span class="o">.</span><span class="na">hmacShaKeyFor</span><span class="o">(</span><span class="no">JWT_KEY</span><span class="o">.</span><span class="na">getBytes</span><span class="o">(</span><span class="nc">StandardCharsets</span><span class="o">.</span><span class="na">UTF_8</span><span class="o">));</span>
 
-<h3 id="3-2-문제-해결-방법">3. 2 문제 해결 방법</h3>
-<hr />
-<p>처음에는 해당 테마가 같은 문제가 계속 일어나 다른 테마로의 변경을 고민했었다. 하지만 마음에 드는 테마라 이 악물고 고치기로 결정 <br />
-어이없게도 간단하게 해결했다.</p>
-
-<ul>
-  <li>이전에 Blog라는 path를 지정해줬을 때 문제가 생겼던 것 처럼 java라는 단어에 문제가 있을거라고 생각했다.</li>
-  <li>
-    <p>해당 포스팅 directory의 이름을 전부 javaStudy로 바꿔줬다 -&gt; 그래도 인식을 하지 못하는 문제가 발생</p>
-  </li>
-  <li>Url을 확인해보니 어째서인지 서버를 작동시키면 javaStudy경로가 javastudy로 나타난다.</li>
-  <li>대문자를 인식못하는 것 같아 javastudy로 바꾸어주었더니 해당 문제가 해결되고 정상적으로 작동한다.</li>
-</ul>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="jekyll" /><summary type="html"><![CDATA["Path 설정의 중요성(이전 포스팅 마지막에 추가되는 오류 사항)"]]></summary></entry><entry><title type="html">[SWEA] 1928_Base64 Decoder</title><link href="http://localhost:4000/categories/algorithm/2023-05-19-algorithm-SWEA_1928/" rel="alternate" type="text/html" title="[SWEA] 1928_Base64 Decoder" /><published>2023-05-19T00:00:00+09:00</published><updated>2023-05-19T14:58:50+09:00</updated><id>http://localhost:4000/categories/algorithm/algorithm-SWEA_1928</id><content type="html" xml:base="http://localhost:4000/categories/algorithm/2023-05-19-algorithm-SWEA_1928/"><![CDATA[<blockquote>
-  <p><a href="https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5PR4DKAG0DFAUq">https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5PR4DKAG0DFAUq</a></p>
-</blockquote>
-
-<h3 id="문제-해결-과정">문제 해결 과정</h3>
-<hr />
-<p><strong>문제 해석</strong></p>
-<ul>
-  <li>이 부분은 문제에 대한 이해가 가지 않아 <em>최준아_0847231님</em>의 댓글을 참고했다.</li>
-</ul>
-
-<blockquote>
-  <p>문제요약</p>
-  <ol>
-    <li>표1을 보고 입력받은 문자들을 각각 대응하는 숫자로 변경한다.</li>
-    <li>각 숫자들을 6자리 이진수로 표현하고, 이 이진수들을 한 줄로 쭉 이어 붙인다.</li>
-    <li>한 줄로 쭉 이어붙인 이진수들을 8자리씩 끊어서 십진수로 바꾼다.</li>
-    <li>각각의 십진수를 아스키 코드로 변환한다.</li>
-  </ol>
-</blockquote>
-
-<p><strong>접근 방식</strong></p>
-<ul>
-  <li>
-    <p>문제가 어렵다기보다는 아스키 코드를 활용할 수 없다면 풀 수가 없는 문제였다.</p>
-
-    <p><a href="https://hunnibs.github.io/categories/study/2023-05-03-algorithmStudy-ascii/">[기본 지식] Ascii Code</a> 해당 포스트 내용 참조</p>
-  </li>
-</ul>
-
-<h3 id="풀이-코드">풀이 코드</h3>
-<hr />
-
-<p><strong>코드 구성 설명</strong></p>
-<ol>
-  <li>주어진 문자열에서 문자 하나하나 당 아스키코드 변환식을 통해 자연수로 바꿔준다.</li>
-  <li>바꿔준 자연수를 decoding(num) 함수에 넣어 이진수로 변환해준다.</li>
-  <li>전부 이진수로 변환했다면 translate(sum) 함수에 넣어 8자리씩 슬라이스를 이용해 끊어준 뒤, 다시 정수로 변환시켜준다.</li>
-  <li>정수로 변환시켜주고 아스키코드 변환을 이용해 다시 문자열로 변환해준다.</li>
-  <li>3~4 과정을 끝까지 반복하면 완전한 문장이 완성된다.</li>
-</ol>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-    def decoding(num):
-        decode = ''
-        for i in range(5, -1, -1):
-            if num - (2**i) &gt;= 0:
-                decode += '1'
-                num = num - (2**i)
-            else:
-                decode += '0'
-
-        return decode
-
-    def translate(sum):
-        result = ''
-
-        a = len(sum) // 8
-        for i in range(a):
-            b = i * 8
-            tmp = sum[b:b+8]
-
-            num = 0
-            i = 7
-            for t in tmp:
-                t = int(t)
-                num += t * (2**i)
-                i -= 1
-
-            result += chr(num)
-        return result
-
-    # input
-    T = int(input())
-    for t in range(1, T+1):
-        base = input()
-        sum = ''
-
-    # main
-        for word in base:
-            if 48 &lt;= ord(word) &lt;= 57:
-                num = ord(word)+4
-                sum += decoding(num)
-
-            elif 65 &lt;= ord(word) &lt;= 90:
-                num = ord(word)-65
-                sum += decoding(num)
-
-            elif 97 &lt;= ord(word) &lt;= 122:
-                num = ord(word)-71
-                sum += decoding(num)
-
-            elif word == '+':
-                num = 62
-                sum += decoding(num)
-
-            else:
-                num = 63
-                sum += decoding(num)
-        
-        result = translate(sum)
-        
-        print('#' + str(t), result)
-
+        <span class="k">return</span> <span class="nc">Jwts</span><span class="o">.</span><span class="na">builder</span><span class="o">()</span>
+                <span class="o">.</span><span class="na">issuer</span><span class="o">(</span><span class="s">"GoldZZok"</span><span class="o">)</span>
+                <span class="o">.</span><span class="na">claim</span><span class="o">(</span><span class="s">"id"</span><span class="o">,</span> <span class="n">memberNo</span><span class="o">)</span>
+                <span class="o">.</span><span class="na">issuedAt</span><span class="o">(</span><span class="n">date</span><span class="o">)</span>
+                <span class="o">.</span><span class="na">expiration</span><span class="o">(</span><span class="k">new</span> <span class="nc">Date</span><span class="o">(</span><span class="n">date</span><span class="o">.</span><span class="na">getTime</span><span class="o">()</span> <span class="o">+</span> <span class="nc">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="no">JWT_REFRESH_EXPIRE</span><span class="o">)))</span>  <span class="c1">// 7일 설정</span>
+                <span class="o">.</span><span class="na">signWith</span><span class="o">(</span><span class="n">key</span><span class="o">).</span><span class="na">compact</span><span class="o">();</span>
+    <span class="o">}</span>
 </code></pre></div></div>
 
-<h3 id="문제풀이-후기">문제풀이 후기</h3>
-<hr />
-<p>오랜만에 풀어보는 재밌는 문제였던 것 같다. 알고리즘을 푼다는 생각보다는 암호해석을 하는 듯 하여 재밌었다. 문제 자체의 난이도는 높지 않은 것 같으나 본인도 아스키코드 표를 참조하지 않고는 풀기가 힘들었던 문제였다. 그만큼 아스키 코드에 대해 다 외우고 있지 못한다면 풀기 어려운 문제라고 생각한다.</p>
+<h3 id="jwt-검증">JWT 검증</h3>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">validateToken</span><span class="o">(</span><span class="nc">String</span> <span class="n">token</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">SecretKey</span> <span class="n">key</span> <span class="o">=</span> <span class="nc">Keys</span><span class="o">.</span><span class="na">hmacShaKeyFor</span><span class="o">(</span><span class="no">JWT_KEY</span><span class="o">.</span><span class="na">getBytes</span><span class="o">(</span><span class="nc">StandardCharsets</span><span class="o">.</span><span class="na">UTF_8</span><span class="o">));</span>
+        <span class="k">try</span> <span class="o">{</span>
+            <span class="nc">Jws</span><span class="o">&lt;</span><span class="nc">Claims</span><span class="o">&gt;</span> <span class="n">claims</span> <span class="o">=</span> <span class="nc">Jwts</span><span class="o">.</span><span class="na">parser</span><span class="o">()</span>
+                    <span class="o">.</span><span class="na">verifyWith</span><span class="o">(</span><span class="n">key</span><span class="o">)</span>
+                    <span class="o">.</span><span class="na">build</span><span class="o">()</span>
+                    <span class="o">.</span><span class="na">parseSignedClaims</span><span class="o">(</span><span class="n">token</span><span class="o">);</span>
 
-<p>총 소요시간: 0H 30M</p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="algorithm" /><summary type="html"><![CDATA["구현 문제(Ascii code표 활용)"]]></summary></entry><entry><title type="html">[SWEA] 1244_최대상금</title><link href="http://localhost:4000/categories/algorithm/2023-05-17-algorithm-SWEA_1244/" rel="alternate" type="text/html" title="[SWEA] 1244_최대상금" /><published>2023-05-17T00:00:00+09:00</published><updated>2023-05-18T11:18:43+09:00</updated><id>http://localhost:4000/categories/algorithm/algorithm-SWEA_1244</id><content type="html" xml:base="http://localhost:4000/categories/algorithm/2023-05-17-algorithm-SWEA_1244/"><![CDATA[<blockquote>
-  <p><a href="https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=2&amp;problemLevel=3&amp;contestProbId=AV15Khn6AN0CFAYD&amp;categoryId=AV15Khn6AN0CFAYD&amp;categoryType=CODE&amp;problemTitle=&amp;orderBy=RECOMMEND_COUNT&amp;selectCodeLang=ALL&amp;select-1=3&amp;pageSize=10&amp;pageIndex=1">https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=2&amp;problemLevel=3&amp;contestProbId=AV15Khn6AN0CFAYD&amp;categoryId=AV15Khn6AN0CFAYD&amp;categoryType=CODE&amp;problemTitle=&amp;orderBy=RECOMMEND_COUNT&amp;selectCodeLang=ALL&amp;select-1=3&amp;pageSize=10&amp;pageIndex=1</a></p>
-</blockquote>
-
-<h3 id="문제-해결-과정">문제 해결 과정</h3>
-<hr />
-<p><strong>문제 해석</strong></p>
-<ul>
-  <li>정해진 횟수만큼 두 숫자의 위치를 바꿨을 때(중복 가능), 가장 큰 숫자가 나와야한다.</li>
-</ul>
-
-<p><strong>접근 방식</strong></p>
-<ul>
-  <li>
-    <p>Greedy 알고리즘 활용(잘못된 접근)</p>
-
-    <p>매 번 최선의 선택을 하면 결과값이 최선일거라는 실수를 저질렀다. greedy 방식의 경우는 최적의 선택들을 계속 한다해서 결과가 최적이라는 보장이 없다는 것을 공부할 때 정리하고도 문제를 풀 때 생각없이 사용했다.</p>
-
-    <p><a href="https://hunnibs.github.io/categories/study/2023-04-20-algorithmStudy-Greedy/">[알고리즘] Greedy 알고리즘</a> 해당 포스트 내용 참조</p>
-  </li>
-</ul>
-
-<blockquote>
-  <p>조건을 다시 생각</p>
-  <ol>
-    <li>max값을 가장 맨 앞에 오게 하는 것이 최대가 되게 하는 방식</li>
-    <li>max값이 여러개라면? 일일히 탐색해보며 결과가 가장 최대가 될 때를 고르자</li>
-  </ol>
-
-  <p>해당 문제는 최대 6자리 교환횟수 10번 이내이므로 DFS 알고리즘과 브루트포스 알고리즘을 함께 사용해 모든 경우를 다 탐색해봐도 가능할 것이라고 생각했다.</p>
-</blockquote>
-
-<ul>
-  <li>
-    <p>Queue를 활용한 DFS 알고리즘 활용(잘못된 접근)</p>
-
-    <p>max 값을 가장 앞으로 이동시켰을 때 popleft를 통해 제거해준다면 시간복잡도가 더 단순해질 것으로 생각했다. 하지만 여러가지 조건들을 추가하다보니 재귀문에서 돌아올 때 제거했던 값을 다시 넣어주는 것이 너무 복잡했고 계속해서 index error가 발생해서 포기했다.</p>
-  </li>
-  <li>
-    <p>DFS 알고리즘 활용(실제 풀이)</p>
-
-    <p>시간이 오래걸리더라도 가장 깔끔하게 답을 구할 수 있는 방식으로 조건이 까다로운 부분만 해결하면 문제없이 구현할 수 있었다.</p>
-  </li>
-</ul>
-
-<h3 id="풀이-코드">풀이 코드</h3>
-<hr />
-
-<ul>
-  <li>코드가 매우 난잡해 최대한 주석을 달아 설명하려함</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-    # cnt는 남은 반복 횟수, 0 ~ C는 이미 정렬된 숫자를 의미한다. 즉, C는 이제 가장 큰 숫자가 와야하는 index값
-    def sol(cnt, C):
-        # 해당 조건문은 깊이가 최대에 달했을 때를 처리
-        if cnt == 0:
-            tmp = []
-            for i in range(len(answer)):
-                tmp.append(str(answer[i]))
-            for i in range(C, len(nums)):
-                tmp.append(str(nums[i]))
-
-            result.append(''.join(tmp))
-
-            return
-
-        # 해당 루프문은 만약 가장 큰 숫자가 가장 앞에 있는 경우는 변경할 필요가 없어 처리해줌
-        while max(nums) == nums[C]:
-            answer.append(nums[C])
-            nums[C] = -1
-            C += 1
-
-            if C == len(nums):
-                break
-
-        # cnt는 남았는데 이미 최대금액으로 정렬된 경우
-        if C == len(nums):
-            if cnt % 2 == 0 or status:  
-            # 중복되는 숫자가 있다면 그 숫자들만 자리를 바꿔주거나 
-            # or 중복되지않아도 남은 횟수가 짝수면 다시 원래대로 돌려놓을 수 있다.
-                tmp = []
-                for i in range(len(answer)):
-                    tmp.append(str(answer[i]))
-                result.append(''.join(tmp))
-            # 자리를 바꿔줘야하는 경우
-            else:
-                tmp = answer[-1]
-                answer[-1] = answer[-2]
-                answer[-2] = tmp
-                tmp = []
-                for i in range(len(answer)):
-                    tmp.append(str(answer[i]))
-                result.append(''.join(tmp))
-
-            return
-
-        maxNum = max(nums)
-
-        # DFS 동작 코드
-        for i in range(len(nums)):
-            if nums[i] == maxNum:
-                nums[i] = nums[C]
-                nums[C] = -1
-                answer.append(maxNum)
-                sol(cnt-1, C+1)
-                answer.pop()
-                nums[C] = nums[i]
-                nums[i] = maxNum
-
-    # input
-    T = int(input())
-    for t in range(1, T+1):
-        result = []
-        answer = []
-
-        nums, cnt = input().split(' ')
-
-    # main
-        cnt = int(cnt)
-        nums = list(nums)
-        for i in range(len(nums)):
-            nums[i] = int(nums[i])
-
-        status = 0
-        # 중복 Status
-        if len(set(nums)) != len(nums):
-            status = 1
-
-        sol(cnt, 0)
-
-        ans = 0
-        while not ans:
-            if len(max(result)) != len(nums):
-                result[result.index(max(result))] = ''
-            else:
-                ans = max(result)
-
-        print('#' + str(t), ans)
-
+            <span class="k">return</span> <span class="o">!</span><span class="n">claims</span><span class="o">.</span><span class="na">getPayload</span><span class="o">().</span><span class="na">getExpiration</span><span class="o">().</span><span class="na">before</span><span class="o">(</span><span class="k">new</span> <span class="nc">Date</span><span class="o">());</span>
+        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">JwtException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
 </code></pre></div></div>
 
-<h3 id="문제풀이-후기">문제풀이 후기</h3>
-<hr />
-<p>체감 상 굉장히 까다로운 문제였다. 조건이 많고 시간과 공간복잡도를 생각했을 때 섣불리 코드를 짜기가 어려워 줄이려고 노력하다가 시간이 오래걸렸던 것 같다. 느꼈던 건 뭔가 구현문제에 가까웠던 것 같다.</p>
+<h2 id="jwt-이용한-인증">JWT 이용한 인증</h2>
+<h3 id="구현-코드">구현 코드</h3>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="kd">public</span> <span class="kd">class</span> <span class="nc">JwtAuthenticationFilter</span> <span class="kd">extends</span> <span class="nc">OncePerRequestFilter</span> <span class="o">{</span>
+        <span class="nd">@Override</span>
+        <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">doFilterInternal</span><span class="o">(</span><span class="nc">HttpServletRequest</span> <span class="n">request</span><span class="o">,</span> <span class="nc">HttpServletResponse</span> <span class="n">response</span><span class="o">,</span> <span class="nc">FilterChain</span> <span class="n">filterChain</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">ServletException</span><span class="o">,</span> <span class="nc">IOException</span> <span class="o">{</span>
+            <span class="nc">String</span> <span class="n">accessToken</span> <span class="o">=</span> <span class="n">extractAccessToken</span><span class="o">(</span><span class="n">request</span><span class="o">);</span>
+            <span class="nc">String</span> <span class="n">refreshToken</span> <span class="o">=</span> <span class="n">extractRefreshToken</span><span class="o">(</span><span class="n">request</span><span class="o">);</span>
 
-<p>총 소요시간: 3H</p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="algorithm" /><summary type="html"><![CDATA["구현 문제"]]></summary></entry><entry><title type="html">[SWEA] 1859_백만 장자 프로젝트</title><link href="http://localhost:4000/categories/algorithm/2023-05-15-algorithm-SWEA_1859/" rel="alternate" type="text/html" title="[SWEA] 1859_백만 장자 프로젝트" /><published>2023-05-15T00:00:00+09:00</published><updated>2023-05-18T11:18:18+09:00</updated><id>http://localhost:4000/categories/algorithm/algorithm-SWEA_1859</id><content type="html" xml:base="http://localhost:4000/categories/algorithm/2023-05-15-algorithm-SWEA_1859/"><![CDATA[<blockquote>
-  <p><a href="https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=2&amp;contestProbId=AV5LrsUaDxcDFAXc&amp;categoryId=AV5LrsUaDxcDFAXc&amp;categoryType=CODE&amp;problemTitle=&amp;orderBy=RECOMMEND_COUNT&amp;selectCodeLang=ALL&amp;select-1=2&amp;pageSize=10&amp;pageIndex=1">https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=2&amp;contestProbId=AV5LrsUaDxcDFAXc&amp;categoryId=AV5LrsUaDxcDFAXc&amp;categoryType=CODE&amp;problemTitle=&amp;orderBy=RECOMMEND_COUNT&amp;selectCodeLang=ALL&amp;select-1=2&amp;pageSize=10&amp;pageIndex=1</a></p>
-</blockquote>
+            <span class="k">if</span> <span class="o">(</span><span class="kc">null</span> <span class="o">!=</span> <span class="n">accessToken</span> <span class="o">&amp;&amp;</span> <span class="n">jwtService</span><span class="o">.</span><span class="na">validateToken</span><span class="o">(</span><span class="n">accessToken</span><span class="o">))</span> <span class="o">{</span>  <span class="c1">// access token이 유효함</span>
+                <span class="nc">GrantedAuthority</span> <span class="n">authority</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">SimpleGrantedAuthority</span><span class="o">(</span><span class="s">"ROLE_USER"</span><span class="o">);</span>
+                <span class="nc">Authentication</span> <span class="n">authentication</span> <span class="o">=</span> <span class="n">authenticationManager</span><span class="o">.</span><span class="na">authenticate</span><span class="o">(</span><span class="k">new</span> <span class="nc">UsernamePasswordAuthenticationToken</span><span class="o">(</span><span class="n">jwtService</span><span class="o">.</span><span class="na">userCheck</span><span class="o">(</span><span class="n">accessToken</span><span class="o">),</span> <span class="kc">null</span><span class="o">,</span> <span class="nc">Collections</span><span class="o">.</span><span class="na">singletonList</span><span class="o">(</span><span class="n">authority</span><span class="o">)));</span>
+                <span class="nc">SecurityContextHolder</span><span class="o">.</span><span class="na">getContext</span><span class="o">().</span><span class="na">setAuthentication</span><span class="o">(</span><span class="n">authentication</span><span class="o">);</span>
+            <span class="o">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">(</span><span class="kc">null</span> <span class="o">!=</span> <span class="n">extractRefreshToken</span><span class="o">(</span><span class="n">request</span><span class="o">)</span> <span class="o">&amp;&amp;</span> <span class="n">jwtService</span><span class="o">.</span><span class="na">validateToken</span><span class="o">(</span><span class="n">refreshToken</span><span class="o">))</span> <span class="o">{</span>
+                <span class="n">response</span><span class="o">.</span><span class="na">setStatus</span><span class="o">(</span><span class="nc">HttpStatus</span><span class="o">.</span><span class="na">UNAUTHORIZED</span><span class="o">.</span><span class="na">value</span><span class="o">());</span>  <span class="c1">// Refreshtoken이 유효함</span>
+            <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+                <span class="n">authenticationFailureHandler</span><span class="o">(</span><span class="n">response</span><span class="o">);</span>
+            <span class="o">}</span>
 
-<h3 id="문제-해결-과정">문제 해결 과정</h3>
-<hr />
-<p><strong>문제 해석</strong></p>
-<ul>
-  <li>N일 동안의 매매가가 각각 주어졌을 때 저점에 매수해 고점에 파는 것을 반복해 최대 이익을 구하는 것</li>
-</ul>
-
-<p><strong>접근 방식</strong></p>
-<ol>
-  <li>
-    <p>이중 for문을 이용한 간단한 구현 방식(Time Error)</p>
-
-    <p>1일차부터 N-1일차까지 뒤 전부를 돌며 가장 고점에 판매하는 방식으로 구현만 가능할 뿐 시간복잡도가 O(n^2)으로 복잡한 편이다.</p>
-  </li>
-</ol>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-    import sys
-
-    # input
-    input = sys.stdin.readline
-
-    T = int(input())
-
-    for t in range(1, T+1):
-        N = int(input())
-        value = list(map(int, input().split()))
-        result = 0
-        for i in range(N-1):
-            tmp = 0
-            for j in range(i+1, N):
-                if value[i] &lt; value[j]:
-                    tmp = max(tmp, value[j]-value[i])
-            result += tmp
-
-        print('#' + str(t), result)
-
+            <span class="n">filterChain</span><span class="o">.</span><span class="na">doFilter</span><span class="o">(</span><span class="n">request</span><span class="o">,</span> <span class="n">response</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
 </code></pre></div></div>
 
-<ol>
-  <li>
-    <p>max값을 이용한 구현 방식</p>
+<ul>
+  <li>내가 만든 Custom Filter를 Security Filter Chain 내부에 동작하게 걸어 인증이 완료된다면 Security Context 내부에 Authentication 객체를 만들어준다.</li>
+</ul>
 
+<h3 id="개발-과정-인증-절차">개발 과정 인증 절차</h3>
+<ul>
+  <li>
+    <p>request header에 넣어주기 위해 instance header를 사용하게 된다면 SPA의 특성 상 페이지 이동이 없이 이루어져 토큰이 유지가 되지만 새로고침을 누르기만 하면 access token이 사라지는 문제점이 발생한다. 
+이는 access token이 사라질 때마다 server에 접근하여 새롭게 발급받아야하는 상황이 생기고 이가 반복되면 서버에 과부하가 생기게 된다.</p>
+  </li>
+  <li>
+    <p>https://jwt.io/introduction - 공식 소개글 참조</p>
+  </li>
+</ul>
+
+<p><img src="/assets/img/pjt/jwt.png" alt="jwt" /></p>
+
+<ul>
+  <li>당연히 이렇게 header에 넣어 내려준다는 생각만을 하고 있었다. 심지어 secure cookie와 header로 토큰을 각각 나누면 한 번 더 숨기는것이므로 탈취될 위험이 적다고 생각했다.</li>
+  <li>하지만 개발자도구의 network를 까는 순간 모든 정보는 노출되어 보여지고 있었고 header는 cookie처럼 http only 설정을 진행할 수 없기 때문에 JS를 이용한 XSS 공격이 가능했다. 
+→ 모든 걸 secure cookie로 만들어 내려주고 관리하도록 변경, 새로고침 문제부터 XSS 문제까지 해결가능 이제 쿠키를 이용하였을 경우 CSRF 공격이 가능하므로 알아볼 필요가 있다.</li>
+</ul>
+
+<ol>
+  <li>추후 인증 과정
     <ul>
-      <li>매매가 정보가 리스트로 주어졌을 때 가장 고점인 날을 구한다.</li>
-      <li>가장 고점인 날을 high라고 했을 때, 1일차부터 high-1일차까지는 전부 매수하고 high에서 전부 매도한다.</li>
-      <li>큐의 특성을 이용해 1일차부터 순서대로 나아가면서 리스트에서 없애준다.</li>
-      <li>계속해서 하락장인 경우 O(N^2)까지 증가할 수 있으나 O(N)에 보통 해결 가능하다.</li>
+      <li>Access를 가지고 있다면 jwtAuthenticationFilter에서 인증을 바로 완료하고 Authentication 객체를 바로 생성해 권한을 줄 수 있다.</li>
+      <li>만약 없다면, refresh 토큰을 가지고 있는지 확인한다. refresh token이 존재한다면 프론트에 response error를 내려준다.</li>
+    </ul>
+  </li>
+  <li>error 발생 시
+    <ul>
+      <li>해당 에러가 발생 시 클라이언트에서(front application) interceptor가 동작하게 되고 해당 interceptor는 auth/silent-refresh request를 자동으로 보내준다.</li>
+      <li>refresh token이 유효하다면 access token과 refresh token을 재발급해서 할당해준다.</li>
+      <li>만약 유효하지 않다면? 인증할 수 있는 방법이 없기 때문에 다시 로그인하라고 끝내야된다.</li>
+    </ul>
+  </li>
+</ol>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="pjt" /><summary type="html"><![CDATA["Spring Security JWT를 이용한 인증/인가"]]></summary></entry><entry><title type="html">[Spring] HTTP 다양한 통신 방법</title><link href="http://localhost:4000/categories/javastudy/2023-12-29-javaStudy-urlConnection/" rel="alternate" type="text/html" title="[Spring] HTTP 다양한 통신 방법" /><published>2023-12-29T00:00:00+09:00</published><updated>2024-07-02T11:46:47+09:00</updated><id>http://localhost:4000/categories/javastudy/javaStudy-urlConnection</id><content type="html" xml:base="http://localhost:4000/categories/javastudy/2023-12-29-javaStudy-urlConnection/"><![CDATA[<ul>
+  <li>TOC
+    <hr />
+    <h2 id="httpurlconnection">HttpURLConnection</h2>
+    <hr />
+    <h3 id="정의">정의</h3>
+    <hr />
+    <p>public abstract class인 URLConnection의 Subclass로 URL 간의 통신 링크를 나타낸다. <br />
+각 HttpURLConnection instance는 단일 요청을 만드는 데 사용되며 요청 후 InputStream 혹은 OutputStream에서 close() 메소드를 호출 시 네트워크 리소스를 해제할 수 가 있다.
+또한, 서버에 다른 요청을 더 이상 보낼 필요가 없을 경우 disconnect() 메소드를 사용해서 연결을 해제할 수가 있다. <br />
+HttpURLConnection은 Java에서 기본적으로 제공하는 클래스이기 때문에 스프링 프레임워크를 사용할 필요성이 없다.</p>
+  </li>
+</ul>
+
+<h3 id="예시-코드">예시 코드</h3>
+<hr />
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nd">@GetMapping</span><span class="o">(</span><span class="s">"url_connection"</span><span class="o">)</span>
+    <span class="kd">public</span> <span class="nc">ResponseEntity</span><span class="o">&lt;</span><span class="nc">Map</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">,</span> <span class="nc">Object</span><span class="o">&gt;&gt;</span> <span class="nf">getHttpURLConnection</span><span class="o">()</span> <span class="kd">throws</span> <span class="nc">IOException</span> <span class="o">{</span>
+        <span class="nc">Map</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">,</span> <span class="nc">Object</span><span class="o">&gt;</span> <span class="n">map</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">HashMap</span><span class="o">&lt;&gt;();</span>
+        <span class="k">try</span> <span class="o">{</span>
+            <span class="nc">String</span> <span class="n">param</span> <span class="o">=</span> <span class="nc">URLEncoder</span><span class="o">.</span><span class="na">encode</span><span class="o">(</span><span class="s">"설현"</span><span class="o">,</span> <span class="s">"UTF-8"</span><span class="o">);</span>
+            <span class="nc">String</span> <span class="n">apiUrl</span> <span class="o">=</span> <span class="s">"https://openapi.naver.com/v1/search/news.json?query="</span><span class="o">;</span>
+            <span class="no">URL</span> <span class="n">url</span> <span class="o">=</span> <span class="k">new</span> <span class="no">URL</span><span class="o">(</span><span class="n">apiUrl</span> <span class="o">+</span> <span class="n">param</span><span class="o">);</span>
+
+            <span class="nc">HttpURLConnection</span> <span class="n">con</span> <span class="o">=</span> <span class="o">(</span><span class="nc">HttpURLConnection</span><span class="o">)</span> <span class="n">url</span><span class="o">.</span><span class="na">openConnection</span><span class="o">();</span>
+            <span class="n">con</span><span class="o">.</span><span class="na">setRequestMethod</span><span class="o">(</span><span class="s">"GET"</span><span class="o">);</span>
+
+            <span class="n">con</span><span class="o">.</span><span class="na">setRequestProperty</span><span class="o">(</span><span class="s">"X-Naver-Client-Id"</span><span class="o">,</span> <span class="n">clientId</span><span class="o">);</span>
+            <span class="n">con</span><span class="o">.</span><span class="na">setRequestProperty</span><span class="o">(</span><span class="s">"X-Naver-Client-Secret"</span><span class="o">,</span> <span class="n">clientSecret</span><span class="o">);</span>
+
+            <span class="nc">BufferedReader</span> <span class="n">br</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">BufferedReader</span><span class="o">(</span><span class="k">new</span> <span class="nc">InputStreamReader</span><span class="o">(</span><span class="n">con</span><span class="o">.</span><span class="na">getInputStream</span><span class="o">(),</span> <span class="s">"UTF-8"</span><span class="o">));</span>
+
+            <span class="nc">String</span> <span class="n">inputLine</span><span class="o">;</span>
+            <span class="nc">StringBuilder</span> <span class="n">response</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">StringBuilder</span><span class="o">();</span>
+            <span class="k">while</span> <span class="o">((</span><span class="n">inputLine</span> <span class="o">=</span> <span class="n">br</span><span class="o">.</span><span class="na">readLine</span><span class="o">())</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">response</span><span class="o">.</span><span class="na">append</span><span class="o">(</span><span class="n">inputLine</span><span class="o">);</span>
+            <span class="o">}</span>
+
+            <span class="n">map</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">"response"</span><span class="o">,</span> <span class="n">response</span><span class="o">);</span>
+
+            <span class="n">con</span><span class="o">.</span><span class="na">disconnect</span><span class="o">();</span>
+            <span class="n">br</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">Exception</span> <span class="n">e</span><span class="o">){</span>
+            <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+        <span class="o">}</span>
+
+        <span class="k">return</span> <span class="k">new</span> <span class="nc">ResponseEntity</span><span class="o">&lt;&gt;(</span><span class="n">map</span><span class="o">,</span> <span class="nc">HttpStatus</span><span class="o">.</span><span class="na">OK</span><span class="o">);</span>
+    <span class="o">}</span>
+
+</code></pre></div></div>
+
+<h3 id="결과-화면">결과 화면</h3>
+<hr />
+<p><img src="/assets/img/javaStudy/httpconnection.png" alt="urlConnection" /></p>
+
+<h2 id="resttemplate">RestTemplate</h2>
+<hr />
+<h3 id="정의-1">정의</h3>
+<p>Public class RestTemplate은 Spring 프레임워크에서 제공하는 HTTP 클라이언트 라이브러리로 간단하게 HTTP 통신을 진행할 수가 있는 동기식 클라이언트이다.</p>
+
+<h3 id="예시-코드-1">예시 코드</h3>
+<hr />
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nd">@GetMapping</span><span class="o">(</span><span class="s">"rest_template"</span><span class="o">)</span>
+    <span class="kd">public</span> <span class="nc">ResponseEntity</span><span class="o">&lt;</span><span class="nc">Map</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">,</span> <span class="nc">Object</span><span class="o">&gt;&gt;</span> <span class="nf">getRestTemplate</span><span class="o">(){</span>
+        <span class="nc">Map</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">,</span> <span class="nc">Object</span><span class="o">&gt;</span> <span class="n">map</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">HashMap</span><span class="o">&lt;&gt;();</span>
+        <span class="k">try</span> <span class="o">{</span>
+            <span class="nc">String</span> <span class="n">param</span> <span class="o">=</span> <span class="nc">URLEncoder</span><span class="o">.</span><span class="na">encode</span><span class="o">(</span><span class="s">"설현"</span><span class="o">,</span> <span class="nc">StandardCharsets</span><span class="o">.</span><span class="na">UTF_8</span><span class="o">.</span><span class="na">toString</span><span class="o">());</span>
+            <span class="nc">String</span> <span class="n">apiUrl</span> <span class="o">=</span> <span class="s">"https://openapi.naver.com/v1/search/news.json?query="</span> <span class="o">+</span> <span class="n">param</span><span class="o">;</span>
+
+            <span class="nc">HttpHeaders</span> <span class="n">headers</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">HttpHeaders</span><span class="o">();</span>
+            <span class="n">headers</span><span class="o">.</span><span class="na">set</span><span class="o">(</span><span class="s">"X-Naver-Client-Id"</span><span class="o">,</span> <span class="n">clientId</span><span class="o">);</span>
+            <span class="n">headers</span><span class="o">.</span><span class="na">set</span><span class="o">(</span><span class="s">"X-Naver-Client-Secret"</span><span class="o">,</span> <span class="n">clientSecret</span><span class="o">);</span>
+
+            <span class="nc">RestTemplate</span> <span class="n">restTemplate</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">RestTemplate</span><span class="o">();</span>
+            <span class="nc">HttpEntity</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;</span> <span class="n">httpEntity</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">HttpEntity</span><span class="o">&lt;&gt;(</span><span class="n">headers</span><span class="o">);</span>
+            <span class="nc">ResponseEntity</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;</span> <span class="n">responseEntity</span> <span class="o">=</span> <span class="n">restTemplate</span><span class="o">.</span><span class="na">exchange</span><span class="o">(</span><span class="n">apiUrl</span><span class="o">,</span> <span class="n">org</span><span class="o">.</span><span class="na">springframework</span><span class="o">.</span><span class="na">http</span><span class="o">.</span><span class="na">HttpMethod</span><span class="o">.</span><span class="na">GET</span><span class="o">,</span> <span class="n">httpEntity</span><span class="o">,</span> <span class="nc">String</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
+            <span class="nc">String</span> <span class="n">responseBody</span> <span class="o">=</span> <span class="n">responseEntity</span><span class="o">.</span><span class="na">getBody</span><span class="o">();</span>
+
+            <span class="n">map</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">"response"</span><span class="o">,</span> <span class="n">responseBody</span><span class="o">);</span>
+        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">Exception</span> <span class="n">e</span><span class="o">){</span>
+            <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+        <span class="o">}</span>
+
+        <span class="k">return</span> <span class="k">new</span> <span class="nc">ResponseEntity</span><span class="o">&lt;&gt;(</span><span class="n">map</span><span class="o">,</span> <span class="nc">HttpStatus</span><span class="o">.</span><span class="na">OK</span><span class="o">);</span>
+    <span class="o">}</span>
+
+</code></pre></div></div>
+
+<h3 id="결과-화면-1">결과 화면</h3>
+<hr />
+<p><img src="/assets/img/javaStudy/restTemplate.png" alt="restTemplate" /></p>
+
+<h2 id="webclient">WebClient</h2>
+<hr />
+<h3 id="정의-2">정의</h3>
+<hr />
+<p>WebClient는 스프링 5에서 소개된 비동기 및 논블록킹 웹 요청을 수행하기 위해 사용되는 Reactive web 클라이언트이다.</p>
+
+<h3 id="예시-코드-2">예시 코드</h3>
+<hr />
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nd">@GetMapping</span><span class="o">(</span><span class="s">"web_client"</span><span class="o">)</span>
+    <span class="kd">public</span> <span class="nc">Mono</span><span class="o">&lt;</span><span class="nc">ResponseEntity</span><span class="o">&lt;</span><span class="nc">Map</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">,</span> <span class="nc">Object</span><span class="o">&gt;&gt;&gt;</span> <span class="nf">getWebClient</span><span class="o">()</span> <span class="o">{</span>
+        <span class="nc">Map</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">,</span> <span class="nc">Object</span><span class="o">&gt;</span> <span class="n">map</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">HashMap</span><span class="o">&lt;&gt;();</span>
+
+        <span class="k">try</span> <span class="o">{</span>
+            <span class="nc">String</span> <span class="n">param</span> <span class="o">=</span> <span class="nc">URLEncoder</span><span class="o">.</span><span class="na">encode</span><span class="o">(</span><span class="s">"설현"</span><span class="o">,</span> <span class="nc">StandardCharsets</span><span class="o">.</span><span class="na">UTF_8</span><span class="o">.</span><span class="na">toString</span><span class="o">());</span>
+            <span class="nc">String</span> <span class="n">apiUrl</span> <span class="o">=</span> <span class="s">"https://openapi.naver.com/v1/search/news.json?query="</span> <span class="o">+</span> <span class="n">param</span><span class="o">;</span>
+
+            <span class="nc">WebClient</span> <span class="n">webClient</span> <span class="o">=</span> <span class="nc">WebClient</span><span class="o">.</span><span class="na">builder</span><span class="o">().</span><span class="na">baseUrl</span><span class="o">(</span><span class="n">apiUrl</span><span class="o">)</span>
+                    <span class="o">.</span><span class="na">defaultHeader</span><span class="o">(</span><span class="nc">HttpHeaders</span><span class="o">.</span><span class="na">CONTENT_TYPE</span><span class="o">,</span> <span class="nc">MediaType</span><span class="o">.</span><span class="na">APPLICATION_JSON_VALUE</span><span class="o">)</span>
+                    <span class="o">.</span><span class="na">defaultHeader</span><span class="o">(</span><span class="s">"X-Naver-Client-Id"</span><span class="o">,</span> <span class="n">clientId</span><span class="o">)</span>
+                    <span class="o">.</span><span class="na">defaultHeader</span><span class="o">(</span><span class="s">"X-Naver-Client-Secret"</span><span class="o">,</span> <span class="n">clientSecret</span><span class="o">)</span>
+                    <span class="o">.</span><span class="na">build</span><span class="o">();</span>
+
+            <span class="nc">String</span> <span class="n">responseBody</span> <span class="o">=</span> <span class="n">webClient</span><span class="o">.</span><span class="na">get</span><span class="o">()</span>
+                    <span class="o">.</span><span class="na">retrieve</span><span class="o">()</span>
+                    <span class="o">.</span><span class="na">bodyToMono</span><span class="o">(</span><span class="nc">String</span><span class="o">.</span><span class="na">class</span><span class="o">)</span>
+                    <span class="o">.</span><span class="na">block</span><span class="o">();</span>
+
+            <span class="n">map</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">"response"</span><span class="o">,</span> <span class="n">responseBody</span><span class="o">);</span>
+        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">Exception</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+        <span class="o">}</span>
+
+        <span class="k">return</span> <span class="nc">Mono</span><span class="o">.</span><span class="na">just</span><span class="o">(</span><span class="k">new</span> <span class="nc">ResponseEntity</span><span class="o">&lt;&gt;(</span><span class="n">map</span><span class="o">,</span> <span class="nc">HttpStatus</span><span class="o">.</span><span class="na">OK</span><span class="o">));</span>
+    <span class="o">}</span>
+</code></pre></div></div>
+
+<h3 id="결과-화면-2">결과 화면</h3>
+<hr />
+<p><img src="/assets/img/javaStudy/webclient.png" alt="webclient" /></p>
+
+<h3 id="추가spring-webflux">추가(Spring WebFlux)</h3>
+<hr />
+<p>Spring WebFlux는 Spring5에서 새롭게 추가된 모듈로 Reactive 스타일의 개발을 도와준다.</p>
+
+<ul>
+  <li>Flux: 0 ~ N개의 데이터 전달</li>
+  <li>Mono: 0 ~ 1개의 데이터 전달</li>
+</ul>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="javaStudy" /><summary type="html"><![CDATA["HttpURLConnection & Rest Template & web client"]]></summary></entry><entry><title type="html">[알고리즘] 위상 정렬 알고리즘</title><link href="http://localhost:4000/categories/study/2023-12-26-algorithmStudy-topologicalSort/" rel="alternate" type="text/html" title="[알고리즘] 위상 정렬 알고리즘" /><published>2023-12-26T00:00:00+09:00</published><updated>2023-12-26T10:07:43+09:00</updated><id>http://localhost:4000/categories/study/algorithmStudy-topologicalSort</id><content type="html" xml:base="http://localhost:4000/categories/study/2023-12-26-algorithmStudy-topologicalSort/"><![CDATA[<ul>
+  <li>TOC
+    <hr />
+    <h3 id="위상정렬-알고리즘이란">위상정렬 알고리즘이란?</h3>
+    <hr />
+    <p>위상정렬(Topological Sorting) 알고리즘이란 선후 관계가 확실한 유향 그래프에서 선후 관계에 따라 정렬하기 위해 이용하는 알고리즘이다.
+위상정렬 알고리즘을 사용하기 위해서는 우선 방향 그래프여야 하며 싸이클이 발생해서는 안된다. <br />
+가장 유명한 예시로는 선수 과목을 정하는 일로 대학에서 특정 과목을 듣기 위해 어떤 선수 과목을 듣고 해당 과목을 들어야되는지 알아내는 것이 있다.</p>
+  </li>
+</ul>
+
+<h3 id="구현">구현</h3>
+<hr />
+<ol>
+  <li>위상 정렬 구현을 위한 Graph Class.</li>
+</ol>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="kd">private</span> <span class="kd">static</span> <span class="kd">class</span> <span class="nc">Graph</span> <span class="o">{</span>
+        <span class="nc">List</span><span class="o">&lt;</span><span class="nc">List</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;&gt;</span> <span class="n">graph</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;();</span>
+
+        <span class="kd">public</span> <span class="nf">Graph</span><span class="o">(</span><span class="kt">int</span> <span class="no">N</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="no">N</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+                <span class="n">graph</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;());</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+
+        <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setGraph</span><span class="o">(</span><span class="kt">int</span> <span class="n">from</span><span class="o">,</span> <span class="kt">int</span> <span class="n">to</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">graph</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">from</span><span class="o">).</span><span class="na">add</span><span class="o">(</span><span class="n">to</span><span class="o">);</span>
+        <span class="o">}</span>
+
+        <span class="kd">public</span> <span class="nc">List</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;</span> <span class="nf">getGraph</span><span class="o">(</span><span class="kt">int</span> <span class="n">from</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">return</span> <span class="n">graph</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">from</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+</code></pre></div></div>
+
+<ol>
+  <li>Graph에서 정점들을 연결할 때 특정 정점에 몇 개의 간선이 연결되는지를 따로 체크</li>
+</ol>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nc">Graph</span> <span class="n">graph</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Graph</span><span class="o">(</span><span class="no">N</span><span class="o">);</span>
+    <span class="kt">int</span><span class="o">[]</span> <span class="n">degree</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="no">N</span><span class="o">];</span>
+    <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="no">K</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+        <span class="n">st</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">StringTokenizer</span><span class="o">(</span><span class="n">br</span><span class="o">.</span><span class="na">readLine</span><span class="o">());</span>
+        <span class="kt">int</span> <span class="n">from</span> <span class="o">=</span> <span class="nc">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">st</span><span class="o">.</span><span class="na">nextToken</span><span class="o">())-</span><span class="mi">1</span><span class="o">;</span>
+        <span class="kt">int</span> <span class="n">to</span> <span class="o">=</span> <span class="nc">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">st</span><span class="o">.</span><span class="na">nextToken</span><span class="o">())-</span><span class="mi">1</span><span class="o">;</span>
+    
+        <span class="n">graph</span><span class="o">.</span><span class="na">setGraph</span><span class="o">(</span><span class="n">from</span><span class="o">,</span> <span class="n">to</span><span class="o">);</span>
+        <span class="n">degree</span><span class="o">[</span><span class="n">to</span><span class="o">]++;</span>
+    <span class="o">}</span>
+</code></pre></div></div>
+
+<ol>
+  <li>Main Logic</li>
+</ol>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">private</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">topologicalSort</span><span class="o">(</span><span class="nc">Graph</span> <span class="n">graph</span><span class="o">,</span> <span class="kt">int</span><span class="o">[]</span> <span class="n">degree</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">Queue</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">queue</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayDeque</span><span class="o">&lt;&gt;();</span>
+
+    <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">degree</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">degree</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">==</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">queue</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">i</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+
+    <span class="k">while</span> <span class="o">(!</span><span class="n">queue</span><span class="o">.</span><span class="na">isEmpty</span><span class="o">())</span> <span class="o">{</span>
+        <span class="kt">int</span> <span class="n">from</span> <span class="o">=</span> <span class="n">queue</span><span class="o">.</span><span class="na">poll</span><span class="o">();</span>
+        <span class="nc">List</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">cur</span> <span class="o">=</span> <span class="n">graph</span><span class="o">.</span><span class="na">getGraph</span><span class="o">(</span><span class="n">from</span><span class="o">);</span>
+        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">to</span> <span class="o">:</span> <span class="n">cur</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">degree</span><span class="o">[</span><span class="n">to</span><span class="o">]--;</span>
+            <span class="k">if</span> <span class="o">(</span><span class="n">degree</span><span class="o">[</span><span class="n">to</span><span class="o">]</span> <span class="o">==</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">queue</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">to</span><span class="o">);</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li>코드에서 degree 값이 0이라면 해당 정점에 연결된 정점들은 이미 처리 되었거나 시작 정점이라는 의미이다.</li>
+  <li>맨 처음에 시작 정점을 찾아주고 Queue를 이용해 간선들을 하나씩 지워나가면서 연결된 간선이 없는 정점부터 다시 처리해준다.</li>
+</ul>
+
+<h3 id="참조">참조</h3>
+<hr />
+<p><a href="https://ko.wikipedia.org/wiki/%EC%9C%84%EC%83%81%EC%A0%95%EB%A0%AC">위키백과 위상정렬</a></p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="study" /><summary type="html"><![CDATA["내용 정리"]]></summary></entry><entry><title type="html">[BOJ] 14891_톱니바퀴</title><link href="http://localhost:4000/categories/algorithm/2023-10-09-algorithm-BOJ_14891/" rel="alternate" type="text/html" title="[BOJ] 14891_톱니바퀴" /><published>2023-10-09T00:00:00+09:00</published><updated>2023-10-09T17:15:32+09:00</updated><id>http://localhost:4000/categories/algorithm/algorithm-BOJ_14891</id><content type="html" xml:base="http://localhost:4000/categories/algorithm/2023-10-09-algorithm-BOJ_14891/"><![CDATA[<blockquote>
+  <p><a href="https://www.acmicpc.net/problem/14891">https://www.acmicpc.net/problem/14891</a>
+<img src="/assets/img/algo/gear.png" alt="gear" /></p>
+</blockquote>
+
+<h2 id="문제-설명">문제 설명</h2>
+<ul>
+  <li>톱니 바퀴는 총 4개가 맞물려있으며 한 개의 톱니바퀴가 시계 방향으로 돌면 해당 톱니바퀴와 맞닿아 있는 톱니바퀴들은 반시계 방향으로 돌게된다.</li>
+  <li>이 때, 톱니바퀴끼리 맞닿아 있는 부분이 같은 자성을 띈다면 맞닿아 있는 톱니는 회전하지 않는다.</li>
+</ul>
+
+<h2 id="풀이-계획">풀이 계획</h2>
+<h3 id="1-deque-자료구조를-활용한-톱니바퀴-돌리기절대-안됨">1. Deque 자료구조를 활용한 톱니바퀴 돌리기(절대 안됨!)</h3>
+<ul>
+  <li>톱니바퀴가 돌 때 deque 자료구조의 특징을 활용해서 넣고 빼고를 하는 것을 생각했다.</li>
+  <li>양쪽 끝에 대한 정보만 알 수 있기 때문에 맞닿아 있는 부분이 같은 자성을 띄는지 아닌지를 판별할 수가 없다.</li>
+</ul>
+
+<h3 id="2-bitmasking을-활용한-톱니바퀴-돌리기">2. Bitmasking을 활용한 톱니바퀴 돌리기</h3>
+<ul>
+  <li>주어진 톱니의 정보가 0, 1로만 이루어져있는 것을 보고 Bitmasking을 활용해서 돌리는 것이 가능하겠다고 생각했다.</li>
+  <li>맞닿아있는 부분에 대한 추적도 용이하고 톱니바퀴를 돌리는 것도 빠른 시간 안에 가능하기 때문에 좋은 방법이라고 생각했다.</li>
+</ul>
+
+<h2 id="풀이-과정">풀이 과정</h2>
+<h3 id="1-check-method">1. check Method</h3>
+<ul>
+  <li>특정 톱니바퀴를 돌리는 정보가 주어졌을 때 나머지 톱니들은 어떻게 돌릴지를 결정하는 함수를 만들어줬다.</li>
+  <li>DFS 방식을 활용해서 추적해주는 방식을 선택했다.</li>
+</ul>
+
+<h3 id="2-update-method">2. update Method</h3>
+<ul>
+  <li>check Method에서 확인한 톱니바퀴를 어느 방향으로 돌릴지에 대한 정보를 활용해 톱니바퀴를 돌려준다.</li>
+  <li>시게 방향으로 돌릴 때는 모두 같지만, 반시계 방향으로 돌리는 경우 주의해야한다.</li>
+  <li>반시계 방향으로 돌릴 경우, 주어진 gear 정보를 binary로 전환 시 무조건 8자리가 보장되지 않는다.</li>
+  <li>그렇기 때문에 binaryString을 활용해서 현재 binary코드가 8자리 이하일 경우와 이상일 경우를 구분해야한다.</li>
+  <li>8자리 이하일 경우는 그냥 shift 연산자를 활용하면 되지만 반대의 경우는 넘어가는 bit를 추적해서 업데이트 해줘야한다.</li>
+</ul>
+
+<h3 id="3-answer-method">3. answer Method</h3>
+<ul>
+  <li>주어진 조건 중 몇 번째 톱니의 12시 방향에 어떤 자성을 띄는 톱니가 오는지에 따라 점수 환산 방식이 다르다.</li>
+  <li>이를 추적해주기 위해 answer method를 따로 구현해주었다.</li>
+</ul>
+
+<h2 id="구현-코드">구현 코드</h2>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+    <span class="kn">package</span> <span class="nn">boj.gold5</span><span class="o">;</span>
+    
+    <span class="kn">import</span> <span class="nn">java.io.BufferedReader</span><span class="o">;</span>
+    <span class="kn">import</span> <span class="nn">java.io.IOException</span><span class="o">;</span>
+    <span class="kn">import</span> <span class="nn">java.io.InputStreamReader</span><span class="o">;</span>
+    <span class="kn">import</span> <span class="nn">java.util.*</span><span class="o">;</span>
+    
+    <span class="cm">/**
+    
+     - @author 이병헌
+     - @since 2023/10/01
+     - @see https://www.acmicpc.net/problem/14891
+     - @git https://github.com/Hunnibs
+     - @youtube
+     - @performance
+     - @category # bitMasking
+     - @note */</span>
+    
+    <span class="kd">public</span> <span class="kd">class</span> <span class="nc">BOJ_14891</span> <span class="o">{</span>
+        <span class="kd">static</span> <span class="kt">int</span><span class="o">[]</span> <span class="n">gear</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="mi">4</span><span class="o">];</span>  <span class="c1">// 톱니는 총 4개</span>
+        <span class="kd">static</span> <span class="kt">int</span><span class="o">[]</span> <span class="n">delta</span> <span class="o">=</span> <span class="o">{-</span><span class="mi">1</span><span class="o">,</span> <span class="mi">1</span><span class="o">};</span>
+    
+        <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">IOException</span> <span class="o">{</span>
+            <span class="nc">BufferedReader</span> <span class="n">br</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">BufferedReader</span><span class="o">(</span><span class="k">new</span> <span class="nc">InputStreamReader</span><span class="o">(</span><span class="nc">System</span><span class="o">.</span><span class="na">in</span><span class="o">));</span>
+            <span class="nc">StringTokenizer</span> <span class="n">st</span><span class="o">;</span>
+            <span class="nc">StringBuilder</span> <span class="n">sb</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">StringBuilder</span><span class="o">();</span>
+    
+            <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+                <span class="n">gear</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="nc">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">br</span><span class="o">.</span><span class="na">readLine</span><span class="o">(),</span> <span class="mi">2</span><span class="o">);</span>
+            <span class="o">}</span>
+    
+            <span class="kt">int</span> <span class="no">K</span> <span class="o">=</span> <span class="nc">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">br</span><span class="o">.</span><span class="na">readLine</span><span class="o">());</span>
+            <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="no">K</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+                <span class="n">st</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">StringTokenizer</span><span class="o">(</span><span class="n">br</span><span class="o">.</span><span class="na">readLine</span><span class="o">());</span>
+                <span class="kt">int</span> <span class="n">gearNum</span> <span class="o">=</span> <span class="nc">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">st</span><span class="o">.</span><span class="na">nextToken</span><span class="o">())</span> <span class="o">-</span> <span class="mi">1</span><span class="o">;</span>
+                <span class="kt">int</span> <span class="n">dir</span> <span class="o">=</span> <span class="nc">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">st</span><span class="o">.</span><span class="na">nextToken</span><span class="o">());</span>
+    
+                <span class="n">check</span><span class="o">(</span><span class="n">gearNum</span><span class="o">,</span> <span class="n">dir</span><span class="o">);</span>
+            <span class="o">}</span>
+    
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">answer</span><span class="o">());</span>
+        <span class="o">}</span>
+    
+        <span class="kd">private</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">check</span><span class="o">(</span><span class="kt">int</span> <span class="n">gearNum</span><span class="o">,</span> <span class="kt">int</span> <span class="n">dir</span><span class="o">)</span> <span class="o">{</span>
+            <span class="kt">int</span><span class="o">[]</span> <span class="n">checked</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="mi">4</span><span class="o">];</span>  <span class="c1">// gear가 어느 방향으로 돌아가는지 체크하기 위한 배열</span>
+            <span class="kt">boolean</span><span class="o">[]</span> <span class="n">visited</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">boolean</span><span class="o">[</span><span class="mi">4</span><span class="o">];</span>
+            <span class="nc">Stack</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">stack</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Stack</span><span class="o">&lt;&gt;();</span>
+    
+            <span class="kt">int</span> <span class="n">bit</span><span class="o">;</span>
+    
+            <span class="n">checked</span><span class="o">[</span><span class="n">gearNum</span><span class="o">]</span> <span class="o">=</span> <span class="n">dir</span><span class="o">;</span>  <span class="c1">// 처음 돌리는 톱니바퀴는 주어지는 방향으로 돌린다.</span>
+            <span class="n">visited</span><span class="o">[</span><span class="n">gearNum</span><span class="o">]</span> <span class="o">=</span> <span class="kc">true</span><span class="o">;</span>
+            <span class="n">stack</span><span class="o">.</span><span class="na">push</span><span class="o">(</span><span class="n">gearNum</span><span class="o">);</span>
+    
+            <span class="k">while</span> <span class="o">(!</span><span class="n">stack</span><span class="o">.</span><span class="na">isEmpty</span><span class="o">())</span> <span class="o">{</span>
+                <span class="kt">int</span> <span class="n">current</span> <span class="o">=</span> <span class="n">stack</span><span class="o">.</span><span class="na">pop</span><span class="o">();</span>
+                <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>  <span class="c1">// 톱니가 맞물리는건 최대 2방향 (양 끝을 제외)</span>
+                    <span class="kt">int</span> <span class="n">next</span> <span class="o">=</span> <span class="n">current</span> <span class="o">+</span> <span class="n">delta</span><span class="o">[</span><span class="n">i</span><span class="o">];</span>
+                    <span class="k">if</span> <span class="o">(</span><span class="n">next</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">next</span> <span class="o">&lt;</span> <span class="mi">4</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">visited</span><span class="o">[</span><span class="n">next</span><span class="o">])</span> <span class="o">{</span>
+                        <span class="c1">// 돌리고 싶은 기어가 왼쪽에 맞물려 있는지 오른쪽에 맞물려있는지에 대한 분기</span>
+                        <span class="c1">// 돌릴 수 있을 때는 현재 기어가 돌아가는 방향에 반대 방향으로 다음 기어를 돌려야한다.</span>
+                        <span class="k">if</span> <span class="o">(</span><span class="n">current</span> <span class="o">&lt;</span> <span class="n">next</span><span class="o">)</span> <span class="o">{</span>
+                            <span class="k">if</span> <span class="o">((((</span><span class="n">gear</span><span class="o">[</span><span class="n">next</span><span class="o">]</span> <span class="o">&amp;</span> <span class="o">(</span><span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">1</span><span class="o">)))</span> <span class="o">&gt;&gt;</span> <span class="mi">1</span><span class="o">)</span> <span class="o">!=</span> <span class="o">(((</span><span class="n">gear</span><span class="o">[</span><span class="n">current</span><span class="o">]</span> <span class="o">&amp;</span> <span class="o">(</span><span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">5</span><span class="o">)))</span> <span class="o">&gt;&gt;</span> <span class="mi">5</span><span class="o">))</span> <span class="o">{</span>
+                                <span class="n">checked</span><span class="o">[</span><span class="n">next</span><span class="o">]</span> <span class="o">=</span> <span class="n">checked</span><span class="o">[</span><span class="n">current</span><span class="o">]</span> <span class="o">*</span> <span class="o">(-</span><span class="mi">1</span><span class="o">);</span>
+                            <span class="o">}</span>
+                        <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+                            <span class="k">if</span> <span class="o">((((</span><span class="n">gear</span><span class="o">[</span><span class="n">current</span><span class="o">]</span> <span class="o">&amp;</span> <span class="o">(</span><span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">1</span><span class="o">))</span> <span class="o">&gt;&gt;</span> <span class="mi">1</span><span class="o">))</span> <span class="o">!=</span> <span class="o">(((</span><span class="n">gear</span><span class="o">[</span><span class="n">next</span><span class="o">]</span> <span class="o">&amp;</span> <span class="o">(</span><span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">5</span><span class="o">))</span> <span class="o">&gt;&gt;</span> <span class="mi">5</span><span class="o">)))</span> <span class="o">{</span>
+                                <span class="n">checked</span><span class="o">[</span><span class="n">next</span><span class="o">]</span> <span class="o">=</span> <span class="n">checked</span><span class="o">[</span><span class="n">current</span><span class="o">]</span> <span class="o">*</span> <span class="o">(-</span><span class="mi">1</span><span class="o">);</span>
+                            <span class="o">}</span>
+                        <span class="o">}</span>
+                        <span class="n">visited</span><span class="o">[</span><span class="n">next</span><span class="o">]</span> <span class="o">=</span> <span class="kc">true</span><span class="o">;</span>
+                        <span class="n">stack</span><span class="o">.</span><span class="na">push</span><span class="o">(</span><span class="n">next</span><span class="o">);</span>
+                    <span class="o">}</span>
+                <span class="o">}</span>
+            <span class="o">}</span>
+            <span class="n">update</span><span class="o">(</span><span class="n">checked</span><span class="o">);</span>
+        <span class="o">}</span>
+    
+        <span class="kd">private</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">update</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">checked</span><span class="o">)</span> <span class="o">{</span>
+            <span class="kt">int</span> <span class="n">bit</span><span class="o">;</span>
+            <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+                <span class="k">if</span> <span class="o">(</span><span class="n">checked</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">==</span> <span class="mi">1</span><span class="o">)</span> <span class="o">{</span>  <span class="c1">// 시계 방향으로 돌리는 경우</span>
+                    <span class="c1">// bit를 우 Shift 하게 된다면 gear의 가장 오른쪽 비트는 밀려서 사라지기 때문에 미리 bit에 저장해준다.</span>
+                    <span class="n">bit</span> <span class="o">=</span> <span class="n">gear</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">&amp;</span> <span class="mi">1</span><span class="o">;</span>
+                    <span class="n">bit</span> <span class="o">=</span> <span class="n">bit</span> <span class="o">&lt;&lt;</span> <span class="mi">7</span><span class="o">;</span>
+                    <span class="n">gear</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">gear</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">&gt;&gt;</span> <span class="mi">1</span><span class="o">;</span>
+                    <span class="n">gear</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">gear</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">|</span> <span class="n">bit</span><span class="o">;</span>
+                <span class="o">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">(</span><span class="n">checked</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="o">)</span> <span class="o">{</span>  <span class="c1">// 반시계 방향으로 돌리는 경우</span>
+                    <span class="n">gear</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">gear</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">&lt;&lt;</span> <span class="mi">1</span><span class="o">;</span>
+                    <span class="k">if</span> <span class="o">(</span><span class="nc">Integer</span><span class="o">.</span><span class="na">toBinaryString</span><span class="o">(</span><span class="n">gear</span><span class="o">[</span><span class="n">i</span><span class="o">]).</span><span class="na">length</span><span class="o">()</span> <span class="o">&gt;</span> <span class="mi">8</span><span class="o">)</span> <span class="o">{</span>  <span class="c1">// 왼쪽으로 밀었을 때 해당 비트의 길이가 8 이상이라면 작업을 실시한다. -&gt; 이유는 8 이하면 그냥 밀면 되기 때문</span>
+                        <span class="n">bit</span> <span class="o">=</span> <span class="n">gear</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">&amp;</span> <span class="o">(</span><span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">8</span><span class="o">);</span>  <span class="c1">// 길이가 넘는 비트를 가져와서 가장 오른쪽 비트로 넣어준다.</span>
+                        <span class="n">bit</span> <span class="o">=</span> <span class="n">bit</span> <span class="o">&gt;&gt;</span> <span class="mi">8</span><span class="o">;</span>
+                        <span class="n">gear</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">gear</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">|</span> <span class="n">bit</span><span class="o">;</span>
+                        <span class="n">gear</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">gear</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">&amp;</span> <span class="mb">0b11111111</span><span class="o">;</span>  <span class="c1">// 톱니가 이상해지는걸 방지하기 위해 길이 8짜리 톱니로 다시 만들어주자!</span>
+                    <span class="o">}</span>
+                <span class="o">}</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+    
+        <span class="kd">private</span> <span class="kd">static</span> <span class="kt">int</span> <span class="nf">answer</span><span class="o">()</span> <span class="o">{</span>  <span class="c1">// 12시 방향에 따른 점수 계산을 위한 코드</span>
+            <span class="kt">int</span> <span class="n">sum</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+            <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+                <span class="k">if</span> <span class="o">((((</span><span class="n">gear</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">&amp;</span> <span class="o">(</span><span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">7</span><span class="o">)))</span> <span class="o">&gt;&gt;</span> <span class="mi">7</span><span class="o">)</span> <span class="o">==</span> <span class="mi">1</span><span class="o">)</span> <span class="o">{</span>  <span class="c1">// 가장 왼쪽 비트가 12시 방향이다.</span>
+                    <span class="n">sum</span> <span class="o">+=</span> <span class="o">(</span><span class="kt">int</span><span class="o">)</span> <span class="nc">Math</span><span class="o">.</span><span class="na">pow</span><span class="o">(</span><span class="mi">2</span><span class="o">,</span> <span class="n">i</span><span class="o">);</span>
+                <span class="o">}</span>
+            <span class="o">}</span>
+            <span class="k">return</span> <span class="n">sum</span><span class="o">;</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+
+
+</code></pre></div></div>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="algorithm" /><summary type="html"><![CDATA["비트마스킹을 활용한 톱니바퀴 돌리기"]]></summary></entry><entry><title type="html">[알고리즘] LIS 알고리즘</title><link href="http://localhost:4000/categories/study/2023-09-26-algorithmStudy-LIS/" rel="alternate" type="text/html" title="[알고리즘] LIS 알고리즘" /><published>2023-09-26T00:00:00+09:00</published><updated>2023-09-27T09:09:38+09:00</updated><id>http://localhost:4000/categories/study/algorithmStudy-LIS</id><content type="html" xml:base="http://localhost:4000/categories/study/2023-09-26-algorithmStudy-LIS/"><![CDATA[<ul>
+  <li>TOC
+    <hr />
+    <h3 id="lis-알고리즘이란">LIS 알고리즘이란?</h3>
+    <hr />
+    <p>가장 긴 최장 증가 수열을 구하는 알고리즘으로 특정 숫자의 배열이 주어졌을 때 해당 수열에서 가장 큰 사이즈의 증가 수열을 만들어내기 위해 사용하는 알고리즘이다.</p>
+  </li>
+</ul>
+
+<h3 id="구현-방법">구현 방법</h3>
+<hr />
+<p>구현 방법은 크게 두 가지로 나뉘는데 DP 테이블만을 이용해 구현하는 방식과 동적인 DP table을 만들어 이분 탐색과 함께 활용하는 방법이다.</p>
+
+<ol>
+  <li>DP table을 활용한 LIS의 풀이
+    <ul>
+      <li>해당 방법은 O(N^2)의 방법으로 시간 상 굉장히 비효율적인 방법이다.</li>
+      <li>하지만 별도의 작업 없이 DP table만 잘 활용한다면 손쉽게 구현이 가능하다.</li>
     </ul>
   </li>
 </ol>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-    import sys
-    from collections import deque
-
-    # input
-    input = sys.stdin.readline
-
-    T = int(input())
-
-    for t in range(1, T+1):
-        N = int(input())
-        value = list(map(int, input().split()))
-
-        value = deque(value)
-        answer = 0
-        while value:
-            high = max(value)
-            idx = value.index(high)
-            for _ in range(idx):
-                answer += (high - value.popleft())
-            value.popleft()
-
-        print('#' + str(t), answer)
-
-</code></pre></div></div>
-
-<h3 id="문제-풀이-후기">문제 풀이 후기</h3>
-<hr />
-<p>시간복잡도 생각 안하고 풀지말고 따져보면서 효율적인 코드 작성하려고 노력하자</p>
-
-<p>총 소요시간: 0H 30M</p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="algorithm" /><summary type="html"><![CDATA["구현 문제(큐 활용)"]]></summary></entry><entry><title type="html">[BOJ] 1238_파티</title><link href="http://localhost:4000/categories/algorithm/2023-05-09-algorithm-BOJ_1238/" rel="alternate" type="text/html" title="[BOJ] 1238_파티" /><published>2023-05-09T00:00:00+09:00</published><updated>2023-05-18T11:17:45+09:00</updated><id>http://localhost:4000/categories/algorithm/algorithm-BOJ_1238</id><content type="html" xml:base="http://localhost:4000/categories/algorithm/2023-05-09-algorithm-BOJ_1238/"><![CDATA[<blockquote>
-  <p><a href="https://www.acmicpc.net/problem/1238">https://www.acmicpc.net/problem/1238</a></p>
+<blockquote>
+  <p>table의 column에는 주어지는 수열의 값들을 순서대로, row에는 해당 수열의 길이만큼 만들어 테이블 내에는 최장 길이가 어느정도까지 될지 저장해준다. <br />
+아래 코드는 눈으로 보기 쉽게 2차원 테이블로 구현한 코드이고 1차원 배열로도 구현이 가능하다.</p>
 </blockquote>
 
-<h3 id="문제-해결-과정">문제 해결 과정</h3>
-<hr />
-<p><strong>문제 해석</strong></p>
-<ul>
-  <li>각 노드를 출발해 정해진 노드에 방문하고 다시 출발 노드로 되돌아오는 최단경로를 구하는 문제</li>
-</ul>
-
-<p><strong>접근 방식</strong></p>
-<ul>
-  <li>최단경로 문제 풀이 방식은 정해져있음</li>
-  <li>최단경로를 구할 때 그래프에 <strong>가중치</strong>가 정해져있다면 BFS가 아닌 Dijkstra 알고리즘을 활용 <br />
-<a href="https://hunnibs.github.io/categories/study/2023-04-25-algorithmStudy-dijkstra/">[알고리즘] 다익스트라 알고리즘</a> 해당 포스트 내용 참조</li>
-  <li>해당 구분만 하면 다익스트라 알고리즘만 구현하면 문제 풀이는 끝</li>
-</ul>
-
-<p>단, 해당 문제는 목표노드에 도달하면 끝나는 것이 아니라 다시 출발 노드로 돌아와야하므로 조건을 추가해야한다.</p>
-<ul>
-  <li>목표 노드 X를 출발점으로 잡고 해당 노드에서 다른 노드까지의 최단경로를 저장해준 리스트를 만들어준다.</li>
-  <li>목표 노드를 제외한 나머지 노드들부터 목표 노드까지 최단경로를 찾아준다.</li>
-  <li>기존에 구했던 목표노드부터 출발노드까지의 최단경로와 방금 구한 목표노드까지의 최단경로를 더해서 각 노드 별로 저장해준다.</li>
-  <li>각 노드 당 목표노드를 들렀다 복귀하는 최단경로가 저장된 리스트를 얻을 수 있다.</li>
-  <li>이 중 최대값이 해당 문제에서 요구하는 정답이다.</li>
-</ul>
-
-<h3 id="풀이-코드">풀이 코드</h3>
-<hr />
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-    import heapq
-    import sys
-    from math import inf
-
-    def dijkstra(i, shortPath):
-        heap = []
-        heapq.heappush(heap, (0, i))
-        while heap:
-            currentW, currentV = heapq.heappop(heap)
-
-            for nextV, w in graph[currentV]:
-                nextW = currentW + w
-                if shortPath[nextV] &gt; nextW:
-                    shortPath[nextV] = nextW
-                    heapq.heappush(heap, (nextW, nextV))
-
-        return shortPath
-
-    # input
-    input = sys.stdin.readline
-
-    N, M, X = map(int, input().split())
-
-    graph = [[] for _ in range(N+1)]
-    for _ in range(M):
-        u, v, w = map(int, input().split())
-        graph[u].append([v, w])
-
-    # main
-    result = [0 for _ in range(N+1)]
-
-    shortPathX = [inf for _ in range(N+1)]
-    shortPathX[X] = 0
-    shortPathX = dijkstra(X, shortPathX)
-
-    for i in range(1, N+1):
-        if i == X:
-            continue
-
-        shortPath = [inf for _ in range(N+1)]
-        shortPath[i] = 0
-        shortPath = dijkstra(i, shortPath)
-        result[i] = shortPath[X] + shortPathX[i]
-
-    print(max(result))
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+      <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="no">N</span><span class="o">+</span><span class="mi">1</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+          <span class="kt">int</span> <span class="n">idx</span> <span class="o">=</span> <span class="nc">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">st</span><span class="o">.</span><span class="na">nextToken</span><span class="o">());</span>
+          <span class="kt">int</span> <span class="n">max</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+          <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="no">N</span><span class="o">+</span><span class="mi">1</span><span class="o">;</span> <span class="n">j</span><span class="o">++)</span> <span class="o">{</span>
+              <span class="k">if</span><span class="o">(</span><span class="n">dp</span><span class="o">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="o">][</span><span class="n">j</span><span class="o">]</span> <span class="o">!=</span> <span class="mi">0</span><span class="o">){</span>
+                  <span class="n">dp</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">j</span><span class="o">]</span> <span class="o">=</span> <span class="n">dp</span><span class="o">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="o">][</span><span class="n">j</span><span class="o">];</span>
+                  <span class="k">if</span> <span class="o">(</span><span class="n">j</span> <span class="o">&lt;</span> <span class="n">idx</span><span class="o">)</span> <span class="o">{</span>
+                      <span class="n">max</span> <span class="o">=</span> <span class="nc">Math</span><span class="o">.</span><span class="na">max</span><span class="o">(</span><span class="n">dp</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">j</span><span class="o">],</span> <span class="n">max</span><span class="o">);</span>
+                  <span class="o">}</span>
+              <span class="o">}</span>
+          <span class="o">}</span>
+          <span class="n">dp</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">idx</span><span class="o">]</span> <span class="o">=</span> <span class="n">max</span><span class="o">+</span><span class="mi">1</span><span class="o">;</span>
+      <span class="o">}</span>
 
 </code></pre></div></div>
 
 <ul>
-  <li>자세한 다익스트라 구현 방식은 남겨둔 포스트를 참조할 것</li>
+  <li>테이블을 업데이트 할 때는 수열의 특정 index값이 들어올 때 그 값보다 작은 값들로 만들 수 있는 최장길이에 +1을 해주는 방식이다.</li>
+  <li>위 코드를 1차원 배열로 더 단순화한다면 다음과 같다.</li>
 </ul>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+      <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="no">N</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+          <span class="kt">int</span> <span class="n">idx</span> <span class="o">=</span> <span class="nc">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">st</span><span class="o">.</span><span class="na">nextToken</span><span class="o">());</span>
+          <span class="kt">int</span> <span class="n">max</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+          <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">idx</span><span class="o">;</span> <span class="n">j</span><span class="o">++)</span> <span class="o">{</span>
+              <span class="n">max</span> <span class="o">=</span> <span class="nc">Math</span><span class="o">.</span><span class="na">max</span><span class="o">(</span><span class="n">max</span><span class="o">,</span> <span class="n">dp</span><span class="o">[</span><span class="n">j</span><span class="o">]);</span>
+          <span class="o">}</span>
+          <span class="n">dp</span><span class="o">[</span><span class="n">idx</span><span class="o">]</span> <span class="o">=</span> <span class="n">max</span><span class="o">+</span><span class="mi">1</span><span class="o">;</span>
+      <span class="o">}</span>
+
+</code></pre></div></div>
+
+<ul>
+  <li>DP table을 이용한 방식은 마지막에 해당 테이블에서 가장 최대의 길이를 찾아주는 연산을 별도로 시행해야된다는 불편함이 있다.</li>
+</ul>
+
+<ol>
+  <li>이분 탐색을 함께 활용한 LIS의 풀이
+    <ul>
+      <li>위의 방식은 미리 수열의 숫자 크기만큼 배열을 미리 할당해야해서 메모리 적으로도 부담이 크다.</li>
+      <li>해당 방식은 동적으로 메모리를 할당하고 탐색 또한 이분 탐색을 활용하기 때문에 시간적으로도 이득이다.</li>
+      <li>시간복잡도는 O(NlogN)이다.</li>
+    </ul>
+  </li>
+</ol>
+
+<p><img src="/assets/img/study/LIS.png" alt="img.png" /></p>
+
+<ul>
+  <li>
+    <p>해당 그림은 업데이트 과정을 시각화 한 것이다.</p>
+  </li>
+  <li>
+    <p>조건</p>
+    <ol>
+      <li>리스트가 비어있거나 현재 리스트에 있는 가장 큰 값보다 더 큰 값이 들어오면 리스트의 길이는 늘려준다.</li>
+      <li>이외의 경우는 들어오는 숫자보다 큰 값을 대체해준다.(해당 값과 차이가 가장 작은 값)</li>
+    </ol>
+  </li>
+</ul>
+
+<blockquote>
+  <p>값을 더 작은 값으로 업데이트 해주는 이유 <br />
+LIS 내부의 값들은 작은 값으로 업데이트 되는 이유가 크게 없지만 마지막 index의 경우 해당 값보다 작은 값이 들어온다면 업데이트를 해줘야지 다음에 올 수열이 꼬이지 않는다. <br />
+그림을 예시로 들자면 1은 들어올때 아무 의미가 없지만 11에서 6으로 바뀐 경우는 다음으로 7이 들어올 경우 리스트의 길이를 늘릴 수 있다는 점을 가능케해준다.</p>
+</blockquote>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+    <span class="nc">List</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">list</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;();</span>
+    <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="no">N</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+        <span class="kt">int</span> <span class="n">target</span> <span class="o">=</span> <span class="nc">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">st</span><span class="o">.</span><span class="na">nextToken</span><span class="o">());</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">list</span><span class="o">.</span><span class="na">isEmpty</span><span class="o">()){</span>
+            <span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">target</span><span class="o">);</span>
+            <span class="k">continue</span><span class="o">;</span>
+        <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+            <span class="kt">int</span> <span class="n">idx</span> <span class="o">=</span> <span class="nc">Math</span><span class="o">.</span><span class="na">abs</span><span class="o">(</span><span class="nc">Collections</span><span class="o">.</span><span class="na">binarySearch</span><span class="o">(</span><span class="n">list</span><span class="o">,</span> <span class="n">target</span><span class="o">))-</span><span class="mi">1</span><span class="o">;</span>
+            <span class="k">if</span> <span class="o">(</span><span class="n">idx</span> <span class="o">&gt;</span> <span class="n">list</span><span class="o">.</span><span class="na">size</span><span class="o">()-</span><span class="mi">1</span><span class="o">){</span>
+                <span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">target</span><span class="o">);</span>
+            <span class="o">}</span> <span class="k">else</span><span class="o">{</span>
+                <span class="n">list</span><span class="o">.</span><span class="na">set</span><span class="o">(</span><span class="n">idx</span><span class="o">,</span> <span class="n">target</span><span class="o">);</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+
+</code></pre></div></div>
+
+<h3 id="주의할-점">주의할 점</h3>
+<hr />
+<p>해당 알고리즘은 최장 증가 수열 내용물 그 자체를 추적하는 것은 불가능하다. 위 알고리즘은 어디까지나 수열에서 만들 수 있는 최장 증가 수열의 길이가 어느정도일지를 알아내는 것 뿐이다.</p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="study" /><summary type="html"><![CDATA["Longest Increasing Subsequences"]]></summary></entry><entry><title type="html">[BOJ] 1655_가운데를 말해요</title><link href="http://localhost:4000/categories/algorithm/2023-09-10-algorithm-BOJ_1655/" rel="alternate" type="text/html" title="[BOJ] 1655_가운데를 말해요" /><published>2023-09-10T00:00:00+09:00</published><updated>2023-09-10T21:38:23+09:00</updated><id>http://localhost:4000/categories/algorithm/algorithm-BOJ_1655</id><content type="html" xml:base="http://localhost:4000/categories/algorithm/2023-09-10-algorithm-BOJ_1655/"><![CDATA[<blockquote>
+  <p><a href="https://www.acmicpc.net/problem/1655">https://www.acmicpc.net/problem/1655</a></p>
+</blockquote>
+
+<h2 id="문제-설명">문제 설명</h2>
+<ul>
+  <li>차례대로 숫자가 하나씩 주어진다.</li>
+  <li>숫자의 개수는 N (1 &lt;= N &lt;= 100,000), 주어지는 숫자는 정수 num (-10,000 &lt;= num &lt;= 10,000)</li>
+  <li>순서대로 주어지는 수들에 대하여 주어질 때마다 중간값을 찾아서 저장해야한다.</li>
+  <li>단, 주어진 수의 개수가 짝수일 때는 중간값 2개 중 더 작은 값을 저장해준다.</li>
+</ul>
+
+<blockquote>
+  <p>ex) <br />
+1이 주어지면 중간값은 1로 저장이 된다. <br />
+다음으로 2가 주어진다면 중간값은 더 작은 1이 저장이 되고, 반대로 더 작은 -2가 주어진다면 -2가 중간값이 된다.</p>
+</blockquote>
+
+<h2 id="풀이-계획">풀이 계획</h2>
+<h3 id="1-tree-구조-사용">1. Tree 구조 사용</h3>
+<ul>
+  <li>Java의 TreeSet 혹은 TreeMap 구조를 사용</li>
+  <li>넣을 때마다 자동으로 정렬해주기 때문에 정렬 시간이 O(logN)으로 짧기 때문에 중간값을 찾는다면 빠르게 확인할 수 있을 것이라 생각했다.</li>
+</ul>
+
+<p><strong>문제점</strong></p>
+<ul>
+  <li>TreeSet은 중복을 제거해주기 때문에 같은 수가 주어지지 않는다는 보장이 없는 현재 문제에서는 반례를 만들 수 있다.</li>
+  <li>TreeMap의 경우도 Key값이 중복될 때 Value값을 어떻게 설정해야하는지에 대한 부분이 문제가 된다.</li>
+</ul>
+
+<h3 id="2-heap의-사용">2. Heap의 사용</h3>
+<ul>
+  <li>다음으로 정렬을 빠르게 할 수 있는 Heap 구조의 활용방안을 생각</li>
+  <li>중복제거도 가능하며 Java의 Collection 중 Priority Queue를 사용한다면 최소 힙, 최대 힙을 구현할 수 있다.</li>
+  <li>위에서 말했듯 최대 힙, 최소 힙을 구현할 수 있으므로 두 개를 이용하여 중간값을 찾는 로직을 작성하려 했다.</li>
+</ul>
+
+<blockquote>
+  <p>이외에도 이진탐색을 통한 정렬을 사용한 중간값 찾기, Dynamic Programming 점화식 세우기 등도 생각해봤지만 모두 불가능하다는 결론을 내렸다..</p>
+</blockquote>
+
+<h2 id="풀이-과정">풀이 과정</h2>
+<h3 id="1-기준점에-따른-힙-두-개-생성">1. 기준점에 따른 힙 두 개 생성</h3>
+<ul>
+  <li>기준점을 기준으로 기준점보다 작은 숫자들을 가지고 있지만 힙으로 반환 시 그 중 가장 큰 값을 반환하는 힙</li>
+  <li>기준점을 기준으로 기준점보다 큰 숫자들을 가지고 있지만 힙으로 반환 시 그 중 가장 작은 값을 반환하는 힙</li>
+  <li>위 두 개의 힙의 사이즈를 이용하여 원래 생각했던 루트 노드부터 양쪽 자식 노드의 수가 같거나 1개 차이인 트리를 구현할 수 있다.</li>
+</ul>
+
+<h3 id="2-push-함수">2. push 함수</h3>
+<ul>
+  <li>들어오는 숫자가 최소힙 쪽인지 최대힙쪽인지를 판단해서 넣어주는 로직을 담당한다.</li>
+  <li>만약, 최소힙과 최대힙의 반환값들의 사잇값(=&gt; 어느 힙에도 속하지 못한다면) 사이즈가 더 작은 쪽으로 넣어준다.</li>
+</ul>
+
+<h3 id="3-update-함수">3. update 함수</h3>
+<ul>
+  <li>두 힙의 차이는 1보다 커진다면 중간값을 찾기가 힘들어지므로 매번 사이즈를 체크하면서 두 힙 사이즈의 차이가 1이거나 0이 되도록 한다.</li>
+</ul>
+
+<h3 id="4-findmiddle-함수">4. findMiddle 함수</h3>
+<ul>
+  <li>사이즈가 더 긴쪽에서 반환하는 값이 중간값이 된다.</li>
+  <li>만약, 두 힙의 사이즈가 같다면 당연히 최대힙(=&gt; 오름차순으로 정렬되어있는 중간값보다 작은 수들을 넣어놓은 힙)에서 반환한다.</li>
+</ul>
+
+<h2 id="구현-코드">구현 코드</h2>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">IOException</span> <span class="o">{</span>
+        <span class="nc">BufferedReader</span> <span class="n">br</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">BufferedReader</span><span class="o">(</span><span class="k">new</span> <span class="nc">InputStreamReader</span><span class="o">(</span><span class="nc">System</span><span class="o">.</span><span class="na">in</span><span class="o">));</span>
+        <span class="nc">StringTokenizer</span> <span class="n">st</span><span class="o">;</span>
+
+        <span class="kt">int</span> <span class="no">N</span> <span class="o">=</span> <span class="nc">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">br</span><span class="o">.</span><span class="na">readLine</span><span class="o">());</span>
+
+        <span class="c1">// main</span>
+        <span class="c1">// init - 초기화 과정이 필요, 첫 두 수를 받아서 각각 힙에 넣어준다.</span>
+        <span class="kt">int</span> <span class="n">first</span> <span class="o">=</span> <span class="nc">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">br</span><span class="o">.</span><span class="na">readLine</span><span class="o">());</span>
+        <span class="n">sb</span><span class="o">.</span><span class="na">append</span><span class="o">(</span><span class="n">first</span><span class="o">).</span><span class="na">append</span><span class="o">(</span><span class="s">"\n"</span><span class="o">);</span>  <span class="c1">// 처음 넣은 숫자는 무조건 중간값</span>
+
+        <span class="kt">int</span> <span class="n">second</span> <span class="o">=</span> <span class="nc">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">br</span><span class="o">.</span><span class="na">readLine</span><span class="o">());</span>
+        <span class="n">sb</span><span class="o">.</span><span class="na">append</span><span class="o">(</span><span class="nc">Math</span><span class="o">.</span><span class="na">min</span><span class="o">(</span><span class="n">first</span><span class="o">,</span> <span class="n">second</span><span class="o">)).</span><span class="na">append</span><span class="o">(</span><span class="s">"\n"</span><span class="o">);</span>  <span class="c1">// 두 번째로 넣은 숫자는 첫번 째 수와 비교해서 더 작은 값을 넣어준다.</span>
+        <span class="n">smallSide</span><span class="o">.</span><span class="na">offer</span><span class="o">(</span><span class="nc">Math</span><span class="o">.</span><span class="na">min</span><span class="o">(</span><span class="n">first</span><span class="o">,</span><span class="n">second</span><span class="o">));</span>
+        <span class="n">largeSide</span><span class="o">.</span><span class="na">offer</span><span class="o">(</span><span class="nc">Math</span><span class="o">.</span><span class="na">max</span><span class="o">(</span><span class="n">first</span><span class="o">,</span><span class="n">second</span><span class="o">));</span>
+
+        <span class="c1">// main logic</span>
+        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="no">N</span> <span class="o">-</span> <span class="mi">2</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+            <span class="kt">int</span> <span class="n">current</span> <span class="o">=</span> <span class="nc">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">br</span><span class="o">.</span><span class="na">readLine</span><span class="o">());</span>
+            <span class="n">push</span><span class="o">(</span><span class="n">current</span><span class="o">);</span>
+            <span class="n">update</span><span class="o">();</span>
+            <span class="n">findMiddle</span><span class="o">();</span>
+        <span class="o">}</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">sb</span><span class="o">);</span>
+    <span class="o">}</span>
+    <span class="kd">private</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">findMiddle</span><span class="o">(){</span>  <span class="c1">// 힙의 길이가 더 긴 쪽이 중간값을 가지고 있다는 뜻이다.</span>
+        <span class="k">if</span><span class="o">(</span><span class="n">smallSide</span><span class="o">.</span><span class="na">size</span><span class="o">()</span> <span class="o">&lt;</span> <span class="n">largeSide</span><span class="o">.</span><span class="na">size</span><span class="o">()){</span>
+            <span class="n">sb</span><span class="o">.</span><span class="na">append</span><span class="o">(</span><span class="n">largeSide</span><span class="o">.</span><span class="na">peek</span><span class="o">()).</span><span class="na">append</span><span class="o">(</span><span class="s">"\n"</span><span class="o">);</span>
+        <span class="o">}</span> <span class="k">else</span><span class="o">{</span>  <span class="c1">// 힙의 길이가 같을 때는 더 작은 수를 출력해야하는 조건 때문에 내림차순 정렬로 되어있는 쪽에서 꺼내온다.</span>
+            <span class="n">sb</span><span class="o">.</span><span class="na">append</span><span class="o">(</span><span class="n">smallSide</span><span class="o">.</span><span class="na">peek</span><span class="o">()).</span><span class="na">append</span><span class="o">(</span><span class="s">"\n"</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+
+    <span class="kd">private</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">update</span><span class="o">(){</span>
+        <span class="k">if</span> <span class="o">(</span><span class="nc">Math</span><span class="o">.</span><span class="na">abs</span><span class="o">(</span><span class="n">smallSide</span><span class="o">.</span><span class="na">size</span><span class="o">()</span> <span class="o">-</span> <span class="n">largeSide</span><span class="o">.</span><span class="na">size</span><span class="o">())</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="o">){</span>  <span class="c1">// 두 힙의 길이 차이가 2인 경우 1이 되도록 길이 차이를 맞춰준다.</span>
+            <span class="k">if</span> <span class="o">(</span><span class="n">smallSide</span><span class="o">.</span><span class="na">size</span><span class="o">()</span> <span class="o">&gt;</span> <span class="n">largeSide</span><span class="o">.</span><span class="na">size</span><span class="o">()){</span>
+                <span class="n">largeSide</span><span class="o">.</span><span class="na">offer</span><span class="o">(</span><span class="n">smallSide</span><span class="o">.</span><span class="na">poll</span><span class="o">());</span>
+            <span class="o">}</span> <span class="k">else</span><span class="o">{</span>
+                <span class="n">smallSide</span><span class="o">.</span><span class="na">offer</span><span class="o">(</span><span class="n">largeSide</span><span class="o">.</span><span class="na">poll</span><span class="o">());</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+
+    <span class="kd">private</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">push</span><span class="o">(</span><span class="kt">int</span> <span class="n">current</span><span class="o">){</span>
+        <span class="k">if</span><span class="o">(</span><span class="n">smallSide</span><span class="o">.</span><span class="na">peek</span><span class="o">()</span> <span class="o">&gt;</span> <span class="n">current</span><span class="o">){</span>  <span class="c1">// 내림차순으로 정렬되어있는 값들보다 작은 경우 그 쪽으로 push</span>
+            <span class="n">smallSide</span><span class="o">.</span><span class="na">offer</span><span class="o">(</span><span class="n">current</span><span class="o">);</span>
+        <span class="o">}</span> <span class="k">else</span> <span class="k">if</span><span class="o">(</span><span class="n">largeSide</span><span class="o">.</span><span class="na">peek</span><span class="o">()</span> <span class="o">&lt;</span> <span class="n">current</span><span class="o">){</span>  <span class="c1">// 오름차순으로 정렬되어있는 값들보다 큰 경우 그 쪽으로 push</span>
+            <span class="n">largeSide</span><span class="o">.</span><span class="na">offer</span><span class="o">(</span><span class="n">current</span><span class="o">);</span>
+        <span class="o">}</span> <span class="k">else</span><span class="o">{</span>  <span class="c1">// 두 힙의 최소 최대의 사잇값이라면 힙의 사이즈가 더 작은 쪽으로 넣어준다.</span>
+            <span class="k">if</span> <span class="o">(</span><span class="n">largeSide</span><span class="o">.</span><span class="na">size</span><span class="o">()</span> <span class="o">&lt;</span> <span class="n">smallSide</span><span class="o">.</span><span class="na">size</span><span class="o">()){</span>
+                <span class="n">largeSide</span><span class="o">.</span><span class="na">offer</span><span class="o">(</span><span class="n">current</span><span class="o">);</span>
+            <span class="o">}</span> <span class="k">else</span><span class="o">{</span>  <span class="c1">// 두 사이즈가 같을 때에도 내림차순으로 정렬된 힙으로 넣어준다.</span>
+                <span class="n">smallSide</span><span class="o">.</span><span class="na">offer</span><span class="o">(</span><span class="n">current</span><span class="o">);</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+</code></pre></div></div>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="algorithm" /><summary type="html"><![CDATA["Heap 자료구조를 통한 빠른 정렬과 약간의 머리 싸움"]]></summary></entry><entry><title type="html">[BOJ] 2178_미로 탐색</title><link href="http://localhost:4000/categories/algorithm/2023-08-07-algorithm-BOJ_2178/" rel="alternate" type="text/html" title="[BOJ] 2178_미로 탐색" /><published>2023-08-07T00:00:00+09:00</published><updated>2023-08-07T14:52:51+09:00</updated><id>http://localhost:4000/categories/algorithm/algorithm-BOJ_2178</id><content type="html" xml:base="http://localhost:4000/categories/algorithm/2023-08-07-algorithm-BOJ_2178/"><![CDATA[<blockquote>
+  <p><a href="https://www.acmicpc.net/problem/2178">https://www.acmicpc.net/problem/2178</a></p>
+</blockquote>
+
+<h3 id="문제-이해-과정">문제 이해 과정</h3>
+<hr />
+<p>N x M 배열이 주어졌을 때 (1, 1)에서 탐색을 시작햇허 (N, M)에 도달하는 순간 종료. 이 때 최단경로를 구하라.    <br />
+1인 경우 이동할 수 있는 경로, 0인 경우 이동할 수 없는 경로이다. <br />
+입력은 무조건 (1,1)에서 (N, M)으로 이동 가능한 입력이 주어진다.</p>
+
+<h3 id="풀이-계획">풀이 계획</h3>
+<hr />
+<p>최단경로 탐색을 위한 BFS를 활용 <br />
+BFS를 활용한 탐색이 끝났을 때 answer[N-1][M-1]에 저장된 값을 출력한다.</p>
+
+<p>해당 방법이 어떻게 최단 경로를 보장하는지에 대한 이유는 다음과 같다. <br />
+visited로 방문한 칸에 대한 체크를 진행해서 많은 경우의 수 중 가장 먼저 해당 칸에 도착한 경우만 경로를 업데이트 할 수 있게 해주기 때문이다.</p>
+
+<h3 id="구현">구현</h3>
+<hr />
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+	/**
+
+	 @author 이병헌
+	 @since 2023. 8. 6.
+	 @see https://www.acmicpc.net/problem/2178
+	 @git
+	 @youtube
+	 @performance O(N x M x 4) -&gt; 전체 노드와 연결된 간선의 수
+	 @category # BFS
+	 @note
+	 (0,0)부터 (N-1, M-1)까지 가는 가장 최단경로 구하기
+
+	 # BFS 탐색 시 마지막에 최단경로가 저장될 수 밖에 없는 이유는 visited 배열을 사용해 먼저 방문한 경로가 있을 경우에는 업데이트가 되지 못하게 막기 때문이다.
+	 */
+
+	import java.io.BufferedReader;
+	import java.io.IOException;
+	import java.io.InputStreamReader;
+	import java.util.ArrayDeque;
+	import java.util.ArrayList;
+	import java.util.Deque;
+	import java.util.StringTokenizer;
+
+	class Info{
+		int r;
+		int c;
+		public Info(int r, int c) {
+			this.r = r;
+			this.c = c;
+		}
+	}
+
+	public class BOJ_02178 {
+		static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		static StringTokenizer st;
+		static StringBuilder sb = new StringBuilder();
+
+		static int N, M, row, col, tr, tc;
+		static int[][] delta = {{-1, 0}, {0, 1}, {1, 0}, {0, -1}};
+		static int[][] answer;
+		static char[][] maze;
+		static boolean[][] visited;
+		static Deque&lt;Info&gt; dq = new ArrayDeque&lt;&gt;();
+
+		public static void main(String[] args) throws IOException {
+			// input
+			st = new StringTokenizer(br.readLine());
+			N = Integer.parseInt(st.nextToken());
+			M = Integer.parseInt(st.nextToken());
+
+			maze = new char[N][M];
+			answer = new int[N][M];
+			visited = new boolean[N][M];
+			String S;
+			for (int r = 0; r &lt; N; r++) {
+				S = br.readLine();
+				maze[r] = S.toCharArray();
+			}
+
+			// main
+			answer[0][0] = 1;
+			visited[0][0] = true;
+			dq.offer(new Info(0, 0));
+			bfs();
+
+			System.out.println(answer[N-1][M-1]);
+		}
+
+		private static void bfs(){
+			while(!dq.isEmpty()) {
+				row = dq.peekFirst().r;
+				col = dq.pollFirst().c;
+				for (int i = 0; i &lt; 4; i++) {
+					tr = row + delta[i][0];
+					tc = col + delta[i][1];
+					if (isIn() &amp;&amp; !visited[tr][tc] &amp;&amp; maze[tr][tc] == '1') {
+						visited[tr][tc] = true;
+						answer[tr][tc] = answer[row][col]+1;
+						dq.add(new Info(tr, tc));
+					}
+				}
+			}
+		}
+
+		private static boolean isIn(){
+			if (tr &gt;= 0 &amp;&amp; tr &lt; N &amp;&amp; tc &gt;= 0 &amp;&amp; tc &lt; M) {
+				return true;
+			} else{
+				return false;
+			}
+		}
+	}
+
+</code></pre></div></div>
 
 <h3 id="문제-풀이-후기">문제 풀이 후기</h3>
 <hr />
-<p>아직은 Dijkstra 알고리즘 사용이 익숙하지 않고 Heap을 자유롭게 사용하지 못해 포스트 내용을 참조해서 문제를 풀어야했다. 그래도 문제를 보고 어떤 알고리즘을 써야할지 빠르게 파악했다는 점에 공부가 되고있다는 생각이 들었던 문제였던 것 같다.</p>
+<p>문제를 본 이후 BFS를 활용한 최단경로라는 것을 바로 알았지만 짜고 나서 생각해보면서 이 방식이 왜 최단경로를 보장하는가에 대한 궁금증이 생겼다. 알고리즘 문제를 풀 때 어떤 방식을 왜 써야하는지에 대한 생각을 하면서 공부할 필요가 있을 것 같다.</p>
 
-<p>총 소요시간: 0H 45M</p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="algorithm" /><summary type="html"><![CDATA["다익스트라 활용 문제"]]></summary></entry></feed>
+<p>총 소요시간: 0H 50M</p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="algorithm" /><summary type="html"><![CDATA["BFS 문제"]]></summary></entry><entry><title type="html">[BOJ] 11660_구간 합 구하기 5</title><link href="http://localhost:4000/categories/algorithm/2023-08-02-algorithm-BOJ_11660/" rel="alternate" type="text/html" title="[BOJ] 11660_구간 합 구하기 5" /><published>2023-08-02T00:00:00+09:00</published><updated>2023-08-07T15:00:42+09:00</updated><id>http://localhost:4000/categories/algorithm/algorithm-BOJ_11660</id><content type="html" xml:base="http://localhost:4000/categories/algorithm/2023-08-02-algorithm-BOJ_11660/"><![CDATA[<blockquote>
+  <p><a href="https://www.acmicpc.net/problem/11660">https://www.acmicpc.net/problem/11660</a></p>
+</blockquote>
+
+<h3 id="문제-이해-과정">문제 이해 과정</h3>
+<hr />
+<p>N x N 크기의 배열이 주어진다. N의 범위는 1 ~ N까지로 (x1, y1), (x2, y2)가 주어졌을 때, 좌표 평면에서 (x2 - x1) x (y2 - y1)의 면적에 해당하는 사각형 구간 안의 합을 구하면 된다.</p>
+
+<p><img src="/assets/img/algo/sectionSum.png" alt="sectionSum" /></p>
+
+<p>위 사진은 (2, 2) 부터 (4, 3)까지의 구간의 예시이다.</p>
+
+<h3 id="풀이-계획">풀이 계획</h3>
+<hr />
+<p>특정 구간 합을 구하는 경우 구간이 주어질 때 마다 연산을 한다면 최악의 경우 N * N 배열 전체의 구간 합을 M번 만큼 구해야한다.</p>
+
+<blockquote>
+  <p>O(M * N^2)</p>
+</blockquote>
+
+<p>별다른 알고리즘을 쓰지 않고 수행했을 때의 연산 시간이다.</p>
+
+<p>그래서 DP 알고리즘을 활용해 테이블에 (1, 1)부터 (x, y)까지의 구간의 합을 미리 저장해놓고 필요할 때 꺼내쓰는 방법을 생각했다.</p>
+
+<p><img src="/assets/img/algo/sum.jpg" alt="Sum" /></p>
+
+<p>꺼내쓸 때는 해당 사진과 같이 파란색 구간의 합을 구하기 위해서 전체 배열에서 빨간색과 노란색 구간의 합을 빼주고 중복되는 구간을 더해준다. <br />
+정리하면, ‘파란 구간 = 전체 구간 - (빨간 구간 + 노란 구간) + 중복 구간’ 이다. <br />
+(0, 0)부터 특정 구간까지의 합을 미리 정리해놓는다면 최악의 경우에도 상수번의 연산만으로 결과를 얻을 수 있다.</p>
+
+<blockquote>
+  <p>O(M)</p>
+</blockquote>
+
+<p>’’’</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// DP table 생성
+dp[r][c] = dp[r-1][c] + dp[r][c-1] + (r, c) 값 - dp[r-1][c-1]
+
+// 구간 합 
+dp[x2][y2] - dp[x2][y1-1] - dp[x1-1][y2] + dp[x1-1][y1-1]
+</code></pre></div></div>
+
+<p>’’’</p>
+
+<blockquote>
+  <p>DP table을 만들 때는 배열로 구할 경우 해당 DP칸의 왼쪽과 위쪽을 더하므로 0번 row와 col을 0으로 패딩해줘야지 outOfIndex를 겪지 않을 수 있다.</p>
+</blockquote>
+
+<h3 id="구현">구현</h3>
+<hr />
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+    public static void main(String[] args) throws IOException{
+		// TODO Auto-generated method stub
+		st = new StringTokenizer(br.readLine());
+		N = Integer.parseInt(st.nextToken());
+		M = Integer.parseInt(st.nextToken());
+		
+		dp = new int[N+1][N+1];
+		
+		for (int r = 1; r &lt;= N; r++) {
+			st = new StringTokenizer(br.readLine());
+			for (int c = 1; c &lt;= N; c++) {
+				dp[r][c] = dp[r-1][c] + dp[r][c-1] + Integer.parseInt(st.nextToken()) - dp[r-1][c-1];
+			}
+		}
+		
+		for (int i = 0; i &lt; M; i++) {
+			st = new StringTokenizer(br.readLine());
+			
+			x1 = Integer.parseInt(st.nextToken());
+			y1 = Integer.parseInt(st.nextToken());
+			x2 = Integer.parseInt(st.nextToken());
+			y2 = Integer.parseInt(st.nextToken());
+			
+			sb.append(dp[x2][y2] - dp[x2][y1-1] - dp[x1-1][y2] + dp[x1-1][y1-1]).append("\n");
+		}
+		
+		System.out.println(sb);
+	}
+
+</code></pre></div></div>
+
+<h3 id="문제-풀이-후기">문제 풀이 후기</h3>
+<hr />
+<p>구간 합을 2차원 배열 DP table로 받아주고 수식만 정리한다면 구현에는 큰 문제가 없는 문제였다. 다만 제대로 수식을 정리하지 않고 구현했다가 수식이 꼬여서 많이 헤메는 경우가 발생해서 DP Table을 활용하려면 확실하게 정리를 하고 구현을 시작할 필요가 있어보인다. <br />
+총 소요시간 : 0H 30M</p>]]></content><author><name>&lt;Lee&gt; &lt;ByungHeon&gt;</name><email>&lt;cqqudgjs@hufs.ac.kr&gt;</email></author><category term="categories" /><category term="algorithm" /><summary type="html"><![CDATA["DP 문제"]]></summary></entry></feed>
