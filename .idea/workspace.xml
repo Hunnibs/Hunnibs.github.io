@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="665d9854-24e4-4d31-bb39-8a8ccf9eea53" name="Changes" comment="2023.12.29 - Http통신">
-      <change afterPath="$PROJECT_DIR$/_data/resume.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/profile.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_data/resume.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_data/resume.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +37,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/hunnibs/Desktop/Hunnibs.github.io/_data",
+    "last_opened_file_path": "/Users/hunnibs/Desktop/Hunnibs.github.io/assets/img",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -52,8 +52,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/_data" />
       <recent name="$PROJECT_DIR$/assets/img" />
+      <recent name="$PROJECT_DIR$/_data" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -90,7 +90,7 @@
       <workItem from="1719840456981" duration="599000" />
       <workItem from="1719888165969" duration="641000" />
       <workItem from="1736250649632" duration="590000" />
-      <workItem from="1736253361822" duration="14117000" />
+      <workItem from="1736253361822" duration="15371000" />
     </task>
     <task id="LOCAL-00001" summary="2023.09.10 - BOJ_1655(Heap)">
       <option name="closed" value="true" />

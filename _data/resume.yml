@@ -4,13 +4,13 @@
 basics:
   name: "이병헌"
   label: "Programmer"
-  picture: "https://via.placeholder.com/240x240"
+  picture: /assets/img/sidebar-bg.jpg
   email: "hunnibs97@gmail.com"
   phone: "(+82) 10-5124-6087"
   website: "https://hunnibs.github.io/"
   summary: >
-    안녕하세요. 새로운 것에 도전하는 것을 좋아하는 개발자 지망생 이병헌입니다.   
-    다양한 신기술에 관심을 가지고 공부를 진행하고 있으며 현재는 Java 기반 프로젝트 개발을 중점으로 공부하고 있습니다.
+    안녕하세요. 새로운 것에 도전하는 것을 좋아하는 개발자 지망생 이병헌입니다. 다양한 일과 모험에 도전하고 신기술에도 관심을 가져 공부하고 있습니다. 
+    현재는 Java 기반 프로젝트 개발을 중점으로 공부하고 있습니다.
   location:
     address: "오금로 32길 5"
     postalCode: "05673"
@@ -39,16 +39,15 @@ work:
       - 협업 도구(Git, Gerrit, Jira)를 사용한 효율적인 관리
   - company: "GPA 코리아"
     position: "SW 동계 인턴 실습생"
-    website: "https://www.ssafy.com/"
+    website: "https://gpakorea.com/"
     startDate: "2022-01-03"
     endDate: "2022-02-25"
     summary: >
-      삼성 청년 SW 아카데미 10기에서 Computer Science, Java, Spring 등 IT 관련 과목을 이수하며,
-      성적 상위 30%와 자율 프로젝트 우수상을 수상.
+      운영팀, 영업팀 업무 보조를 도맡아 수행하며 인턴 평가 최종 96점의 성적으로 수료.
     highlights:
-      - 기업 연계 프로젝트 "삼성전자 인재 관리 시스템" 팀장 및 개발 수행
-      - Spring Security와 JPA 등을 활용한 백엔드 개발 경험 축적
-      - 협업 도구(Git, Gerrit, Jira)를 사용한 효율적인 관리
+      - 사내 운영 애플리케이션 관리자 역할 수행
+      - 블라인드 체크 앱 동작 테스트 수행
+      - 제목학원 유튜브 영상 제작 및 업로드
 education:
   - institution: "한국외국어대학교"
     area: "컴퓨터공학부"
@@ -68,7 +67,7 @@ awards:
       인재 관리 시스템 개발 프로젝트로 우수상 수상.
 skills:
   - name: "Back-end"
-    level: "Advanced"
+    level: "Intermediate"
     keywords:
       - "Java"
       - "Spring Framework"
@@ -89,8 +88,6 @@ skills:
       - "JavaScript"
       - "Vue3"
 languages:
-  - language: "Korean"
-    fluency: "Native speaker"
   - language: "English"
     fluency: "Intermediate"
 interests:
@@ -99,6 +96,10 @@ interests:
       - "Algorithm Study"
       - "Software Architecture"
       - "Open Source Contributions"
+  - name: "Sport"
+    keywords:
+      - "Soccer"
+      - "Health Training"
 projects:
   - name: "인재 관리 시스템"
     startDate: "2024-04-08"
@@ -121,6 +122,5 @@ projects:
       아이와의 활동 계획 및 관리를 돕는 서비스.
       설문조사 화면 개발 및 JWT 인증 기반 로그인 기능 구현.
 references:
-  - name: "삼성 청년 SW 아카데미 담당자"
+  - name: ""
     reference: >
-      이병헌 님은 뛰어난 팀 관리와 개발 역량을 갖춘 수료생으로, 협업과 커뮤니케이션에 강점을 보였습니다.
