@@ -1,17 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><!--
- __  __                __                                     __
-/\ \/\ \              /\ \             __                    /\ \
-\ \ \_\ \   __  __    \_\ \      __   /\_\      __       ___ \ \ \/'\
- \ \  _  \ /\ \/\ \   /'_` \   /'__`\ \/\ \   /'__`\    /'___\\ \ , <
-  \ \ \ \ \\ \ \_\ \ /\ \L\ \ /\  __/  \ \ \ /\ \L\.\_ /\ \__/ \ \ \\`\
-   \ \_\ \_\\/`____ \\ \___,_\\ \____\ _\ \ \\ \__/.\_\\ \____\ \ \_\ \_\
-    \/_/\/_/ `/___/> \\/__,_ / \/____//\ \_\ \\/__/\/_/ \/____/  \/_/\/_/
-                /\___/                \ \____/
-                \/__/                  \/___/
-
-Powered by Hydejack v9.2.1 <https://hydejack.com/>
--->
+<html lang="en">
 
 
 
@@ -24,8 +12,6 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
 
 
 
-
-  <meta name="robots" content="noindex">
 
 
 
@@ -94,6 +80,7 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
 
 <link rel="preload" href="/assets/img/swipe.svg" as="image" id="_hrefSwipeSVG">
 
+<link rel="dns-prefetch" href="/assets/js/search-worker-9.2.1.js" as="worker" id="_hrefSearch">
 
 
 
@@ -110,10 +97,11 @@ Powered by Hydejack v9.2.1 <https://hydejack.com/>
   w._noNavbar = false;
   w._noToc = false;
   w._noSearch = false;
+  w._advertise = false;
   w._search = {
     DATA_URL: '/assets/sitedata.json?no-cache',
     STORAGE_KEY: 'mini-search/',
-    INDEX_KEY: 'index--2025-01-07T21:53:41+09:00',
+    INDEX_KEY: 'index--2025-01-16T16:57:11+09:00',
   };
   w._clapButton = true;
 }(window);</script>
@@ -142,6 +130,7 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
 
 
 <!--<![endif]-->
+
 
 
 
@@ -185,7 +174,7 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
 
   <main
   id="_main"
-  class="content layout-plain"
+  class="content layout-page"
   role="main"
 >
   <nav id="breadcrumbs" class="screen-only"><ul>
@@ -214,40 +203,7 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
 
   </header>
 
-  <ul class="large-only" id="markdown-toc">
-  <li><a href="#attributions" id="markdown-toc-attributions">Attributions</a></li>
-  <li><a href="#licenses" id="markdown-toc-licenses">Licenses</a>    <ul>
-      <li><a href="#hyde" id="markdown-toc-hyde">Hyde</a></li>
-      <li><a href="#hy-drawer" id="markdown-toc-hy-drawer">hy-drawer</a></li>
-      <li><a href="#hy-push-state" id="markdown-toc-hy-push-state">hy-push-state</a></li>
-      <li><a href="#rxjs" id="markdown-toc-rxjs">RxJS</a></li>
-      <li><a href="#katex" id="markdown-toc-katex">KaTeX</a></li>
-      <li><a href="#core-js" id="markdown-toc-core-js">core-js</a></li>
-      <li><a href="#web-animations" id="markdown-toc-web-animations">Web Animations</a></li>
-      <li><a href="#modernizr" id="markdown-toc-modernizr">Modernizr</a></li>
-      <li><a href="#compress-html-in-jekyll" id="markdown-toc-compress-html-in-jekyll">Compress HTML in Jekyll</a></li>
-      <li><a href="#the-html5-shiv" id="markdown-toc-the-html5-shiv">The HTML5 Shiv</a></li>
-      <li><a href="#dom4" id="markdown-toc-dom4">DOM4</a></li>
-      <li><a href="#loadcss" id="markdown-toc-loadcss">loadCSS</a></li>
-      <li><a href="#ratchet" id="markdown-toc-ratchet">Ratchet</a></li>
-      <li><a href="#swipe" id="markdown-toc-swipe">Swipe</a></li>
-      <li><a href="#smoothstate" id="markdown-toc-smoothstate">smoothState</a></li>
-      <li><a href="#bootstrap" id="markdown-toc-bootstrap">Bootstrap</a></li>
-      <li><a href="#atom-one-light-syntax" id="markdown-toc-atom-one-light-syntax">Atom One Light Syntax</a></li>
-      <li><a href="#atom-one-dark-syntax" id="markdown-toc-atom-one-dark-syntax">Atom One Dark Syntax</a></li>
-      <li><a href="#minisearch" id="markdown-toc-minisearch">MiniSearch</a></li>
-      <li><a href="#windowfetch-polyfill" id="markdown-toc-windowfetch-polyfill">window.fetch polyfill</a></li>
-      <li><a href="#abortcontroller-polyfill-for-abortable-fetch" id="markdown-toc-abortcontroller-polyfill-for-abortable-fetch">AbortController polyfill for abortable fetch()</a></li>
-      <li><a href="#resizeobserver-polyfill" id="markdown-toc-resizeobserver-polyfill">ResizeObserver Polyfill</a></li>
-      <li><a href="#kv-storage-polyfill" id="markdown-toc-kv-storage-polyfill">kv-storage polyfill</a></li>
-      <li><a href="#intersectionobserver-polyfill" id="markdown-toc-intersectionobserver-polyfill">IntersectionObserver polyfill</a></li>
-      <li><a href="#web-components-polyfills" id="markdown-toc-web-components-polyfills">Web Components Polyfills</a></li>
-      <li><a href="#lit-html" id="markdown-toc-lit-html">lit-html</a></li>
-    </ul>
-  </li>
-</ul>
-
-<p>Copyright (c) 2020 Florian Klampfer <a href="https://qwtel.com/">https://qwtel.com/</a></p>
+  <p>Copyright (c) 2020 Florian Klampfer <a href="https://qwtel.com/">https://qwtel.com/</a></p>
 
 <p>This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -573,6 +529,9 @@ project, which is BSD-style licensed with the following copyright:</p>
   <hr class="dingbat related mb6" />
 
 
+
+
+
   
 <footer class="content" role="contentinfo">
   <hr/>
@@ -597,7 +556,7 @@ project, which is BSD-style licensed with the following copyright:</p>
     
     </small></nav>
   
-    <p><small>Powered by <a class="external" href="https://hydejack.com/">Hydejack</a> v<span id="_version">9.2.1</span></small></p>
+  
   <hr class="sr-only"/>
 </footer>
 
@@ -642,6 +601,18 @@ project, which is BSD-style licensed with the following copyright:</p>
       <li>
         <a
           id="_drawer--opened"
+          href="/resume/"
+          class="sidebar-nav-item "
+          
+        >
+          resume
+        </a>
+      </li>
+    
+      
+      <li>
+        <a
+          
           href="/study/"
           class="sidebar-nav-item "
           
@@ -790,73 +761,17 @@ project, which is BSD-style licensed with the following copyright:</p>
 
   
 
+  <script type="module">
+    if ('serviceWorker' in navigator) {
+      /**/
+      navigator.serviceWorker.getRegistration()
+        .then(r => r.unregister())
+        .catch(() => {});
+      /**/
+    }
+  </script>
 <!--<![endif]-->
-  <!-- <script>
-  document.querySelector('hy-push-state').setAttribute('prefetch', '');
-
-  document.querySelectorAll('.sidebar a[href^="/"]').forEach(function (el) { 
-    el.addEventListener('click', function (e) {
-      if (el.pathname === window.location.pathname) {
-        e.preventDefault();
-        e.stopPropagation();
-        document.querySelector('hy-drawer').close();
-      }
-    });
-  });
-</script> -->
-
-<!--
-Code for integrating CloudFlare's email protection with Hydejack's single page app loading.
--->
-<script>
-  document.getElementById('_pushState').addEventListener('hy-push-state-after', function (e) {
-    function e(e){
-      (console.error?console.error:console.log).call(console,e)
-    }
-
-    function t(e){
-      return l.innerHTML='<a href="'+e.replace(/"/g,"&quot;")+'"></a>',l.childNodes[0].getAttribute("href")
-    }
-
-    function r(e,t){
-      var r=e.substr(t,2);return parseInt(r,16)
-    }
-
-    function n(e,n){
-      for(var o="",c=r(e,n),a=n+2;a<e.length;a+=2){
-        var l=r(e,a)^c;
-        o+=String.fromCharCode(l)
-      }
-      return t(o)
-    }
-
-    var o="/cdn-cgi/l/email-protection#",
-        c=".__cf_email__",
-        a="data-cfemail",
-        l=document.createElement("div");
-
-    !function(){
-      for(var t=document.getElementsByTagName("a"),r=0;r<t.length;r++)
-        try{
-          var c=t[r],a=c.href.indexOf(o);
-          a>-1&&(c.href="mailto:"+n(c.href,a+o.length))
-        }catch(t){
-          e(t)
-        }
-    }(),
-    function(){
-      for(var t=document.querySelectorAll(c),r=0;r<t.length;r++)
-        try{
-          var o=t[r],l=n(o.getAttribute(a),0),i=document.createTextNode(l);
-          o.parentNode.replaceChild(i,o)
-        }catch(t){
-          e(t)
-        }
-    }()
-  });
-</script>
-
-
+  
 
 
 
@@ -903,6 +818,7 @@ Code for integrating CloudFlare's email protection with Hydejack's single page a
 </template>
 
   
+  
     <template id="_dark-mode-template">
   <button id="_dark-mode" class="nav-btn no-hover" >
     <span class="sr-only">Dark Mode</span>
@@ -911,8 +827,32 @@ Code for integrating CloudFlare's email protection with Hydejack's single page a
 </template>
 
   
-</div>
+  
+    <template id="_search-template">
+  <button id="_search" class="nav-btn no-hover">
+    <label class="sr-only" for="_search-input">Search</label>
+    <span class="icon-search"></span>
+  </button>
+  <div id="_search-box">
+    <div class="nav-btn">
+      <span class="icon-search"></span>
+    </div>
+    <input 
+      id="_search-input"
+      type="search"
+      class="form-control form-control-lg nav-btn"
+      placeholder="Build with JEKYLL_ENV=production to enable search."
+    />
+    <button type="reset" class="nav-btn no-hover">
+      <span class="sr-only">Close</span>
+      <span class="icon-cross"></span>
+    </button>
+  </div>
+  <div id="_hits"></div>
+</template>
 
+  
+</div>
 
 </body>
 </html>

@@ -6,16 +6,36 @@
   <component name="ChangeListManager">
     <list default="true" id="665d9854-24e4-4d31-bb39-8a8ccf9eea53" name="Changes" comment="2023.12.29 - Http통신">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NOTICE.md" beforeDir="false" afterPath="$PROJECT_DIR$/NOTICE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/my-body.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/my-body.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/my-head.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/my-head.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/my-inline.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/my-inline.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/my-style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/my-style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/404.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/LICENSE/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/LICENSE/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/NOTICE/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/NOTICE/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/_site/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/about/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/algorithm/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/algorithm/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/MathJax/.bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/html5shiv/.bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/.bower.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/assets/css/hydejack-9.1.6.css" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/css/hydejack-9.1.6.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/icomoon/fonts/icomoon.eot" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/icomoon/fonts/icomoon.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/icomoon/fonts/icomoon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/icomoon/fonts/icomoon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/icomoon/fonts/icomoon.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/icomoon/fonts/icomoon.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/icomoon/fonts/icomoon.woff" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/icomoon/fonts/icomoon.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/icomoon/selection.json" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/icomoon/selection.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/icomoon/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/icomoon/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/assets/img/sidebar-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/img/sidebar-bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/js/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/version.json" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/version.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/download/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/download/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
@@ -30,6 +50,14 @@
       <change beforePath="$PROJECT_DIR$/_site/posts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/posts/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/sitemap.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/study/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/study/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icomoon/fonts/icomoon.eot" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icomoon/fonts/icomoon.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icomoon/fonts/icomoon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icomoon/fonts/icomoon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icomoon/fonts/icomoon.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icomoon/fonts/icomoon.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icomoon/fonts/icomoon.woff" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icomoon/fonts/icomoon.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icomoon/selection.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icomoon/selection.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icomoon/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icomoon/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/sidebar-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/sidebar-bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/version.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/version.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +87,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/hunnibs/Desktop/Hunnibs.github.io",
+    "last_opened_file_path": "/Users/hunnibs/Desktop/Hunnibs.github.io/assets/img",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -73,6 +101,11 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/img" />
+      <recent name="$PROJECT_DIR$/_data" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\cqqud\Documents\GitHub\Hunnibs.github.io\categories\pjt\_posts" />
       <recent name="C:\Users\cqqud\Documents\GitHub\Hunnibs.github.io" />
@@ -107,7 +140,7 @@
       <workItem from="1719840456981" duration="599000" />
       <workItem from="1719888165969" duration="641000" />
       <workItem from="1736250649632" duration="590000" />
-      <workItem from="1736253361822" duration="1058000" />
+      <workItem from="1736253361822" duration="12843000" />
     </task>
     <task id="LOCAL-00001" summary="2023.09.10 - BOJ_1655(Heap)">
       <option name="closed" value="true" />
