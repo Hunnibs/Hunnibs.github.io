@@ -9,8 +9,8 @@ basics:
   phone: "(+82) 10-5124-6087"
   website: "https://hunnibs.github.io/"
   summary: >
-    안녕하세요. 새로운 것에 도전하는 것을 좋아하는 개발자 지망생 이병헌입니다. 다양한 일과 모험에 도전하고 신기술에도 관심을 가져 공부하고 있습니다. 
-    현재는 Java 기반 프로젝트 개발을 중점으로 공부하고 있습니다.
+    안녕하세요. 저는 새로운 것에 도전하는 것을 좋아합니다. 컴퓨터공학 전공으로 딥러닝, 블록체인 등 신기술도 관심을 가지고 공부했습니다. 이후 삼성 SW 아카데미에 입과해 1년 간 교육을 이수했고 현재는 Java 기반 프로젝트 개발을 중점으로 공부하고 있습니다.  
+    특별한 경험은 대학에서 진행한 인턴십에 참여하여 2달 간 인턴 실습을 진행하였고 조경, 골프장 관리 등 다양한 일을 경험해봤습니다.
   location:
     address: "오금로 32길 5"
     postalCode: "05673"
@@ -43,22 +43,22 @@ work:
     startDate: "2022-01-03"
     endDate: "2022-02-25"
     summary: >
-      운영팀, 영업팀 업무 보조를 도맡아 수행하며 인턴 평가 최종 96점의 성적으로 수료.
+      운영팀, 영업팀 업무 보조를 도맡아 수행하며 인턴 평가 최종 96점
     highlights:
-      - 사내 운영 애플리케이션 관리자 역할 수행
-      - 블라인드 체크 앱 동작 테스트 수행
+      - 운영 애플리케이션 관리자 역할
+      - 블라인드 체크 앱 동작 테스트
       - 제목학원 유튜브 영상 제작 및 업로드
 education:
-  - institution: "한국외국어대학교"
+  - institution: "대학교"
     area: "컴퓨터공학부"
     studyType: "Bachelor"
     startDate: "2017-02-27"
     endDate: "2023-08-18"
     gpa: "3.44/4.5"
     courses:
-      - "Java 기반 웹 개발 프로젝트"
-      - "데이터베이스 설계 및 응용"
-      - "소프트웨어 공학"
+      - "캡스톤 프로젝트 - 전이학습을 통한 SNS 문서 요약 모델"
+      - "고급 문제 해결 기법 실습 (+ 자료구조, 알고리즘)"
+      - "데이터베이스 & 운영체제"
 awards:
   - title: "자율 프로젝트 우수상"
     date: "2024-05-24"
@@ -66,7 +66,7 @@ awards:
     summary: >
       인재 관리 시스템 개발 프로젝트로 우수상 수상.
 skills:
-  - name: "Back-end"
+  - name: "Backend"
     level: "Intermediate"
     keywords:
       - "Java"
@@ -95,7 +95,7 @@ interests:
     keywords:
       - "Algorithm Study"
       - "Software Architecture"
-      - "Open Source Contributions"
+      - "Web Project"
   - name: "Sport"
     keywords:
       - "Soccer"
@@ -114,7 +114,8 @@ projects:
     startDate: "2024-02-19"
     endDate: "2024-04-05"
     summary: >
-      OAuth 기반 로그인 및 상품 관리 기능을 개발한 중고거래 플랫폼 서비스.
+      짝 맞추기 중고거래 플랫폼 서비스.   
+      OAuth 기반 로그인 및 상품 관리 기능 구현.
   - name: "금쪽이 해방일지"
     startDate: "2024-01-08"
     endDate: "2024-02-16"
