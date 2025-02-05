@@ -47,7 +47,7 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             resume
+  - title:             About
     url:               /resume/
   - title:             Algorithm Study
     url:               /study/
