@@ -9,8 +9,7 @@ left_column:
   - education
   - awards
   - work
-  - projects
-  - certificate
+  - certificates
 right_column:
   - languages
   - skills

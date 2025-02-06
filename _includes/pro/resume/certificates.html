@@ -1,0 +1,36 @@
+{% if resume.certificates.size > 0 %}
+<section>
+    <div class="npb">
+        <h2 id="certificates" class="h3 hr-bottom">
+            {{ strings.resume.certificates | default:"Certificates" }}
+            <span class="symbol {{ icons.awards | default:'icon-trophy' }}"></span>
+        </h2>
+        {% for cer in resume.certificates %}
+        <section>
+            <header class="{% unless forloop.first %}mt2{% endunless %}">
+                {% if cer.date.size > 0 %}
+                <p class="faded">
+                    <time datetime="{{ cer.date | date_to_xmlschema }}">{{ cer.date | date:from_to_format }}</time>
+                </p>
+                {% endif %}
+                <h3 class="h4 faded" property="certificate">
+                    {% capture test %}<span class="bc">{{ cer.test }}</span>{% endcapture %}
+                    {% capture test_organization %}<span class="bc">{{ cer.test_organization }}</span>{% endcapture %}
+                    {% capture score %}{% if cer.score %}<span class="bc"><br> 점수: {{ cer.score }}</span>{% endif %}{% endcapture %}
+                    {% capture certificate_code %}<span class="bc"><br> 자격증 번호: {{ cer.certificate_code }}</span>{% endcapture %}
+                    {{ strings.resume.certificates_test
+                    | default:"<!--test--> by <!--test_organization--><!--score--><!--certificate_code-->"
+                    | replace:"<!--test-->", test
+                    | replace:"<!--test_organization-->", test_organization
+                    | replace:"<!--score-->", score
+                    | replace:"<!--certificate_code-->", certificate_code
+                    }}
+                </h3>
+            </header>
+
+            {% include components/message.html class="note" text=cer.summary alt="" %}
+        </section>
+        {% if forloop.first %}</div>{% endif %}
+    {% endfor %}
+</section>
+{% endif %}

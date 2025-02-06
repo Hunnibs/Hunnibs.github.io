@@ -64,6 +64,21 @@ work:
       - 운영 애플리케이션 관리자 역할
       - 블라인드 체크 앱 동작 테스트
       - 유튜브 영상 제작 및 업로드
+certificates:
+  - test: "SQLD"
+    date: "2024-12-13"
+    test_organization: "한국데이터산업진흥원"
+    certificate_code: "SQLD-055006344"
+  - test: "OPIc"
+    date: "2024-09-09"
+    test_organization: "멀티캠퍼스"
+    score: "IM1"
+    certificate_code: "2A2253723468"
+  - test: "TOEIC"
+    date: "2023-03-12"
+    test_organization: "한국토익위원회"
+    score: "835"
+    certificate_code: "143432"
 skills:
   - name: "Backend"
     level: "Intermediate"
