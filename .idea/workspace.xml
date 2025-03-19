@@ -5,33 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="665d9854-24e4-4d31-bb39-8a8ccf9eea53" name="Changes" comment="2023.12.29 - Http통신">
-      <change afterPath="$PROJECT_DIR$/_includes/pro/resume/certificates.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/categories/pjt/_posts/2025-02-25-pjt-security_circulation.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_data/resume.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_data/resume.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_data/strings.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_data/strings.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/resume.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/resume.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/LICENSE/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/LICENSE/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/NOTICE/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/NOTICE/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/_site/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/about/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/algorithm/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/algorithm/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/download/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/download/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/it/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/it/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/jekyll/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/jekyll/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/licenses/Apache-2.0/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/licenses/Apache-2.0/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/licenses/GPL-3.0/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/licenses/GPL-3.0/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/licenses/MIT/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/licenses/MIT/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/licenses/PRO/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/licenses/PRO/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/licenses/W3C-20150513/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/licenses/W3C-20150513/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/licenses/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/licenses/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/posts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/posts/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/sitemap.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/study/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/study/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resume.md" beforeDir="false" afterPath="$PROJECT_DIR$/resume.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +36,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/hunnibs/Desktop/Hunnibs.github.io/assets&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/hunnibs/Desktop/Hunnibs.github.io&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -117,7 +92,11 @@
       <workItem from="1736250649632" duration="590000" />
       <workItem from="1736253361822" duration="17654000" />
       <workItem from="1737889084663" duration="5267000" />
-      <workItem from="1738732878447" duration="12014000" />
+      <workItem from="1738732878447" duration="12620000" />
+      <workItem from="1739770742655" duration="2554000" />
+      <workItem from="1740495293324" duration="892000" />
+      <workItem from="1740886805437" duration="83000" />
+      <workItem from="1740886902578" duration="2714000" />
     </task>
     <task id="LOCAL-00001" summary="2023.09.10 - BOJ_1655(Heap)">
       <option name="closed" value="true" />

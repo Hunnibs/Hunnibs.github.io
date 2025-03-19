@@ -65,6 +65,11 @@ work:
       - 블라인드 체크 앱 동작 테스트
       - 유튜브 영상 제작 및 업로드
 certificates:
+  - test: "TOEIC"
+    date: "2025-03-18"
+    test_organization: "한국토익위원회"
+    score: "900"
+    certificate_code: "160052"
   - test: "SQLD"
     date: "2024-12-13"
     test_organization: "한국데이터산업진흥원"
@@ -74,11 +79,6 @@ certificates:
     test_organization: "멀티캠퍼스"
     score: "IM1"
     certificate_code: "2A2253723468"
-  - test: "TOEIC"
-    date: "2023-03-12"
-    test_organization: "한국토익위원회"
-    score: "835"
-    certificate_code: "143432"
 skills:
   - name: "Backend"
     level: "Intermediate"
