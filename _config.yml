@@ -49,18 +49,16 @@ author:
 menu:
   - title:             About
     url:               /resume/
+  - title:            Web
+    url:               /pjt/
+  - title:             Java Study
+    url:               /javastudy/
   - title:             Algorithm Study
     url:               /study/
   - title:             Algorithm Solution
     url:               /algorithm/
   - title:             It
     url:               /it/
-  - title:             Java Study
-    url:               /javastudy/
-  - title:             Jekyll
-    url:               /jekyll/
-  - title:            Web
-    url:               /pjt/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..

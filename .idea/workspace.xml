@@ -6,8 +6,33 @@
   <component name="ChangeListManager">
     <list default="true" id="665d9854-24e4-4d31-bb39-8a8ccf9eea53" name="Changes" comment="2023.12.29 - Http통신">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_data/resume.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_data/resume.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Resume.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Resume.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_featured_categories/jekyll.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/LICENSE/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/LICENSE/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/NOTICE/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/NOTICE/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/about/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/algorithm/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/algorithm/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/download/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/download/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/it/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/it/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/jekyll/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/licenses/Apache-2.0/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/licenses/Apache-2.0/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/licenses/GPL-3.0/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/licenses/GPL-3.0/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/licenses/MIT/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/licenses/MIT/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/licenses/PRO/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/licenses/PRO/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/licenses/W3C-20150513/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/licenses/W3C-20150513/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/licenses/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/licenses/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/posts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/posts/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/study/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/study/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/categories/javaStudy/_posts/2023-12-29-javaStudy-urlConnection.md" beforeDir="false" afterPath="$PROJECT_DIR$/categories/pjt/_posts/2023-12-29-javaStudy-urlConnection.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/categories/jekyll/_posts/2023-04-16-jekyll-setting.md" beforeDir="false" afterPath="$PROJECT_DIR$/categories/pjt/_posts/2023-04-16-jekyll-setting.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/categories/jekyll/_posts/2023-04-21-jekyll-theme.md" beforeDir="false" afterPath="$PROJECT_DIR$/categories/pjt/_posts/2023-04-21-jekyll-theme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/categories/jekyll/_posts/2023-05-23-jekyll-nameError.md" beforeDir="false" afterPath="$PROJECT_DIR$/categories/pjt/_posts/2023-05-23-jekyll-nameError.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/categories/jekyll/_posts/2023-05-24-jekyll-error1.md" beforeDir="false" afterPath="$PROJECT_DIR$/categories/pjt/_posts/2023-05-24-jekyll-error1.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,26 +55,26 @@
     <option name="sortByType" value="true" />
     <option name="sortKey" value="BY_TYPE" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/cqqud/Documents/GitHub/Hunnibs.github.io/assets",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.fileTypes",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/cqqud/Documents/GitHub/Hunnibs.github.io/assets&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\cqqud\Documents\GitHub\Hunnibs.github.io\assets" />
@@ -118,7 +143,8 @@
       <workItem from="1742491987335" duration="8000" />
       <workItem from="1742906444821" duration="3000" />
       <workItem from="1742909760880" duration="595000" />
-      <workItem from="1742920858279" duration="1278000" />
+      <workItem from="1742920858279" duration="1372000" />
+      <workItem from="1743999463608" duration="1557000" />
     </task>
     <task id="LOCAL-00001" summary="2023.09.10 - BOJ_1655(Heap)">
       <option name="closed" value="true" />
