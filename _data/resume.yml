@@ -41,8 +41,7 @@ education:
     endDate: "2024-06-28"
     gpa: "상위 30%"
     courses:
-      - "웹 개발 교육 이수"
-      - "컴퓨팅 사고력"
+      - "Full-Stack 웹 개발 교육 이수"
       - "금쪽이 해방일지 - 공통 프로젝트"
       - "Pairing 중고거래 플랫폼 - 특화 프로젝트"
       - "인재 관리 시스템 - 기업 연계 자율 프로젝트"
@@ -65,6 +64,10 @@ work:
       - 블라인드 체크 앱 동작 테스트
       - 유튜브 영상 제작 및 업로드
 certificates:
+  - test: "정보처리기사"
+    date: "2025-06-13"
+    test_organization: "한국산업인력공단"
+    certificate_code: "25201300519F"
   - test: "TOEIC"
     date: "2025-03-18"
     test_organization: "한국토익위원회"
@@ -84,15 +87,16 @@ skills:
     level: "Intermediate"
     keywords:
       - "Java"
-      - "Spring Framework"
+      - "Spring"
       - "MyBatis"
       - "JPA"
       - "QueryDSL"
-  - name: "SVN & Collaboration"
+  - name: "Collaboration"
     level: "Intermediate"
     keywords:
       - "Git"
       - "Gerrit"
+      - "Notion"
       - "Jira"
   - name: "Front-end"
     level: "junior"
@@ -107,10 +111,10 @@ languages:
 interests:
   - name: "Continuous Learning"
     keywords:
-      - "Algorithm Study"
       - "Software Architecture"
       - "Web Project"
+      - "English"
   - name: "Sport"
     keywords:
       - "Soccer"
-      - "Health Training"
+      - "Running"
