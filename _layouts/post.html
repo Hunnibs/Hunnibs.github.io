@@ -24,6 +24,11 @@ layout: base
 
 {% include_cached components/post.html post=page no_link_title=true no_excerpt=true hide_image=page.hide_image hide_description=page.hide_description %}
 
+<nav id="post-toc" class="post-toc" aria-label="Table of contents" hidden>
+  <p class="post-toc__title">On this page</p>
+  <ol class="post-toc__list"></ol>
+</nav>
+
 {% include components/dingbat.html %}
 
 {% assign addons = page.addons | default:site.hydejack.post_addons %}

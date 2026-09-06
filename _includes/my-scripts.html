@@ -53,3 +53,96 @@ The snippet below will run the code on every `hy-push-state-load` event instead.
   });
 </script>
 {% endcomment %}
+
+<script>
+  (function () {
+    'use strict';
+
+    function setupPostToc() {
+      if (window.__postTocCleanup) window.__postTocCleanup();
+
+      var post = document.querySelector('.layout-post article.post');
+      var toc = document.getElementById('post-toc');
+      if (!post || !toc) return;
+
+      var headings = Array.prototype.slice.call(post.querySelectorAll('h1, h2, h3, h4, h5, h6'));
+      headings = headings.filter(function (heading) {
+        return !heading.closest('header') && heading.textContent.trim();
+      });
+
+      if (!headings.length) {
+        toc.hidden = true;
+        return;
+      }
+
+      var usedIds = {};
+      document.querySelectorAll('[id]').forEach(function (element) { usedIds[element.id] = true; });
+      headings.forEach(function (heading, index) {
+        if (heading.id) return;
+        var base = heading.textContent.trim().toLowerCase()
+          .replace(/[^a-z0-9가-힣]+/g, '-')
+          .replace(/^-+|-+$/g, '') || 'section';
+        var id = base;
+        var suffix = 2;
+        while (usedIds[id]) id = base + '-' + suffix++;
+        heading.id = id;
+        usedIds[id] = true;
+      });
+
+      var list = toc.querySelector('.post-toc__list');
+      list.textContent = '';
+      var links = headings.map(function (heading) {
+        var item = document.createElement('li');
+        item.className = 'toc-level-' + heading.tagName.slice(1);
+        var link = document.createElement('a');
+        link.href = '#' + encodeURIComponent(heading.id);
+        link.textContent = heading.textContent.trim();
+        item.appendChild(link);
+        list.appendChild(item);
+        return { heading: heading, link: link };
+      });
+      toc.hidden = false;
+
+      var activeLink;
+      function updateActiveLink() {
+        var current = links[0];
+        var offset = 120;
+        links.forEach(function (item) {
+          if (item.heading.getBoundingClientRect().top <= offset) current = item;
+        });
+        if (activeLink === current.link) return;
+        if (activeLink) activeLink.classList.remove('is-active');
+        current.link.classList.add('is-active');
+        activeLink = current.link;
+      }
+
+      var ticking = false;
+      function onScroll() {
+        if (ticking) return;
+        ticking = true;
+        window.requestAnimationFrame(function () {
+          updateActiveLink();
+          ticking = false;
+        });
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      window.addEventListener('resize', onScroll, { passive: true });
+      updateActiveLink();
+
+      window.__postTocCleanup = function () {
+        window.removeEventListener('scroll', onScroll);
+        window.removeEventListener('resize', onScroll);
+        window.__postTocCleanup = null;
+      };
+    }
+
+    function schedulePostToc() { window.requestAnimationFrame(setupPostToc); }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', schedulePostToc, { once: true });
+    } else {
+      schedulePostToc();
+    }
+    document.addEventListener('hy-push-state-load', schedulePostToc);
+    document.addEventListener('hy-push-state-ready', schedulePostToc);
+  }());
+</script>
